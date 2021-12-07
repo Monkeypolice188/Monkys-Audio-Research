@@ -1,0 +1,1 @@
+All solved strings courtesy of Monkeypolice188
