@@ -206,6 +206,7 @@ synth_ambient_aircon_small_05
 synth_ambient_bass_beats_dubstep
 synth_ambient_bass_simple
 synth_ambient_church_organ
+synth_ambient_clapper
 synth_ambient_fountain_spray
 synth_ambient_gas_release
 synth_ambient_golf_sprinkler

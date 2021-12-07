@@ -8978,6 +8978,7 @@ limb_5
 limb_6
 linda_blair_left
 linda_blair_right
+lion_roar
 lip_smack_01
 lip_smack_02
 little_white_lie_left
@@ -14653,6 +14654,8 @@ ting_1
 ting_2
 ting_3
 ting_4
+toilet_door_latch
+toilet_door_slam
 toilet_flush_01
 toilet_flush_02
 tonight_left
@@ -14678,6 +14681,7 @@ traffic_barrel_2
 traffic_barrel_3
 train_airhorn_loop_01
 train_airhorn_loop_02
+train_airhorn_oneshot
 train_horn
 train_horn_tail
 train_loop_a
@@ -15398,6 +15402,7 @@ whoop_02
 whoop_06
 whoop_09
 whoop_10
+wilhelm_short
 wind_eratic_01
 wind_eratic_02
 wind_soft_01
