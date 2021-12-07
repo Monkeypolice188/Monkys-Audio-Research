@@ -1,0 +1,62 @@
+The RetriggeredOverlappedSound (_rt, _rtol, _retrigger, _retrig, _overlap) type is used to replay sounds a number of times. 
+
+Delay or "overlap" duration can be defined, affecting the duration at which the sound plays before it is replayed again. 
+
+Both a "start" and "tail" sound can also be defined, which play only once, on the first and last instance, respectively. These are both taken into consideration by the Retriggers value.
+
+Fields:
+
+RetriggerCount - ushort value - The number of times the retrigger occurs. This includes the StartSound, RetriggerSound and TailSound. 
+RetriggerCountVariance - ushort value - RetriggerVariance - Variance of RetriggerCount.
+Delay - ushort value - Delay - the delay of the retrigger.  If this value matches the full duration of the sound, there will be no delay. If this value exceeds the full duration of the sound, there will be delay. If this value is set to 0, the retriggers will be played on top of each other, creating amplitude. This will affect all retriggers.
+DelayVariance - ushort value - DelayVariance - Variance of Delay. This will affect all retriggers by the same amount of variance.
+RetriggerCountParameter - metahash - Parameter for RetriggerCount.
+DelayParameter - metahash - Parameter for Delay.
+StartSound - metahash - StartSound - The sound that plays first.
+RetriggerSound - metahash - RetriggerSound - The sound that is retriggered.
+TailSound - metahash - TailSound - The sound that plays last.
+
+
+Examples:
+
+"reversing_beep" is played 5 times, each for 500 ms, when "reversing_beep_rtol" is played.
+
+<Item type="RetriggeredOverlappedSound">
+ <Name>reversing_beep_rtol</Name>
+ <Header>
+  <Flags value="0x1800C004" />
+  <Volume value="65336" />
+  <DopplerFactor value="10" />
+  <Category>vehicles_horns</Category>
+  <Unk22 value="25" />
+  <Unk23 value="50" />
+ </Header>
+ <RetriggerCount value="5" />
+ <RetriggerCountVariance value="0" />
+ <Delay value="500" />
+ <DelayVariance value="0" />
+ <RetriggerCountParameter />
+ <DelayParameter />
+ <StartSound />
+ <RetriggerSound>reversing_beep</RetriggerSound>
+ <TailSound />
+</Item>
+
+Below, "timer_10s_rtol" plays "timer_short_env" 9 times, with 1 second delay each, and then plays "timer_long_env" once.
+
+<Item type="RetriggeredOverlappedSound">
+ <Name>timer_10s_rtol</Name>
+ <Header>
+  <Flags value="0x00008000" />
+  <Category>frontend_game_loud</Category>
+ </Header>
+ <RetriggerCount value="10" />
+ <RetriggerCountVariance value="0" />
+ <Delay value="1000" />
+ <DelayVariance value="0" />
+ <RetriggerCountParameter />
+ <DelayParameter />
+ <StartSound />
+ <RetriggerSound>timer_short_env</RetriggerSound>
+ <TailSound>timer_long_env</TailSound>
+</Item>

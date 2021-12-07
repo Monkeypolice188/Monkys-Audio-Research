@@ -1,0 +1,35 @@
+The SequentialOverlapSound (_sqol, _seqol, _seqo) type is used to add delay between a sequence of sounds.
+
+The type is similar to the SequentialSound, but with a Delay field added, like the RetriggeredOverlappedSound.
+
+The data contains a list of ChildSounds which refer to each sound played in sequential order.
+
+Like the RetriggeredOverlappedSound, delay is the amount of duration into play the sound is played before next sound is played. For example, if the delay is defined as 500ms, the second sound will be played 500ms into the first sound's play, and the third sound will be played 500ms into the second sound's play. The sounds will play their full length when played in the sequence. If the sound is less than the delay, there will be a delay of silence.
+
+The maximum number of child sounds in a sequence is 32.
+
+Fields:
+
+Delay - ushort value - The delay of each sound in the sequence.  If this value is set to 0, all sounds will be played on top of each other, creating amplitude. This will affect all sounds in the sequence.
+DelayParameter - metahash - Parameter for Delay.
+DirectionParameter - metahash - Parameter for playback direction. Reverses the order that the sequence is played in if set to a parameter with a value equal to 1.
+ChildSounds - Item list of child sounds to play in sequence.
+
+Example:
+
+when "notes" is played, "note_2" will be played 600 ms into "note_1"'s play, and "note_3" will be played 600 ms into "note_2"'s play.
+
+<Item type="SequentialOverlapSound">
+ <Name>notes</Name>
+ <Header>
+  <Flags value="0x00000000" />
+ </Header>
+ <Delay value="600" />
+ <DelayParameter />
+ <DirectionParameter />
+ <ChildSounds>
+  <Item>note_1</Item>
+  <Item>note_2</Item>
+  <Item>note_3</Item>
+ </ChildSounds>
+</Item>

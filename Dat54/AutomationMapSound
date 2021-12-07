@@ -1,0 +1,47 @@
+The "AutomationMapSound" (_map, _notes) sound type is used to map sounds to an AutomationSound type, which uses a MIDI (Musical Instrument Digital Interface) sound. 
+
+The type can have numerous items which define specific note ranges of the MIDI, assigning them instruments or sounds individually.
+
+The mapping will transpose the note range about middle C (C3).
+
+Fields:
+
+Maps - Maps - Item list of mappings
+	NoteRangeMin - byte value - minimum note of this mapping
+	NoteRangeMax - byte value - maximum note of this mapping
+	NoteRangeType - byte value - Type of note range behavior
+		0 = Track Pitch (plays according to MIDI input)
+		1 = Unity Pitch (plays as constant middle C (C3 - note 48),)
+	ChildSound - metahash - Sound to play on this mapping.
+
+It is important to note that the NoteRangeMin value will transpose the MIDI about middle C (C3 - note 48) according to the value you set it at. 
+For example, if the minimum note of your preferred range is note 37, setting a value of 37 will transpose the tune by -11 semi-tones (37-48 = -11). 
+To correct the resulting pitch change of transposing, the ChildSound should have an opposing pitch change value which should correspond with the number of semi-tones.
+For example, a transpose of -11 semi-tones should = -1100 pitch value (or 64435) to cancel out the change in pitch.)
+
+Example:
+
+Below, "merry_christmas_01_map" has two mappings:
+	- notes 0 to 60 (C1 to C4) are assigned a jingle sound. These do not change pitch regardless of the MIDI notes.
+	- notes 61 to 128 (D4 to G10) are assigned an organ sound.
+
+<Item type="AutomationMapSound">
+ <Name>merry_christmas_01_map</Name>
+ <Header>
+  <Flags value="0xAAAAAAAA" />
+ </Header>
+ <Maps>
+  <Item>
+   <NoteRangeMin value="61" />
+   <NoteRangeMax value="128" />
+   <NoteRangeType value="0" />
+   <ChildSound>merry_christmas_01_organ_synth</ChildSound>
+  </Item>
+  <Item>
+   <NoteRangeMin value="0" />
+   <NoteRangeMax value="60" />
+   <NoteRangeType value="1" />
+   <ChildSound>merry_christmas_01_jingles</ChildSound>
+  </Item>
+ </Maps>
+</Item>

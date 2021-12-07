@@ -1,0 +1,44 @@
+The CrossfadeSound (_crossfade, _fade, _cf) type is used to fade in one sound while fading out another.
+
+It is often used to fade out close/detailed sounds while fading in distant/far sounds.
+
+Fields:
+
+FadeOutSound - metahash - Fade out sound
+FadeInSound - metahash - Fade in sound
+UnkByte - byte value - CrossfadeType
+	0 = None //?
+	1 = Linear //?
+	2 = Equal Power //?
+UnkFloat0 - float value - Unknown // fade-in ms?
+UnkFloat1 - float value - Unknown // fade-out ms?
+UnkInt - integer value - Unknown
+UnkCurvesHash - metahash - Unknown //crossfade curves
+ParameterHash0 - metahash - Variables.
+ParameterHash1 - metahash - Variables.
+ParameterHash2 - metahash - Variables.
+ParameterHash3 - metahash - Variables.
+ParameterHash4 - metahash - Variables.
+
+Example:
+
+<Item type="CrossfadeSound">
+ <Name>dlc_xm_explosions_orbital_cannon_incendiary_cf</Name>
+ <Header>
+  <Flags value="0x00000000" />
+ </Header>
+ <FadeOutSound>dlc_xm_explosions_orbital_cannon_incendiary_close</FadeOutSound>
+ <FadeInSound>dlc_xm_explosions_orbital_cannon_standard_distant_mt</FadeInSound>
+ <UnkByte value="0" />
+ <UnkFloat0 value="20" />
+ <UnkFloat1 value="60" />
+ <UnkInt value="0" />
+ <UnkCurvesHash>equal_power_fall_crossfade</UnkCurvesHash>
+ <ParameterHash0 />
+ <ParameterHash1 />
+ <ParameterHash2 />
+ <ParameterHash3 />
+ <ParameterHash4 />
+</Item>
+  
+  

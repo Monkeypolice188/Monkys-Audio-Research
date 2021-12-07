@@ -1,0 +1,45 @@
+The VariableBlockSound (_vb, _var, _var_block) type is used to declare the base values of any variables used in a sound type chain.
+
+The type must be used to define what the base value of any variables used in child sounds are. Without it, the variables will not be considered.
+
+Fields:
+
+ChildSound - metahash - Child sound.
+Variables - Item list of variables.
+	Name - metahash - Variable name.
+	Value - float value - Default value for this variable.
+	ValueVariance - float value - Variance of the Value.
+	VariableType - byte value - Type of variable.
+		0 = Sound //used for sound data inputs
+		1 = Code //used for math/calculations
+		2 = Constant //variable pulled from gameplay information, such as constant velocity, player health, etc.
+  
+Example:
+  
+Below, "outlaw_air_intake_vb" defines the variables "revs" and "throttle" as having a base value of 0. 
+
+These variables are used in child sounds to determine the input revs and throttle for the air intake sound's behavior.
+  
+<Item type="VariableBlockSound">
+ <Name>outlaw_air_intake_vb</Name>
+ <Header>
+  <Flags value="0x00008004" />
+  <Volume value="64736" />
+  <Category>vehicles_extras_loud</Category>
+ </Header>
+ <AudioHash>outlaw_air_intake_pts</AudioHash>
+ <Variables>
+  <Item>
+   <Name>revs</Name>
+   <Value value="0" />
+   <ValueVariance value="0" />
+   <Flags value="1" />
+  </Item>
+  <Item>
+   <Name>throttle</Name>
+   <Value value="0" />
+   <ValueVariance value="0" />
+   <Flags value="1" />
+  </Item>
+ </Variables>
+</Item>

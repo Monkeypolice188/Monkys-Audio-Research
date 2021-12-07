@@ -1,0 +1,28 @@
+The RandomizedSound (_rnd, _rdm, _rand, _random, _randomize) type can be used to pick any child sound from a list of sounds.
+
+It contains a list of Items and their names (as "keys") and the value of its probability.
+
+The randomizer can be limited using the UnkByte value and UnkBytes Flags, which will limit the chosen items to the count.
+
+Fields:
+
+UnkByte - Unused. Restricts the randomization to a specified offset. (default 0 = no limit, 2 = first two items (FF FF) only, 3 = first three items (FF FF FF) only, etc)
+UnkBytes - Flags corresponding to item count. When enabled, will correspond to the UnkByte value (1-2 items = FF, 3-4 = FF FF, 5-6 = FF FF FF, etc)
+
+Example:
+
+"tracks" picks randomly between "track_1", "track_2" and "track_3". Both "track_1" and "track_2" have a 100% probability of being chosen, while "track_3" has a 50% probability of being chosen.
+
+<Item type="RandomizedSound">
+  <Name>tracks</Name>
+	<Header>
+	<Flags value="0x00000000" />
+	</Header>
+	<UnkByte value="0" />
+	<UnkBytes>FF FF</UnkBytes>
+	<Items>
+	<Item key="track_1" value="1" />
+	<Item key="track_2" value="1" />
+	<Item key="track_3" value="0.5" />
+	</Items>
+</Item>

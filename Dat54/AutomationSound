@@ -1,0 +1,34 @@
+The AutomationSound (_midi) type is used to play MIDI (Musical Instrument Digital Interface) sounds. 
+
+MIDIs are used to handle what would otherwise be complex sound arrangements. The AutomationSound type controls which MIDI to play, and how to play it (for example, what "instrument" or sound is used for each note type, etc).
+
+Fields:
+
+FallBackSound - metahash - Fallback sound.
+PlaybackRate - float value  - rate of playback, increasing it will increase the MIDI playback speed
+PlaybackRateVariance - float value - variance of the PlaybackRate.
+PlaybackRateParameter - metahash - overrides PlaybackRate.
+Map - metahash - associates an AutomationMapSound to the MIDI, mapping note/sounds onto the MIDI.
+ContainerName - metahash - File location.
+FileName - metahash - Name of the .mid file.
+UnkData - metahash - Unknown.
+
+Example:
+
+Below, "christmas_feed_message_nyn" plays the "newyearsnight" MIDI file. It maps the notes according to the "dlc_xm17_emitter_tree_map" MIDI map.
+
+  <Item type="AutomationSound">
+   <Name>bugle_taps_aut</Name>
+   <Header>
+    <Flags value="0x00000001" />
+    <Flags2 value="0xAAA8AAAA" />
+   </Header>
+   <FallBackSound>streamed_ambience_bugle_call_bugle_long_note</FallBackSound>
+   <PlaybackRate value="0.75" />
+   <PlaybackRateVariance value="0" />
+   <PlaybackRateParameter />
+   <Map>bugle_taps_aut_notes</Map>
+   <ContainerName>resident/low_latency</ContainerName>
+   <FileName>taps_edit</FileName>
+   <UnkData />
+  </Item>

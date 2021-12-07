@@ -1,0 +1,22 @@
+The EnvironmentSound type is used to apply environmental reflections to a sound.
+
+The sound type is used to refract and reflect sounds according to the player's position.
+
+It is mostly used on vehicles to refract exhaust sounds, but is also used on radio emitters, bird ambience and stereo sounds.
+
+It can also be used as a child of a ModularSynthSound which applies the refraction directly to the synth.
+
+Fields:
+
+UnkByte - byte value - Unknown //0 or 1?
+
+Example:
+
+<Item type="EnvironmentSound">
+ <Name>barrage_exhaust_accel</Name>
+ <Header>
+  <Flags value="0x00008000" />
+  <Category>vehicles_engines</Category>
+ </Header>
+ <UnkByte value="1" />
+</Item>

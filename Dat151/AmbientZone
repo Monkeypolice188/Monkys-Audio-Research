@@ -1,0 +1,64 @@
+The AmbientZone type is used to assign ambient sounds to an area.
+
+It uses two main bounding volumes; an activation volume and a playback volume. The volumes can be defined as spheres, boxes or lines. The position, size and rotation of the two volumes can be defined independently.
+
+AmbientZones use AmbientRules to play sounds. An AmbientZone can use multiple AmbientRules which will play according to their individual settings.
+
+Fields:
+
+Name - metahash - Name of the AmbientRule
+Flags - Flags value - Unknown
+Flags2 - Flags value - Unknown
+Flags3 - Flags value - Unknown
+Position - Vector3 value - Offset of the sound relative to the AmbientZone center.
+Flags3 - Flags value - Unknown
+Hash1 - metahash - Master sound
+Hash2 - metahash - Category
+Flags4 - Flags value - Unknown
+Flags5 - Flags value - Unknown
+Flags6 - Flags value - Unknown
+Unk01 - Float value - Unknown
+InnerRad - Float value - Inner radius of sound - minimum distance the sound can be heard from.
+OuterRad - Float value - Outer radius of sound - maximum distance the sound can be heard from.
+StartTime - Integer value - Start time, in minutes, the sound can play at.
+EndTime - Integer value - End time, in minutes, the sound can play at.
+Unk06 - Integer value - Unknown
+Unk07 - Integer value - Unknown
+Unk08 - Integer value - Unknown
+Unk09 - Integer value - Unknown
+Unk10 - Integer value - Unknown
+Unk11 - Integer value - Unknown
+Unk12 - Integer value - Unknown
+Unk13 - Integer value - Unknown
+ExtParams - Item list - Item list of external parameters
+
+
+Example:
+
+  <Item type="AmbientRule" ntOffset="16979">
+   <Name>ar_construction_grinder</Name>
+   <Flags0 value="0xAA001190" />
+   <Flags1 value="0x00000000" />
+   <Flags2 value="0x00000000" />
+   <Position x="0" y="0" z="0" />
+   <Flags3 value="0x00000000" />
+   <Hash1>construction_grinder</Hash1>
+   <Hash2>base</Hash2>
+   <Flags4 value="0x00000000" />
+   <Flags5 value="0xFFFFFFFF" />
+   <Flags6 value="0x00000000" />
+   <Unk01 value="1" />
+   <InnerRad value="30" />
+   <OuterRad value="80" />
+   <StartTime value="450" />
+   <EndTime value="1176" />
+   <Unk06 value="45" />
+   <Unk07 value="0" />
+   <Unk08 value="0" />
+   <Unk09 value="0" />
+   <Unk10 value="255" />
+   <Unk11 value="255" />
+   <Unk12 value="100" />
+   <Unk13 value="3" />
+   <ExtParams />
+  </Item>

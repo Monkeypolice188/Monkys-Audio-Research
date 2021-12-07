@@ -1,0 +1,70 @@
+The EnvelopeSound (_env, _envelope, _one_shot) type is used to apply an ADSR (Attack, Decay, Sustain, Release) style envelope to a sound. It is often used to play a sound for a specific duration.
+
+Fields:
+
+Attack - ushort value - Duration of attack in ms. Attack style pairs up to AttackCurve.
+AttackVariance - ushort value - Variance of Attack.
+Decay - ushort value - Duration of decay in ms. Decay style pairs up to DecayCurve.
+DecayVariance - ushort value - Variance of Decay.
+Sustain - byte value - Level of sustain as a percentage from 0-100%.
+SustainVariance - byte value - Variance of Sustain
+Hold - integer value - duration of sustain in ms.
+HoldVariance - ushort value - Variance of Hold.
+Release - integer value - Duration of release in ms. Release style pairs up to ReleaseCurve.
+ReleaseVariance - integer value - Variance of Release.
+AttackCurve - metahash - Attack curve.
+DecayCurve - metahash - Decay curve.
+ReleaseCurve - metahash - Release curve.
+AttackParameter - metahash - Attack parameter.
+DecayParameter - metahash - Decay parameter.
+SustainParameter - metahash - Sustain parameter.
+HoldParameter - metahash - Hold parameter.
+ReleaseParameter - metahash - Release parameter.
+ChildSound - metahash - child sound to envelope.
+EnvelopeType - integer value - Envelope type behavior.
+	0 = Volume
+	1 = Pitch
+	2 = Pan
+	3 = LPF
+	4 = HPF
+	5 = Variable (overriden by EnvelopeTypeParameter)
+	6 = Logarithmic LPF
+	7 = Logarithmic HPF
+EnvelopeTypeParameter - metahash - Overrides EnvelopeType (when EnvelopeType is set to 5).
+LevelMin - float value - Minimum level of the envelope (default -100 or 0).
+LevelMax - float value - Maximum level of the envelope (default 0 or 1).
+
+Example:
+
+"truck_horn" will have 900 ms of attack time (volume from 0 to 100%) before releasing for a further 200 ms.
+
+<Item type="EnvelopeSound">
+<Name>truck_horn_blast_env</Name>
+ <Header>
+  <Flags value="0x00000001" />
+  <Flags2 value="0xAAA1AAAA" />
+ </Header>
+ <Attack value="900" />
+ <AttackVariance value="0" />
+ <Decay value="0" />
+ <DecayVariance value="0" />
+ <Sustain value="0" />
+ <SustainVariance value="0" />
+ <Hold value="0" />
+ <HoldVariance value="0" />
+ <Release value="200" />
+ <ReleaseVariance value="0" />
+ <AttackCurve>linear_rise</AttackCurve>
+ <DecayCurve>linear_fall</DecayCurve>
+ <ReleaseCurve>linear_fall</ReleaseCurve>
+ <AttackParameter />
+ <DecayParameter />
+ <SustainParameter />
+ <HoldParameter />
+ <ReleaseParameter />
+ <ChildSound>truck_horn</ChildSound>
+ <EnvelopeType value="0" />
+ <EnvelopeTypeParameter />
+ <LevelMin value="-100" />
+ <LevelMax value="0" />
+</Item>

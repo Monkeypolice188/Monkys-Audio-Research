@@ -1,0 +1,38 @@
+The WrapperSound (_wrp, _wrap, _wrapper, _wrapped) type is a soundblock that can be used to "wrap" two sounds together. 
+
+A fall-back sound can be applied using the WrapperSound block, which will be played if, for example, the initial sound is not found, or is requested too quickly. 
+
+Wrappers are often used to apply Variables in-between other blocks in a sound hierachy.
+
+As well as wrapping sounds, the WrapperSound block can be used as a general-use sound block to apply Header fields without making any other changes to the sound.
+
+Fields:
+
+ChildSound - metahash - ChildSound - Child sound to play.
+FrameStartTime - integer value - Unknown. Always 0.
+FallBackSound - metahash - Sound to fall back onto if ChildSound is not found.
+FrameStartInterval - ushort value - Unknown. Always 0.
+Variables - additional variables.
+ChildSounds - Item list of sound hashes. Should match ChildSound and FallBackSound entries.
+ItemCount - byte value - Unknown.
+UnkByteData - byte value - Unknown.
+
+Example:
+
+"toreador_ignition" will play "toreador_ignition_switch" unless it is not found, in which case it will use the Fallback "ignition" sound.
+
+<Item type="WrapperSound">
+ <Name>toreador_ignition</Name>
+ <Header>
+  <Flags value="0x00000000" />
+ </Header>
+ <ChildSound>toreador_ignition_switch</ChildSound>
+ <FrameStartTime value="0" />
+ <FallBackSound>ignition</FallBackSound>
+ <FrameTimeInterval value="0" />
+ <Variables />
+ <ChildSounds>
+  <Item>toreador_ignition_switch</Item>
+  <Item>ignition</Item>
+ </ChildSounds>
+</Item>

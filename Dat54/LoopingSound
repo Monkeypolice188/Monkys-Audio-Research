@@ -1,0 +1,29 @@
+The LoopingSound (_lp, _loop) type is used to replay a sound continuously under the right conditions. 
+
+It can be used to replay its child infinitely, or until a certain condition is met.
+
+Fields:
+
+LoopCount - ushort value - Number of times to loop. 
+LoopCountVariance - ushort value - Variance of LoopCount.
+UnkShort2 - ushort value - Unknown.
+ChildSound - metahash - Child sound to loop.
+LoopCountParameter - metahash - Parameter for LoopCount.
+
+Example:
+
+"beep_sound_env" will be looped 3 times by "beep_sound_loop".
+
+<Item type="LoopingSound">
+ <Name>beep_sound_loop</Name>
+ <Header>
+  <Flags value="0x00000000" />
+  <Flags2 value="0xAAAAAAAA" />
+  <Category />
+ </Header>
+ <LoopCount value="3" />
+ <LoopCountVariance value="0" />
+ <UnkShort2 value="0" />
+ <ChildSound>beep_sound_env</ChildSound>
+ <LoopCountParameter />
+</Item>

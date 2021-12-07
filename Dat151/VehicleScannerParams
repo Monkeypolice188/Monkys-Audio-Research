@@ -1,0 +1,45 @@
+The VehicleScannerParams type is used by the police scanner to identify a vehicle.
+
+It is used to assign a manufacturer, model, category and colour to a vehicle. 
+
+The police scanner will refer to a vehicle by its current color so long as the Unk04 entry is blank, or the vehicle does not have FLAG_HAS_LIVERY in vehicles.meta
+
+The police scanner will pair up either the manufacturer or color override with either the model or the category entries.
+
+Fields:
+
+Name - metahash - scannerparams name //from Dat151Vehicle ScannerParams
+Flags - flag value - Scanner flags //See Flags
+Unk01 - metahash - Manufacturer //Dat54 eg brute, joebuilt, vapid
+Unk02 - metahash - Model //Dat54 eg boxville, phantom, stanier
+Unk03 - metahash - Category //Dat54 eg big rig, 4-door, sports, utility vehicle
+Unk04 - metahash - ColorOverride - overrides the color prefix//Dat54 eg white, black, grey
+
+Flags
+The Flags value represents basic scanner flags.
+
+The Unk00 flag reads "0xXXXXXXXX" where "X" represents the following digits in respective order:
+
+0xAAAAAAA1 - disables the Model entry  //emergency and utility/service vehicles 
+0xAAAAAAA8 - ? //all scanner params
+
+Example:
+
+boxville_scanner_params_white will allow the police scanner to refer to the vehicle as:
+- white truck
+- brute truck
+- white boxville
+- brute boxville
+
+  <Item type="VehicleScannerParams" ntOffset="0">
+   <Name>boxville_scanner_params_white</Name>
+   <Flags value="0xAAAAAAA8" />
+   <Params>
+    <Item>
+     <Unk01>police_scanner_manufacturer_brute_b</Unk01>
+     <Unk02>police_scanner_model_boxville_b</Unk02>
+     <Unk03>police_scanner_vehicle_category_truck_b</Unk03>
+     <Unk04>police_scanner_01_colour_color_white_01</Unk04>
+    </Item>
+   </Params>
+  </Item>

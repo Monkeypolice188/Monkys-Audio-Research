@@ -1,0 +1,25 @@
+The SimpleSound (_ss, _simple) type is used to associate any other sound bock with a .wav sound file.
+
+It is used to locate the container the sound file is located in, and the file itself. 
+
+Like other sound types, it can have a Header section applied, which can be used to apply any of the Header variables to the initial sound. 
+
+Fields:
+
+ContainerName - metahash - the location of the container (.awc) and the container itself, for example, "resident/ambience" refers to ambience.awc.
+FileName - metahash - the name of the file within the container, for example, "truck_door_open" refers to truck_door_open.wav.
+WaveSlotNum - byte value - Unknown. Always set to 0.
+
+Example:
+
+"resident_ambience_scream_01" plays "scream_01.wav" from "ambience.awc" located in "resident.rpf".
+
+<Item type="SimpleSound">
+ <Name>resident_ambience_scream_01</Name>
+ <Header>
+  <Flags value="0x00000000" />
+ </Header>
+ <ContainerName>resident/ambience</ContainerName>
+ <FileName>scream_01</FileName>
+ <WaveSlotNum value="0" />
+</Item>

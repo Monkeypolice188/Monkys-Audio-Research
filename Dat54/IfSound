@@ -1,0 +1,81 @@
+The IfSound (_if) type is used to switch between two child sounds depending on a condition or condition change.
+
+The type assesses when a certain condition is met to determine when to change between two sounds.
+
+The condition type can be set, determining whether the condition is to be equal to, less, and/or greater than the value defined.
+
+The IfSound type requires a defined ConditionParameter variable.
+
+Fields:
+
+ConditionTrueSound - metahash  - child sound 1.
+ConditionFalseSound - metahash - child sound 2.
+ConditionParameter - metahash - Parameter for child sound 1.
+ParamterHash2 - metahash - Parameters // unknown?
+ConditionType - byte value - Type of condition behavior
+	0 = Less Than
+	1 = Less Than or Equal To
+	2 = Greater Than
+	3 = Greater Than or Equal To
+	4 = Equal To
+	5 = Not Equal To
+	6 = Num of Conditions
+ConditionValue - float value - value for ConditionType //such as type/value/index, Mass in kg, speed in m/s, etc
+
+Examples:
+
+Below, "dlc_apt_champagne_hiccup_if" assesses whether to play the male or female "hiccup" child sounds.
+
+The condition "ped_type" is that the player is either male or female. If the value is equal to ped type 3 (male), it plays child sound 1.
+
+<Item type="IfSound">
+ <Name>dlc_apt_champagne_hiccup_if</Name>
+ <Header>
+  <Flags value="0x00000001" />
+  <Flags2 value="0xAAA8AAAA" />
+ </Header>
+ <ConditionTrueSound>dlc_apt_champagne_hiccup_male_rnd</ConditionTrueSound>
+ <ConditionFalseSound>dlc_apt_champagne_hiccup_female_rnd</ConditionFalseSound>
+ <ParameterHash1>ped_type</ParameterHash1>
+ <ConditionType value="4" /> //equal to
+ <ConditionValue value="3" /> //ped_type Value (male)
+ <ParameterHash2 />
+</Item>
+  
+Below, "dlc_h4_combat_shotgun_player_fpmech" assesses whether to play child sound 1 or child sound 2. 
+
+The condition (hash_378A1D92) is that the player is in first person mode; child sound 1 plays if the condition is true, and child sound 2 plays if the condition is false.
+
+<Item type="IfSound">
+ <Name>dlc_h4_combat_shotgun_player_fpmech</Name>
+ <Header>
+  <Flags value="0x00000141" />
+  <Flags2 value="0xAAA8AAAA" />
+  <Pan value="0" />
+  <PreDelay value="30" />
+ </Header>
+ <ConditionTrueSound>dlc_h4_combat_shotgun_mech_fp_mt</ConditionTrueSound>
+ <ConditionFalseSound>dlc_h4_combat_shotgun_mech_mt</ConditionFalseSound>
+ <ParameterHash1>hash_378A1D92</ParameterHash1>
+ <ConditionType value="4" /> //equal to
+ <ConditionValue value="1" /> //hash_378A1D92 Value (first person)
+ <ParameterHash2 />
+</Item>
+  
+Below, "dlc_apt_bvs_beast_sprint_vb_woosh_pts_rtol_mt_boost_if" assesses whether to play child sound 1 or not.
+  
+The condition "intensity" is that the player intensity is of a certain value. If the value is greater than 0.5, it plays child sound 1.
+  
+  <Item type="IfSound">
+ <Name>dlc_apt_bvs_beast_sprint_vb_woosh_pts_rtol_mt_boost_if</Name>
+ <Header>
+  <Flags value="0x00000001" />
+  <Flags2 value="0xAAA8AAAA" />
+ </Header>
+ <ConditionTrueSound>dlc_apt_bvs_beast_sprint_vb_woosh_pts_rtol_mt_boost</ConditionTrueSound>
+ <ConditionFalseSound />
+ <ParameterHash1>intensity</ParameterHash1>
+ <ConditionType value="2" /> //greater than
+ <ConditionValue value="0.5" /> //intensity Value
+ <ParameterHash2 />
+</Item>

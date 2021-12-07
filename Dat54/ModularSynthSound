@@ -1,0 +1,79 @@
+The ModularSynthSound (_mod, _synth, _mss) is used to assign synthesised sounds from the optamp.dat10.rel file. 
+
+Fields:
+
+OptAmpSynthSound - metahash - optamp.dat10.rel entry.
+UnkHash - metahash - Presets //?
+UnkFloat - float value - Unknown.
+UnkInt - integer value - Unknown.
+TrackCount - integer value - Unknown.
+ChildSounds - Unknown. //environmentsound entries
+UnkItems - Unknown. Item list of variables.
+	UnkHash - metahash - input variable
+	ParameterHash - metahash - output variable
+	Value - float value - unknown //variable value
+	
+Example:
+
+<Item type="ModularSynthSound">
+ <Name>sirens_reverse_beep_02</Name>
+ <Header>
+  <Flags value="0x18000001" />
+  <Flags2 value="0xAAA9AAAA" />
+  <Unk22 value="25" />
+  <Unk23 value="50" />
+ </Header>
+ <OptAmpSynthSound>synth_reversing_beep</OptAmpSynthSound>
+ <UnkHash />
+ <UnkFloat value="-1" />
+ <UnkInt value="0" />
+ <TrackCount value="0" />
+ <ChildSounds>
+  <Item />
+  <Item />
+  <Item />
+  <Item />
+ </ChildSounds>
+ <UnkItems>
+  <Item>
+   <UnkHash>square</UnkHash>
+   <ParameterHash />
+   <Value value="0.25" />
+  </Item>
+  <Item>
+   <UnkHash>hash_0F47FAFA</UnkHash>
+   <ParameterHash />
+   <Value value="0.24" />
+  </Item>
+  <Item>
+   <UnkHash>comb</UnkHash>
+   <ParameterHash />
+   <Value value="0.8" />
+  </Item>
+  <Item>
+   <UnkHash>hash_85D134F8</UnkHash>
+   <ParameterHash />
+   <Value value="0.65" />
+  </Item>
+  <Item>
+   <UnkHash>ds</UnkHash>
+   <ParameterHash />
+   <Value value="4" />
+  </Item>
+  <Item>
+   <UnkHash>fb</UnkHash>
+   <ParameterHash />
+   <Value value="0.568" />
+  </Item>
+  <Item>
+   <UnkHash>f1</UnkHash>
+   <ParameterHash />
+   <Value value="1200" />
+  </Item>
+  <Item>
+   <UnkHash>f2</UnkHash>
+   <ParameterHash />
+   <Value value="1500" />
+  </Item>
+ </UnkItems>
+</Item>

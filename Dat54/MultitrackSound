@@ -1,0 +1,24 @@
+The MultitrackSound (_mt, _multi) type can be used to play multiple sounds at the same time.
+
+It contains a list of ChildSounds which refer to other sound entries. 
+
+Fields:
+
+ChildSounds - Item list of audio tracks.
+
+Example:
+
+"horn_multi" will play "horn_01", "horn_02" and "horn_03" at the same time.
+
+<Item type="MultitrackSound">
+ <Name>horn_multi</Name>
+ <Header>
+  <Flags value="0x00000001" />
+  <Flags2 value="0xAAA0AAAA" />
+ </Header>
+ <ChildSounds>
+  <Item>horn_01</Item>
+  <Item>horn_02</Item>
+  <Item>horn_03</Item>
+ </ChildSounds>
+</Item>

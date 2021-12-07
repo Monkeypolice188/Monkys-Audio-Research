@@ -1,0 +1,37 @@
+The CollapsingStereoSound (_css, _collapse) type is used to collapse a stereo's tracks into two singular mono tracks.
+
+Fields:
+
+ChildSound1 - metahash - stereo track 1
+AudioTrack1 - metahash - stereo track 2
+UnkFloat0 - float value - Unknown
+UnkFloat1 - float value - Unknown
+ParameterHash0 - metahash - Parameters //Unknown
+ParameterHash1 - metahash - Parameters //Unknown
+ParameterHash2 - metahash - Parameters //Unknown
+ParameterHash3 - metahash - Parameters //Unknown
+ParameterHash4 - metahash - Parameters //Unknown
+UnkInt - integer value - Unknown //always 1065353216?
+ParameterHash5 - metahash - Parameters //Unknown
+UnkByte - byte value - Unknown //usually 1
+
+Example:
+
+<Item type="CollapsingStereoSound">
+ <Name>dlc_xm_int_sub_engine_room_stereo</Name>
+ <Header>
+  <Flags value="0x00000000" />
+ </Header>
+ <ChildSound1>dlc_xm_int_sub_engine_room_l</ChildSound1>
+ <ChildSound2>dlc_xm_int_sub_engine_room_r</ChildSound2>
+ <UnkFloat0 value="0" />
+ <UnkFloat1 value="15" />
+ <ParameterHash0 />
+ <ParameterHash1 />
+ <ParameterHash2 />
+ <ParameterHash3 />
+ <ParameterHash4 />
+ <UnkInt value="1065353216" />
+ <ParameterHash5 />
+ <UnkByte value="1" />
+</Item>

@@ -1,0 +1,54 @@
+The FluctuatorSound (_fluc, _fl) type is used to apply fluctuation to a sound's play.
+
+The type has fields for the degree of fluctuation, as well as the floor and ceiling levels of fluctuation.
+
+Multiple fluctuations can be applied at once.
+
+Fields:
+
+ChildSound - metahash - Child sound.
+Items - Item list of fluctuators.
+	UnkByte0  - byte value - FluctuatorType
+		0 = Probability-based
+		1 = Time-based
+	UnkByte1  - byte value - Unknown //ceiling amount?
+	ParameterHash - metahash - Variable
+	UnkFloat00  - float value - Unknown //?
+	UnkFloat01  - float value - Unknown //?
+	UnkFloat02  - float value - Unknown //?
+	UnkFloat03  - float value - Unknown //?
+	UnkFloat04  - float value - Unknown //?
+	UnkFloat05  - float value - Unknown //?
+	UnkFloat06  - float value - Unknown //?
+	UnkFloat07  - float value - Unknown //?
+	UnkFloat08  - float value - Unknown // 0
+	UnkFloat09  - float value - Unknown // 0
+	UnkFloat10  - float value - Unknown //usually 1 or 0, overall fluc?
+
+Example:
+
+<Item type="FluctuatorSound">
+ <Name>dlc_ch_heist_lock_box_drill_flc</Name>
+ <Header>
+  <Flags value="0x00000000" />
+ </Header>
+ <ChildSound>dlc_ch_heist_lock_box_drill_flc_mt</ChildSound>
+ <Items>
+  <Item>
+   <UnkByte0 value="0" />
+   <UnkByte1 value="1" />
+   <ParameterHash />
+   <UnkFloat00 value="0.004" />
+   <UnkFloat01 value="0.004" />
+   <UnkFloat02 value="1.03" />
+   <UnkFloat03 value="1.08" />
+   <UnkFloat04 value="0.92" />
+   <UnkFloat05 value="0.97" />
+   <UnkFloat06 value="0.5" />
+   <UnkFloat07 value="0.5" />
+   <UnkFloat08 value="0" />
+   <UnkFloat09 value="0" />
+   <UnkFloat10 value="1" />
+  </Item>
+ </Items>
+</Item>

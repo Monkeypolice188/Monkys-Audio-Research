@@ -1,0 +1,318 @@
+The MathOperationSound (_math, _mos, _mop,  _mathop, _calc, _compute, _init) type is used to perform mathematical operations to a sound.
+
+It uses input parameters and operations such as addition, subtraction and randomization to produce an output. 
+
+More than one operation can be performed at a time, and operations can be cascaded to perform multiple operations in one.
+
+Each operation uses one or more of the three input fields. There are a total of 6 inputs, 3 input "parameters" and 3 input "immediates" (literal values). 
+
+Operations will accept either form of input (parameter or immediate values). Some operations use only input 1, while some use all 3 inputs.
+
+Fields:
+ChildSound - metahash - child sound
+Operations - Operations - Item list of operation(s)
+	OperationType - OperationType //see Operation Formulas for more information
+		0 = Addition (+)
+		1 = Subtraction (-)
+		2 = Multiply (*)
+		3 = Divide (/)
+		4 = Set
+		5 = Mod //?
+		6 = Min
+		7 = Max
+		8 = Abs (absolute value)
+		9 = Sign //positive/negative?
+		10 = Floor //greatest integer less than or equal to the input
+		11 = Ceil //smallest integer greater than or equal to the input
+		12 = Rand (randomized)
+		13 = Sin
+		14 = Cos
+		15 = SquareRoot
+		16 = DBToLinear
+		17 = LinearToDB
+		18 = PitchToRatio
+		19 = RatioToPitch
+		20 = GetTime
+		21 = Fsel //FloatingPointSelect
+		22 = ValueInRange
+		23 = Clamp //Clamps range
+		24 = Pow //PowerOf
+		25 = Round //round up/down?
+		26 = ScaledSin //?
+		27 = ScaledTri //?
+		28 = ScaledSaw //?
+		29 = ScaledSquare //?
+		30 = Smooth //?
+		31 = GetScaledTime //?
+		32 = ClampRange //?
+		33 = GetPositionX
+		34 = GetPositionY
+		35 = GetPositionZ	
+	InputImmediate1 - float value - Immediate value for input1
+	InputParameter1 - metahash - Parameter for input1
+	InputImmediate2 - float value - Immediate value for input2
+	InputParameter2 - metahash - Parameter for input2
+	InputImmediate3 - float value  - Immediate value for input3
+	InputParameter3 - metahash - Parameter for input3
+	OutputParameter - metahash - Output for the operation.
+  
+Operation Formulas:
+
+Below is a list of the formulas each of the operation types use. Certain operations use certain inputs and in a particular order.
+
+0 = Addition (+)
+	output= input1 + input2
+
+1 = Subtraction (-)
+	output = input1 - input2
+
+2 = Multiply (*)
+	output = input1 * input2
+		
+3 = Divide (/)
+	output = input1 / input2
+	
+4 = Set
+	output = input1
+	
+5 = Mod //?
+    if (input2 != 0.0)
+        output = fmodf(input1, input2) //input1 minus the biggest multiple of input2 which is less than or equal to input1 (eg fmodf(9,3) = 0)
+    else
+        output = 0.0
+		
+6 = Min
+    if (input1 >= input2)
+        output = input2
+    else
+        output = input1
+		
+7 = Max
+    if (input1 > input2)
+        output = input1
+    else
+        output = input2
+
+8 = Abs (absolute value)
+    if (input1 < 0.0)
+        output = -input1
+    else
+        output = input1
+		
+9 = Sign //positive/negative?
+    if (input1 < 0.0)
+        output = -1.0
+    else if (input1 == 0.0)
+        output = 0.0
+    else
+        output = 1.0
+
+10 = Floor //greatest integer less than or equal to the input
+    output = floorf(input1)
+
+11 = Ceil //smallest integer greater than or equal to the input
+    output = ceilf(input1)
+
+12 = Rand (randomized)
+    output = randValue() * (input2 - input1) + input1 //randValue() returns a random value between 0.0 and 1.0, input1 = min and input2 = max
+
+13 = Sin (radians)
+    output = sinf(input1)
+	
+14 = Cos (radians)
+    output = cosf(input1)
+
+15 = SquareRoot
+    output = fsqrt(input1)
+
+16 = DBToLinear
+    if (input1 >= -99.0)
+        output = powf(10.0, input1 / 20.0)
+    else
+        output = 0.0
+
+17 = LinearToDB
+if (input1 < 0.00001)
+    output = -100.0
+else
+    output = log10f(input1) * 20.0
+	
+	
+18 = PitchToRatio
+    output = powf(2.0, ((int)input1) / 1200.0)
+
+19 = RatioToPitch
+    output = (int)((log10f(input1) * 3.321928) * 1200.0)
+	
+20 = GetTime
+21 = Fsel //FloatingPointSelect
+	if (input1 >= 0.0)
+		output = input2;
+	else
+		output = input3;
+
+22 = ValueInRange
+	output = ((input3 - input2) * input1) + input2
+	
+23 = Clamp //Clams range
+    if ( input1 < input2 )
+        output = input2
+    else if ( input1 <= input3 )
+        output = input1
+    else
+        output = input3
+
+24 = Pow //PowerOf
+    output = input1 ^ input2 //returns the base input1 to the power of exponential input2
+
+25 = Round //round up/down?
+    output = roundf(input1)
+
+26 = ScaledSin //?
+    output = (sinf((input1 * 2.0) * 3.1415927) + 1.0) * 0.5
+
+27 = ScaledTri //?
+      float temp = (input1 - floorf(input1)) - 0.5
+      if ( temp < 0.0 )
+        output = (input1 - floorf(input1)) * 2.0
+      else
+        output = 1.0 - (temp * 2.0)
+
+28 = ScaledSaw //?
+      output = input1 - floorf(input1)
+
+29 = ScaledSquare //?
+    if (((input1 - floorf(input1)) - 0.5) < 0.0 )
+        output = 1.0
+    else
+        output = 0.0
+
+30 = Smooth //?
+    float temp1, temp2
+    temp1 = input2 - input1
+    if (temp1 > 0.0 )
+        temp2 = 1.0
+    else if (temp1 == 0.0)
+        temp2 = 0.0
+    else
+        temp2 = -1.0
+
+    if ( temp1 < 0.0 )
+        temp1 = -temp1
+    if ( temp1 >= input3 )
+        temp1 = input3
+
+    output = input2 - (temp1 * temp2);
+
+31 = GetScaledTime //?
+32 = ClampRange //?
+    if ( input1 > input2 && input1 < input3 )
+        output = (input1 - input2) / (input3 - input2)
+    else if ( input1 >= input3 )
+        output = 1.0
+    else
+        output = 0.0
+
+33 = GetPositionX
+34 = GetPositionY
+35 = GetPositionZ	
+
+Examples:
+
+ 4) Set
+Below, the dlc_h4_..._setlooptime_02 math operation computes the following calculations on the child sound, dlc_hei4_..._mockingbird_tropical_a_02.
+  
+looptime = set(0.2) //this declares that the "looptime" output parameter is the immediate value 0.2.
+
+<Item type="MathOperationSound">
+ <Name>dlc_h4_ih_tropical_mockingbird_seq_chunk_b_setlooptime_02</Name>
+ <Header>
+  <Flags value="0x00000001" />
+  <Flags2 value="0xAAA9AAAA" />
+ </Header>
+ <ChildSound>dlc_hei4_tropical_mockingbird_mockingbird_tropical_a_02</ChildSound>
+ <Operations>
+  <Item>
+   <OperationType value="4" /> //set
+   <InputImmediate1 value="0.2" />
+   <InputParameter1 />
+   <InputImmediate2 value="0" />
+   <InputParameter2 />
+   <InputImmediate3 value="0" />
+   <InputParameter3 />
+   <OuputParameter>looptime</OuputParameter>
+  </Item>
+ </Operations>
+</Item>
+
+12) Rand and Fsel (FloatingPointSelect)
+Below, the siren_wail_01_mos math operation computes the following calculations on the child sound, reisdent_vehicles_siren_wail_01
+
+#Operation 1: randpitch = rand(-8, 8)  //this declares that the "randpitch" output parameter is, at all times, a random immediate value between -8 and 8
+
+#Operation 2: randtimetilchange = rand(0.25, 1.5) //this declares that the "randtimetilchange" output parameter is, at all times, a random immediate value between 0.25 and 1.5
+
+#Operation 3: 
+	if (timetilchange >= 0), //if "timetilchange" is less than 0, pitch=randpitch
+		pitch = pitch
+	else
+		pitch = randpitch
+
+#Operation 4: 
+	if (timetilchange >= 0), //if"timetilchange" is less than 0, timetilchange=randtimetilchange
+		timetilchange = timetilchange
+	else
+		timetilchange = randtimetilchange
+	
+The equation is a randomised pitch and time manipulation of the child sound, resulting in a warped sound.
+
+<Item type="MathOperationSound">
+ <Name>siren_wail_01_mos</Name>
+ <Header>
+  <Flags value="0x00000001" />
+  <Flags2 value="0xAAA8AAAA" />
+ </Header>
+ <ChildSound>resident_vehicles_siren_wail_01</ChildSound>
+ <Operations>
+  <Item>
+   <OperationType value="12" /> //rand
+   <InputImmediate1 value="-8" />
+   <InputParameter1 />
+   <InputImmediate2 value="8" />
+   <InputParameter2 />
+   <InputImmediate3 value="0" />
+   <InputParameter3 />
+   <OuputParameter>randpitch</OuputParameter>
+  </Item>
+  <Item>
+   <OperationType value="12" /> //rand
+   <InputImmediate1 value="0.25" />
+   <InputParameter1 />
+   <InputImmediate2 value="1.5" />
+   <InputParameter2 />
+   <InputImmediate3 value="0" />
+   <InputParameter3 />
+   <OuputParameter>randtimetilchange</OuputParameter>
+  </Item>
+  <Item>
+   <OperationType value="21" /> //fsel
+   <InputImmediate1 value="0" />
+   <InputParameter1 value="timetilchange" />
+   <InputImmediate2 value="0" />
+   <InputParameter2 value="pitch" />
+   <InputImmediate3 value="0" />
+   <InputParameter3>randpitch</InputParameter3>
+   <OuputParameter>pitch</OuputParameter>
+  </Item>
+  <Item>
+   <OperationType value="21" /> //fsel
+   <InputImmediate1 value="0" />
+   <InputParameter1>timetilchange</InputParameter1>
+   <InputImmediate2 value="0" />
+   <InputParameter2>timetilchange</InputParameter2>
+   <InputImmediate3 value="0" />
+   <InputParameter3>randtimetilchange</InputParameter3>
+   <OuputParameter>timetilchange</OuputParameter>
+  </Item>
+ </Operations>
+</Item>

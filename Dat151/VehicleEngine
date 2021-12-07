@@ -1,0 +1,131 @@
+The VehicleEngine type is used for a variety various engine-related sounds.
+
+It is used to assign a range of engine-based sounds to a vehicle, including the static "low" and "high" engine and exhaust sounds, idle, intake, turbo, exhaust pops and transmission sounds.
+
+VehicleEngine is carried over from GTA IV's engine system. Sounds applied in a VehicleEngineGranular type will override much of sounds used in this type.
+
+It  uses separate, static high and low sounds and manipulates them together with respect to the engine revolutions to create a dynamic engine sound. 
+
+Fields:
+
+Name - metahash - engine name //from Dat151Vehicle Engine
+Unk00 - integer value - MasterVolume - Volume of the engine //default 700-900
+Unk01 - integer value - EngineLowVolume - Volume of EngineLow & ExhaustLow
+Unk02 - integer value - EngineHighVolume - Volume of EngineHigh & ExhaustHigh
+Unk03 - integer value - NPCEngineVolume - Volume of Engine & Exhaust exterior volume
+EngineLow - metahash - Engine low sound //Dat54
+EngineHigh - metahash - Engine high sound //Dat54
+ExhaustLow - metahash - Exhaust low sound //Dat54
+ExhaustHigh - metahash - Exhaust high sound //Dat54
+RevsOff - metahash - Revs off sound //Dat54
+Unk09 - integer value - Unknown
+Unk10 - integer value - Unknown
+EngineIdleLoop - metahash - Engine idle sound //Dat54
+ExhaustIdleLoop - metahash - Exhaust idle sound //Dat54
+Unk13 - integer value - Unknown //EngineIdleLoop volume?
+Unk14 - integer value - Unknown //ExhaustIdleLoop volume?
+AirIntake - metahash - Intake "woosh" sound on acceleration //Dat54
+Unk16 - integer value - Unknown
+Unk17 - integer value - Unknown
+Turbo - metahash - Turbo whine/whistle sound //Dat54
+Unk19 - integer value - Unknown
+Unk20 - integer value - Unknown
+DumpValve - metahash - Dump valve release sound on gear shift //Dat54
+Unk22 - integer value - Unknown
+Unk23 - integer value - Unknown
+Transmission - metahash - Transmission whine //Dat54
+Unk25 - integer value - Unknown
+Unk26 - integer value - Unknown
+Unk27 - integer value - Unknown
+Ignition - metahash - Ignition switch sound //Dat54
+ShutDown - metahash - Engine shutdown sound //Dat54
+Unk30 - metahash - EngineCoolingFan - Cooling fan sound when engine active //Dat54
+ExhaustPops - metahash - Exhaust pop/crack sounds when accelerating and decelerating near high revs //Dat54
+Unk32 - metahash - DistantStart - NPC engine startup sound //Dat54
+Unk33 - integer value - Unknown //DistantStart volume?
+FansVolume - integer value - Gear shift volume //should be "GearShiftVolume"
+StartupMaster - metahash - Engine startup sound //Dat54
+Unk36 - metahash - Unknown //Dat10 engine submix? only phantom
+Unk37 - metahash - Unknown //Dat10 engine submix preset? only phantom
+Unk38 - metahash - Unknown //Dat10 exhaust submix? only phantom
+Unk39 - metahash - Unknown //Dat10 exhaust submix preset? only phantom
+Unk40 - metahash - Unknown //Dat54 environment sound - engine?
+Unk41 - metahash - Unknown //Dat54 environment sound - exhaust?
+Unk42 - integer value - Unknown
+Unk43 - metahash - GearShiftInteriorUpgraded - transmission upgrade gear shift POV sound //Dat54
+Unk44 - metahash - GearShiftExteriorUpgraded - transmsission upgrade gear shift exterior sound //Dat54
+Unk45 - integer value - Unknown
+Unk46 - integer value - Unknown
+Unk47 - integer value - Unknown
+Unk48 - integer value - Unknown
+Unk49 - integer value - Unknown
+Unk50 - integer value - Unknown
+DumpValveUpgraded - Turbo upgrade dump valve sound //Dat54
+Unk52 - integer value - DumpValveUpgradedVolume - DumpValveUpgraded volume
+TransmissionUpgraded - Transmission upgraded whine sound //Dat54
+TurboUpgraded - Turbo upgraded turbo whine/whistle sound //Dat54
+AirIntakeUpgraded - Engine upgraded intake "woosh" sound //Dat54
+ExhaustPopsUpgraded - Exhaust upgraded exhaust pop/crackle sound //Dat54
+
+Example:
+
+  <Item type="VehicleEngine" ntOffset="0">
+   <Name>phantom_engine</Name>
+   <Unk00 value="700" />
+   <Unk01 value="-300" />
+   <Unk02 value="900" />
+   <Unk03 value="300" />
+   <EngineLow>vehicles_engine_resident_rig_2_engine_low</EngineLow>
+   <EngineHigh>vehicles_engine_resident_rig_2_engine_high</EngineHigh>
+   <ExhaustLow>vehicles_engine_resident_rig_2_exhaust_low</ExhaustLow>
+   <ExhaustHigh>vehicles_engine_resident_rig_2_exhaust_high</ExhaustHigh>
+   <RevsOff />
+   <Unk09 value="-600" />
+   <Unk10 value="1200" />
+   <EngineIdleLoop>vehicles_engine_resident_rig_2_eng_idle_loop</EngineIdleLoop>
+   <ExhaustIdleLoop>vehicles_engine_resident_rig_2_ex_idle_loop</ExhaustIdleLoop>
+   <Unk13 value="-200" />
+   <Unk14 value="1200" />
+   <AirIntake />
+   <Unk16 value="0" />
+   <Unk17 value="0" />
+   <Turbo>null_sound</Turbo>
+   <Unk19 value="-600" />
+   <Unk20 value="600" />
+   <DumpValve>null_sound</DumpValve>
+   <Unk22 value="0" />
+   <Unk23 value="50" />
+   <Transmission>vehicles_engine_resident_gear_transmission</Transmission>
+   <Unk25 value="-200" />
+   <Unk26 value="800" />
+   <Unk27 value="1600" />
+   <Ignition>ignition_truck</Ignition>
+   <ShutDown>vehicles_engine_resident_shut_down_1</ShutDown>
+   <Unk30>null_sound</Unk30>
+   <ExhaustPops>null_sound</ExhaustPops>
+   <Unk32 />
+   <Unk33 value="0" />
+   <FansVolume value="0" />
+   <StartupMaster>null_sound</StartupMaster>
+   <Unk36>hash_1932E476</Unk36>
+   <Unk37>hash_1B8624C6</Unk37>
+   <Unk38>hash_4022A088</Unk38>
+   <Unk39>hash_8AB6C01E</Unk39>
+   <Unk40>hash_490413A6</Unk40>
+   <Unk41>hash_58337F32</Unk41>
+   <Unk42 value="0" />
+   <Unk43>null_sound</Unk43>
+   <Unk44>null_sound</Unk44>
+   <Unk45 value="0" />
+   <Unk46 value="0" />
+   <Unk47 value="0" />
+   <Unk48 value="0" />
+   <Unk49 value="0" />
+   <Unk50 value="0" />
+   <DumpValveUpgraded>null_sound</DumpValveUpgraded>
+   <Unk52 value="0" />
+   <TransmissionUpgraded>null_sound</TransmissionUpgraded>
+   <TurboUpgraded>null_sound</TurboUpgraded>
+   <AirIntakeUpgraded>null_sound</AirIntakeUpgraded>
+   <ExhaustPopsUpgraded>null_sound</ExhaustPopsUpgraded>
+  </Item>

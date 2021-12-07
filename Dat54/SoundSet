@@ -1,0 +1,39 @@
+The SoundSet (_sounds) type is a set of sounds and their scripted application. 
+
+Scripts call for the soundset, and then define the specific "script sound" to play. SoundSets can only be called for through script files or through game.dat151.
+
+The data contains a list of items which refer to each script name and sound. Script names are pre-defined.
+
+The order of items is in ScriptName hash alphanumeric order, for example, below, "stopsound" = 0x216A24CE (item 1), and "motorloop" = 0xD15B9729 (item 2).
+
+It is important that individual sounds which are called for through a SoundSet in scripts use any of the "scripted" categories, for example, "scripted_louder".
+
+Fields:
+
+ScriptName - metahash - The script name called for in the script native.
+ChildSound - metahash - The sound that pairs up to the script name.
+
+Example:
+
+When "handlerforksdefault" is called for, "streamed_..._digger_stop" will play when "stopsound" is defined, and "streamed_..._digger_lifter" will play when "motorloop" is defined.
+
+<Item type="SoundSet">
+ <Name>handlerforksdefault</Name>
+ <Header>
+  <Flags value="0xAAAAAAAA" />
+ </Header>
+ <Items>
+  <Item>
+   <ScriptName>stopsound</ScriptName>
+   <ChildSound>streamed_vehicles_box_van_1_digger_stop</ChildSound>
+  </Item>
+  <Item>
+   <ScriptName>motorloop</ScriptName>
+   <ChildSound>streamed_vehicles_box_van_1_digger_lifter</ChildSound>
+  </Item>
+ </Items>
+</Item>
+
+Script example:
+
+	AUDIO::PLAY_SOUND_FRONTEND(-1, "STOPSOUND", "HANDLERFORKSDEFAULT", true);

@@ -1,0 +1,28 @@
+The StreamingSound (_stream) type is used to play any kind of music or sound that is played through the front-end gameplay. Streaming sounds are stereo sounds.
+
+Fields:
+
+Duration - integer value - The length of the sound in ms.
+ChildSounds -  Item list of child sounds to stream.
+
+Example:
+
+"dlc_aw_track_1" plays all ChildSounds entries at the same time, using streaming information controlled by the game mood to fade in/out each stem. The category applied to each of the child stems affects how the game's StemMix and Mood entries control them.
+
+<Item type="StreamingSound">
+ <Name>dlc_aw_track_1</Name>
+ <Header>
+  <Flags value="0x00808001" />
+  <Flags2 value="0xAA95AAAA" />
+  <Category>interactive_music</Category>
+  <Unk20 value="0" />
+ </Header>
+ <Duration value="175774" />
+ <ChildSounds>
+  <Item>dlc_aw_track_1_dlc_aw_track_1_stem_5</Item>
+  <Item>dlc_aw_track_1_dlc_aw_track_1_stem_1</Item>
+  <Item>dlc_aw_track_1_dlc_aw_track_1_stem_2</Item>
+  <Item>dlc_aw_track_1_dlc_aw_track_1_stem_3</Item>
+  <Item>dlc_aw_track_1_dlc_aw_track_1_stem_4</Item>
+ </ChildSounds>
+</Item>

@@ -1,0 +1,127 @@
+The GranularSound type is used for granular engine sounds defined in VehicleEngineGranular entries in game.dat151.rel. 
+
+It defines the engine & exhaust's acceleration, deceleration and idle sounds, as well as their individual volumes and the pitch vector for acceleration and deceleration.
+
+Engine sounds are played from the engine bone of the vehicle model, while exhaust sounds are played from the exhaust bones. These can be coned out with individual controls for the volume.
+
+Fields:
+
+EngineAccel - engine acceleration sound and .awc location.
+ExhaustAccel - exhaust acceleration sound and .awc location.
+EngineDecel - engine deceleration sound and .awc location.
+ExhaustDecel - exhaust deceleration sound and .awc location.
+EngineIdle - engine idle sound and .awc location.
+ExhaustIdle - exhaust idle sound and .awc location.
+EngineAccelData -  Unknown.
+ExhaustAccelData -  Unknown.
+EngineDecelData -  Unknown.
+ExhaustDecelData -  Unknown.
+EngineIdleData -  Unknown.
+ExhaustIdleData -  Unknown.
+UnkFlags0 - flag value - Unknown. //set to 1 only on exhaust entries (ExhaustAccelData, 4 and 6)
+UnkFlags1 - flag value - Unknown. //set to 1 only on idle entries (EngineIdleData and 6)
+UnkByte0 - byte value - Unknown. //set only to 0.
+UnkByte1 - byte value - Unknown. //set only to 0. Sometimes 1 on deceleration entries (EngineDecelData and 4)
+UnkFloat - float value - Unknown. //set to 0.5 only on acceleration entries (EngineAccelData and 2)
+UnkFloat0 - float value - Unknown. //affects distortion for engine acceleration at rev limit.
+UnkFloat1 - float value - Unknown. //affects distortion for exhaust acceleration at rev limit.
+EngineAccelVolume - ushort value - volume of engine acceleration entry.
+ExhaustAccelVolume - ushort value - volume of exhaust acceleration entry.
+EngineDecelVolume - ushort value - volume of engine deceleration entry.
+ExhaustDecelVolume - ushort value - volume of exhaust deceleration entry.
+EngineIdleVolume - ushort value - volume of engine idle entry.
+ExhaustIdleVolume - ushort value - volume of exhaust idle entry.
+TrackName - associates the NPC GranularSound entry with the non-NPC GranularSound entry.
+PitchVector - vector data - the minimum and maximum pitch points for the accel/decel (1st line) and idle (2nd line) entries.
+
+Example:
+
+<Item type="GranularSound">
+ <Name>hei4_suv01_engine_accel</Name>
+ <Header>
+  <Flags value="0x00008011" />
+  <Flags2 value="0x9555AAAA" />
+  <Pitch value="65436" />
+  <Category>vehicles_engines</Category>
+ </Header>
+ <WaveSlotIndex value="0" />
+ <EngineAccel>
+  <ContainerName>dlc_hei4/hei4_suv01</ContainerName>
+  <FileName>engine_accel</FileName>
+ </EngineAccel>
+ <ExhaustAccel>
+  <ContainerName>dlc_hei4/hei4_suv01</ContainerName>
+  <FileName>exhaust_accel</FileName>
+ </ExhaustAccel>
+ <EngineDecel>
+  <ContainerName>dlc_hei4/hei4_suv01</ContainerName>
+  <FileName>engine_decel</FileName>
+ </EngineDecel>
+ <ExhaustDecel>
+  <ContainerName>dlc_hei4/hei4_suv01</ContainerName>
+  <FileName>exhaust_decel</FileName>
+ </ExhaustDecel>
+ <EngineIdle>
+  <ContainerName>dlc_hei4/hei4_suv01</ContainerName>
+  <FileName>engine_idle</FileName>
+ </EngineIdle>
+ <ExhaustIdle>
+  <ContainerName>dlc_hei4/hei4_suv01</ContainerName>
+  <FileName>exhaust_idle</FileName>
+ </ExhaustIdle>
+ <EngineAccelData>
+  <UnkFlags0 value="0" />
+  <UnkFlags1 value="0" />
+  <UnkByte0 value="0" />
+  <UnkByte1 value="0" />
+  <UnkFloat value="0.5" />
+ </EngineAccelData>
+ <ExhaustAccelData>
+  <UnkFlags0 value="1" />
+  <UnkFlags1 value="0" />
+  <UnkByte0 value="0" />
+  <UnkByte1 value="0" />
+  <UnkFloat value="0.5" />
+ </ExhaustAccelData>
+ <EngineDecelData>
+  <UnkFlags0 value="0" />
+  <UnkFlags1 value="0" />
+  <UnkByte0 value="0" />
+  <UnkByte1 value="0" />
+  <UnkFloat value="1" />
+ </EngineDecelData>
+ <ExhaustDecelData>
+  <UnkFlags0 value="1" />
+  <UnkFlags1 value="0" />
+  <UnkByte0 value="0" />
+  <UnkByte1 value="0" />
+  <UnkFloat value="1" />
+ </ExhaustDecelData>
+ <EngineIdleData>
+  <UnkFlags0 value="0" />
+  <UnkFlags1 value="1" />
+  <UnkByte0 value="0" />
+  <UnkByte1 value="0" />
+  <UnkFloat value="1" />
+ </EngineIdleData>
+ <ExhaustIdleData>
+  <UnkFlags0 value="1" />
+  <UnkFlags1 value="1" />
+  <UnkByte0 value="0" />
+  <UnkByte1 value="0" />
+  <UnkFloat value="1" />
+ </ExhaustIdleData>
+ <UnkFloat0 value="0.05" />
+ <UnkFloat1 value="0.15" />
+ <EngineAccelVolume value="-400" />
+ <ExhaustAccelVolume value="-400" />
+ <EngineDecelVolume value="-800" />
+ <ExhaustDecelVolume value="0" />
+ <EngineIdleVolume value="-500" />
+ <ExhaustIdleVolume value="0" />
+ <TrackName />
+ <PitchVector>
+    12, 45.54
+    13.02, 13.02
+ </PitchVector>
+</Item>

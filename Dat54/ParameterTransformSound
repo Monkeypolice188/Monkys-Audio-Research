@@ -1,0 +1,130 @@
+The ParameterTransformSound (_param, _pts, _pt, _pu, _mdr) type is used to manipulate a sound, using vectors and other parameter modifiers.
+
+They use vectors to manipulate a sound in a variety of ways, including volume, pitch and velocity. 
+
+PTS types can host multiple different graphs at once, as well as multiple line plots on one graph, allowing for huge amounts of manipulation running at once.
+
+If an envelope sound it transformed, it is required that the envelope uses attack rather than hold to measure the length of the sound in total.
+Fields:
+
+ChildSound - metahash - child sound.
+Items - Item list of PTS graphs
+	InputParameter - metahash - Input parameter used to determine how to transform the sound - velocity of a vehicle, volume, playback duration, plane banking angle, etc. What the PTS uses to base its transformation on.
+	InputRangeMin - float value - determines the X-axis min value for the graph, default 0. Changing this value affects where the graph starts, and thus where the PTS begins transforming the sound.
+	InputRangeMax - float value - determines the X-axis max value for this graph, default 1. Changing this value affects where the graph ends, and thus where the PTS stops transforming the sound.
+	Transforms - Item list of transforms
+		TransformType =  integer value - Type of transformation to make - what the PTS does to the sound based on its input. volume, pitch, etc.
+			0 = Volume
+			1 = Pitch
+			2 = Pan
+			3 = StartOffset
+			4 = PreDelay
+			5 = LPF (Low pass filter)
+			6 = HPF (High pass filter)
+			7 = Variable (overriden by TransformTypeParameter)
+			8 = Rolloff
+			9 = Logarithmic LPF //??
+			10 = Logarithmic HPF //??
+			11 = Variable Logarithmic LPF //??
+			12 = Variable Logarithmic HPF //??
+			13 = Variable Volume // variable + volume?
+			14 = Variable Pitch // variable + pitch?
+		TransformTypeParameter - metahash - Overrides TransformType (if TransformType is set to 7).
+		SmoothRate - float value - Smooths points on the graph, default -1 (no smoothing).
+		OutputRangeMin - float value- Determines the Y-axis min value for this graph, default 0. Changing this value affects how the output is scaled based on the InputRangeMin value.
+		OutputRangeMax - float value - Determines the Y-axis max value for this graph, default 1. Changing this value affects how the output is scaled based on the InputRangeMax value.
+		Vectors - vector data - plotting points on the graph //0.3, 0.5 = 0.3 on X axis (input), 0.5 on Y axis (output)
+		
+Example:
+
+Below, "sawmill_main_building_pts" manipulates the high-pass filter (TransformType = 6) of the child sound (streams_countryside_sawmill_sawmill), based on the distance the sound is from the player (sound.distancefromlistener).
+Once the player's distance from the sound exceeds 30m (InputRangeMin), the high-pass filter intensity increases from 0 to 0.02, until the sound is 150m (InputRangeMax) away at which point the sound will return to its normal state (if not already occluded).
+
+  <Item type="ParameterTransformSound">
+   <Name>sawmill_main_building_pts</Name>
+   <Header>
+    <Flags value="0x00000000" />
+   </Header>
+   <ChildSound>streams_countryside_sawmill_sawmill</ChildSound>
+   <Items>
+    <Item>
+     <InputParameter>sound.distancefromlistener</InputParameter>
+     <InputRangeMin value="30" />
+     <InputRangeMax value="150" />
+     <Transforms>
+      <Item>
+       <SmoothRate value="-1" />
+       <TransformType value="6" />
+       <TransformTypeParameter />
+       <OutputRangeMin value="0" />
+       <OutputRangeMax value="0.02083333" />
+       <Vectors>
+        0.22, 0
+        0.7693946, 0.3260067
+        1, 1
+       </Vectors>
+      </Item>
+     </Transforms>
+    </Item>
+   </Items>
+  </Item>
+  
+Below, "crane_strain_test_vb_kinetic_pts" transforms the sound's volume (Item 1, TransformType = 0) and pitch (Item 2, TransformType = 1) in graph 1, according to the acceleration of the sound entity (soundacceleration). It also transforms the sound's volume (Item 1, TransformType = 0) according to the velocity of the sound entity in the Z axis (sound.velocityz) in graph 2. The Vector plotting ensures that the sound's volume increases from 0% to 100%, while the sound's pitch increases by 0.122, as the entity accelerates from 0 to 0.1 m/s
+  
+<Item type="ParameterTransformSound">
+ <Name>crane_strain_test_vb_kinetic_pts</Name>
+ <Header>
+  <Flags value="0x00000000" />
+ </Header>
+ <ChildSound>crane_strain_vars_pts_fluc</ChildSound>
+ <Items>
+  <Item>
+   <InputParameter>soundacceleration</InputParameter>
+   <InputRangeMin value="0" />
+   <InputRangeMax value="0.1" />
+   <Transforms>
+    <Item>
+     <SmoothRate value="2" />
+     <TransformType value="0" />
+     <TransformTypeParameter />
+     <OutputRangeMin value="1E-05" />
+     <OutputRangeMax value="1" />
+     <Vectors>
+        0.1066667, 0
+        0.3683334, 0.5525454
+        1, 1
+     </Vectors>
+    </Item>
+    <Item>
+     <SmoothRate value="2" />
+     <TransformType value="1" />
+     <TransformTypeParameter />
+     <OutputRangeMin value="1" />
+     <OutputRangeMax value="1.122462" />
+     <Vectors>
+        0, 0
+        1, 1
+     </Vectors>
+    </Item>
+   </Transforms>
+  </Item>
+  <Item>
+   <InputParameter>sound.velocityz</InputParameter>
+   <InputRangeMin value="-1" />
+   <InputRangeMax value="1" />
+   <Transforms>
+    <Item>
+     <SmoothRate value="1" />
+     <TransformType value="0" />
+     <TransformTypeParameter />
+     <OutputRangeMin value="1E-05" />
+     <OutputRangeMax value="1" />
+     <Vectors>
+        0, 0
+        1, 1
+     </Vectors>
+    </Item>
+   </Transforms>
+  </Item>
+ </Items>
+</Item>

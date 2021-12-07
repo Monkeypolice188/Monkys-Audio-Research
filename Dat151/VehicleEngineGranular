@@ -1,0 +1,152 @@
+The VehicleEngineGranular type is used for a variety various engine-related sounds.
+
+It is used to assign a range of engine-based sounds to a vehicle, including a granular engine sound, as well as exhaust pops and filters.
+
+VehicleEngineGranular is a successor to the VehicleEngine type and overrides much of the engine-related sounds in that type.
+
+It uses dynamic engine and exhaust acceleration, idle and deceleration sounds to create a granular sound, using granulargrain data from the awc the sounds are found in. 
+
+Like VehicleEngine, all engine sounds are played at the "engine" bone, while exhaust sounds are played at the "exhaust" bones.
+Fields:
+
+Name - metahash - EngineGranular name //from Dat151Vehicle EngineGranular
+Unk00 -flag value - EngineGranular flags //see Flags
+MasterVolume - integer value - Volume of engine //default 0-100?
+EngineAccel - metahash - Granular engine sound //Dat54 played at engine
+ExhaustAccel - metahash - Exhaust coning environmental reflections //Dat54 played at exhaust/_2-30
+Unk04 - integer value - Unknown value.
+Unk05 - integer value - Unknown value.
+Unk06 - integer value - Unknown value.
+Unk07 - integer value - Unknown value.
+Unk08 - integer value - Unknown value.
+Unk09 - integer value - Unknown value.
+Unk10 - integer value - Unknown value.
+Unk11 - integer value - Unknown value.
+Unk12 - integer value - Unknown value.
+Unk13 - integer value - Master Volume of the Engine.  //Controls the Engine "accel", "decel" and "idle" entries.
+Unk14 - integer value - Master Volume of the Exhaust. //Controls the Exhaust "accel", "decel" and "idle" entries.
+Unk15 - integer value - Volume of the Engine Idle.  //Controls the Engine "idle" entry independently.
+Unk16 - integer value - Volume of the Exhaust Idle.  //Controls the Exhaust "idle" entry independently.
+Unk17 - integer value - Maximum Volume of the Engine Accel and Decel.  //Controls the maximum volme the Engine "accel" and "decel" entries reach independently.
+Unk18 - integer value - Maximum Volume of the Exhaust Accel and Decel.  //Controls the maximum volme the Exhaust "accel" and "decel" entries reach independently.
+Unk19 - integer value - Volume of the Engine Accel.  //Controls the Engine "accel" entry independently.
+Unk20 - integer value - Volume of the Exhaust Accel.  //Controls the Exhaust "accel" entry independently.
+Unk21 - integer value - Unknown value.
+Unk22 - float value - Unknown value.
+Unk23 - float value - Unknown value.
+Unk24 - float value - Unknown value.
+Unk25 - float value - Unknown value.
+Unk26 - float value - Unknown value.
+Unk27 - float value - Unknown value.
+Unk28 - float value - Unknown value.
+Unk29 - integer value - Volume of the Engine Gear Shift volume "boost". //loud boost of Engine sound when shifting gears?
+Unk30 - integer value - Volume of the Exhaust Gear Shift volume "boost". //loud boost of Exhaust sound when shifting gears?
+EngineSubmix - metahash - Engine submix synth modifications //Dat10
+EngineSubmixPreset - metahash - Engine submix preset variables //Dat10
+ExhaustSubmix - metahash - Exhaust submix synth modifications //Dat10
+ExhaustSubmixPreset - metahash - Exhaust submix preset variables //Dat10
+EngineAccelNPC - metahash - NPC granular engine sound //Dat54
+ExhaustAccelNPC - metahash - NPC exhaust coning environmental reflections //Dat54 should be the same as the ExhaustAccel entry.
+Unk37 - metahash - LimiterPops - Exhaust pops when hitting rev limit //Dat54
+Unk38 - integer value - Unknown
+Unk39 - integer value - Unknown
+Unk40 - metahash -Unknown //Dat54
+Unk41 - metahash - Unknown //Dat54
+Unk42 - integer value - Unknown
+Unk43 - integer value - Unknown
+Unk44 - integer value - Unknown
+IdleSub - metahash - Sub idle sounds overlayed on idle, accel and decel //Dat54
+Unk46 - integer value - Unknown
+Unk47 - integer value - Unknown
+Unk48 - integer value - Unknown
+Unk49 - integer value - Unknown
+Unk50 - integer value - Unknown
+Unk51 - integer value - Unknown
+Unk52 - metahash - Engine damage & exhaust bang sounds //Dat54 
+Unk53 - metahash - LimiterPopsUpgraded - Exhaust upgrade pops when hitting rev limit //Dat54
+Unk54 - integer value - Unknown
+Unk55 - integer value - Unknown
+Unk56 - integer value - Unknown
+Unk57 - integer value - Unknown
+Unk58 - integer value - Unknown
+Unk59 - float value - Unknown 
+
+Unk00 - EngineGranularFlags
+
+The Unk00 Flags value represents basic granular engine flags which seem to control various aspects of engine's behavior.
+
+The Unk00 flag reads "0xXXXXXXXX" where "X" represents the following digits in respective order:
+
+Only the last three digits of the flag value are used.
+
+0xAAAAA900 - ? //all vehicles
+0xAAAAA010 - enables exhaust pop sounds
+0xAAAAA040 - enables exhaust pop particle effects (requires exhaust pop sound flag)
+0xAAAAA001 - ? //higher end cars and sports cars
+0xAAAAA004 - ? //all vehicles
+
+Example:
+
+  <Item type="VehicleEngineGranular" ntOffset="0">
+   <Name>bison_granular_engine</Name>
+   <Unk00 value="0xAAAAA905" />
+   <MasterVolume value="0" />
+   <EngineAccel>suv_2_us_v8_engine_accel</EngineAccel>
+   <ExhaustAccel>suv_2_us_v8_exhaust_accel</ExhaustAccel>
+   <Unk04 value="0" />
+   <Unk05 value="0" />
+   <Unk06 value="0" />
+   <Unk07 value="-200" />
+   <Unk08 value="0" />
+   <Unk09 value="0" />
+   <Unk10 value="0" />
+   <Unk11 value="0" />
+   <Unk12 value="0" />
+   <Unk13 value="700" />
+   <Unk14 value="700" />
+   <Unk15 value="-200" />
+   <Unk16 value="-200" />
+   <Unk17 value="200" />
+   <Unk18 value="0" />
+   <Unk19 value="0" />
+   <Unk20 value="300" />
+   <Unk21 value="50" />
+   <Unk22 value="0.2" />
+   <Unk23 value="0.15" />
+   <Unk24 value="0.2" />
+   <Unk25 value="0.05" />
+   <Unk26 value="0.4" />
+   <Unk27 value="0.3" />
+   <Unk28 value="0.1" />
+   <Unk29 value="0" />
+   <Unk30 value="0" />
+   <EngineSubmix>bison_engine_submix</EngineSubmix>
+   <EngineSubmixPreset>bison_engine_submix_preset</EngineSubmixPreset>
+   <ExhaustSubmix>bison_exhaust_submix</ExhaustSubmix>
+   <ExhaustSubmixPreset>bison_exhaust_submix_preset</ExhaustSubmixPreset>
+   <EngineAccelNPC>suv_2_us_v8_engine_accel_npc</EngineAccelNPC>
+   <ExhaustAccelNPC>suv_2_us_v8_exhaust_accel</ExhaustAccelNPC>
+   <Unk37>null_sound</Unk37>
+   <Unk38 value="0" />
+   <Unk39 value="0" />
+   <Unk40>hash_490413A6</Unk40>
+   <Unk41>hash_58337F32</Unk41>
+   <Unk42 value="600" />
+   <Unk43 value="5" />
+   <Unk44 value="2" />
+   <IdleSub>suv_2_veh_idle_sub</IdleSub>
+   <Unk46 value="0" />
+   <Unk47 value="0" />
+   <Unk48 value="0" />
+   <Unk49 value="0" />
+   <Unk50 value="0" />
+   <Unk51 value="0" />
+   <Unk52>hash_B3BAE87C</Unk52>
+   <Unk53>upgrade_pops_multi</Unk53>
+   <Unk54 value="0" />
+   <Unk55 value="0" />
+   <Unk56 value="500" />
+   <Unk57 value="500" />
+   <Unk58 value="1" />
+   <Unk59 value="0.2" />
+  </Item>
