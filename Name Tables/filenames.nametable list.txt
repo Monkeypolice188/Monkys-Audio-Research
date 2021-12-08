@@ -394,6 +394,8 @@ all_crooks_caught_02
 all_crooks_caught_03
 all_the_things_she_said_left
 all_the_things_she_said_right
+alleycat_hiss_short_01
+alleycat_hiss_short_02
 alleycat_meow_02
 alleycat_meow_03
 alright_left
