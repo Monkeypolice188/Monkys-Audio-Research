@@ -4338,6 +4338,7 @@ radio_02_pop_djsolo
 radio_02_pop_idents
 radio_02_pop_music
 radio_03_hiphop_new
+radio_03_hiphop_new_core_music
 radio_03_hiphop_new_djsolo
 radio_03_hiphop_new_idents
 radio_03_hiphop_new_music
@@ -4360,6 +4361,7 @@ radio_07_dance_01_music
 radio_08_mexican
 radio_08_mexican_music
 radio_09_hiphop_old
+radio_09_hiphop_old_core_music
 radio_09_hiphop_old_djsolo
 radio_09_hiphop_old_idents
 radio_09_hiphop_old_music
@@ -4372,6 +4374,7 @@ radio_12_reggae_idents
 radio_12_reggae_music
 radio_12_reggae_music_new
 radio_13_jazz
+radio_13_jazz_music_edited
 radio_14_dance_02
 radio_14_dance_02_music
 radio_15_motown
@@ -5078,6 +5081,7 @@ sm20_tun3
 sm20_tun4
 sm_1
 sm_15_delperro_subway
+sm_1_3_4_5_7_8
 sm_2
 sm_3
 sm_4

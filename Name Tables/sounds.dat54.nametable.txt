@@ -3533,6 +3533,9 @@ josh_03_soundset
 jump_land_intact
 jump_land_loose
 jump_land_rnd
+jump_land_soft_intact
+jump_land_soft_intact_env
+jump_land_soft_intact_multi
 jump_sound
 jump_sound_echo
 jump_ss
@@ -14265,6 +14268,9 @@ towing_train_brakes_master
 towing_train_horn_master
 towtruck1default
 towtruck2default
+track_shin_flat_vbs
+track_shin_flat_vbs_mt
+track_shin_flat_vbs_pts
 tractor_multi_horn
 traffic_ground_enemy_pick_up_weapon_master
 trailer_drop_random
@@ -15117,6 +15123,7 @@ water_rain_twinloop_4_wrapper
 water_splash_env
 water_tank_random
 water_tank_random_wrapper
+water_tank_wrap
 water_vb
 water_walk_master
 waves_01_master
