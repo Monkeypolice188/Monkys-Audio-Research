@@ -33,6 +33,7 @@ frontend_game_nofade
 frontend_game_player_switch
 frontend_game_police_scanner
 frontend_game_slow_mo
+frontend_game_slow_mo_weapon_wheel
 frontend_menu
 frontend_menu_loud
 frontend_menu_pauseable
@@ -67,6 +68,7 @@ peds_collisions_loud
 peds_collisions_loud_dynamic
 peds_footsteps
 peds_footsteps_boostable
+peds_footsteps_highheels
 peds_footsteps_leather
 peds_footsteps_rubber_hard
 peds_footsteps_rubber_soft
@@ -93,6 +95,8 @@ scripted_override_fade
 scripted_override_pitch
 scripted_tv
 sfx_slider
+slow_mo_video_editor_gunfire
+slow_mo_video_editor_gunfire_action
 speech
 speech_ambient
 speech_breathing
@@ -160,6 +164,8 @@ video_editor_gunfire_npc
 video_editor_gunfire_npc_action
 video_editor_gunfire_npc_lazer
 video_editor_melee
+video_editor_weapons_guns_bullet_bys
+video_editor_weapons_guns_bullet_impacts
 water
 water_loud
 water_ocean

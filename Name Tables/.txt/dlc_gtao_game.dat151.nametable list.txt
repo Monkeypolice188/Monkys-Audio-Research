@@ -5,7 +5,6 @@ ambient_zone_list
 arm_dave
 audio_item_v2_vehicle_tank
 audio_item_vehicle_tank
-ch3_14b_props_combo0120_slod_children.ydd
 country_2_bars
 country_alarm
 country_bar

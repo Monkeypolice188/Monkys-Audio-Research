@@ -2798,6 +2798,7 @@ bottle_break_c_02
 bottle_break_c_03
 bottle_break_c_04
 bottle_break_c_05
+bottle_break_c_07
 bottle_cap
 bottle_on_table_2
 bottle_on_table_5

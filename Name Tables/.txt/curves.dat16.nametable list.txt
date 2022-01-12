@@ -44,6 +44,7 @@ collision_ped_impact_volume
 collision_ped_scrape_pitch
 collision_ped_scrape_volume
 collision_player_scrape_pitch
+collision_player_scrape_volume
 collision_reso_release
 collision_roll_pitch
 collision_roll_res_pitch
@@ -175,8 +176,10 @@ lapping_waves_wind_to_vol
 lfo_sine_curve
 linear_fall
 linear_rise
+linear_velocity_to_volume
 lj2_follow_ped_and_kill_pisscurve
 melee_damage_done_to_clothing_vol
+melee_damage_to_volume
 melee_swipe_velocity_to_pitch
 melee_swipe_velocity_to_volume
 melee_swipe_velocity_to_volume_player
@@ -189,6 +192,8 @@ mobile_two_way_garbled_low_so
 mobile_two_way_garbled_med_holds
 mobile_two_way_garbled_med_so
 molotov_fuse_fire_release
+molotov_fuse_pitch_curve
+molotov_fuse_vol_curve
 mp_countdown_attack
 outer_occlusion
 pathetic_size
@@ -316,6 +321,7 @@ vehicle_interior_open_to_vol
 vehicle_mass_to_heavy_vol
 vehicle_radio_fall
 vehicle_radio_rise
+vehicle_scrape_impact
 volume_to_quiet_loud
 walla_num_hostile_peds_to_density
 walla_num_peds_to_density
