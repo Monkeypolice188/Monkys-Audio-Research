@@ -841,6 +841,9 @@ bicycle_re_pedal_rnd
 bicycle_seat_master
 bicycle_skid
 bicycle_skids
+bicycle_sprocket_bmx
+bicycle_sprocket_cruiser
+bicycle_sprocket_scorcher
 biff_horn
 biff_horn_wrapper
 big_rig_brake_release
@@ -3704,6 +3707,7 @@ lino_env_soft
 lm1_track_mask_os_lm1_track_mask_os
 lmg_assault_npc_rprt_master
 loading_tune
+loading_tune_01_im
 loading_tune_pts
 lokus_horn
 lokus_multi_horn
