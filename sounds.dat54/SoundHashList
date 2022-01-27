@@ -1,0 +1,24 @@
+The SoundHashList (_list) type is a list of sounds, from which one is chosen, when played, in order. SoundHashLists can only be called for through game.dat151.
+
+The maximum number of child sounds in a list is 128.
+
+Fields:
+
+UnkShort - ushort value - Unknown. //some kind of randomization?
+
+Example:
+
+"dlc_biker_horn_list_motorbikes" picks from any of its child sounds to play.
+
+<Item type="SoundHashList">
+ <Name>dlc_biker_horn_list_motorbikes</Name>
+ <Header>
+  <Flags value="0xAAAAAAAA" />
+ </Header>
+ <UnkShort value="0" />
+ <SoundHashes>
+  <Item>bobber_horn_mt</Item>
+  <Item>hellfury_horn_mt</Item>
+  <Item>nrg_horn_mt</Item>
+ </SoundHashes>
+</Item>
