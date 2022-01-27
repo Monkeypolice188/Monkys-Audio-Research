@@ -6,10 +6,10 @@ It essentially pulls a specific entry (or entries) from speech .awcs, and is des
 
 Fields:
 
-SpeechUnkInt0 - integer value - Unknown //min number of variations for this speech entry?
+LastVariation - integer value - Unknown //min number of variations for this speech entry?
 SpeechUnkInt1 - integer value - Unknown //max number of variations for this speech entry?
-VoiceDataHash - metahash - name of base ByteArray entry in speech.dat
-SpeechName - metahash - speech name in ALL CAPS (without value suffix, e.g., _01)
+VoiceName - metahash - name of base ByteArray entry in speech.dat
+ContextName - metahash - context name - the name of the sound context in the .awc name in ALL CAPS (without value suffix, e.g., _01)
 
 Example:
 
@@ -19,8 +19,8 @@ Example:
   <Flags value="0x00000004" />
   <Unk02 value="65236" />
  </Header>
- <SpeechUnkInt0 value="1" />
+ <LastVariation value="1" />
  <SpeechUnkInt1 value="1" />
- <VoiceDataHash>vb_female_01</VoiceDataHash>
- <SpeechName>VB_ONESHOT</SpeechName>
+ <VoiceName>vb_female_01</VoiceName>
+ <ContextName>VB_ONESHOT</ContextName>
 </Item>

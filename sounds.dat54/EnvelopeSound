@@ -1,4 +1,8 @@
-The EnvelopeSound (_env, _envelope, _one_shot) type is used to apply an ADSR (Attack, Decay, Sustain, Release) style envelope to a sound. It is often used to play a sound for a specific duration.
+The EnvelopeSound (_env, _envelope, _one_shot) type is used to apply an ADSR (Attack, Decay, Sustain, Release) style envelope to a sound. 
+
+Envelopes are used to play a sound for a specific duration and with specific mounts of fade-in/out.
+
+The EnvelopeSound uses the additional parameter Hold (ADSHR), which defines the amount of time sustain occurs.
 
 Fields:
 
@@ -21,18 +25,18 @@ SustainParameter - metahash - Sustain parameter.
 HoldParameter - metahash - Hold parameter.
 ReleaseParameter - metahash - Release parameter.
 ChildSound - metahash - child sound to envelope.
-EnvelopeType - integer value - Envelope type behavior.
+Mode - integer value - Envelope behavior.
 	0 = Volume
 	1 = Pitch
 	2 = Pan
 	3 = LPF
 	4 = HPF
-	5 = Variable (overriden by EnvelopeTypeParameter)
+	5 = Variable (used by OutputVariable)
 	6 = Logarithmic LPF
 	7 = Logarithmic HPF
-EnvelopeTypeParameter - metahash - Overrides EnvelopeType (when EnvelopeType is set to 5).
-LevelMin - float value - Minimum level of the envelope (default -100 or 0).
-LevelMax - float value - Maximum level of the envelope (default 0 or 1).
+OutputVariable - metahash - Output variable used if Mode is set to 5
+OuputRangeMin - float value - Minimum output level of the envelope (default -100 or 0).
+OuputRangeMax - float value - Maximum output level of the envelope (default 0 or 1).
 
 Example:
 
@@ -63,8 +67,8 @@ Example:
  <HoldParameter />
  <ReleaseParameter />
  <ChildSound>truck_horn</ChildSound>
- <EnvelopeType value="0" />
- <EnvelopeTypeParameter />
- <LevelMin value="-100" />
- <LevelMax value="0" />
+ <Mode value="0" />
+ <OutputVariable />
+ <OuputRangeMin value="-100" />
+ <OuputRangeMax value="0" />
 </Item>

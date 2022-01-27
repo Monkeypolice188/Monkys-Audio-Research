@@ -1,23 +1,23 @@
-The OnStopSound (_os, _oss, _onstop, _on_stop) type is used to switch between different child sounds or behaviors when another condition is met. 
+The StopSound (_os, _oss, _onstop, _on_stop) type is used to switch between different child sounds or behaviors when another condition is met. 
 
-It assumes that once ChildSound's conditions have been met, OnStopSound is played.
+It assumes that once ChildSound's conditions have been met, StopSound is played.
 
 The conditions may depend on both flags, parameter hashes, and each of the ChildSound's own entries, such as math or if operations.
 
 Fields:
 
 ChildSound - metahash - first sound to play.
-OnStopSound - metahash - sound played once ChildSound has finished playing.
-OnStopFallBackSound - metahash - fallback if OnStopSound is invalid or not found.
+StopSound - metahash - sound played once ChildSound has finished playing.
+FinishedSound - metahash - fallback if StopSound is invalid or not found.
 
 Example:
 
-<Item type="OnStopSound">
+<Item type="StopSound">
  <Name>sum20_arcade_general_qub3d_attract_loop_mdr_oss</Name>
  <Header>
   <Flags value="0x00000000" />
  </Header>
  <ChildSound>sum20_arcade_general_qub3d_attract_loop_mdr_mt</ChildSound>
- <OnStopSound>sum20_arcade_general_qub3d_attract_loop_mdr_oss_death</OnStopSound>
- <OnStopFallBackSound />
+ <StopSound>sum20_arcade_general_qub3d_attract_loop_mdr_oss_death</StopSound>
+ <FinishedSound />
 </Item>

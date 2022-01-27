@@ -4,21 +4,21 @@ It is often used to fade out close/detailed sounds while fading in distant/far s
 
 Fields:
 
-FadeOutSound - metahash - Fade out sound
-FadeInSound - metahash - Fade in sound
-UnkByte - byte value - CrossfadeType
+FadeOutSound - metahash - NearSound
+FadeInSound - metahash - FarSound
+UnkByte - byte value - Mode
 	0 = None //?
 	1 = Linear //?
 	2 = Equal Power //?
-UnkFloat0 - float value - Unknown // fade-in ms?
-UnkFloat1 - float value - Unknown // fade-out ms?
-UnkInt - integer value - Unknown
-UnkCurvesHash - metahash - Unknown //crossfade curves
-ParameterHash0 - metahash - Variables.
-ParameterHash1 - metahash - Variables.
-ParameterHash2 - metahash - Variables.
-ParameterHash3 - metahash - Variables.
-ParameterHash4 - metahash - Variables.
+UnkFloat0 - float value - MinDistance
+UnkFloat1 - float value - MaxDistance
+UnkInt - integer value - Hysteresis
+UnkCurvesHash - metahash - CrossfadeCurve
+ParameterHash0 - metahash - DistanceVariable
+ParameterHash1 - metahash - MinDistanceVariable
+ParameterHash2 - metahash - MaxDistanceVariable
+ParameterHash3 - metahash - HysteresisVariable
+ParameterHash4 - metahash - CrossfadeVariable
 
 Example:
 

@@ -8,7 +8,7 @@ It can also be used as a child of a ModularSynthSound which applies the refracti
 
 Fields:
 
-UnkByte - byte value - Unknown //0 or 1?
+ChannelID - byte value - Unknown. // possibly used only for GranularSound entries as they use Channels for engine/exhaust.
 
 Example:
 
@@ -18,5 +18,5 @@ Example:
   <Flags value="0x00008000" />
   <Category>vehicles_engines</Category>
  </Header>
- <UnkByte value="1" />
+ <ChannelID value="1" />
 </Item>

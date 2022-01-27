@@ -10,9 +10,9 @@ The maximum number of child sounds in a sequence is 32.
 
 Fields:
 
-Delay - ushort value - The delay of each sound in the sequence.  If this value is set to 0, all sounds will be played on top of each other, creating amplitude. This will affect all sounds in the sequence.
-DelayParameter - metahash - Parameter for Delay.
-DirectionParameter - metahash - Parameter for playback direction. Reverses the order that the sequence is played in if set to a parameter with a value equal to 1.
+DelayTime - ushort value - The delay of each sound in the sequence.  If this value is set to 0, all sounds will be played on top of each other, creating amplitude. This will affect all sounds in the sequence.
+DelayTimeVariable - metahash - Parameter for Delay.
+SequenceDirection - metahash - Parameter for playback direction. Reverses the order that the sequence is played in if set to a parameter with a value equal to 1.
 ChildSounds - Item list of child sounds to play in sequence.
 
 Example:
@@ -24,9 +24,9 @@ when "notes" is played, "note_2" will be played 600 ms into "note_1"'s play, and
  <Header>
   <Flags value="0x00000000" />
  </Header>
- <Delay value="600" />
- <DelayParameter />
- <DirectionParameter />
+ <DelayTime value="600" />
+ <DelayTimeVariable />
+ <SequenceDirection />
  <ChildSounds>
   <Item>note_1</Item>
   <Item>note_2</Item>

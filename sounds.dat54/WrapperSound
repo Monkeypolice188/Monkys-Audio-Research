@@ -9,9 +9,9 @@ As well as wrapping sounds, the WrapperSound block can be used as a general-use 
 Fields:
 
 ChildSound - metahash - ChildSound - Child sound to play.
-FrameStartTime - integer value - Unknown. Always 0.
+LastPlayTime - integer value - Overrides the amount of time should be waited before playing this sound again.
 FallBackSound - metahash - Sound to fall back onto if ChildSound is not found.
-FrameStartInterval - ushort value - Unknown. Always 0.
+MinRepeatTime - ushort value - Overrides the amount of time any children of this sound pass before repeating.
 Variables - additional variables.
 ChildSounds - Item list of sound hashes. Should match ChildSound and FallBackSound entries.
 ItemCount - byte value - Unknown.
@@ -27,7 +27,7 @@ Example:
   <Flags value="0x00000000" />
  </Header>
  <ChildSound>toreador_ignition_switch</ChildSound>
- <FrameStartTime value="0" />
+ <LastPlayTime value="0" />
  <FallBackSound>ignition</FallBackSound>
  <FrameTimeInterval value="0" />
  <Variables />

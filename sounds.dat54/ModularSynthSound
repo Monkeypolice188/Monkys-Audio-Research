@@ -2,15 +2,15 @@ The ModularSynthSound (_mod, _synth, _mss) is used to assign synthesised sounds 
 
 Fields:
 
-OptAmpSynthSound - metahash - optamp.dat10.rel entry.
-UnkHash - metahash - Presets //?
-UnkFloat - float value - Unknown.
+SynthSound - metahash - optamp.dat10.rel entry.
+SynthPreset - metahash - Presets //?
+PlaybackTimeLimit - float value - Unknown.
 UnkInt - integer value - Unknown.
 TrackCount - integer value - Unknown.
-ChildSounds - Unknown. //environmentsound entries
-UnkItems - Unknown. Item list of variables.
-	UnkHash - metahash - input variable
-	ParameterHash - metahash - output variable
+EnvironmentSounds - Unknown. //environmentsound entries
+ExposedVariables - Unknown. Item list of variables.
+	VariableName - metahash - input variable
+	ParameterName - metahash - output variable
 	Value - float value - unknown //variable value
 	
 Example:
@@ -23,57 +23,57 @@ Example:
   <Unk22 value="25" />
   <Unk23 value="50" />
  </Header>
- <OptAmpSynthSound>synth_reversing_beep</OptAmpSynthSound>
- <UnkHash />
- <UnkFloat value="-1" />
+ <SynthSound>synth_reversing_beep</SynthSound>
+ <SynthPreset />
+ <PlaybackTimeLimit value="-1" />
  <UnkInt value="0" />
  <TrackCount value="0" />
- <ChildSounds>
+ <EnvironmentSounds>
   <Item />
   <Item />
   <Item />
   <Item />
- </ChildSounds>
- <UnkItems>
+ </EnvironmentSounds>
+ <ExposedVariables>
   <Item>
-   <UnkHash>square</UnkHash>
-   <ParameterHash />
+   <VariableName>square</VariableName>
+   <ParameterName />
    <Value value="0.25" />
   </Item>
   <Item>
-   <UnkHash>hash_0F47FAFA</UnkHash>
-   <ParameterHash />
+   <VariableName>hash_0F47FAFA</VariableName>
+   <ParameterName />
    <Value value="0.24" />
   </Item>
   <Item>
-   <UnkHash>comb</UnkHash>
-   <ParameterHash />
+   <VariableName>comb</VariableName>
+   <ParameterName />
    <Value value="0.8" />
   </Item>
   <Item>
-   <UnkHash>hash_85D134F8</UnkHash>
-   <ParameterHash />
+   <VariableName>hash_85D134F8</VariableName>
+   <ParameterName />
    <Value value="0.65" />
   </Item>
   <Item>
-   <UnkHash>ds</UnkHash>
-   <ParameterHash />
+   <VariableName>ds</VariableName>
+   <ParameterName />
    <Value value="4" />
   </Item>
   <Item>
-   <UnkHash>fb</UnkHash>
-   <ParameterHash />
+   <VariableName>fb</VariableName>
+   <ParameterName />
    <Value value="0.568" />
   </Item>
   <Item>
-   <UnkHash>f1</UnkHash>
-   <ParameterHash />
+   <VariableName>f1</VariableName>
+   <ParameterName />
    <Value value="1200" />
   </Item>
   <Item>
-   <UnkHash>f2</UnkHash>
-   <ParameterHash />
+   <VariableName>f2</VariableName>
+   <ParameterName />
    <Value value="1500" />
   </Item>
- </UnkItems>
+ </ExposedVariables>
 </Item>

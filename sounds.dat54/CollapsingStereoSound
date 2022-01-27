@@ -1,19 +1,29 @@
 The CollapsingStereoSound (_css, _collapse) type is used to collapse a stereo's tracks into two singular mono tracks.
 
+Two mono tracks defined as LeftSound and RightSound will only be played in stereo playback if the player is within a certain distance range.
+
+The distance range is defined as a min/max range in meters. If the player exceeds the distance bounds, the sound will play one single mono track (LeftSound).
+
+A crossfade curve will be applied during the fade between the mono and stereo playback.
+
 Fields:
 
-ChildSound1 - metahash - stereo track 1
-AudioTrack1 - metahash - stereo track 2
-UnkFloat0 - float value - Unknown
-UnkFloat1 - float value - Unknown
-ParameterHash0 - metahash - Parameters //Unknown
-ParameterHash1 - metahash - Parameters //Unknown
-ParameterHash2 - metahash - Parameters //Unknown
+LeftSound - metahash - stereo track 1 (left)
+RightSound - metahash - stereo track 2 (right)
+MinDistance - float value - Minimum distance to play this track in stereo.
+MaxDistance - float value - Maximum distance to play this track in stereo; after which it will reduce to mono playback.
+MinDistanceVariable - metahash - Parameters //Unknown
+MaxDistanceVariable - metahash - Parameters //Unknown
+CrossfadeOverrideVariable - metahash - Parameters //Unknown
 ParameterHash3 - metahash - Parameters //Unknown
 ParameterHash4 - metahash - Parameters //Unknown
 UnkInt - integer value - Unknown //always 1065353216?
 ParameterHash5 - metahash - Parameters //Unknown
-UnkByte - byte value - Unknown //usually 1
+Mode - byte value - Crossfade mode:
+	0 = Fixed
+	1 = Both - plays both tracks as stereo
+	2 = Retrigger
+	3 = Position-relative Pan
 
 Example:
 
@@ -22,16 +32,16 @@ Example:
  <Header>
   <Flags value="0x00000000" />
  </Header>
- <ChildSound1>dlc_xm_int_sub_engine_room_l</ChildSound1>
+ <LeftSound>dlc_xm_int_sub_engine_room_l</LeftSound>
  <ChildSound2>dlc_xm_int_sub_engine_room_r</ChildSound2>
- <UnkFloat0 value="0" />
- <UnkFloat1 value="15" />
- <ParameterHash0 />
- <ParameterHash1 />
- <ParameterHash2 />
+ <MinDistance value="0" />
+ <MaxDistance value="15" />
+ <MinDistanceVariable />
+ <MaxDistanceVariable />
+ <CrossfadeOverrideVariable />
  <ParameterHash3 />
  <ParameterHash4 />
  <UnkInt value="1065353216" />
  <ParameterHash5 />
- <UnkByte value="1" />
+ <Mode value="1" />
 </Item>

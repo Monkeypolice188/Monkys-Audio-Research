@@ -6,9 +6,9 @@ Fields:
 
 LoopCount - ushort value - Number of times to loop. 
 LoopCountVariance - ushort value - Variance of LoopCount.
-UnkShort2 - ushort value - Unknown.
+LoopPoint - ushort value - Unknown. //unused?
 ChildSound - metahash - Child sound to loop.
-LoopCountParameter - metahash - Parameter for LoopCount.
+LoopCountVariable - metahash - Parameter for LoopCount.
 
 Example:
 
@@ -23,7 +23,7 @@ Example:
  </Header>
  <LoopCount value="3" />
  <LoopCountVariance value="0" />
- <UnkShort2 value="0" />
+ <LoopPoint value="0" />
  <ChildSound>beep_sound_env</ChildSound>
- <LoopCountParameter />
+ <LoopCountVariable />
 </Item>

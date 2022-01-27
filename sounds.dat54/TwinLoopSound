@@ -2,18 +2,18 @@ The TwinLoopSound (_tl, _tls, _twin_loop) block is used to loop two sounds in su
 
 The type allows two sounds to be played back-to-back with crossfade.
 
-It will keep both loops in sync, but allows for a min and max duration as well as min and max crossfade time between each of the two loops.
+It will keep both loops in sync, but allows for a min and max "swap" duration as well as min and max crossfade time between each of the two loops.
 Fields:
 
-DurationMin - ushort value - Minimum duration of the two loops in ms.
-DurationMax - ushort value - Maximum duration of the two loops in ms.
-CrossfadeMin - ushort value - Minimum crossfade (fade out/in) between the two loops in ms.
-CrossfadeMax - ushort value - Maximum crossfade (fade out/in) between the two loops in ms.
+MinSwapTime - ushort value - Minimum duration of the two loops in ms.
+MaxSwapTime - ushort value - Maximum duration of the two loops in ms.
+MinCrossfadeTime - ushort value - Minimum crossfade (fade out/in) between the two loops in ms.
+MaxCrossfadeTime - ushort value - Maximum crossfade (fade out/in) between the two loops in ms.
 CrossfadeCurve - metahash  -  -The curve style used for the crossfade between two loops.
-DurationMinParameter - metahash - Parameter for DurationMin.
-DurationMaxParameter - metahash - Parameter for DurationMax.
-CrossfadeMinParameter - metahash - Parameter for CrossfadeMin.
-CrossfadeMaxParameter - metahash - Parameter for CrossfadeMax.
+MinSwapTimeVariable - metahash - Parameter for MinSwapTime.
+MaxSwapTimeVariable - metahash - Parameter for MaxSwapTime.
+MinCrossfadeTimeVariable - metahash - Parameter for MinCrossfadeTime.
+MaxCrossfadeTimeVariable - metahash - Parameter for MaxCrossfadeTime.
 ChildSounds - Item list of audio tracks.
 
 Example:
@@ -26,15 +26,15 @@ Example:
   <Volume value="300" />
   <Category>vehicles_planes</Category>
  </Header>
- <DurationMin value="150" />
- <DurationMax value="600" />
- <CrossfadeMin value="40" />
- <CrossfadeMax value="150" />
+ <MinSwapTime value="150" />
+ <MaxSwapTime value="600" />
+ <MinCrossfadeTime value="40" />
+ <MaxCrossfadeTime value="150" />
  <CrossfadeCurve>equal_power_rise</CrossfadeCurve>
- <DurationMinParameter />
- <DurationMaxParameter />
- <CrossfadeMinParameter />
- <CrossfadeMaxParameter />
+ <MinSwapTimeVariable />
+ <MaxSwapTimeVariable />
+ <MinCrossfadeTimeVariable />
+ <MaxCrossfadeTimeVariable />
  <ChildSounds>
   <Item>dlc_christmas2017_avenger_avenger_heli_jet06_02</Item>
   <Item>dlc_christmas2017_avenger_avenger_heli_jet06_01</Item>

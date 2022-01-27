@@ -8,7 +8,7 @@ Fields:
 
 ChildSound - metahash - Child sound.
 Items - Item list of fluctuators.
-	UnkByte0  - byte value - FluctuatorType
+	FluctuatorType  - byte value - fluctuator mode
 		0 = Probability-based
 		1 = Time-based
 	UnkByte1  - byte value - Unknown //ceiling amount?
@@ -35,7 +35,7 @@ Example:
  <ChildSound>dlc_ch_heist_lock_box_drill_flc_mt</ChildSound>
  <Items>
   <Item>
-   <UnkByte0 value="0" />
+   <FluctuatorType value="0" />
    <UnkByte1 value="1" />
    <ParameterHash />
    <UnkFloat00 value="0.004" />

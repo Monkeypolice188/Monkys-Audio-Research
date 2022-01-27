@@ -4,14 +4,14 @@ The type assesses when a certain condition is met to determine when to change be
 
 The condition type can be set, determining whether the condition is to be equal to, less, and/or greater than the value defined.
 
-The IfSound type requires a defined ConditionParameter variable.
+The IfSound type requires a defined ConditionVariable variable.
 
 Fields:
 
-ConditionTrueSound - metahash  - child sound 1.
-ConditionFalseSound - metahash - child sound 2.
-ConditionParameter - metahash - Parameter for child sound 1.
-ParamterHash2 - metahash - Parameters // unknown?
+TrueSound - metahash  - child sound 1.
+FalseSound - metahash - child sound 2.
+ConditionVariable - metahash - Parameter for child sound 1.
+IfParameterHash1 - metahash - Parameters // unknown?
 ConditionType - byte value - Type of condition behavior
 	0 = Less Than
 	1 = Less Than or Equal To
@@ -19,7 +19,6 @@ ConditionType - byte value - Type of condition behavior
 	3 = Greater Than or Equal To
 	4 = Equal To
 	5 = Not Equal To
-	6 = Num of Conditions
 ConditionValue - float value - value for ConditionType //such as type/value/index, Mass in kg, speed in m/s, etc
 
 Examples:
@@ -34,8 +33,8 @@ The condition "ped_type" is that the player is either male or female. If the val
   <Flags value="0x00000001" />
   <Flags2 value="0xAAA8AAAA" />
  </Header>
- <ConditionTrueSound>dlc_apt_champagne_hiccup_male_rnd</ConditionTrueSound>
- <ConditionFalseSound>dlc_apt_champagne_hiccup_female_rnd</ConditionFalseSound>
+ <TrueSound>dlc_apt_champagne_hiccup_male_rnd</TrueSound>
+ <FalseSound>dlc_apt_champagne_hiccup_female_rnd</FalseSound>
  <ParameterHash1>ped_type</ParameterHash1>
  <ConditionType value="4" /> //equal to
  <ConditionValue value="3" /> //ped_type Value (male)
@@ -54,8 +53,8 @@ The condition (hash_378A1D92) is that the player is in first person mode; child 
   <Pan value="0" />
   <PreDelay value="30" />
  </Header>
- <ConditionTrueSound>dlc_h4_combat_shotgun_mech_fp_mt</ConditionTrueSound>
- <ConditionFalseSound>dlc_h4_combat_shotgun_mech_mt</ConditionFalseSound>
+ <TrueSound>dlc_h4_combat_shotgun_mech_fp_mt</TrueSound>
+ <FalseSound>dlc_h4_combat_shotgun_mech_mt</FalseSound>
  <ParameterHash1>hash_378A1D92</ParameterHash1>
  <ConditionType value="4" /> //equal to
  <ConditionValue value="1" /> //hash_378A1D92 Value (first person)
@@ -72,8 +71,8 @@ The condition "intensity" is that the player intensity is of a certain value. If
   <Flags value="0x00000001" />
   <Flags2 value="0xAAA8AAAA" />
  </Header>
- <ConditionTrueSound>dlc_apt_bvs_beast_sprint_vb_woosh_pts_rtol_mt_boost</ConditionTrueSound>
- <ConditionFalseSound />
+ <TrueSound>dlc_apt_bvs_beast_sprint_vb_woosh_pts_rtol_mt_boost</TrueSound>
+ <FalseSound />
  <ParameterHash1>intensity</ParameterHash1>
  <ConditionType value="2" /> //greater than
  <ConditionValue value="0.5" /> //intensity Value

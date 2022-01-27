@@ -1,20 +1,20 @@
 The RetriggeredOverlappedSound (_rt, _rtol, _retrigger, _retrig, _overlap) type is used to replay sounds a number of times. 
 
-Delay or "overlap" duration can be defined, affecting the duration at which the sound plays before it is replayed again. 
+DelayTime or "overlap" duration can be defined, affecting the duration at which the sound plays before it is replayed again. 
 
 Both a "start" and "tail" sound can also be defined, which play only once, on the first and last instance, respectively. These are both taken into consideration by the Retriggers value.
 
 Fields:
 
-RetriggerCount - ushort value - The number of times the retrigger occurs. This includes the StartSound, RetriggerSound and TailSound. 
-RetriggerCountVariance - ushort value - RetriggerVariance - Variance of RetriggerCount.
-Delay - ushort value - Delay - the delay of the retrigger.  If this value matches the full duration of the sound, there will be no delay. If this value exceeds the full duration of the sound, there will be delay. If this value is set to 0, the retriggers will be played on top of each other, creating amplitude. This will affect all retriggers.
-DelayVariance - ushort value - DelayVariance - Variance of Delay. This will affect all retriggers by the same amount of variance.
-RetriggerCountParameter - metahash - Parameter for RetriggerCount.
-DelayParameter - metahash - Parameter for Delay.
+LoopCount - ushort value - The number of times the retrigger occurs. This includes the StartSound, RetriggerSound and StopSound. 
+LoopCountVariance - ushort value - RetriggerVariance - Variance of LoopCount.
+DelayTime - ushort value - DelayTime - the DelayTime of the retrigger.  If this value matches the full duration of the sound, there will be no DelayTime. If this value exceeds the full duration of the sound, there will be DelayTime. If this value is set to 0, the retriggers will be played on top of each other, creating amplitude. This will affect all retriggers.
+DelayTimeVariance - ushort value - DelayTimeVariance - Variance of DelayTime. This will affect all retriggers by the same amount of variance.
+LoopCountVariable - metahash - Parameter for LoopCount.
+DelayTimeVariable - metahash - Parameter for DelayTime.
 StartSound - metahash - StartSound - The sound that plays first.
 RetriggerSound - metahash - RetriggerSound - The sound that is retriggered.
-TailSound - metahash - TailSound - The sound that plays last.
+StopSound - metahash - StopSound - The sound that plays last.
 
 
 Examples:
@@ -31,18 +31,18 @@ Examples:
   <Unk22 value="25" />
   <Unk23 value="50" />
  </Header>
- <RetriggerCount value="5" />
- <RetriggerCountVariance value="0" />
- <Delay value="500" />
- <DelayVariance value="0" />
- <RetriggerCountParameter />
- <DelayParameter />
+ <LoopCount value="5" />
+ <LoopCountVariance value="0" />
+ <DelayTime value="500" />
+ <DelayTimeVariance value="0" />
+ <LoopCountVariable />
+ <DelayTimeVariable />
  <StartSound />
  <RetriggerSound>reversing_beep</RetriggerSound>
- <TailSound />
+ <StopSound />
 </Item>
 
-Below, "timer_10s_rtol" plays "timer_short_env" 9 times, with 1 second delay each, and then plays "timer_long_env" once.
+Below, "timer_10s_rtol" plays "timer_short_env" 9 times, with 1 second DelayTime each, and then plays "timer_long_env" once.
 
 <Item type="RetriggeredOverlappedSound">
  <Name>timer_10s_rtol</Name>
@@ -50,13 +50,13 @@ Below, "timer_10s_rtol" plays "timer_short_env" 9 times, with 1 second delay eac
   <Flags value="0x00008000" />
   <Category>frontend_game_loud</Category>
  </Header>
- <RetriggerCount value="10" />
- <RetriggerCountVariance value="0" />
- <Delay value="1000" />
- <DelayVariance value="0" />
- <RetriggerCountParameter />
- <DelayParameter />
+ <LoopCount value="10" />
+ <LoopCountVariance value="0" />
+ <DelayTime value="1000" />
+ <DelayTimeVariance value="0" />
+ <LoopCountVariable />
+ <DelayTimeVariable />
  <StartSound />
  <RetriggerSound>timer_short_env</RetriggerSound>
- <TailSound>timer_long_env</TailSound>
+ <StopSound>timer_long_env</StopSound>
 </Item>

@@ -1,6 +1,10 @@
 The AutomationSound (_midi) type is used to play MIDI (Musical Instrument Digital Interface) sounds. 
 
-MIDIs are used to handle what would otherwise be complex sound arrangements. The AutomationSound type controls which MIDI to play, and how to play it (for example, what "instrument" or sound is used for each note type, etc).
+MIDIs are used to handle what would otherwise be complex sound arrangements. 
+
+The AutomationSound type controls which MIDI to play, and how to play it (playback rate, variance, etc). 
+
+It also defines an AutomationNoteMap, which is used to assign note ranges a specific sound/"instrument".
 
 Fields:
 
@@ -8,14 +12,14 @@ FallBackSound - metahash - Fallback sound.
 PlaybackRate - float value  - rate of playback, increasing it will increase the MIDI playback speed
 PlaybackRateVariance - float value - variance of the PlaybackRate.
 PlaybackRateParameter - metahash - overrides PlaybackRate.
-Map - metahash - associates an AutomationMapSound to the MIDI, mapping note/sounds onto the MIDI.
+NoteMap - metahash - associates an AutomationNoteMapSound to the MIDI, mapping note/sounds onto the MIDI.
 ContainerName - metahash - File location.
 FileName - metahash - Name of the .mid file.
-UnkData - metahash - Unknown.
+VariableOutputs - metahash - Unknown.
 
 Example:
 
-Below, "christmas_feed_message_nyn" plays the "newyearsnight" MIDI file. It maps the notes according to the "dlc_xm17_emitter_tree_map" MIDI map.
+Below, "christmas_feed_message_nyn" plays the "newyearsnight" MIDI file. It NoteMaps the notes according to the "dlc_xm17_emitter_tree_NoteMap" MIDI NoteMap.
 
   <Item type="AutomationSound">
    <Name>bugle_taps_aut</Name>
@@ -27,8 +31,8 @@ Below, "christmas_feed_message_nyn" plays the "newyearsnight" MIDI file. It maps
    <PlaybackRate value="0.75" />
    <PlaybackRateVariance value="0" />
    <PlaybackRateParameter />
-   <Map>bugle_taps_aut_notes</Map>
+   <NoteMap>bugle_taps_aut_notes</NoteMap>
    <ContainerName>resident/low_latency</ContainerName>
    <FileName>taps_edit</FileName>
-   <UnkData />
+   <VariableOutputs />
   </Item>

@@ -2,11 +2,11 @@ The DirectionalSound (_dir) type is used to apply a small amount of spread and t
 
 Fields:
 
-UnkFloat0 - float value. Unknown. //translation in?
-UnkFloat1 - float value. Unknown. //translation in Y?
-UnkFloat2 - float value. Unknown. //translation in?
-UnkFloat3 - float value. Unknown. //angle?
-UnkFloat4 - float value. Unknown. //translation in?
+InnerAngle - float value. Unknown
+OuterAngle - float value. Unknown
+RearAttentuation - float value. Unknown
+YawAngle - float value. Unknown
+PitchAngle - float value. Unknown
 
 Example:
 
@@ -17,9 +17,9 @@ Example:
   <Category>vehicles_sirens</Category>
  </Header>
  <ChildSound>sirens_slow_dir3_sirens_slow</ChildSound>
- <UnkFloat0 value="20" />
- <UnkFloat1 value="65" />
- <UnkFloat2 value="-3" />
- <UnkFloat3 value="90" />
- <UnkFloat4 value="0" />
+ <InnerAngle value="20" />
+ <OuterAngle value="65" />
+ <RearAttentuation value="-3" />
+ <YawAngle value="90" />
+ <PitchAngle value="0" />
 </Item>
