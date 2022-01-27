@@ -176,6 +176,7 @@ lapping_waves_wind_to_vol
 lfo_sine_curve
 linear_fall
 linear_rise
+linear_to_db
 linear_velocity_to_volume
 lj2_follow_ped_and_kill_pisscurve
 melee_damage_done_to_clothing_vol

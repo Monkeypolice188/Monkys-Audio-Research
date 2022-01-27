@@ -1,0 +1,21 @@
+The "DecayingExponentialCurve" is a curve type used to graph exponential decay of a sound.
+
+The curve type is often used in place of the LinearCurve to create exponential decay.
+
+The curve has fields for the min and max input on the X axis.
+
+MinInput - minimum value on the X axis of the graph
+MaxOuput - maximum value on the X axis of the graph
+HorizontalScaling - decay scale of the graph.
+Example:
+
+Below, "default_release_curve" has an input (X axis) range of 1 (0 to 1). The decay scaling is 4.
+
+
+<Item type="DecayingExponentialCurve" ntOffset="3518">
+ <Name>default_release_curve</Name>
+ <Flags value="0xAAAAAAA6" />
+ <MinInput value="0" />
+ <MaxInput value="1" />
+ <HorizontalScaling value="4" />
+</Item>

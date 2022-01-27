@@ -1,0 +1,13 @@
+ConstantCurve = 0
+LinearCurve = 1
+LinearDbCurve = 2
+PiecewiseLinearCurve = 3
+EqualPowerCurve = 4
+ValueTableCurve = 5
+ExponentialCurve = 6
+DecayingExponentialCurve = 7
+DecayingSquaredExponentialCurve = 8
+SineCurve = 9
+OneOverXSquaredCurve = 10
+DefaultDistanceAttenuationCurve = 11
+DistanceAttenuationValueTableCurve = 12

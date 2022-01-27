@@ -1,0 +1,25 @@
+The "LinearDbCurve" is a curve type used to define a linear line using a decibel (logarithmic) scale.
+
+The curve has fields for the min and max input on both the X and Y axis of the graph.
+
+MinInput - minimum value on the X axis of the graph
+MaxOuput - maximum value on the X axis of the graph
+Unk03/Unk04 - minimum value on the Y axis of the graph.
+Unk05/Unk06 - maximum value on the Y axis of the graph.
+
+Example:
+
+Below, "linear_to_db" has an input (X axis) range of 1 (0 to 1). The minimum Y axis value is defined as 0, and the max defined as 1.
+Therefore, this graph maps as a diagonal line from 0 to 1.
+
+
+<Item type="LinearDbCurve" ntOffset="3576">
+ <Name>linear_to_db</Name>
+ <Flags value="0xAAAAAAA9" />
+ <MinInput value="0" />
+ <MaxInput value="1" />
+ <Unk03 value="0" />
+ <Unk04 value="0" />
+ <Unk05 value="1" />
+ <Unk06 value="1" />
+</Item>

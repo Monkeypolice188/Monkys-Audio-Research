@@ -1,0 +1,27 @@
+The "PiecewiseLinearCurve" is a curve type used to graph linear points.
+
+The curve type is often used to create customized linear curves by defining turning points.
+
+The curve has fields for the min and max input on the X axis.
+
+MinInput - minimum value on the X axis of the graph
+MaxOuput - maximum value on the X axis of the graph
+Points - list of piecwise linear points on the graph
+
+Example:
+
+Below, "energy_decay" has an input (X axis) range of 1 (0 to 1). It has points on the graph as (0, 0), (0.001, 0), (0.5, 0.5), (1, 1).
+
+
+<Item type="PiecewiseLinearCurve" ntOffset="22196">
+ <Name>energy_decay</Name>
+ <Flags value="0xAAAAAAAA" />
+ <MinInput value="0" />
+ <MaxInput value="1" />
+ <Points>
+  0, 0
+  0.001, 0
+  0.5, 0.5
+  1, 1
+ </Points>
+</Item>

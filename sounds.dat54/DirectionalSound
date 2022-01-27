@@ -4,7 +4,7 @@ Fields:
 
 InnerAngle - float value. Unknown
 OuterAngle - float value. Unknown
-RearAttentuation - float value. Unknown
+RearAttenuation - float value. Unknown
 YawAngle - float value. Unknown
 PitchAngle - float value. Unknown
 
@@ -19,7 +19,7 @@ Example:
  <ChildSound>sirens_slow_dir3_sirens_slow</ChildSound>
  <InnerAngle value="20" />
  <OuterAngle value="65" />
- <RearAttentuation value="-3" />
+ <RearAttenuation value="-3" />
  <YawAngle value="90" />
  <PitchAngle value="0" />
 </Item>

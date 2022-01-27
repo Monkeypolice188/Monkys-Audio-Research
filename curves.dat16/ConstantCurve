@@ -1,0 +1,20 @@
+The "ConstantCurve" is a curve type used to define a constant line which runs at a single amplitude.
+
+The curve has fields for the min and max input on the X axis, and the value at which it should map in the Y axis.
+
+MinInput - minimum value on the X axis of the graph
+MaxOuput - maximum value on the X axis of the graph
+Value - offset on the Y axis of the graph.
+
+Example:
+
+Below, "constant_one" has an input (X axis) range of 1 (0 to 1). The Value (Y axis) defined is 1. Therefore, this maps a constant, flat line.
+
+
+<Item type="ConstantCurve" ntOffset="3389">
+ <Name>constant_one</Name>
+ <Flags value="0xAAAAAAAA" />
+ <MinInput value="0" />
+ <MaxInput value="1" />
+ <Value value="1" />
+</Item>

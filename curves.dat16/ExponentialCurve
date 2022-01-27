@@ -1,0 +1,25 @@
+The "ExponentialCurve" is a curve type used to graph exponential growth of a sound.
+
+The curve type is often used in place of the LinearCurve to create exponential gain.
+
+
+The curve has fields for the min and max input on the X axis.
+
+MinInput - minimum value on the X axis of the graph
+MaxOuput - maximum value on the X axis of the graph
+Flip - Unknown //?
+Exponent - the exponential rate of the graph.
+
+Example:
+
+Below, "melee_swipe_velocity_to_volume" has an input (X axis) range of 1 (0 to 1). The Flip value is defined as 0, and the Exponent is 5.
+
+
+<Item type="ExponentialCurve" ntOffset="8580">
+ <Name>melee_swipe_velocity_to_volume</Name>
+ <Flags value="0xAAAAAAAA" />
+ <MinInput value="0" />
+ <MaxInput value="1" />
+ <Flip value="0" />
+ <Exponent value="5" />
+</Item>

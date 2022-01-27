@@ -1,0 +1,28 @@
+The "EqualPowerCurve" is a curve type used to define two curves approaching a median, before overlapping.
+
+The curve type is used to crossfade sounds. Both curves are affected by the input values. 
+
+The Flip value is used to flip the direction of the curves relative to the median.
+
+The curve has fields for the min and max input on the X axis.
+
+MinInput - minimum value on the X axis of the graph
+MaxOuput - maximum value on the X axis of the graph
+Flip - Flips the direction of the curves across the median.
+	0 - Rise
+	1 - Mid (crossfade)
+	2 - Fall
+	3 - Unknown //? waves_test
+
+Example:
+
+Below, "equal_power_rise" has an input (X axis) range of 1 (0 to 1). The Flip value is defined as 1. Therefore, this maps a rising curve graph.
+
+
+<Item type="EqualPowerCurve" ntOffset="3414">
+ <Name>equal_power_rise</Name>
+ <Flags value="0xAAAAAAAA" />
+ <MinInput value="0" />
+ <MaxInput value="1" />
+ <Flip value="0" />
+</Item>
