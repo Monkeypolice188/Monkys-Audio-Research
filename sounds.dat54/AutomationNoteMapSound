@@ -1,4 +1,4 @@
-The "AutomationMapSound" (_map, _notes) sound type is used to map sounds to an AutomationSound type, which uses a MIDI (Musical Instrument Digital Interface) sound. 
+The "AutomationNoteMapSound" (_map, _notes) sound type is used to map sounds to an AutomationSound type, which uses a MIDI (Musical Instrument Digital Interface) sound. 
 
 The type can have numerous items which define specific note ranges of the MIDI, assigning them instruments or sounds individually.
 
@@ -25,7 +25,7 @@ Below, "merry_christmas_01_map" has two mappings:
 	- notes 0 to 60 (C1 to C4) are assigned a jingle sound. These do not change pitch regardless of the MIDI notes.
 	- notes 61 to 128 (D4 to G10) are assigned an organ sound.
 
-<Item type="AutomationMapSound">
+<Item type="AutomationNoteMapSound">
  <Name>merry_christmas_01_map</Name>
  <Header>
   <Flags value="0xAAAAAAAA" />
