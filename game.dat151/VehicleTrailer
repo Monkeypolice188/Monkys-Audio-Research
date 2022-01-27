@@ -1,0 +1,37 @@
+The "VehicleTrailer" type is used to assign sounds to towable trailers.
+
+It is used to assign several foley sounds to trailers, including suspension, braking sounds and fire intensity.
+
+Fields:
+
+Name - metahash - Trailer modelName
+Suspension - metahash - Suspension sounds.
+UnkO2 - Unknown
+Unk03 - metahash - Unknown //Brake sounds?
+Mods - metahash - Unknown
+Fire - metahash - Fire sounds.
+Unk06 - metahash - Unknown
+Unk07 - Unknown
+Unk08 - Unknown
+Unk09 - Unknown
+Unk10 - Unknown
+Unk11 - metahash - Unknown
+Unk12 - Unknown
+
+Example:
+
+<Item type="VehicleTrailer" ntOffset="11693">
+ <Name>trailersmall2</Name>
+ <Suspension>transit_van_bump</Suspension>
+ <Unk02 value="5" />
+ <Unk03>hash_1B540E3D</Unk03>
+ <Mods>mod_trailersmall2</Mods>
+ <Fire>veh_fire_soundset</Fire>
+ <Unk06 />
+ <Unk07 value="2" />
+ <Unk08 value="800" />
+ <Unk09 value="2" />
+ <Unk10 value="800" />
+ <Unk11 />
+ <Unk12 value="1" />
+</Item>

@@ -1,0 +1,21 @@
+The "AmbientZoneList" type is used to list all AmbientZones to be used by the game's script files.
+
+The game automatically loads some AmbientZoneLists by default, while others are loaded through scripts (such as DLC lists which should only be activated in certain circumstances).
+
+The AmbientZoneList should be used to list all AmbientZones that are required to be loaded.
+
+The native function SET_AMBIENT_ZONE_LIST_STATE_PERSISTENT loads lists by name:
+	void SET_AMBIENT_ZONE_LIST_STATE_PERSISTENT(char AmbientZoneList, BOOL p1,  BOOL p2)
+
+Fields:
+
+Zones - Item list of AmbientZones
+
+Example:
+
+<Item type="AmbientZoneList" ntOffset="580">
+ <Name>ambient_zone_list</Name>
+ <Zones>
+  <Item>az_dmod_trailer_01</Item>
+ </Zones>
+</Item>
