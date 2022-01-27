@@ -15361,6 +15361,8 @@ tooth_fall_d
 tooth_fall_e
 topic_of_the_day_left
 topic_of_the_day_right
+tought_sea_race_1_left
+tought_sea_race_1_right
 toy_release
 tractor_engine
 tractor_idle
