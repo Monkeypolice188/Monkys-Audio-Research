@@ -21,6 +21,12 @@ collisions_glass
 collisions_louder
 collisions_scripted
 collisions_vehicles_glass
+conductors
+conductors_gun_fight
+conductors_gun_fight_bys
+conductors_gun_fight_glass
+conductors_gun_fight_open_space
+conductors_gun_fight_vehicle
 cutscenes
 cutscenes_reverb
 doors
@@ -39,6 +45,21 @@ frontend_menu_loud
 frontend_menu_pauseable
 frontend_radio
 game_world
+guns_echo_svk
+guns_interior_svk
+guns_reports_npc
+guns_reports_svk
+guns_svk
+guns_svk_dry_fire_loud
+guns_svk_foley
+guns_svk_mech
+guns_svk_mech_louder
+guns_svk_mech_quieter
+guns_svk_npc
+guns_svk_npc_far
+guns_svk_npc_silenced
+guns_svk_shells
+guns_svk_silenced
 hud
 interactive_music
 interactive_music_1
@@ -63,6 +84,7 @@ ped_vehicles_very_loud
 ped_vehicles_very_quiet
 peds
 peds_clothing
+peds_clothing_loud
 peds_collisions
 peds_collisions_loud
 peds_collisions_loud_dynamic
@@ -163,6 +185,7 @@ video_editor_gunfire_action
 video_editor_gunfire_npc
 video_editor_gunfire_npc_action
 video_editor_gunfire_npc_lazer
+video_editor_guns_svk_shells
 video_editor_melee
 video_editor_weapons_guns_bullet_bys
 video_editor_weapons_guns_bullet_impacts
@@ -188,3 +211,4 @@ weather_rain_heavy
 weather_rain_props
 weather_thunder
 weather_wind
+weather_wind_foliage

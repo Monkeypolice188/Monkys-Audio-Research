@@ -8,27 +8,27 @@ Fields:
 
 Flags - flag value - Enables each variable indepedently. See table below.
 Flags2 - flag value - Enables additional sound type behaviors.
-Unk01 - ushort value - Unknown.
-Volume - ushort value //negative values are represented as 65535 minus the amount to reduce.
+Unk01 - ushort value - Max header size.
+Volume - ushort value - negative values are represented as 65535 minus the amount to reduce.
 VolumeVariance - ushort value
-Pitch - ushort value //100 = 1 semitone. Negative values are represented as 65535 minus the amount to reduce.
+Pitch - ushort value - 100 = 1 semitone. Negative values are represented as 65535 minus the amount to reduce.
 PitchVariance - ushort value
-Pan - ushort value //307 = left, 53 = right.
+Pan - ushort value - 307 = left, 53 = right.
 PanVariance - ushort value
-preDelay - ushort value //silence before sound in ms. Infinite = 65535
-preDelayVariance - ushort value
-startOffset - integer value //offset in ms. Infinite = 65535
-startOffsetVariance - integer value
-AttackTime - ushort value //fade in time in ms.
-ReleaseTime - ushort value //fade out time in ms.
-DopplerFactor - ushort value //doppler intensity
-Category - metahash - Adds additional preset variables.
-LPFCutOff - ushort value //low pass filter cut-off 
+PreDelay - ushort value - silence before sound in ms. Infinite = 65535
+PreDelayVariance - ushort value
+StartOffset - integer value - offset in ms. Infinite = 65535
+StartOffsetVariance - integer value
+AttackTime - ushort value - fade in time in ms.
+ReleaseTime - ushort value - fade out time in ms.
+DopplerFactor - ushort value - doppler intensity
+Category - metahash - Adds additional filters.
+LPFCutOff - ushort value - low pass filter cut-off 
 LPFCutOffVariance - ushort value
-HPFCutOff - ushort value //high pass filter cut-off
+HPFCutOff - ushort value - high pass filter cut-off
 HPFCutOffVariance - ushort value
-UnkHash3 - metahash - RolloffCurves //default_rolloff
-DistanceAttentuation - ushort value - dispersal rate of sound as it travels across a distance plane.
+VolumeCurve - metahash - distance attenuation curves.
+VolumeCurveScale - ushort value - dispersal rate of sound as it travels across a distance plane.
 Unk19 - byte value - Unknown //EnvironmentalEffects?
 Unk20 - byte value - Unknown //VirtualiseAsGroup - Stereo panning - L-R?
 Unk21 - byte value - Unknown //DynamicPrepare?
@@ -39,6 +39,7 @@ Unk23 - float value - Echo. //y ?
 Unk24 - float value - Echo. //z ?
 Unk25 - float value - Unknown.
 Unk26 - float value - Unknown.
+
 //StartOffsetPercentage
 //InvertPhase
 //Mute

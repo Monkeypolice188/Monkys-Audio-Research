@@ -7729,6 +7729,7 @@ w_lmg_mg_npc
 w_lmg_mg_player
 w_molotov
 w_pistol_deagle_rubber_npc
+w_ptl_50cal_backup
 w_ptl_ap_backup
 w_ptl_ap_npc
 w_ptl_ap_player
@@ -7804,6 +7805,7 @@ w_spl_rocket_heli_player
 w_spl_rpg_backup
 w_spl_rpg_npc
 w_spl_rpg_player
+w_spl_rubber_backup
 w_spl_stun_player
 w_spl_tankshell_npc
 w_spl_vehicle_bullet_npc

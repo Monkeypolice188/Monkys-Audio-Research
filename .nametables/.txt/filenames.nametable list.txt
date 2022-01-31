@@ -191,6 +191,8 @@ age_of_consent_right
 age_teenage_01
 age_young_01
 agitated_01
+ah_3b_rappel_02_left
+ah_3b_rappel_02_right
 air_rev_01
 air_support_shoot_tires_start_01
 air_support_shoot_tires_start_02
@@ -11118,6 +11120,7 @@ mp_dm_countdown_60_1_right
 mp_freemode_drive_what_u_wanna_do_1_left
 mp_freemode_drive_what_u_wanna_do_1_right
 mp_freemode_intro_neon_indian_1_left
+mp_freemode_intro_neon_indian_1_right
 mp_lndp_track_one_1_left
 mp_lndp_track_one_1_right
 mp_race_countdown_start_left
