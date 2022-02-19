@@ -14,6 +14,7 @@ bodhi2_exhaust_submix
 bodhi2_exhaust_submix_preset
 buccaneer2_exhaust_submix
 buccaneer2_exhaust_submix_preset
+buccaneer_engine_transients
 buccaneer_exhaust_submix
 buccaneer_exhaust_submix_preset
 buffalo2_exhaust_submix
@@ -144,6 +145,7 @@ penumbra_engine_submix
 penumbra_engine_submix_preset
 penumbra_exhaust_submix
 penumbra_exhaust_submix_preset
+phoenix_engine_transients
 phoenix_exhaust_submix
 phoenix_exhaust_submix_preset
 preset_x

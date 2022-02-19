@@ -1368,7 +1368,6 @@ audio_item_molotov
 audio_item_petrolcan
 audio_item_pistol
 audio_item_pistol50
-audio_item_prog
 audio_item_programmablear
 audio_item_pumpshotgun
 audio_item_railgun

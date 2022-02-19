@@ -4386,6 +4386,7 @@ musclecar_4_us_v8_engine_accel
 musclecar_4_us_v8_engine_accel_npc
 musclecar_4_us_v8_exhaust_accel
 musclecar_4_veh_idle_sub
+musket_dry_fire_master
 neck_break
 new_distant_helis_pts
 new_distant_helis_triggerrate
@@ -4777,6 +4778,7 @@ piledriver_03
 pineapple_impact_master
 pinnacle_horn
 pinnacle_multi_horn
+pistol_dry_fire_master
 pistol_whip
 plane_on_fire
 plane_on_fire_multi
@@ -12060,6 +12062,7 @@ ricochets_in_3
 ricochets_in_4
 ricochets_in_5
 ricochets_out
+rifle_dry_fire_master
 rig_2_turret
 rig_2_turret_hit_os
 rig_2_turret_hit_rdm
@@ -12125,6 +12128,7 @@ rotor_pitch_startup_curve
 rotor_volume_startup_curve
 round_ending_stinger_1s
 round_ending_stinger_2s
+rpg_dry_fire_master
 rpg_scrape
 rpg_scrape_master
 ruiner_horn
@@ -12811,6 +12815,7 @@ sht_bullpup_player_shot_l
 sht_bullpup_player_shot_r
 sht_bullpup_player_stereo
 sht_bullpup_player_sub
+sht_dry_fire_master
 sht_echo_master
 sht_pump_backup_master
 sht_pump_player_colored_01
@@ -13107,6 +13112,7 @@ smg_assault_player_stereo
 smg_assault_player_sub_rdm
 smg_assault_player_thud_rdm
 smg_assault_suppressed2_player_master
+smg_dry_fire_master
 smg_micro_echo_master
 smg_micro_echo_rto
 smg_micro_player_env_end

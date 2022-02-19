@@ -2875,6 +2875,7 @@ waypoint_set
 weaken
 weapon_advancedrifle
 weapon_ammo_purchase
+weapon_amrifle
 weapon_appistol
 weapon_ar
 weapon_assaultmg
@@ -2886,6 +2887,7 @@ weapon_attachment_equip
 weapon_attachment_unequip
 weapon_bullpuprifle
 weapon_bullpupshotgun
+weapon_carbine_special
 weapon_carbinerifle
 weapon_change
 weapon_combatmg
@@ -2910,6 +2912,7 @@ weapon_programmablear
 weapon_pumpshotgun
 weapon_purchase
 weapon_railgun
+weapon_raypistol
 weapon_respawn
 weapon_rnd
 weapon_rpg
@@ -2932,6 +2935,7 @@ weapon_smg
 weapon_sniperrifle
 weapon_snspistol
 weapon_upgrade
+weapon_vintage_pistol
 weaponwheel
 weaponwheel_mp
 weclip
