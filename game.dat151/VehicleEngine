@@ -46,7 +46,7 @@ ExhaustPops               metahash  dat54   Exhaust pop/crack sounds when accele
 DistantStart              metahash  dat54   NPC engine startup sound 
 Unk33                     integer           Unknown //DistantStart volume?
 GearShiftVolume           integer           Gear shift volume
-StartupMaster             metahash  dat10   Engine startup sound 
+StartupMaster             metahash  dat54   Engine startup sound 
 EngineSubmix              metahash  dat10   Engine submix 
 EngineSubmixPreset        metahash  dat10   Engine submix preset 
 ExhaustSubmix             metahash  dat10   Exhaust submix 

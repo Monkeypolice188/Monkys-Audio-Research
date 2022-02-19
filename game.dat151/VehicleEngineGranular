@@ -44,10 +44,10 @@ Unk27               float             Unknown
 Unk28               float             Unknown
 Unk29               integer           Volume of the Engine Gear Shift volume "boost". //loud boost of Engine sound when shifting gears?
 Unk30               integer           Volume of the Exhaust Gear Shift volume "boost". //loud boost of Exhaust sound when shifting gears?
-EngineSubmix        metahash  dat54   Engine submix synth modifications //Dat10
-EngineSubmixPreset  metahash  dat54   Engine submix preset variables //Dat10
-ExhaustSubmix       metahash  dat54   Exhaust submix synth modifications //Dat10
-ExhaustSubmixPreset metahash  dat54   Exhaust submix preset variables //Dat10
+EngineSubmix        metahash  dat10   Engine submix synth modifications
+EngineSubmixPreset  metahash  dat10   Engine submix preset variables
+ExhaustSubmix       metahash  dat10   Exhaust submix synth modifications
+ExhaustSubmixPreset metahash  dat10   Exhaust submix preset variables
 EngineAccelNPC      metahash  dat54   NPC granular engine sound
 ExhaustAccelNPC     metahash  dat54   NPC exhaust coning environmental reflectionsshould be the same as the ExhaustAccel entry.
 LimiterPops         metahash  dat54   Exhaust pops when hitting rev limit
