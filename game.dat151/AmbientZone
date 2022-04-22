@@ -12,36 +12,38 @@ AmbientZones can be assigned scene patches, which allow for other types of sound
 
 Fields:
 
-Name - metahash - Zone's name
-Flags0 - Flags value - Unknown
-Shape - metahash - type of zone 
-	Sphere
-	Box
-	Line
-Flags1 - Flags value - Unknown
-ActivationZonePosition - Vector3 value - Position of the activation zone.
-ActivationZoneSize - Vector3 value - Size of the activation zone in meters.
-ActivationZoneVec1 - Vector4 value - position vector4.
-ActivationZoneVec2 - Vector4 value - size vector4.
-ActivationZoneAngle - float value - Rotation of the activation zone in degrees.
-ActivationZoneVec3 - Vector3 value - rotation vector3.
-PlaybackZonePosition - Vector3 value - Position of the Playback zone.
-PlaybackZoneSize - Vector3 value - Size of the Playback zone in meters.
-PlaybackZoneVec1 - Vector4 value - position vector4.
-PlaybackZoneVec2 - Vector4 value - size vector4.
-PlaybackZoneAngle - float value - Rotation of the Playback zone in degrees.
-PlaybackZoneVec3 - Vector3 value - rotation vector3.
-UnkVec1 - Vector4 value - Unknown
-UnkVec2 - Vector4 value - Unknown
-UnkHash0 - metahash - Unknown
-Scene - metahash - Scene defined in dynamix.dat.
-UnkVec3 - Vector2 value - Unknown
-Flags2 - Flags value - Unknown
-Unk14 - Unknown
-Unk15 - Unknown
-Unk16 - Unknown
-Rules - Item list of AmbientRules
-ExtParams - Item list of external parameters such as variables and DependentAudio entries.
+Field name               Type       FileRef Description
+--
+Name                     metahash          Zone name referenced in Dat151AmbientZoneList <Zones>
+Flags0                   flags             Unknown
+Shape                    metahash          Type of zone 
+- Sphere
+- Box
+- Line
+Flags1                   flags             Unknown
+ActivationZonePosition   vector3           Position of the activation zone.
+ActivationZoneSize       vector3           Size of the activation zone in meters.
+ActivationZoneVec1       vector4           Position vector4.
+ActivationZoneVec2       vector4           Size vector4.
+ActivationZoneAngle      float             Rotation of the activation zone in degrees.
+ActivationZoneVec3       vector3           Rotation vector3.
+PlaybackZonePosition     vector3           Position of the Playback zone.
+PlaybackZoneSize         vector3           Size of the Playback zone in meters.
+PlaybackZoneVec1         vector4           Position vector4.
+PlaybackZoneVec2         vector4           Size vector4.
+PlaybackZoneAngle        float             Rotation of the Playback zone in degrees.
+PlaybackZoneVec3         vector3           Rotation vector3.
+UnkVec1                  vector4           Unknown
+UnkVec2                  vector4           Unknown
+UnkHash0                 metahash          Unknown
+Scene                    metahash  dat15   Scene defined in dynamix.dat.
+UnkVec3                  vector2           Unknown
+Flags2                   flags             Unknown
+Unk14                    byte              Unknown
+Unk15                    byte              Unknown
+Unk16                    byte              Unknown
+Rules                    item list dat151  List of Dat151AmbientRules
+ExtParams                item list dat151  List of external parameters such as variables and DependentAudio entries.
 
 
 Example:

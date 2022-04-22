@@ -323,6 +323,8 @@ synth_jets_engine_01
 synth_lightning_sweetener
 synth_marina_creak
 synth_marina_splash
+synth_melee_swipe_cloth
+synth_melee_swipe_weapon
 synth_metal_ambient_squeak
 synth_metal_ring
 synth_metal_squeak_aim

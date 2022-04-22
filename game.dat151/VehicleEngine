@@ -10,7 +10,7 @@ Fields:
 
 Field name          Type      FileRef Description
 --
-Name                      metahash  dat54   Engine name //from Dat151Vehicle <Engine>
+Name                      metahash          Engine name //from Dat151Vehicle <Engine>
 MasterVolume              integer           Volume of the engine //default 700-900
 EngineLowVolume           integer           Volume of EngineLow & ExhaustLow
 EngineHighVolume          integer           Volume of EngineHigh & ExhaustHigh

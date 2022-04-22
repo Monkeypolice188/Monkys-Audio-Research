@@ -437,6 +437,7 @@ click_keyboard
 click_keyboard_nav
 click_link
 click_special
+climbing_foley
 clintona
 clipin
 clipout
@@ -1479,6 +1480,7 @@ level_select_slums
 level_select_theme_park
 level_start
 libertyst
+lid_shut
 lift
 lift_posh_door_open
 lift_posh_move

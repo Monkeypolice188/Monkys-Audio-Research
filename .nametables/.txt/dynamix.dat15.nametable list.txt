@@ -1165,8 +1165,10 @@ paparazzo_02_poppy_cars
 paparazzo_02_poppy_cars_map
 paparazzo_02_poppy_cars_patch
 paparazzo_03_scene
+paparazzo_1_limo
 paparazzo_1_limo_group
 paparazzo_1_limo_group_map
+paparazzo_1_pap_bike
 paparazzo_1_pap_bike_group
 paparazzo_1_pap_bike_group_map
 paparazzo_3a_photo_scene

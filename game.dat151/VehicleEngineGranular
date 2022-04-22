@@ -12,7 +12,7 @@ Fields:
 
 Field name          Type      FileRef Description
 --
-Name                metahash  dat54   EngineGranular name //from Dat151Vehicle <EngineGranular>
+Name                metahash          EngineGranular name //from Dat151Vehicle <EngineGranular>
 Unk00               flag              EngineGranular flags //see Flags
 MasterVolume        integer           Volume of engine //default 0-100?
 EngineAccel         metahash  dat54   Granular engine sound played at engine bone
