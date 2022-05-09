@@ -396,6 +396,9 @@ adder
 adder_engine
 adder_granular_engine
 adder_scanner_params
+af_deer_grass
+af_pig_grass
+af_rat_grass
 agency_heist_fib_tower_alarms
 agency_heist_fib_tower_alarms_upper
 agency_heist_fib_tower_alarms_upper_b
@@ -599,7 +602,9 @@ akuma_scanner_params
 alarms_test
 algasstation001
 am_base_animal_default
+am_base_bicycle_entity
 am_base_blood
+am_base_boat_entity
 am_base_breeze_block
 am_base_brick
 am_base_brick_pavement
@@ -607,6 +612,7 @@ am_base_bushes
 am_base_bushes_noinst
 am_base_buttocks
 am_base_car_engine
+am_base_car_entity
 am_base_car_glass_bulletproof
 am_base_car_glass_medium
 am_base_car_glass_opaque
@@ -622,6 +628,7 @@ am_base_carpet_floorboard
 am_base_carpet_solid
 am_base_carpet_solid_dusty
 am_base_ceramic
+am_base_chopper_bike_entity
 am_base_clavicle_left
 am_base_clavicle_right
 am_base_clay_hard
@@ -635,6 +642,7 @@ am_base_concrete_pothole
 am_base_default
 am_base_dirt_track
 am_base_dried_meat
+am_base_dune_entity
 am_base_emissive_glass
 am_base_emissive_plastic
 am_base_feather_pillow
@@ -659,8 +667,10 @@ am_base_hand_left
 am_base_hand_right
 am_base_hay
 am_base_head
+am_base_helicopter_entity
 am_base_ice
 am_base_ice_tarmac
+am_base_jetski_entity
 am_base_laminate
 am_base_leather
 am_base_leaves
@@ -685,6 +695,7 @@ am_base_metal_solid_large
 am_base_metal_solid_medium
 am_base_metal_solid_road_surface
 am_base_metal_solid_small
+am_base_motorbike_entity
 am_base_mud_deep
 am_base_mud_hard
 am_base_mud_pothole
@@ -710,6 +721,8 @@ am_base_phys_pooltable_ball
 am_base_phys_pooltable_cushion
 am_base_phys_pooltable_surface
 am_base_phys_tennis_ball
+am_base_plane_entity
+am_base_plane_small_entity
 am_base_plaster_brittle
 am_base_plaster_solid
 am_base_plastic
@@ -719,7 +732,9 @@ am_base_plastic_high_density_clear
 am_base_plastic_hollow
 am_base_plastic_hollow_clear
 am_base_polystyrene
+am_base_prop_trailer_entity
 am_base_puddle
+am_base_rc_car_entity
 am_base_rock
 am_base_rock_mossy
 am_base_rock_noinst
@@ -786,6 +801,7 @@ am_base_temp_29
 am_base_temp_30
 am_base_thigh_left
 am_base_thigh_right
+am_base_train_entity
 am_base_tree_bark
 am_base_tvscreen
 am_base_twigs
@@ -1266,6 +1282,7 @@ arm_lost
 arm_offer
 arm_taunt
 arm_tired
+arm_won
 armytanker
 armytrailer
 arrest_player
@@ -1345,6 +1362,7 @@ asterope_engine
 asterope_granular_engine
 astrope_scanner_params
 attack_boat_start
+attack_cry
 attacked_by_surprise
 audio_item_advancedrifle
 audio_item_appistol
@@ -1740,6 +1758,7 @@ biff
 biff_engine
 biff_scanner_params
 big_score_heist_vault_alarms
+bike_breath_settings
 billbinder_pvg
 bison
 bison2
@@ -1794,8 +1813,10 @@ blocked_in_pursuit
 bmx
 bmx_scanner_params
 boar_eat
+boar_excited
 boar_excited_random
 boar_idle
+boar_snort
 boar_walk
 boattrailer
 bobcatxl
@@ -1891,6 +1912,7 @@ bus_engine
 bus_scanner_params
 business
 businessman_pvg
+buy_drugs
 buy_drugs_sc
 buzzard
 buzzard2
@@ -4126,6 +4148,7 @@ game_quit_early
 game_quit_sc
 game_win_self
 gang_arm
+gang_balla
 gang_biker
 gang_bump
 gang_bump_sc
@@ -4149,6 +4172,7 @@ gburrito_scanner_params
 general_adverts
 generic_agree
 generic_agree_sc
+generic_aimed_at_virtual_sc
 generic_buy
 generic_buy_repeat
 generic_buy_repeat_sc
@@ -4161,6 +4185,7 @@ generic_curse_high
 generic_curse_high_sc
 generic_curse_med
 generic_curse_med_sc
+generic_curse_virtual_sc
 generic_dejected
 generic_drink
 generic_drink_sc
@@ -4170,6 +4195,7 @@ generic_frightened_high
 generic_frightened_high_sc
 generic_frightened_med
 generic_frightened_med_sc
+generic_frightened_virtual_sc
 generic_frustrated_high_sc
 generic_frustrated_med_sc
 generic_fuck_off
@@ -4184,6 +4210,7 @@ generic_hi_flirty_sc
 generic_hi_male
 generic_hi_male_sc
 generic_hi_sc
+generic_hi_virtual_sc
 generic_hows_it_going
 generic_insult
 generic_insult_female
@@ -4196,12 +4223,14 @@ generic_insult_med
 generic_insult_med_sc
 generic_insult_old
 generic_insult_old_sc
+generic_insult_virtual_sc
 generic_interrupt_high_sc
 generic_interrupt_med_sc
 generic_no
 generic_no_sc
 generic_shocked_high
 generic_shocked_med
+generic_shocked_virtual_sc
 generic_thanks
 generic_thanks_sc
 generic_war_cry
@@ -4317,6 +4346,7 @@ heist_stats_screen_start
 heist_stats_screen_stop
 heist_stats_screen_stop_prep
 heist_sweatshop_zones
+hen_excited
 hexer
 hexer_engine
 hexer_granular_engine
@@ -4340,6 +4370,7 @@ hidden_radio_strip_club
 high_fall
 high_fall_death
 high_fall_sc
+high_intensity
 hippy
 hipster
 hit_by_player
@@ -4423,6 +4454,15 @@ issi2
 issi2_engine
 issi2_granular_engine
 issi_scanner_params
+iz_ababackpass
+iz_ababetween
+iz_abaloadbay
+iz_abapens
+iz_abaprodfloor
+iz_abaslaught
+iz_strp3bkpss
+iz_strp3chngrm
+iz_strp3stge
 iz_v_fib01_v_fib01_jan_comm1
 iz_v_fib01_v_fib01_jan_comm2
 iz_v_fib01_v_fib01_jan_offc1
@@ -4806,6 +4846,7 @@ los_santos_vanilla_unicorn_01_stage
 los_santos_vanilla_unicorn_02_main_room
 los_santos_vanilla_unicorn_03_back_room
 lostkidnapgirl_pvg
+low_intensity
 lowrider_finale_start_music
 lowrider_start_music
 luxor
@@ -4898,6 +4939,7 @@ medic
 medic_arrive_at_body
 medic_reflect_on_death
 medic_return_to_ambulance_state
+medium_intensity
 melee_combat_crowbar
 melee_combat_finish_hook
 melee_combat_golfclub
@@ -5425,6 +5467,7 @@ ninef2_granular_engine
 ninef_engine
 ninef_granular_engine
 ninef_scanner_params
+no_change
 no_change_sc
 norm_pvg
 normal_stealth
@@ -5655,7 +5698,9 @@ picador_engine
 picador_granular_engine
 picador_scanner_params
 pig_eat
+pig_excited
 pig_idle
+pig_snort
 pig_turn
 pig_walk
 pigeon_coo
@@ -5951,6 +5996,7 @@ radio_18_90s_rock_idents
 radio_18_90s_rock_music
 radio_18_90s_rock_music_new
 radio_dislike_sc
+radio_like
 radio_like_sc
 radio_stations_01
 raketanker
@@ -6273,6 +6319,7 @@ rumpo2_granular_engine
 rumpo_engine
 rumpo_granular_engine
 rumpo_scanner_params
+run_breath_settings
 run_over_player
 run_over_player_sc
 s_f_m_fembarber_black_pvg
@@ -6899,6 +6946,7 @@ shot_by_player_dislike
 shot_by_player_dislike_sc
 shout_insult
 shout_insult_hipster
+shout_perv_at_woman_aggressive
 shout_perv_at_woman_perv
 shout_threaten_cop
 shout_threaten_gang
@@ -6908,6 +6956,7 @@ shove_sc
 silent_cutscene_pvg
 silent_pvg
 simeon_pvg
+skis_generic
 skivvy_scanner_params
 skylift
 skylift_scanner_params
@@ -7450,6 +7499,7 @@ stanier_granular_engine
 stanier_scanner_params
 start_car_panic
 start_electronic
+start_idle_music
 start_random
 start_rock
 start_urban
@@ -7477,8 +7527,11 @@ stockade3
 stockade3_engine
 stockade_engine
 stockade_scanner_params
+stone_test
 stop
+stop_idle_music
 stop_idle_music_mission
+stop_idle_music_wanted
 stop_the_car
 stop_vehicle_boat_megaphone
 stop_vehicle_car_megaphone
@@ -7668,6 +7721,7 @@ tennis_lose
 tennis_lose_sc
 tennis_lucky
 tennis_lucky_sc
+tennis_out
 tennis_out_sc
 tennis_start_with_michael
 tennis_vfx_settings
@@ -8128,13 +8182,21 @@ vehicle_collide_horse_sc
 vehicle_collide_mountain_lion
 vehicle_collide_mountain_lion_sc
 vehicle_collision_bicycle
+vehicle_collision_boat
 vehicle_collision_bus
 vehicle_collision_camper
 vehicle_collision_car
 vehicle_collision_chopper
 vehicle_collision_dune_buggy
+vehicle_collision_heli
+vehicle_collision_jetski
 vehicle_collision_motorbike
+vehicle_collision_plane
+vehicle_collision_plane_small
+vehicle_collision_prop_trailer
 vehicle_collision_rc_car
+vehicle_collision_sub
+vehicle_collision_train
 vehicle_default
 vehicle_flipped
 vehicle_flipped_sc
@@ -8143,14 +8205,19 @@ vehicle_jump_sc
 vehicle_on_fire
 vehicle_on_fire_sc
 velum
+vid_l
 vid_l_f
 vid_l_md
 vid_m_md
+vid_s
 vid_s_f
 vid_s_md
+vid_silence
 vid_stop
+vid_xl
 vid_xl_f
 vid_xl_md
+vid_xs
 vid_xs_f
 vid_xs_md
 vigero
@@ -8271,6 +8338,22 @@ washington_engine
 washington_granular_engine
 washington_scanner_params
 weak
+weather_types_blizzard
+weather_types_clear
+weather_types_clearing
+weather_types_clouds
+weather_types_cloudy
+weather_types_extrasunny
+weather_types_foggy
+weather_types_halloween
+weather_types_multiplayer
+weather_types_neutral
+weather_types_overcast
+weather_types_rain
+weather_types_smog
+weather_types_snow
+weather_types_snowlight
+weather_types_thunder
 weathertypelist
 weights
 whale_call

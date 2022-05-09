@@ -2594,8 +2594,10 @@ battle_mix4_radio_03_left
 battle_mix4_radio_03_right
 battle_mix_warmup_left
 battle_mix_warmup_right
+bay_door_end
 bay_door_loop_01
 bay_door_loop_02
+bay_door_start
 become_hunted_stinger_left
 become_hunted_stinger_right
 become_slasher_stinger_left
@@ -3004,6 +3006,8 @@ body_so_good_left
 body_so_good_right
 body_splat_01
 body_throw_01
+bomb_drop_error_beep
+bomb_in_place
 bomb_whistle_01
 bomb_whistle_02
 bomber_jacket
