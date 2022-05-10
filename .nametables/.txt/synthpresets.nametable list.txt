@@ -149,6 +149,7 @@ pawls
 peak_res
 peak_smooth
 peakres
+phone_pitch
 pitch_control
 pitch_factor
 player_position

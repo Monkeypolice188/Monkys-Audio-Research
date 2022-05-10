@@ -1946,11 +1946,13 @@ petrol_trail_fire
 petrol_trail_fire_start
 peyote_attract_soundset
 peyote_completed
+phone_default_ring
 phone_generic_key_02
 phone_generic_key_03
 phone_generic_ring_01
 phone_generic_ring_02
 phone_generic_ring_03
+phone_ring_vibrate
 phone_text_arrive
 pick_up
 pick_up_parachute
@@ -2222,6 +2224,7 @@ remote_control_open
 remote_enemy_enter_line
 remote_engaged
 remote_friendly_enter_line
+remote_hang_up
 remote_perspective_fire
 remote_plyr_cash_counter_complete
 remote_plyr_cash_counter_increase
@@ -2669,6 +2672,7 @@ test_circuit
 test_scream_long
 test_scream_short
 text_arrive_tone
+text_arrive_vibrate
 texthit
 texti
 thermal_loop
@@ -2939,6 +2943,7 @@ warning_tones
 wasted
 water
 water_lapping
+water_splashing
 waveimpact
 waypoint_mouse_click
 waypoint_mouse_drop
