@@ -80,6 +80,8 @@ antwerp
 appear
 apt_style_purchase
 architect_fall
+area_capture_player
+area_capture_remote
 argyle
 arm
 arm_2_repo_door_kick_open
@@ -138,13 +140,22 @@ ballistic
 ballistic_player
 banhamc
 banhamca
+bank_atms
+bank_basementrm
 bank_door_open
+bank_lobby
+bank_mainrm
+bank_office
+bank_stairwell1
+bank_vaultrm
 banning
 banshee2_upgrade
 bar_cut
 bar_deliver_booze_rattle_master
 bar_drop
+bar_eat
 bar_lower_and_lock
+bar_swallow
 bar_unlock_and_raise
 barbaren
 barefoot
@@ -206,6 +217,8 @@ bin_bag_bugs
 bird_impact
 birds
 blade_appear
+blade_beasts_fail
+blade_beasts_win
 bleep
 blip
 blip_pickup
@@ -246,6 +259,9 @@ bootclosesound
 bootup
 boss_blipped
 boss_message_orange
+bottle_gulp
+bottle_initial
+bottle_swallow
 bottles_loop
 bouldelp
 bounds_timer_pulse
@@ -363,6 +379,8 @@ camthirdpersonpedmeleeaimcamera
 camthirdpersonvehicleaimcamera
 camtimedsplinecamera
 can_drop
+can_gulp
+can_initial
 cancel
 cannon_activating_loop
 cannon_active
@@ -395,6 +413,7 @@ cargo_debris
 cargo_engine
 cargo_interior
 cargobob_door_open
+carjackimpact
 carriage
 carrying
 carsona
@@ -424,6 +443,9 @@ chamber1
 chamber2
 chamber3
 chamh
+champagne_slosh
+champagne_spray
+champagne_swallow
 change_cam
 change_station
 change_station_loud
@@ -1103,6 +1125,7 @@ found_clue
 found_target
 franklin
 franklin_1_photo_shoot
+franklin_bike_rev
 franklin_gun_master
 franklin_passby
 franklin_throttle_blip
@@ -1460,6 +1483,7 @@ keypad_access_player
 keypad_break
 keys
 kick_machine
+kickshoe
 kill_list_counter
 kill_streak
 kill_streak_extreme
@@ -1470,9 +1494,11 @@ kiss
 klaxon_01
 klaxon_03
 klaxon_06
+klaxon_07_louder
 knoll
 knuckle_crack_hard_cel
 knuckle_crack_slap_cel
+knuckle_crack_soft
 koreat
 kortz
 laborp
@@ -1526,6 +1552,7 @@ lesbosl
 lester1a_sounds
 lester_laugh
 lester_laugh_phone
+lester_throttle_blip
 level_background_loop
 level_complete_amazing
 level_complete_average
@@ -1628,6 +1655,7 @@ martin_1_plane_crash_master
 match_end
 match_start
 meat_slide
+mechanic_stream
 medal_bronze
 medal_gold
 medal_silver
@@ -1813,6 +1841,8 @@ no_match
 no_win
 node_release
 node_select
+noise2
+noise_meter
 norange
 normand
 notification
@@ -1838,6 +1868,8 @@ ok
 on
 on_call_player_join
 on_fire
+on_high
+on_low
 oneil
 oneshot_final
 onoff
@@ -1952,6 +1984,7 @@ phone_generic_key_03
 phone_generic_ring_01
 phone_generic_ring_02
 phone_generic_ring_03
+phone_ring
 phone_ring_vibrate
 phone_text_arrive
 pick_up
@@ -2092,6 +2125,8 @@ player_pick_up
 player_riding
 playerfuckedsiren
 playing_card
+pnq_eat
+pnq_swallow
 police_crash
 police_notification
 popup_cancel
@@ -2344,6 +2379,7 @@ score_ok
 score_opponent
 score_team
 score_up
+score_up_player
 score_up_remote
 scramble_countdown_high
 scramble_countdown_low
@@ -2457,12 +2493,18 @@ slipstream_follower
 slipstream_leader
 slipstream_master
 slow
+slow_clap
 slow_clap_cel
 slow_squeak
 slsant
 slurps
 smadjoe
 small
+small_01
+small_02
+small_03
+small_04
+small_05
 small_award
 small_crash
 small_dog
@@ -2679,6 +2721,7 @@ thermal_loop
 thermal_off
 thermal_on
 thermalvision
+thernal_vision_loop
 throw
 throw_meat
 throw_meat_impact
@@ -2724,6 +2767,7 @@ tower
 towing_engine_turning_master
 track_move_loop
 traffic_control_bg_noise
+traffic_control_bg_stream
 traffic_control_change_cam
 traffic_control_fail
 traffic_control_fail_blank
@@ -2760,6 +2804,7 @@ transition_sound
 transitvan
 transitvanclown
 transmitter_beeps
+transporter_crash
 trash_bag_land
 trawler_material
 trevor
@@ -2783,11 +2828,13 @@ trevor_4_747_tanker_explosion
 trevor_4_747_tanker_horn
 trevor_4_747_tv
 truck_horn
+truck_ramp_lower
 truck_ramp_raise
 truck_ramp_scrape
 truck_stop
 truckcab
 truckcages
+trucks_hijack
 trucktrailerchains
 trunk_open
 trunk_shut
@@ -3061,6 +3108,7 @@ woosh_04
 working
 wounded
 wrecked
+wrecked_crash
 wvine
 yes
 yoga_exhale

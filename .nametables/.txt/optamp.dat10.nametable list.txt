@@ -309,6 +309,7 @@ synth_hacking_countdown_01
 synth_hacking_downloaded
 synth_hacking_downloading
 synth_hacking_move_cursor
+synth_hair_clippers
 synth_hand_clap
 synth_hand_saw
 synth_helicopter_far
@@ -372,6 +373,10 @@ synth_starling
 synth_toilet_drips
 synth_toilet_spray
 synth_tracker_bleeps
+synth_traffic_control_bg_hum
+synth_traffic_control_change_cam
+synth_traffic_control_move_crosshair
+synth_traffic_control_toggle_lights_delayed
 synth_transmission_whine
 synth_tunnel_entry
 synth_tunnel_noise
