@@ -17352,6 +17352,10 @@ tyre_bump_1
 tyre_bump_2
 tyre_bump_3
 tyre_bump_4
+tyre_bump_dirt_1
+tyre_bump_dirt_2
+tyre_bump_dirt_3
+tyre_bump_dirt_4
 tyre_chirp_1
 tyre_chirp_2
 tyre_chirp_3

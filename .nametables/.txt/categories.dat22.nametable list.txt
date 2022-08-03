@@ -19,6 +19,7 @@ collisions_cloth
 collisions_dynamic_upped
 collisions_glass
 collisions_louder
+collisions_louder_reso
 collisions_scripted
 collisions_vehicles_glass
 conductors
@@ -164,6 +165,7 @@ vehicles_planes_distant
 vehicles_planes_extras
 vehicles_planes_extras_loud
 vehicles_planes_jet
+vehicles_planes_ng_engines
 vehicles_planes_prop
 vehicles_sirens
 vehicles_suspension
@@ -185,6 +187,7 @@ video_editor_gunfire_action
 video_editor_gunfire_npc
 video_editor_gunfire_npc_action
 video_editor_gunfire_npc_lazer
+video_editor_guns_reports_svk
 video_editor_guns_svk_shells
 video_editor_melee
 video_editor_weapons_guns_bullet_bys

@@ -384,6 +384,7 @@ synth_turbo_01
 synth_turbo_02
 synth_turbo_03
 synth_tyre_bump
+synth_tyre_bump_alt
 synth_underwater_texture
 synth_walla_noise_01
 synth_warning_tones
