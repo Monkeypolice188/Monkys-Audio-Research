@@ -72,8 +72,8 @@ The section reads "0xXXXXXXXX" where "X" represents the following digits in resp
 0x00004000 - DopplerFactor
 0x00008000 - Category
 0x00010000 - LPFCutOff
-0X00020000 - HPFCutOff
-0x00040000 - LPFCutOffVariance
+0X00020000 - LPFCutOffVariance
+0x00040000 - HPFCutOff
 0X00080000 - HPFCutOffVariance
 0x00100000 - UnkHash3
 0x00200000 - DistanceAttentuation

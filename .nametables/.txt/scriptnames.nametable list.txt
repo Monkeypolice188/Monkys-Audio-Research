@@ -497,6 +497,7 @@ chu
 chum
 cinematic
 clamp
+clean_pool
 clear
 clear_block
 clearing
@@ -532,6 +533,7 @@ club_crowd_transition
 clue_complete_shard
 clue_seen
 cmsw
+cock_pistol
 cocking
 coin_drop
 coin_insert
@@ -631,6 +633,7 @@ crane_move_u_d
 crash
 crash_npc
 crash_through_fence
+crash_through_window
 crashed_heli_ambience
 crashed_plane_ambience
 crate_beacon_loop
@@ -905,6 +908,7 @@ emp_activate
 emp_blast
 emp_vehicle_affected
 emp_vehicle_hum
+empty_fire
 empty_fire_fail
 end_game
 end_squelch
@@ -1202,6 +1206,7 @@ glass_debris
 glass_smash
 glom_block
 gloryw
+glug
 go
 go_kart_death_match_soundset
 go_non_race
@@ -1336,6 +1341,7 @@ heavy_bag
 heavy_bag_player
 heavy_boots
 heavysound
+hedge_trimmer
 heels
 heli_bank
 heli_crash
@@ -1535,6 +1541,7 @@ laugh
 launch
 launch_mission
 launch_power_up_loop
+lawn_mower
 lbhorn
 leader_board
 leaderboard
@@ -2134,6 +2141,7 @@ popup_confirm_fail
 popup_confirm_success
 portola
 positioned_walla_master
+pouring
 power_down
 power_on
 powerup
@@ -2313,6 +2321,7 @@ rockd
 rocket_collect
 rocket_detonate
 rocket_flight
+rocket_flight_underwater
 rockf
 rodedr
 roll
@@ -2721,6 +2730,7 @@ thermal_loop
 thermal_off
 thermal_on
 thermalvision
+thermalvisionoff
 thernal_vision_loop
 throw
 throw_meat
