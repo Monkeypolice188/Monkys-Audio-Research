@@ -1,0 +1,39 @@
+The SpeechContextList (15) type is used to list all SpeechContext items.
+
+Fields:
+
+SpeechContexts - Item list of Dat151SpeechContexts.
+
+Example:
+
+<Item type="SpeechContextList" ntOffset="280866">
+ <Name>blocked_contexts_greetings</Name>
+ <SpeechContexts>
+  <Item>generic_hi</Item>
+  <Item>generic_hi_female</Item>
+  <Item>generic_hi_male</Item>
+  <Item>greet</Item>
+  <Item>greet_across_street</Item>
+  <Item>greet_attractive_f</Item>
+  <Item>greet_bum</Item>
+  <Item>greet_cop</Item>
+  <Item>greet_evening</Item>
+  <Item>greet_gang_ballas_f</Item>
+  <Item>greet_gang_ballas_m</Item>
+  <Item>greet_gang_families_f</Item>
+  <Item>greet_gang_families_m</Item>
+  <Item>greet_gang_vagos_f</Item>
+  <Item>greet_gang_vagos_m</Item>
+  <Item>greet_hillbilly_m</Item>
+  <Item>greet_hippy_f</Item>
+  <Item>greet_hippy_m</Item>
+  <Item>greet_hipster_f</Item>
+  <Item>greet_hipster_m</Item>
+  <Item>greet_jewish</Item>
+  <Item>greet_junkie</Item>
+  <Item>greet_korean</Item>
+  <Item>greet_morning</Item>
+  <Item>greet_strong_m</Item>
+  <Item>greet_transvestite</Item>
+ </SpeechContexts>
+</Item>

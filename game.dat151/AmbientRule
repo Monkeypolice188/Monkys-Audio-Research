@@ -1,4 +1,4 @@
-The "AmbientRule" type is used to assign rules to a specific sound, which allows it to be used in the ambient world.
+The AmbientRule (38) type is used to assign rules to a specific sound, which allows it to be used in the ambient world.
 
 The AmbientRules are often used by AmbientZones. Rules have information such as start and finish times, the radius of the sound and any exposed parameters the sound should consider.
 
@@ -6,23 +6,23 @@ Fields:
 
 Field name Type      FileRef Description
 --
-Name       metahash          Rule name //from Dat151AmbientZone <Rules>
+Name       metahash          Rule name //from Dat151AmbientZone <Rules>.
 Flags      flags             Unknown
-Flags2     flags             Unknown
-Flags3     flags             Unknown
+Flags2     metahash  dat54   Unknown
+Flags3     metahash  dat54   Unknown
 Position   vector3           Offset of the sound relative to the AmbientZone center.
 Flags3     flags             Unknown
-ChildSound metahash  dat54   The master sound defined in sounds.dat
-Category   metahash  dat22   Category defined in categories.dat
-Flags4     flags             Unknown
-Flags5     flags             Unknown
-Flags6     flags             Unknown
+ChildSound metahash  dat54   The master sound defined in sounds.dat.
+Category   metahash  dat22   Category defined in categories.dat.
+Flags4     metahash  dat54   Unknown
+Flags5     metahash  dat54   Unknown
+Flags6     metahash  dat54   Unknown
 Unk01      float             Unknown
-InnerRad   float             Inner radius of sound - minimum distance the sound can be heard from.
-OuterRad   float             Outer radius of sound - maximum distance the sound can be heard from.
+InnerRad   float             Inner radius of sound, in meters, - minimum distance the sound can be heard from.
+OuterRad   float             Outer radius of sound, in meters, - maximum distance the sound can be heard from.
 StartTime  integer           Start time, in minutes, the sound can play at.
-EndTime    integer           End time, in minutes, the sound can play at.
-Unk06      integer           Unknown
+EndTime    integer           End time, in minutes, the sound can play at (1440 = 24hr / 12:00am)
+Unk06      integer           Frequency multiplier. Affects how often the sound should trigger, higher values = less frequent.
 Unk07      integer           Unknown
 Unk08      integer           Unknown
 Unk09      integer           Unknown
@@ -30,8 +30,16 @@ Unk10      integer           Unknown
 Unk11      integer           Unknown
 Unk12      integer           Unknown
 Unk13      integer           Unknown
-ExtParams  item list         List of external parameters
-
+ExtParams  item list         List of external parameters which influence whether the sound should play.
+	Hash   metahash  dat10   Variable to use for this parameter.
+	Value  float             Value the variable must use for the rule to play.
+	Flags  flags             Type of condition behavior
+		0x00000100 = Less Than
+		0x00000101 = Less Than or Equal To
+		0x00000102 = Greater Than
+		0x00000103 = Greater Than or Equal To
+		0x00000104 = Equal To
+		0x00000105 = Not Equal To
 Example:
 
 <Item type="AmbientRule" ntOffset="19358">
@@ -61,3 +69,14 @@ Example:
  <Unk13 value="3" />
  <ExtParams />
 </Item>
+
+
+Example with external parameters:
+
+ <ExtParams>
+  <Item>
+   <Hash>game.weather.rain.level</Hash>
+   <Value value="0.2" />
+   <Flags value="0x00000102" />
+  </Item>
+ </ExtParams>

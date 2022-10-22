@@ -1,0 +1,99 @@
+The Boat (16) type is used to assign sounds to boats and submersibles.
+
+It is used to assign a variety of vehicle-related sounds to a boat model, including its engine sounds, 
+water splashes and wave hits and creaking sounds.
+
+Fields:
+
+Field name                Type      FileRef Description
+--
+Name                      metahash          Boat's modelName //or audioNameHash entry.
+Flags                     flags             Boat flags.
+Engine                    metahash  dat54   Left engine.
+EngineVolume              metahash  dat16   Volume curve for left engine.
+EnginePitch               metahash  dat16   Pitch curve for left engine.
+Engine2                   metahash  dat54   Right engine.
+Engine2Volume             metahash  dat16   Volume curve for right engine.
+Engine2Pitch              metahash  dat16   Pitch curve for right engine.
+EngineLowReso             metahash  dat54   Unknown
+EngineLowResoVolume       metahash  dat16   Unknown
+EngineLowResoPitch        metahash  dat16   Unknown
+EngineIdleLoop            metahash  dat54   Engine idle loops.
+EngineIdleVolume          metahash  dat16   Volume curve for engine idle loop.
+EngineIdlePitch           metahash  dat16   Pitch curve for engine idle loop.
+WaterTurbulence           metahash  dat54   Unknown
+WaterTurbulenceVolume     metahash  dat16   Unknown
+Unk15                     metahash  dat54   Unknown
+Unk16                     metahash  dat54   Unknown
+Unk17                     metahash  dat54   Unknown
+Unk18                     metahash  dat54   Unknown
+
+Example:
+
+<Item type="Boat" ntOffset="18818">
+ <Name>dinghy5</Name>
+ <Flags value="0xAAAAAAA1" />
+ <Engine>streamed_vehicles_dinghy_dinghy_engine_loop</Engine>
+ <EngineVolume>dinghy_engine_volume</EngineVolume>
+ <EnginePitch>dinghy_engine_pitch</EnginePitch>
+ <Engine2>streamed_vehicles_dinghy_dinghy_null_loop</Engine2>
+ <Engine2Volume>speedboat_engine_2_volume</Engine2Volume>
+ <Engine2Pitch>dinghy_engine_pitch</Engine2Pitch>
+ <EngineLowReso>streamed_vehicles_dinghy_dinghy_low_reso_loop</EngineLowReso>
+ <EngineLowResoVolume>boat_reso_volume</EngineLowResoVolume>
+ <EngineLowResoPitch>dinghy_engine_pitch</EngineLowResoPitch>
+ <EngineIdleLoop>streamed_vehicles_dinghy_dinghy_idle_loop</EngineIdleLoop>
+ <EngineIdleVolume>boat_idle_reso_volume</EngineIdleVolume>
+ <EngineIdlePitch>speedboat_engine_pitch</EngineIdlePitch>
+ <WaterTurbulence>hash_7C917BEA</WaterTurbulence>
+ <WaterTurbulenceVolume>boat_curves_water_turbulance_vol</WaterTurbulenceVolume>
+ <Unk15>hash_6B3DC4A2</Unk15>
+ <Unk16>null_sound</Unk16>
+ <Unk17>null_sound</Unk17>
+ <Unk18>null_sound</Unk18>
+ <PoliceScannerParams>dinghy5_scanner_params</PoliceScannerParams>
+ <Unk20 value="1" />
+ <Horn>dilettante_horn</Horn>
+ <Ignition>speedboat_ignition</Ignition>
+ <Shutdown>speedboat_shutdown</Shutdown>
+ <Unk24 />
+ <EngineSubmix>dinghy5_engine_submix</EngineSubmix>
+ <EngineSubmixPreset>dinghy5_engine_submix_preset</EngineSubmixPreset>
+ <ExhaustSubmix />
+ <ExhaustSubmixPreset />
+ <Collision>vehicle_collision_boat</Collision>
+ <Unk30>hash_519101EA</Unk30>
+ <Unk31>hash_CB0F92C4</Unk31>
+ <WaveHitMedium>hash_5D9D2B9B</WaveHitMedium>
+ <Unk33 />
+ <IdleHullSlap>hash_FFFF62BC</IdleHullSlap>
+ <Unk35>hash_7DE7B14A</Unk35>
+ <EngineGranular>dinghy5_granular_engine</EngineGranular>
+ <BankSpray>general_water_fast_boat_bank_spray</BankSpray>
+ <Ignition2>ignition</Ignition2>
+ <Startup />
+ <Unk40 />
+ <SubTurn>null_sound</SubTurn>
+ <Unk42>constant_one</Unk42>
+ <Unk43 />
+ <Unk44 />
+ <SandSkid>sand_skid_mt</SandSkid>
+ <Unk46 value="6" />
+ <Unk47 value="3" />
+ <Unk48 value="1" />
+ <Unk49>hash_5514B45C</Unk49>
+ <Hull>boat_hull_multi_louder</Hull>
+ <Unk51>null_sound</Unk51>
+ <Fire>veh_boat_fire_soundset</Fire>
+ <DoorOpen>null_sound</DoorOpen>
+ <DoorClose>null_sound</DoorClose>
+ <Unk55>null_sound</Unk55>
+ <Unk56>null_sound</Unk56>
+ <Unk57>null_sound</Unk57>
+ <Unk58>null_sound</Unk58>
+ <SubCreaks>null_sound</SubCreaks>
+ <WaveHitBigAir>hash_73E4FA98</WaveHitBigAir>
+ <Unk61 value="1.2" />
+ <Unk62>null_sound</Unk62>
+ <Unk63>null_sound</Unk63>
+</Item>

@@ -1,0 +1,202 @@
+The AudioMaterial (1) type is used to assign sounds to a specific material.
+
+It can be used to assign a base material sound, as well as sounds when scraped upon with a vehicle,
+walked on, or shot.
+
+Fields:
+
+Field name       Type      FileRef Description
+--
+Name             metahash          AudioMaterial name.
+Unk00            flags             Unknown flags.
+Unk01            metahash  dat54   Main collision sound.
+Unk02            metahash  dat54   Unknown
+Unk03            metahash  dat54   Unknown
+Unk04            metahash  dat54   Collision scrape sound.
+Unk05            metahash  dat54   Collision scrape sound.
+Unk06            metahash  dat54   Unknown
+Unk07            metahash  dat54   Unknown
+Unk08            metahash  dat54   Unknown
+Unk09            metahash  dat54   Unknown
+Unk10            metahash  dat54   Unknown
+Unk11            metahash  dat54   Unknown
+Unk12            metahash  dat54   Unknown
+Unk13            metahash  dat54   Unknown
+Unk14            metahash  dat54   Unknown
+Unk15            integer           Unknown
+Unk16            integer           Unknown
+Unk17            integer           Unknown
+Unk18            integer           Unknown
+Unk19            float             Unknown
+Unk20            integer           Unknown
+Unk21            float             Unknown
+Unk22            float             Unknown
+Unk23            float             Unknown
+Unk24            float             Unknown
+Unk25            float             Unknown
+Unk26            float             Unknown
+Unk27            integer           Unknown
+Unk28            metahash  dat54   Unknown //soundset.
+Unk29            float             Unknown
+Unk30            float             Unknown
+Footsteps        metahash  dat151  Footsteps sounds on this material defined in Dat151Shoe.
+Unk31            integer           Unknown
+Unk32            metahash  dat151  Skis footsteps sound on this material defined in Dat151Skis //unused.
+AnimalFootsteps  metahash  dat151  Animal footsteps sounds on this material defined in Dat151AnimalFootstepsList.
+AudioTrack2      metahash          Unknown
+Unk33            metahash  dat16   Unknown //Impact start offset.
+Unk34            metahash  dat16   Unknown //Impact volume.
+Unk35            metahash  dat16   Unknown //Scrape pitch.
+Unk36            metahash  dat16   Unknown //Scrape volume.
+Unk37            metahash  dat54   Unknown
+Unk38            metahash  dat54   Unknown
+Unk39            metahash  dat54   Unknown
+Unk40            metahash  dat54   Unknown
+Unk41            metahash  dat54   Unknown
+Unk42            metahash  dat54   Unknown
+Unk43            metahash  dat54   Unknown
+Unk44            metahash  dat54   Unknown
+Unk45            metahash  dat54   Unknown
+Unk46            metahash  dat54   Unknown
+Unk47            metahash  dat54   Shot sound. //shell_plastic_hard
+Unk48            metahash  dat54   Unknown
+Unk49            metahash  dat54   Scrape sound.
+Unk50            metahash  dat54   Unknown
+Unk51            metahash  dat54   Tyre bump sound. //tyre_bumps_concrete
+Unk52            metahash  dat54   Unknown
+Unk53            metahash  dat54   Unknown
+Unk54            metahash          Unknown
+Unk55            float             Unknown
+Unk56            metahash  dat54   Unknown
+Unk57            metahash  dat54   Unknown
+Unk58            integer           Unknown
+Unk59            integer           Unknown
+Unk60            float             Unknown
+Unk61            integer           Unknown
+Unk62            integer           Unknown
+Unk63            metahash  dat54   Unknown
+Unk64            metahash  dat54   Unknown
+Unk65            metahash  dat54   Unknown
+Unk66            integer           Unknown
+Unk67            metahash  dat54   Unknown
+Unk68            metahash  dat54   Unknown
+Unk69            metahash  dat54   Unknown
+Unk70            metahash  dat54   Unknown
+Unk71            metahash  dat54   Unknown
+Unk72            integer           Unknown
+Unk73            metahash  dat54   Unknown
+Unk74            metahash  dat54   Unknown
+Unk75            metahash  dat54   Unknown
+Unk76            metahash  dat54   Unknown
+Unk77            float             Unknown
+Unk78            metahash  dat151  Unknown //Dat151AudioMaterial
+Unk79            metahash  dat151  Unknown //Dat151AudioMaterial (self referenced)
+Unk80            metahash  dat54   Unknown
+Unk81            metahash  dat54   Unknown
+Unk82            metahash  dat54   Unknown
+Unk83            metahash  dat54   Unknown
+Unk84            metahash  dat54   Unknown
+Unk85            integer           Unknown
+Unk86            metahash  dat54   Unknown
+Unk87            integer           Unknown
+Unk88            metahash  dat54   Unknown
+Unk89            integer           Unknown
+
+Example:
+
+<Item type="AudioMaterial" ntOffset="119957">
+ <Name>am_base_metal_manhole</Name>
+ <Unk00 value="0xA8104010" />
+ <Unk01>manhole_collision</Unk01>
+ <Unk02>null_sound</Unk02>
+ <Unk03>null_sound</Unk03>
+ <Unk04>collision_scrape_marble_twin</Unk04>
+ <Unk05>collision_scrape_marble_twin</Unk05>
+ <Unk06>null_sound</Unk06>
+ <Unk07>null_sound</Unk07>
+ <Unk08>null_sound</Unk08>
+ <Unk09>hash_ECFAE5A2</Unk09>
+ <Unk10>null_sound</Unk10>
+ <Unk11>null_sound</Unk11>
+ <Unk12>null_sound</Unk12>
+ <Unk13>hash_7C28B42F</Unk13>
+ <Unk14>hash_C200FB3F</Unk14>
+ <Unk15 value="0" />
+ <Unk16 value="0" />
+ <Unk17 value="100" />
+ <Unk18 value="0" />
+ <Unk19 value="3" />
+ <Unk20 value="100" />
+ <Unk21 value="3" />
+ <Unk22 value="0.125" />
+ <Unk23 value="3" />
+ <Unk24 value="0.75" />
+ <Unk25 value="0" />
+ <Unk26 value="3" />
+ <Unk27 value="100" />
+ <Unk28>hash_1B4C4861</Unk28>
+ <Unk29 value="1" />
+ <Unk30 value="1" />
+ <Footsteps>footsteps_generic</Footsteps>
+ <Unk31 value="1184818" />
+ <Unk32>skis_generic</Unk32>
+ <AnimalFootsteps>animal_metal_ring</AnimalFootsteps>
+ <AudioTrack2 />
+ <Unk33>collision_impact_start_offset</Unk33>
+ <Unk34>collision_impact_volume</Unk34>
+ <Unk35>collision_scrape_pitch</Unk35>
+ <Unk36>collision_scrape_volume</Unk36>
+ <Unk37>null_sound</Unk37>
+ <Unk38>null_sound</Unk38>
+ <Unk39>null_sound</Unk39>
+ <Unk40>null_sound</Unk40>
+ <Unk41>hash_B260A562</Unk41>
+ <Unk42>hash_0EBB8DF2</Unk42>
+ <Unk43>hash_4674E066</Unk43>
+ <Unk44>hash_1210359D</Unk44>
+ <Unk45>hash_92DB3579</Unk45>
+ <Unk46>hash_90BC1335</Unk46>
+ <Unk47>shell_plastic_hard_master</Unk47>
+ <Unk48>hash_FAEAF436</Unk48>
+ <Unk49>collision_scrape_marble_twin</Unk49>
+ <Unk50>null_sound</Unk50>
+ <Unk51>tyre_bumps_concrete</Unk51>
+ <Unk52>null_sound</Unk52>
+ <Unk53>null_sound</Unk53>
+ <Unk54 />
+ <Unk55 value="0.2" />
+ <Unk56>null_sound</Unk56>
+ <Unk57>null_sound</Unk57>
+ <Unk58 value="0" />
+ <Unk59 value="3" />
+ <Unk60 value="-100" />
+ <Unk61 value="0" />
+ <Unk62 value="0" />
+ <Unk63>null_sound</Unk63>
+ <Unk64>null_sound</Unk64>
+ <Unk65>null_sound</Unk65>
+ <Unk66 value="0" />
+ <Unk67>null_sound</Unk67>
+ <Unk68>hash_2A1CC193</Unk68>
+ <Unk69>null_sound</Unk69>
+ <Unk70>null_sound</Unk70>
+ <Unk71>hash_1082435B</Unk71>
+ <Unk72 value="771" />
+ <Unk73>null_sound</Unk73>
+ <Unk74>hash_7C799286</Unk74>
+ <Unk75>hash_E62FA544</Unk75>
+ <Unk76>hash_D929370F</Unk76>
+ <Unk77 value="0.8" />
+ <Unk78 />
+ <Unk79>am_base_metal_manhole</Unk79>
+ <Unk80>null_sound</Unk80>
+ <Unk81>null_sound</Unk81>
+ <Unk82>null_sound</Unk82>
+ <Unk83>null_sound</Unk83>
+ <Unk84>null_sound</Unk84>
+ <Unk85 value="0" />
+ <Unk86>null_sound</Unk86>
+ <Unk87 value="0" />
+ <Unk88>null_sound</Unk88>
+ <Unk89 value="0" />
+</Item>

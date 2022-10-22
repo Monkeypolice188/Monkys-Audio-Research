@@ -1,0 +1,42 @@
+The SpeechParams (15) type controls how specific speech categories behave.
+
+Fields:
+
+Field name  Type      FileRef Description
+--
+Name        metahash          SpeechParams name
+Flags       flags             Unknown flags
+Unk01       integer           Unknown //interrupt behavior
+	0 standard
+	1 allows repeat
+	2
+	3 interrupt/force
+Unk02       integer           Unknown //30000 - max duration?
+Unk03       byte              Unknown //type?
+	0
+	1 normal
+	2 shouted
+	3 frontend
+	4 megaphone
+	5 heli
+Unk04       byte              Unknown
+	0 normal
+	1 clear
+	2 critical
+Unk05       short             Unknown //0
+Unk06       metahash          Unknown //unused
+Unk07       integer           Unknown //-1
+
+Examples:
+
+<Item type="SpeechParams" ntOffset="330799">
+ <Name>speech_params_megaphone</Name>
+ <Flags value="0xAAA50400" />
+ <Unk01 value="0" />
+ <Unk02 value="30000" />
+ <Unk03 value="4" />
+ <Unk04 value="0" />
+ <Unk05 value="0" />
+ <Unk06 />
+ <Unk07 value="-1" />
+</Item>

@@ -1,0 +1,40 @@
+The EntityEmitter (7) type is used to apply sounds to an entity.
+
+
+Often used for entities that produce sounds, such as vending machines, air con units and fans.
+
+Fields:
+
+Field name     Type      FileRef Description
+--
+Name           metahash          EntityEmitter name.
+Flags          flags             Unknown flags.
+Unk01          metahash  dat54   Main sound.
+Unk02          float             Unknown
+Unk03          float             Unknown
+Unk04          float             Unknown
+Unk05          float             Unknown
+Unk06          float             Unknown
+Unk07          float             Unknown
+Unk08          float             Unknown
+Unk09          metahash          Unknown //Unused
+Unk10          integer           Unknown
+Unk11          float             Unknown
+
+Example:
+
+<Item type="EntityEmitter" ntOffset="27951">
+ <Name>ee_can_machine</Name>
+ <Flags value="0xAAAA9A2A" />
+ <Unk01>appliances_can_machine</Unk01>
+ <Unk02 value="30" />
+ <Unk03 value="0.8" />
+ <Unk04 value="0.8" />
+ <Unk05 value="0.8" />
+ <Unk06 value="0" />
+ <Unk07 value="0" />
+ <Unk08 value="0" />
+ <Unk09 />
+ <Unk10 value="2" />
+ <Unk11 value="-1" />
+</Item>

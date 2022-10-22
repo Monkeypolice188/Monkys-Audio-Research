@@ -1,0 +1,118 @@
+The VehicleCollision (1) type is used to assign collision sounds to a vehicle.
+
+It is used to assign a variety of vehicle collision sounds to the vehicle, including impacts and scrapes with other vehicles, different materials and the intensity.
+
+
+Fields:
+
+Field name              Type      FileRef Description
+--
+Name                    metahash  dat151  VehicleCollision name from Dat151Vehicle <Collision>.
+Flags                   flags             Unknown
+Unk01                   integer           Unknown
+Scrape                  metahash  dat54   Scraping.
+SlowScrape              metahash  dat54   Slow scraping.
+ScrapeImpact            metahash  dat54   Initial scraping impact.
+SlowScrapeImpact        metahash  dat54   Initial slow scraping impact.
+Unk06                   metahash  dat54   Unknown
+Unk07                   metahash  dat54   Unknown
+Unk08                   float             Unknown
+ScrapePitch             metahash  dat16   Pitch of scraping.
+ScrapeVolume            metahash  dat16   Volume of scraping.
+SlowScrapeVolume        metahash  dat16   Volume of slow scraping.
+ScrapeImpactVolume      metahash  dat16   Volume of initial scraping impact.
+SlowScrapeImpactVolume  metahash  dat16   Volume of initial slow scraping impact.
+Unk14                   metahash  dat16   Unknown //Impact start offset.
+Unk15                   metahash  dat16   Unknown //Impact volume.
+Unk16                   metahash  dat16   Unknown //Impact start offset.
+Unk17                   metahash  dat16   Unknown //Impact volume.
+Unk18                   metahash  dat16   Unknown
+Unk19                   metahash  dat16   Unknown
+Unk20                   metahash  dat16   Unknown
+Unk21                   float             Unknown
+Unk22                   float             Unknown
+Unk23                   float             Unknown
+Unk24                   float             Unknown
+Unk25                   float             Unknown
+Unk26                   float             Unknown
+Unk27                   metahash  dat16   Unknown //Impact damage volume.
+Unk28                   metahash  dat16   Unknown
+Unk29                   metahash  dat151  Dat151AudioMaterial
+Unk30                   metahash  dat54   Unknown //Crash debris.
+Unk31                   metahash  dat54   Unknown //Crash debris.
+Unk32                   metahash  dat54   Unknown //Crash debris.
+Unk33                   metahash  dat54   Unknown //Crash debris.
+Unk34                   float             Unknown
+Unk35                   float             Unknown
+Unk36                   float             Unknown
+Unk37                   float             Unknown
+Unk38                   integer           Unknown
+Unk39                   float             Unknown
+Unk40                   float             Unknown
+Unk41                   float             Unknown
+Unk42                   float             Unknown
+Unk43                   float             Unknown
+Unk44                   float             Unknown
+Unk45                   metahash  dat54   Unknown
+Unk46                   metahash  dat54   Unknown
+Unk47                   metahash  dat54   Unknown
+Unk48                   metahash  dat151  Dat151AudioMaterial
+Unk49                   metahash  dat151  Dat151AudioMaterial
+AudioTrack0             metahash  dat151  Dat151AudioMaterial //Only used on bicycles
+AudioTrack1             metahash  dat151  Dat151AudioMaterial //Only used on bicycles
+
+Example:
+
+<Item type="VehicleCollision" ntOffset="10800">
+ <Name>vehicle_collision_tug</Name>
+ <Flags value="0x00000000" />
+ <Unk01 value="0" />
+ <Scrape>tug_dry_land_hard_impact_master</Scrape>
+ <SlowScrape>tug_dry_land_hard_impact_master</SlowScrape>
+ <ScrapeImpact>tug_dry_land_scrape_master</ScrapeImpact>
+ <SlowScrapeImpact>null_sound</SlowScrapeImpact>
+ <Unk06>null_sound</Unk06>
+ <Unk07>null_sound</Unk07>
+ <Unk08 value="20" />
+ <ScrapePitch>collision_scrape_pitch</ScrapePitch>
+ <ScrapeVolume>collision_car_scrape_volume</ScrapeVolume>
+ <SlowScrapeVolume>collision_vehicle_slow_scrape_volume</SlowScrapeVolume>
+ <ScrapeImpactVolume>collision_impact_volume</ScrapeImpactVolume>
+ <SlowScrapeImpactVolume>collision_impact_volume</SlowScrapeImpactVolume>
+ <Unk14>collision_impact_start_offset_boat</Unk14>
+ <Unk15>collision_impact_volume_boat</Unk15>
+ <Unk16>collision_impact_start_offset</Unk16>
+ <Unk17>collision_impact_volume</Unk17>
+ <Unk18>hash_67339AE8</Unk18>
+ <Unk19>hash_F3059826</Unk19>
+ <Unk20>hash_0498F1B8</Unk20>
+ <Unk21 value="1" />
+ <Unk22 value="20" />
+ <Unk23 value="1" />
+ <Unk24 value="1" />
+ <Unk25 value="6" />
+ <Unk26 value="30" />
+ <Unk27>impact_damage_volume</Unk27>
+ <Unk28>hash_F9A05A17</Unk28>
+ <Unk29>am_base_boat_entity</Unk29>
+ <Unk30>null_sound</Unk30>
+ <Unk31>null_sound</Unk31>
+ <Unk32>null_sound</Unk32>
+ <Unk33>null_sound</Unk33>
+ <Unk34 value="0.1" />
+ <Unk35 value="10" />
+ <Unk36 value="0" />
+ <Unk37 value="6" />
+ <Unk38 value="0" />
+ <Unk39 value="1" />
+ <Unk40 value="10" />
+ <Unk41 value="1" />
+ <Unk42 value="20" />
+ <Unk43 value="20" />
+ <Unk44 value="130" />
+ <Unk45>null_sound</Unk45>
+ <Unk46>null_sound</Unk46>
+ <Unk47>null_sound</Unk47>
+ <Unk48 />
+ <Unk49 />
+</Item>

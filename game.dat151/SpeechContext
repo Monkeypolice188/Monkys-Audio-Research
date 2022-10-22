@@ -1,0 +1,111 @@
+The SpeechContext (11) type is used on speech lines within a ped speech audio container.
+
+The context then controls how frequently this line can be used, and what other variations can
+trigger instead of this line.
+
+
+Fields:
+
+Field name  Type      FileRef Description
+--
+Name        metahash          Name of speech line from .awc.
+Flags       flags             Unknown flags //0xAAAAAAAA.
+Unk01       integer           Unknown
+Unk02       integer           Unknown //min time in ms between repeat?
+Unk03       integer           Unknown //max time in ms between repeat?
+Unk04       integer           Unknown //min time in ms since last play?
+Unk05       integer           Unknown //max time in ms since last play?
+Unk06       metahash          Unknown
+Unk07       metahash          Unknown
+Unk08       metahash          Unknown
+Unk09       metahash  dat151  Dat151SpeechChoice.
+Items       Item list         Item list of Dat151SpeechChoice or Dat151VirtualSpeechChoice.
+	Hash    metahash  dat151  Dat151SpeechChoice or Dat151VirtualSpeechChoice.
+	Value   float             Probability of choice line(s).
+
+
+Examples:
+
+<Item type="SpeechContext" ntOffset="331997">
+ <Name>blocked_generic</Name>
+ <Flags value="0xAAAAAAAA" />
+ <Unk01 value="0" />
+ <Unk02 value="7000" />
+ <Unk03 value="12000" />
+ <Unk04 value="5000" />
+ <Unk05 value="12000" />
+ <Unk06 />
+ <Unk07 />
+ <Unk08 />
+ <Unk09>blocked_generic_sc</Unk09>
+ <Items>
+  <Item>
+   <Hash>generic_insult_virtual_sc</Hash>
+   <Value value="1" />
+  </Item>
+  <Item>
+   <Hash>generic_curse_med_sc</Hash>
+   <Value value="1" />
+  </Item>
+ </Items>
+</Item>
+
+<Item type="SpeechContext" ntOffset="332642">
+ <Name>buddy_sees_trevor_death</Name>
+ <Flags value="0xAAAAAAAA" />
+ <Unk01 value="0" />
+ <Unk02 value="0" />
+ <Unk03 value="-1" />
+ <Unk04 value="0" />
+ <Unk05 value="-1" />
+ <Unk06 />
+ <Unk07 />
+ <Unk08 />
+ <Unk09>buddy_sees_trevor_death_sc</Unk09>
+ <Items>
+  <Item>
+   <Hash>generic_curse_high_sc</Hash>
+   <Value value="0.75" />
+  </Item>
+  <Item>
+   <Hash>generic_curse_med_sc</Hash>
+   <Value value="0.25" />
+  </Item>
+ </Items>
+</Item>
+
+<Item type="SpeechContext" ntOffset="333148">
+ <Name>dont_ignore_me_insult</Name>
+ <Flags value="0xAAAAAAAA" />
+ <Unk01 value="0" />
+ <Unk02 value="0" />
+ <Unk03 value="-1" />
+ <Unk04 value="0" />
+ <Unk05 value="-1" />
+ <Unk06 />
+ <Unk07 />
+ <Unk08 />
+ <Unk09>dont_ignore_me_insult_sc</Unk09>
+ <Items>
+  <Item>
+   <Hash>generic_insult_med_sc</Hash>
+   <Value value="1" />
+  </Item>
+ </Items>
+</Item>
+
+
+<Item type="SpeechContext" ntOffset="335801">
+ <Name>request_noose</Name>
+ <Flags value="0xAAAAAAAA" />
+ <Unk01 value="0" />
+ <Unk02 value="0" />
+ <Unk03 value="-1" />
+ <Unk04 value="0" />
+ <Unk05 value="-1" />
+ <Unk06 />
+ <Unk07 />
+ <Unk08 />
+ <Unk09>request_noose_sc</Unk09>
+ <Items />
+</Item>

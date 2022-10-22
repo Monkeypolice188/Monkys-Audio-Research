@@ -1,4 +1,4 @@
-The "AmbientZoneList" type is used to list all AmbientZones to be used by the game's script files.
+The AmbientZoneList (39) type is used to list all AmbientZones to be used by the game's script files.
 
 The game automatically loads some AmbientZoneLists by default, while others are loaded through scripts (such as DLC lists which should only be activated in certain circumstances).
 

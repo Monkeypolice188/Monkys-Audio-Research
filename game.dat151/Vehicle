@@ -1,11 +1,11 @@
-The Vehicle type is used to assign sounds to vehicles.
+The Vehicle (3) type is used to assign sounds to vehicles.
 
 It is used to assign a variety of vehicle-related sounds to a vehicle model, including its engine, transmission, suspension, horn, radio, doors, sirens and interior sounds.
 
 Fields:
 Field name          Type      FileRef Description
 --
-Name                    metahash          Vehicle's modelName //or audioNameHash entry.
+Name                metahash          Vehicle's modelName //or audioNameHash entry.
 Unk00               flags             VehicleFlags - Vehicle behavioral     flags //see Unk00 VehicleFlags
 Engine              metahash  dat151  Engine sounds Dat151VehicleEngine
 EngineGranular      metahash  dat151  Granular engine sounds Dat151VehicleEngineGranular
@@ -118,6 +118,9 @@ Unk70               integer           Unknown //0
 Unk71               metahash  dat54   Unknown //only on bikes
 Unk72               metahash  dat54   Unknown //only on bikes
 
+
+
+
 Unk00 - VehicleFlags
 The Unk00 value represents basic vehicle     flags which seem to control various aspects of vehicle sound behavior. Some may be overriden by other options in the Vehicle sound type.
 
@@ -154,6 +157,8 @@ The Unk00 flag reads "0xXXXXXXXX" where "X" represents the following digits in r
 >0x00000002
 0x00000004 - reversing beeper //most trucks and utility vehicles
 0x00000008 - ? //most vehicles
+
+
 
 RadioFlags
 The RadioFlag value represents what radio station is chosen to play upon entry of the vehicle. 

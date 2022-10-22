@@ -126,6 +126,7 @@ award_msmd
 award_stv
 award_td
 award_ttk
+axe_door
 back
 background
 background1
@@ -648,6 +649,8 @@ crate_pickup_player
 crate_pickup_remote
 crates_blipped
 creak_01
+creak_02
+creak_03
 creaking_loop
 creaksound
 creator_snap
@@ -760,6 +763,7 @@ distant_racers
 distant_roar
 distant_sirens
 distant_sirens_fight
+distant_sirens_rappel
 distant_sirens_rubble
 distant_sirens_skip_start
 diveinwater
@@ -1460,6 +1464,7 @@ insert_coin
 insert_keycard
 inside_track_start
 integ
+interior_explosion
 interior_rain
 internal_explosion
 intocoversound
@@ -1628,6 +1633,7 @@ lower_pants_leather_player
 lower_pants_suit
 lower_pants_suit_player
 lower_pants_tight
+lower_pants_tight_player
 lower_shorts
 lower_shorts_player
 lower_skirt_long
@@ -2233,6 +2239,7 @@ rampage_timer_countdown_loop_3_min_master
 rampage_timer_countdown_loop_master
 rancho
 rank_up
+rappel_foley_02
 rappel_land
 rappel_loop
 rappel_parachute
@@ -2345,6 +2352,7 @@ roylo
 rt68
 rt68app
 rtrak
+rubber
 rubber_boots
 rubst
 rumble
@@ -2524,6 +2532,7 @@ smash_cabinet_npc
 smash_cabinet_player
 smash_crate
 smog
+smoke_grenade
 smoke_loop
 smoket
 smomil
@@ -2603,6 +2612,7 @@ stage_05
 stage_06
 stage_07
 stage_sounds
+stairs_collapse
 standard_door
 start
 start_game
@@ -2631,6 +2641,7 @@ sub_lift
 sub_release
 sub_scanner_loop
 sub_splash
+sub_switch
 submarine_sunk
 subsequentsurface
 subway_train_horns_air_horn

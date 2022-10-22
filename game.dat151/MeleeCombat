@@ -1,0 +1,54 @@
+The MeleeCombat (9) type is used to apply sounds to specific melee weapons and moves.
+
+It can be used to define sounds used when hitting, stabbing or swiping with melee weapons such as knifes, 
+bats, crowbars, or fists.
+
+Fields:
+
+Field name  Type      FileRef Description
+--
+Name        metahash          MeleeCombat name.
+Unk01       metahash  dat54   Unknown //override
+Unk02       metahash  dat54   Hitting anything
+Unk03       metahash  dat54   Unknown
+Unk04       metahash  dat54   Unknown //response face - hitting ped face?
+Unk05       metahash  dat54   Unknown
+Unk06       metahash  dat54   Unknown
+Unk07       metahash  dat54   Unknown
+Unk08       metahash  dat54   Unknown
+Unk09       metahash  dat54   Unknown
+Unk10       metahash  dat54   Unknown //response body - hitting ped body?
+Unk11       metahash  dat54   Unknown
+Unk12       metahash  dat54   Unknown
+Unk13       metahash  dat54   Unknown
+Unk14       metahash  dat54   Unknown
+Unk15       metahash  dat54   Unknown
+Unk16       metahash  dat54   Unknown
+Unk17       metahash  dat54   Unknown //video editor melee - slowmo? 
+Unk18       metahash  dat54   Unknown
+
+
+
+Example:
+
+<Item type="MeleeCombat" ntOffset="2065">
+ <Name>melee_combat_flashlight</Name>
+ <Unk01>override</Unk01>
+ <Unk02>flashlight_hit_general</Unk02>
+ <Unk03>flashlight_hit_body</Unk03>
+ <Unk04>melee_combat_ped_response_face</Unk04>
+ <Unk05>flashlight_hit_face</Unk05>
+ <Unk06>flashlight_hit_body</Unk06>
+ <Unk07>flashlight_hit_face</Unk07>
+ <Unk08>null_sound</Unk08>
+ <Unk09>flashlight_hit_face</Unk09>
+ <Unk10>melee_combat_ped_response_body</Unk10>
+ <Unk11>null_sound</Unk11>
+ <Unk12>null_sound</Unk12>
+ <Unk13>null_sound</Unk13>
+ <Unk14>null_sound</Unk14>
+ <Unk15>null_sound</Unk15>
+ <Unk16>null_sound</Unk16>
+ <Unk17>null_sound</Unk17>
+ <Unk18>null_sound</Unk18>
+</Item>

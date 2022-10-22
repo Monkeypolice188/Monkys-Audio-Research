@@ -1,4 +1,4 @@
-The VehicleEngine type is used for a variety various engine-related sounds.
+The VehicleEngine (4) type is used for a variety various engine-related sounds.
 
 It is used to assign a range of engine-based sounds to a vehicle, including the static "low" and "high" engine and exhaust sounds, idle, intake, turbo, exhaust pops and transmission sounds.
 

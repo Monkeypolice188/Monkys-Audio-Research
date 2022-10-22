@@ -1,0 +1,47 @@
+The VirtualSpeechChoice (13) type is used to apply settings to SpeechContext lines.
+
+The type is used to determine under what circumstances the line can be triggered and
+how frequently it can be used. Unlike SpeechChoice, VirtualSpeechChoice does not require a speaker,
+and is instead triggered as a response to a speaker's line. It is mostly used on generic street ped
+conversation lines.
+
+
+Fields:
+
+Field name  Type      FileRef Description
+--
+Name        metahash  dat151  VirtualSpeechChoice name from Dat151SpeechContext <Unk09>.
+Flags       flags             Unknown flags
+Unk01       metahash          Unknown
+Unk02       metahash          Unknown //unused
+Unk03       integer           Unknown
+Unk04       metahash          Unknown //unused      
+Unk05       metahash          Unknown //unused
+Unk06       metahash          Unknown //unused
+Unk07       byte              Unknown
+Unk08       byte              Unknown
+Unk09       byte              Unknown
+Items       item list         Item list of Dat151SpeechChoice.
+
+
+
+
+Examples:
+
+<Item type="VirtualSpeechChoice" ntOffset="361220">
+ <Name>generic_curse_virtual_sc</Name>
+ <Flags value="0xAAA94000" />
+ <Unk01>hash_05C6BAAF</Unk01>
+ <Unk02 />
+ <Unk03 value="-1" />
+ <Unk04 />
+ <Unk05 />
+ <Unk06 />
+ <Unk07 value="3" />
+ <Unk08 value="0" />
+ <Unk09 value="2" />
+ <Items>
+  <Item>generic_curse_high_sc</Item>
+  <Item>generic_curse_med_sc</Item>
+ </Items>
+</Item>

@@ -1,378 +1,381 @@
-The "AmbienceBankMap" type is used to load audio wave containers and allow them to be used in the ambient world.
+The AmbienceBankMap (41) type is used to load audio wave containers and allow them to be used in the ambient world.
 
 The AmbienceBankMap assigns container names a specific bank category which permits a certain amount of storage (defined in audioconfig.dat), and in turn affects how much memory is
 dedicated to this particular bank.
 
 Fields:
 
-Items - Item list of banks.
-	Hash0 - Container path
-	Hash1 - Ambience bank category defined in audioconfig.dat
-	
+Field name    Type      FileRef Description
+--
+Items         item list         List of audio banks.
+	AudioBank metahash          Container path (i.e, "dlc_tuner/dlc_tuner_car_meet_walla").
+	BankName  metahash  dat4    Ambience bank category (Dat4VariableList item).
+
+
 Example:
 
 <Item type="AmbienceBankMap" ntOffset="7560">
- <Name>hash_96F2AB50</Name>
+ <Name>ambience_bank_map</Name>
  <Items>
   <Item>
-   <Hash0>streamed_ambience/crow</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/crow</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/goldfinch</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/goldfinch</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/mockingbird</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/mockingbird</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/owl</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/owl</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/song_sparrow</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/song_sparrow</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/starling</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/starling</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/cricket_b</Hash0>
-   <Hash1>streamed_insects</Hash1>
+   <AudioBank>streamed_ambience/cricket_b</AudioBank>
+   <BankName>streamed_insects</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/cricket_c</Hash0>
-   <Hash1>streamed_insects</Hash1>
+   <AudioBank>streamed_ambience/cricket_c</AudioBank>
+   <BankName>streamed_insects</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/cricket_d</Hash0>
-   <Hash1>streamed_insects</Hash1>
+   <AudioBank>streamed_ambience/cricket_d</AudioBank>
+   <BankName>streamed_insects</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/cricket_e</Hash0>
-   <Hash1>streamed_insects</Hash1>
+   <AudioBank>streamed_ambience/cricket_e</AudioBank>
+   <BankName>streamed_insects</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/cricket_f</Hash0>
-   <Hash1>streamed_insects</Hash1>
+   <AudioBank>streamed_ambience/cricket_f</AudioBank>
+   <BankName>streamed_insects</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/cricket_g</Hash0>
-   <Hash1>streamed_insects</Hash1>
+   <AudioBank>streamed_ambience/cricket_g</AudioBank>
+   <BankName>streamed_insects</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/cicada_b</Hash0>
-   <Hash1>streamed_insects</Hash1>
+   <AudioBank>streamed_ambience/cicada_b</AudioBank>
+   <BankName>streamed_insects</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/coyote</Hash0>
-   <Hash1>streamed_animals</Hash1>
+   <AudioBank>streamed_ambience/coyote</AudioBank>
+   <BankName>streamed_animals</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/dock_crane_reversing_beeps</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/dock_crane_reversing_beeps</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/chicken_factory</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/chicken_factory</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/construction_piledriver_1</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/construction_piledriver_1</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/docks</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/docks</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/oil_field</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/oil_field</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/heist_sweatshop</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/heist_sweatshop</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/biotech_gas_jet</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/biotech_gas_jet</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/biotech_underwater_drips</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/biotech_underwater_drips</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/biotech_vacuum_pump</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/biotech_vacuum_pump</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/biotech_gcms</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/biotech_gcms</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/meth_lab</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/meth_lab</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/creaking_metal</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/creaking_metal</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/distant_train</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/distant_train</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/bullfrog</Hash0>
-   <Hash1>streamed_animals</Hash1>
+   <AudioBank>streamed_ambience/bullfrog</AudioBank>
+   <BankName>streamed_animals</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/raccoon</Hash0>
-   <Hash1>streamed_animals</Hash1>
+   <AudioBank>streamed_ambience/raccoon</AudioBank>
+   <BankName>streamed_animals</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/construction_grinder</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/construction_grinder</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/construction_nailgun</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/construction_nailgun</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/construction_piledriver_2</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/construction_piledriver_2</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/construction_piledriver_3</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/construction_piledriver_3</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/wind_farm</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/wind_farm</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/quarry_grinder</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/quarry_grinder</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/steam_whistle</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/steam_whistle</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/morse_sine</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/morse_sine</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/airport_idle_jets</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/airport_idle_jets</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/creaking_barn</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/creaking_barn</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/sea_bird</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/sea_bird</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/alley_cat</Hash0>
-   <Hash1>streamed_animals</Hash1>
+   <AudioBank>streamed_ambience/alley_cat</AudioBank>
+   <BankName>streamed_animals</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/shipyard</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/shipyard</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/pigeon_wings</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/pigeon_wings</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/storage_vessel_drips</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/storage_vessel_drips</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/black_legged_stilt</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/black_legged_stilt</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>hash_F93B86DA</Hash0>
-   <Hash1>streamed_animals</Hash1>
+   <AudioBank>hash_F93B86DA</AudioBank>
+   <BankName>streamed_animals</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/urban_dogs</Hash0>
-   <Hash1>streamed_animals</Hash1>
+   <AudioBank>streamed_ambience/urban_dogs</AudioBank>
+   <BankName>streamed_animals</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/can_drop</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/can_drop</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/bell_tower</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/bell_tower</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/bell_tower_2</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/bell_tower_2</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/car_mod_shop</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/car_mod_shop</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/fridge_hum_01</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/fridge_hum_01</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/industrial_hum</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/industrial_hum</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/industrial_motor_01</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/industrial_motor_01</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/industrial_motor_02</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/industrial_motor_02</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/industrial_motor_03</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/industrial_motor_03</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/abattoir_cooler</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/abattoir_cooler</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/abattoir_cows</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/abattoir_cows</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/chain_hits</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/chain_hits</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/office</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/office</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/life_invader_office</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/life_invader_office</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/creaking_ice</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/creaking_ice</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/creaking_trees</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/creaking_trees</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/redwing_blackbird</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/redwing_blackbird</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/movie_lot</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/movie_lot</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/alarm_clock_01</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/alarm_clock_01</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/blenders</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/blenders</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/dryers</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/dryers</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/hairdryer</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/hairdryer</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/vacuum</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/vacuum</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/snores</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/snores</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/rooster</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/rooster</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/chicken</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/chicken</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/chicken_factory_chickens</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/chicken_factory_chickens</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/chicken_2</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/chicken_2</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/creaking_building</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/creaking_building</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/debris_falls</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/debris_falls</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/sharmoota_horse</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/sharmoota_horse</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/sawmill</Hash0>
-   <Hash1>streamed_special</Hash1>
+   <AudioBank>streamed_ambience/sawmill</AudioBank>
+   <BankName>streamed_special</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/chainsaw</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/chainsaw</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/country_birds</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/country_birds</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/jay_and_loon</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/jay_and_loon</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/quail_and_hawk</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/quail_and_hawk</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/sparrow_and_finch</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/sparrow_and_finch</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/waterfowl</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/waterfowl</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/woodpeckers</Hash0>
-   <Hash1>streamed_birds</Hash1>
+   <AudioBank>streamed_ambience/woodpeckers</AudioBank>
+   <BankName>streamed_birds</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/chipmunk_and_squirrel</Hash0>
-   <Hash1>streamed_animals</Hash1>
+   <AudioBank>streamed_ambience/chipmunk_and_squirrel</AudioBank>
+   <BankName>streamed_animals</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/hobo_cough_female</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/hobo_cough_female</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/hobo_cough_male_01</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/hobo_cough_male_01</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
   <Item>
-   <Hash0>streamed_ambience/hobo_cough_male_02</Hash0>
-   <Hash1>streamed_general</Hash1>
+   <AudioBank>streamed_ambience/hobo_cough_male_02</AudioBank>
+   <BankName>streamed_general</BankName>
   </Item>
  </Items>
 </Item>

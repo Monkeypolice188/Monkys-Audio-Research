@@ -1,0 +1,52 @@
+The SpeechChoice (12) type is used to apply settings to SpeechContext lines.
+
+The type is used to determine under what circumstances the line can be triggered and
+how frequently it can be used.
+
+
+Fields:
+
+Field name  Type      FileRef Description
+--
+Name        metahash  dat151  SpeechChoice name from Dat151SpeechContext <Unk09>.
+Flags       flags             Unknown flags
+Unk01       metahash          Unknown
+Unk02       integer           Unknown //min time in ms between repeat?
+Unk03       integer           Unknown //max time in ms between repeat?
+Unk04       byte              Unknown
+Unk05       byte              Unknown
+Unk06       byte              Unknown
+Unk07       byte              Unknown
+Unk08       metahash          Unknown
+Unk09       metahash          Unknown
+Unk10       byte              Unknown
+Unk11       byte              Unknown
+Unk12       byte              Unknown
+Unk13       byte              Unknown
+Unk14       byte              Unknown //only when Unk11 > 2 generic_whatever_sc
+Unk15       byte              Unknown //only when Unk11 > 2 generic_whatever_sc
+Unk16       byte              Unknown //only when Unk11 > 2 generic_whatever_sc
+Unk17       byte              Unknown //only when Unk11 > 2 generic_whatever_sc
+
+
+
+
+Examples:
+
+<Item type="SpeechChoice" ntOffset="282264">
+ <Name>generic_insult_high_sc</Name>
+ <Flags value="0xAAA94401" />
+ <Unk01>hash_5B2027A1</Unk01>
+ <Unk02 value="5000" />
+ <Unk03 value="10000" />
+ <Unk04 value="1" />
+ <Unk05 value="0" />
+ <Unk06 value="0" />
+ <Unk07 value="0" />
+ <Unk08 />
+ <Unk09 />
+ <Unk10 value="3" />
+ <Unk11 value="1" />
+ <Unk12 value="22" />
+ <Unk13 value="0" />
+</Item>

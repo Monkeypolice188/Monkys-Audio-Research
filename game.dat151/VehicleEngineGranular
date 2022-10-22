@@ -1,4 +1,4 @@
-The VehicleEngineGranular type is used for a variety various engine-related sounds.
+The VehicleEngineGranular (88) type is used for a variety various engine-related sounds.
 
 It is used to assign a range of engine-based sounds to a vehicle, including a granular engine sound, as well as exhaust pops and filters.
 

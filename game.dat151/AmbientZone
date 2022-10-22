@@ -1,4 +1,4 @@
-The "AmbientZone" type is used to assign ambient sounds to an area.
+The AmbientZone (37) type is used to assign ambient sounds to an area.
 
 It uses two main bounding volumes; an activation volume and a playback volume. The volumes can be defined as spheres, boxes or lines. 
 
@@ -14,13 +14,13 @@ Fields:
 
 Field name               Type       FileRef Description
 --
-Name                     metahash          Zone name referenced in Dat151AmbientZoneList <Zones>
+Name                     metahash          Zone name //from Dat151AmbientZoneList <Zones>.
 Flags0                   flags             Unknown
-Shape                    metahash          Type of zone 
+Shape                    metahash          Type of zone.
 - Sphere
 - Box
 - Line
-Flags1                   flags             Unknown
+Flags1                   metahash          Unknown
 ActivationZonePosition   vector3           Position of the activation zone.
 ActivationZoneSize       vector3           Size of the activation zone in meters.
 ActivationZoneVec1       vector4           Position vector4.
@@ -35,16 +35,17 @@ PlaybackZoneAngle        float             Rotation of the Playback zone in degr
 PlaybackZoneVec3         vector3           Rotation vector3.
 UnkVec1                  vector4           Unknown
 UnkVec2                  vector4           Unknown
-UnkHash0                 metahash          Unknown
+UnkHash0                 metahash  dat151  AmbientZoneParams entry.
 Scene                    metahash  dat15   Scene defined in dynamix.dat.
 UnkVec3                  vector2           Unknown
-Flags2                   flags             Unknown
+Flags2                   metahash          Unknown
 Unk14                    byte              Unknown
 Unk15                    byte              Unknown
 Unk16                    byte              Unknown
-Rules                    item list dat151  List of Dat151AmbientRules
-ExtParams                item list dat151  List of external parameters such as variables and DependentAudio entries.
-
+Rules                    item list dat151  List of Dat151AmbientRules.
+ExtParams                item list dat151  List of Dat151DependentAmbience.
+	Name                 metahash          Dat151DependentAmbience entry.
+	Value                float             Unknown // possibly intensity override
 
 Example:
 
@@ -80,3 +81,25 @@ Example:
  </Rules>
  <ExtParams />
 </Item>
+
+
+Example with external parameters:
+
+ <ExtParams>
+  <Item>
+   <Name>da_dlc_h4_ih_tree_frogs_tropical</Name>
+   <Value value="1" />
+  </Item>
+  <Item>
+   <Name>da_dlc_h4_ih_crickets_tropical_night</Name>
+   <Value value="1" />
+  </Item>
+  <Item>
+   <Name>da_dlc_h4_ih_cricket_plains_day</Name>
+   <Value value="1" />
+  </Item>
+  <Item>
+   <Name>da_dlc_h4_ih_cicadas_tropical_jungle_day</Name>
+   <Value value="1" />
+  </Item>
+ </ExtParams>

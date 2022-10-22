@@ -1,0 +1,59 @@
+The StaticEmitter (6) type is used to apply sounds in a specific location or interior.
+
+It is generally only used for ambient radio music, but can also be used for alarms or general streams.
+
+Fields:
+
+Field name     Type      FileRef Description
+--
+Name           metahash  dat151  StaticEmitter name //from Dat151StaticEmitterList <Emitters>.
+Unk01          metahash  dat54   Main sound.
+RadioStation   metahash  dat151  RadioStation played, defined in Dat151RadioStation.
+Position       vector3           Position within the world it is played at.
+Unk06          float             Unknown //same as Unk07 else 0
+Unk07          float             Unknown //Volume?
+Unk08          integer           Unknown
+Unk09          short             LPFCutoff
+Unk10          short             HPFCutoff
+Unk11          integer           Unknown //Falloff?
+Interior       metahash  dat151  Interior played within, defined in Dat151Interior.
+Room           metahash  dat151  Room within the interior it is played in, defined in Dat151Room.
+Unk13          metahash          Unknown
+Unk14          float             Unknown
+Unk15          short             Unknown       
+Unk16          short             Unknown //Angle?
+Alarm          metahash  dat151  Alarm sound used, defined in Dat151Alarm.
+Unk18          metahash  dat54   Unknown
+Unk19          flags             Unknown
+Unk20          flags             Unknown
+Unk21          float             Unknown
+Unk22          float             Unknown
+
+
+Example:
+
+<Item type="StaticEmitter" ntOffset="47416">
+ <Name>los_santos_ammunation_gun_range</Name>
+ <Flags value="0xAA041501" />
+ <Unk01>null_sound</Unk01>
+ <RadioStation>hidden_radio_04_punk</RadioStation>
+ <Position x="12.8" y="-1098" z="32" />
+ <Unk06 value="0" />
+ <Unk07 value="60" />
+ <Unk08 value="1200" />
+ <Unk09 value="5000" />
+ <Unk10 value="200" />
+ <Unk11 value="250" />
+ <Interior>v_gun</Interior>
+ <Room>v_7_shootrm</Room>
+ <Unk13 />
+ <Unk14 value="0.8" />
+ <Unk15 value="6" />
+ <Unk16 value="15" />
+ <Alarm />
+ <Unk18>null_sound</Unk18>
+ <Unk19 value="0x00323203" />
+ <Unk20 value="0x05A00000" />
+ <Unk21 value="0.94" />
+ <Unk22 value="0.99" />
+</Item>

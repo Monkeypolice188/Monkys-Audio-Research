@@ -1,19 +1,24 @@
-The VehicleScannerParams type is used by the police scanner to identify a vehicle.
+The VehicleScannerParams (76) type is used by the police scanner to identify a vehicle.
 
 It is used to assign a manufacturer, model, category and colour to a vehicle. 
 
-The police scanner will refer to a vehicle by its current color so long as the Unk04 entry is blank, or the vehicle does not have FLAG_HAS_LIVERY in vehicles.meta
+The police scanner will refer to a vehicle by its current color so long as the ColorOverride entry is blank, or the vehicle does not have FLAG_HAS_LIVERY in vehicles.meta
 
 The police scanner will pair up either the manufacturer or color override with either the model or the category entries.
 
 Fields:
 
-Name - metahash - scannerparams name //from Dat151Vehicle ScannerParams
-Flags - flag value - Scanner flags //See Flags
-Unk01 - metahash - Manufacturer //Dat54 eg brute, joebuilt, vapid
-Unk02 - metahash - Model //Dat54 eg boxville, phantom, stanier
-Unk03 - metahash - Category //Dat54 eg big rig, 4-door, sports, utility vehicle
-Unk04 - metahash - ColorOverride - overrides the color prefix//Dat54 eg white, black, grey
+Field name    Type      FileRef Description
+--
+Name          metahash  dat151  ScannerParam's name //from Dat151Vehicle <ScannerParams>.
+Flags         flags             Scanner flags //see Flags.
+Manufacturer  metahash  dat54   Manufactuer.
+Model         metahash  dat54   Model.
+Category      metahash  dat54   Category.
+ColorOverride metahash  dat54   Overrides the color prefix with a permanent color.
+
+
+
 
 Flags
 The Flags value represents basic scanner flags.
@@ -36,10 +41,10 @@ boxville_scanner_params_white will allow the police scanner to refer to the vehi
    <Flags value="0xAAAAAAA8" />
    <Params>
     <Item>
-     <Unk01>police_scanner_manufacturer_brute_b</Unk01>
-     <Unk02>police_scanner_model_boxville_b</Unk02>
-     <Unk03>police_scanner_vehicle_category_truck_b</Unk03>
-     <Unk04>police_scanner_01_colour_color_white_01</Unk04>
+     <Manufacturer>police_scanner_manufacturer_brute_b</Manufacturer>
+     <Model>police_scanner_model_boxville_b</Model>
+     <Category>police_scanner_vehicle_category_truck_b</Category>
+     <ColorOverride>police_scanner_01_colour_color_white_01</ColorOverride>
     </Item>
    </Params>
   </Item>

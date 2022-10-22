@@ -3961,6 +3961,8 @@ chopper_3_ex_idle
 chopper_3_ex_low
 chopper_3_revs_off
 chopper_3_start
+chopper_crash_left
+chopper_crash_right
 chopper_ignition
 chopper_ignition_tail
 chopper_loop
@@ -7563,6 +7565,8 @@ drop_4
 drop_5
 drop_6
 drop_7
+drop_stinger_left
+drop_stinger_right
 dual_engine
 duck
 duck_quack_01
@@ -15321,6 +15325,8 @@ siren_3
 siren_firetruck_quick_01
 siren_firetruck_wail_01
 siren_pa20a_wail
+siren_pa20a_wail_vc
+siren_pa20a_wail_vf
 siren_quick_01
 siren_quick_02
 siren_quick_03
@@ -17318,6 +17324,8 @@ train_horn
 train_horn_tail
 train_loop_a
 train_loop_b
+train_switch_tracks_left
+train_switch_tracks_right
 trans_synth_loop
 transit_van_bump
 trash2_comapctor_close

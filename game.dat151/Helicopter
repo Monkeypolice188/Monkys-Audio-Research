@@ -1,0 +1,202 @@
+The Helicopter (8) type is used to assign sounds to helicopters.
+
+It is used to assign a variety of vehicle-related sounds to a helicopter model, including its engine and exhaust 
+howl, main rotor, tail rotor and internal tones.
+
+Fields:
+
+Field name                Type      FileRef Description
+--
+Name                      metahash          Helicopter's modelName //or audioNameHash entry.
+Flags                     flags             Unknown flags.
+MainRotor                 metahash  dat54   Main rotor loop sound.
+TailRotor                 metahash  dat54   Tail rotor loop sound.
+Exhaust                   metahash  dat54   Exhaust howl tone.
+Engine                    metahash  dat54   Engine banking tone.
+InternalCabinTone         metahash  dat54   Internal cabin buzz.
+Unk06                     float             Unknown //related to blade speed.
+BankAngleVolume           metahash  dat16   Volume curve of engine when banking.
+BankThrottleVolume        metahash  dat16   Volume curve of engine when throttling.
+BankThrottlePitch         metahash  dat16   Pitch curve of engine when throttling.
+RotorThrottleVolume       metahash  dat16   Volume curve of main rotors when throttling.
+RotorThrottlePitch        metahash  dat16   Pitch curve of main rotors when throttling.
+RotorThrottleGap          metahash  dat16   Unknown //affects the "gap" between each blade sound upon throttling.
+TailRotorThrottleVolume   metahash  dat16   Volume curve of tail rotor when throttling.
+ExhaustThrottleVolume     metahash  dat16   Volume curve of exhaust howl when throttling.
+ExhaustThrottlePitch      metahash  dat16   Pitch curve of exhaust howl when throttling.
+Unk16                     short             //46
+Unk17                     short             //134
+Unk18                     short             //-300
+Unk19                     short             //2
+Unk20                     short             //177
+Unk21                     short             //-300
+Unk22                     short             //80
+Unk23                     short             //100
+Unk24                     short             //-300
+Unk25                     short             //0
+ThrottleResonance1        metahash  dat16   Unknown //Resonance curve of main rotor when throttling?
+ThrottleResonance2        metahash  dat16   Unknown //Resonance curve of tail rotor when throttling?
+BankingResonance          metahash  dat16   Resonance curve of engine when throttling?
+RotorStartupVolume        metahash  dat16   Volume curve of main rotor when starting up.
+BladeStartupVolume        metahash  dat16   Unknown
+RotorStartupPitch         metahash  dat16   Pitch curve of of main rotor when starting up.
+RearRotorStartupVolume    metahash  dat16   Volume curve of tail rotor when starting up.
+ExhaustStartupVolume      metahash  dat16   Volume curve of exhaust howl when starting up.
+RotorStartupGap           metahash  dat16   Unknown //affects the "gap" between each blade sound upon startup.
+Startup                   metahash  dat54   Startup sound.
+Unk36                     short             //91
+Unk37                     short             //110
+Unk38                     short             //0
+Unk39                     short             //109
+Unk40                     integer           //76
+Unk41                     metahash  dat54   Unknown
+Unk42                     metahash  dat54   Unknown
+PoliceScannerCategory     metahash  dat54   Helicopter category for police scanner.
+PoliceScannerParams       metahash  dat151  Helicopter's scanner params defined in Dat151VehicleScannerParams.
+RadioFlags                integer           Radio flags.
+	1 - default radio
+	4098 - no radio (police helicopter)
+DoorOpen                  metahash  dat54   Door open sound.
+DoorClose                 metahash  dat54   Door close sound.
+DoorLimit                 metahash  dat54   Door when knocked and reached maximum open angle.
+Damage                    metahash  dat54   Damage loop sounds (exhaust hissing).
+Unk50                     metahash  dat16   Unknown
+Unk51                     integer           Unknown
+Unk52                     metahash          Unknown //unused
+Unk53                     metahash          Unknown //unused
+Unk54                     metahash          Unknown //unused
+Unk55                     metahash          Unknown //unused
+Unk56                     metahash  dat54   Unknown //environment sounds
+Unk57                     metahash  dat54   Unknown //environment sounds
+RotorBass                 metahash  dat54   Rotor "bass" sounds used when panning camera.
+Unk59                     metahash  dat16   Unknown //possibly related to RotorBass
+Collision                 metahash  dat151  Helicopter's collision sounds defined in Dat151VehicleCollision.
+Fire                      metahash  dat54   Fire and explosion sounds.
+Distant                   metahash  dat54   Distant helicopter synth loop.
+Unk63                     metahash  dat54   Unknown
+Unk64                     metahash  dat54   Unknown
+Unk65                     metahash  dat54   Unknown
+Unk66                     metahash  dat54   Unknown
+SuspensionUp              metahash  dat54   Helicopter skid/suspsension sounds when compressed.
+SuspensionDown            metahash  dat54   Helicopter skid/suspsension sounds when retracted.
+Unk69                     float             Unknown //SuspsensionUpFrequency?
+Unk70                     float             Unknown //SuspsensionDownFrequency?
+DamageOneShots            metahash  dat54   Infrequent damage "pops" when engine breaking down.
+DamageWarning             metahash  dat54   Damage warning beeping tone.
+TailBreak                 metahash  dat54   Break/deform sound when tail is broken off.
+MainRotorBreak            metahash  dat54   Burst/pop sound when main rotor destroyed.
+TailRotorBreak            metahash  dat54   Burst/pop sound when tail rotor destroyed.
+CableDeploy               metahash  dat54   Cable/chain foley when rapple cables deployed.
+Unk77                     metahash  dat54   Unknown //scrapes
+Unk78                     metahash  dat54   Unknown //heat stress ticks?
+AltitudeWarning           metahash  dat54   Unknown
+DamageVolumeCurve         metahash  dat16   Unknown //Volume curve of damage loops.
+DamageVolumeCurve2        metahash  dat16   Unknown //Volume curve of damage loops.
+Unk83                     float             Unknown //0.003 - related to DamageVolumeCurve?
+Unk84                     float             Unknown //0.003 - related to DamageVolumeCurve2?
+Unk85                     float             Unknown //100
+Jet                       metahash  dat54   Unknown //unused, possibly obselete with <Engine>
+PlayerSwitch              metahash  dat54   Unknown //blade slowdown on char switch?
+Unk88                     metahash  dat54   Unknown
+Unk89                     metahash  dat54   Unknown
+Unk90                     metahash  dat54   Unknown
+StartupBroken             metahash  dat54   Startup sound when engine is damaged.
+
+Example:
+
+<Item type="Helicopter" ntOffset="17965">
+ <Name>akula</Name>
+ <Flags value="0xAAAAAA96" />
+ <Version value="1" />
+ <MainRotor>military_heli_rotor</MainRotor>
+ <TailRotor>military_heli_tail</TailRotor>
+ <Exhaust>military_heli_howl</Exhaust>
+ <Engine>military_heli_bank</Engine>
+ <InternalCabinTone>military_internal_cabin_tone</InternalCabinTone>
+ <Unk06 value="0.005" />
+ <BankAngleVolume>heli_bank_angle_volume</BankAngleVolume>
+ <BankThrottleVolume>heli_bank_throttle_volume</BankThrottleVolume>
+ <BankThrottlePitch>heli_bank_throttle_pitch_curve</BankThrottlePitch>
+ <RotorThrottleVolume>heli_rotor_throttle_volume</RotorThrottleVolume>
+ <RotorThrottlePitch>hash_63FA8612</RotorThrottlePitch>
+ <RotorThrottleGap>heli_rotor_throttle_gap</RotorThrottleGap>
+ <TailRotorThrottleVolume>heli_rear_rotor_throttle_volume</TailRotorThrottleVolume>
+ <ExhaustThrottleVolume>hash_D742CE50</ExhaustThrottleVolume>
+ <ExhaustThrottlePitch>hash_66C6D033</ExhaustThrottlePitch>
+ <Unk16 value="46" />
+ <Unk17 value="134" />
+ <Unk18 value="-300" />
+ <Unk19 value="2" />
+ <Unk20 value="177" />
+ <Unk21 value="-300" />
+ <Unk22 value="80" />
+ <Unk23 value="100" />
+ <Unk24 value="-300" />
+ <Unk25 value="0" />
+ <ThrottleResonance1>heli_throttle_resonance_1</ThrottleResonance1>
+ <ThrottleResonance2>heli_throttle_resonance_2</ThrottleResonance2>
+ <BankingResonance>banking_resonance_curve</BankingResonance>
+ <RotorStartupVolume>rotor_volume_startup_curve</RotorStartupVolume>
+ <BladeStartupVolume>blade_volume_startup_curve</BladeStartupVolume>
+ <RotorStartupPitch>rotor_pitch_startup_curve</RotorStartupPitch>
+ <RearRotorStartupVolume>rear_rotor_volume_startup_curve</RearRotorStartupVolume>
+ <ExhaustStartupVolume>exhaust_volume_startup_curve</ExhaustStartupVolume>
+ <RotorStartupGap>rotor_gap_startup_curve</RotorStartupGap>
+ <Startup>military_heli_startup</Startup>
+ <Unk36 value="91" />
+ <Unk37 value="110" />
+ <Unk38 value="0" />
+ <Unk39 value="109" />
+ <Unk40 value="76" />
+ <Unk41>null_sound</Unk41>
+ <Unk42>null_sound</Unk42>
+ <PoliceScannerCategory>police_scanner_vehicle_category_military_chopper_b</PoliceScannerCategory>
+ <PoliceScannerParams>akula_scanner_params</PoliceScannerParams>
+ <RadioFlags value="1" />
+ <DoorOpen>vehicles_extras_copter_door_open</DoorOpen>
+ <DoorClose>vehicles_extras_copter_door_close</DoorClose>
+ <DoorLimit>vehicles_extras_door_limit</DoorLimit>
+ <Damage>military_heli_damage_loop</Damage>
+ <Unk50>hash_D4D639AB</Unk50>
+ <Unk51 value="400" />
+ <Unk52 />
+ <Unk53 />
+ <Unk54 />
+ <Unk55 />
+ <Unk56>hash_C8A30AC3</Unk56>
+ <Unk57>hash_D2CE8485</Unk57>
+ <RotorBass>military_heli_rotor_bass</RotorBass>
+ <Unk59>hash_F7CA35FC</Unk59>
+ <Collision>vehicle_collision_heli</Collision>
+ <Fire>veh_big_fire_soundset</Fire>
+ <Distant>distant_helis_triggerrate</Distant>
+ <Unk63>null_sound</Unk63>
+ <Unk64>null_sound</Unk64>
+ <Unk65>null_sound</Unk65>
+ <Unk66>null_sound</Unk66>
+ <SuspensionUp>heli_suspension_up</SuspensionUp>
+ <SuspensionDown>heli_suspension_down</SuspensionDown>
+ <Unk69 value="0.2" />
+ <Unk70 value="1" />
+ <DamageOneShots>hash_C869646E</DamageOneShots>
+ <DamageWarning>akula_heli_damage_warning</DamageWarning>
+ <TailBreak>heli_tail_break</TailBreak>
+ <MainRotorBreak>heli_rotor_break</MainRotorBreak>
+ <TailRotorBreak>heli_rear_rotor_break</TailRotorBreak>
+ <CableDeploy>helicopter_cable_deploy</CableDeploy>
+ <Unk77>multi_scrape</Unk77>
+ <Unk78>heli_heat_stress_heat_tick_loop</Unk78>
+ <AltitudeWarning>akula_heli_altitude_warning</AltitudeWarning>
+ <DamageVolumeCurve>heli_damage_volume_curve</DamageVolumeCurve>
+ <DamageVolumeCurve2>heli_damage_volume_curve</DamageVolumeCurve2>
+ <DamageBelow600>military_damage_below_600</DamageBelow600>
+ <Unk83 value="0.0003" />
+ <Unk84 value="0.0003" />
+ <Unk85 value="100" />
+ <Jet>null_sound</Jet>
+ <PlayerSwitch>player_switch_heli_master</PlayerSwitch>
+ <Unk88>null_sound</Unk88>
+ <Unk89>null_sound</Unk89>
+ <Unk90>null_sound</Unk90>
+ <StartupBroken />
+</Item>

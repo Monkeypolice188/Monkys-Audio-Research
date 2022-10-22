@@ -1,0 +1,36 @@
+The AmbientZoneParams (42) type is used to override various settings otherwise controlled by the game world (collisions and player behavior).
+
+The settings include minimum and maximum reverb and echo.
+
+Fields:
+Field name          Type      FileRef Description
+--
+Name                metahash          AmbientZoneParam's name //from Dat151AmbientZone <UnkHash0>.
+Flags               flags             Unknown
+Unk01               metahash          Unknown //unused
+Unk02               float             Unknown
+Unk03               metahash          Unknown //unused
+Unk04               float             Unknown
+Unk05               float             Unknown
+Unk06               float             Unknown
+Unk07               float             Unknown
+Unk08               metahash          Unknown //unused
+Unk09               metahash          Unknown //unused
+Unk10               metahash          Unknown //unused
+
+Example:
+
+<Item type="AmbientZoneParams" ntOffset="7206">
+ <Name>az_dlc_hei4_island_beach_party_music_override_reverb</Name>
+ <Flags value="0xAAAAAAA9" />
+ <Unk01 />
+ <Unk02 value="0" />
+ <Unk03 />
+ <Unk04 value="1" />
+ <Unk05 value="250" />
+ <Unk06 value="75" />
+ <Unk07 value="-100" />
+ <Unk08 />
+ <Unk09 />
+ <Unk10 />
+</Item>
