@@ -4,36 +4,36 @@ The AmbientRules are often used by AmbientZones. Rules have information such as 
 
 Fields:
 
-Field name Type      FileRef Description
+Field name  Type      FileRef Description
 --
-Name       metahash          Rule name //from Dat151AmbientZone <Rules>.
-Flags      flags             Unknown
-Flags2     metahash  dat54   Unknown
-Flags3     metahash  dat54   Unknown
-Position   vector3           Offset of the sound relative to the AmbientZone center.
-Flags3     flags             Unknown
-ChildSound metahash  dat54   The master sound defined in sounds.dat.
-Category   metahash  dat22   Category defined in categories.dat.
-Flags4     metahash  dat54   Unknown
-Flags5     metahash  dat54   Unknown
-Flags6     metahash  dat54   Unknown
-Unk01      float             Unknown
-InnerRad   float             Inner radius of sound, in meters, - minimum distance the sound can be heard from.
-OuterRad   float             Outer radius of sound, in meters, - maximum distance the sound can be heard from.
-StartTime  integer           Start time, in minutes, the sound can play at.
-EndTime    integer           End time, in minutes, the sound can play at (1440 = 24hr / 12:00am)
-Unk06      integer           Frequency multiplier. Affects how often the sound should trigger, higher values = less frequent.
-Unk07      integer           Unknown
-Unk08      integer           Unknown
-Unk09      integer           Unknown
-Unk10      integer           Unknown
-Unk11      integer           Unknown
-Unk12      integer           Unknown
-Unk13      integer           Unknown
-ExtParams  item list         List of external parameters which influence whether the sound should play.
-	Hash   metahash  dat10   Variable to use for this parameter.
-	Value  float             Value the variable must use for the rule to play.
-	Flags  flags             Type of condition behavior
+Name        metahash          Rule name //from Dat151AmbientZone <Rules>.
+Flags       flags             Unknown
+Flags2      metahash  dat54   Unknown
+Flags3      metahash  dat54   Unknown
+Position    vector3           Offset of the sound relative to the AmbientZone center.
+Flags3      flags             Unknown
+ChildSound  metahash  dat54   The master sound defined in sounds.dat.
+Category    metahash  dat22   Category defined in categories.dat.
+Flags4      metahash  dat54   Unknown
+Flags5      metahash  dat54   Unknown
+Flags6      metahash  dat54   Unknown
+Unk01       float             Unknown
+InnerRadius float             Inner radius of sound, in meters, - minimum distance the sound can be heard from.
+OuterRadius float             Outer radius of sound, in meters, - maximum distance the sound can be heard from.
+StartTime   integer           Start time, in minutes, the sound can play at.
+EndTime     integer           End time, in minutes, the sound can play at (1440 = 24hr / 12:00am)
+Frequency   integer           Frequency multiplier. Affects how often the sound should trigger, higher values = less frequent.
+Unk07       integer           Unknown
+Unk08       integer           Unknown
+Unk09       integer           Unknown
+Unk10       integer           Unknown
+Unk11       integer           Unknown
+Unk12       integer           Unknown
+Unk13       integer           Unknown
+Variables   item list         List of  variables which influence whether the sound should play.
+	Name    metahash  dat10   Variable to use.
+	Value   float             Value the variable must use for the rule to play.
+	Flags   flags             Type of condition behavior
 		0x00000100 = Less Than
 		0x00000101 = Less Than or Equal To
 		0x00000102 = Greater Than
@@ -55,11 +55,11 @@ Example:
  <Flags5 value="0xFFFFFFFF" />
  <Flags6 value="0x00000000" />
  <Unk01 value="1" />
- <InnerRad value="100" />
- <OuterRad value="200" />
+ <InnerRadius value="100" />
+ <OuterRadius value="200" />
  <StartTime value="0" />
  <EndTime value="1440" />
- <Unk06 value="35" />
+ <Frequency value="35" />
  <Unk07 value="10" />
  <Unk08 value="2" />
  <Unk09 value="0" />
@@ -67,16 +67,16 @@ Example:
  <Unk11 value="255" />
  <Unk12 value="100" />
  <Unk13 value="3" />
- <ExtParams />
+ <Variables />
 </Item>
 
 
 Example with external parameters:
 
- <ExtParams>
+ <Variables>
   <Item>
-   <Hash>game.weather.rain.level</Hash>
+   <Name>game.weather.rain.level</Name>
    <Value value="0.2" />
    <Flags value="0x00000102" />
   </Item>
- </ExtParams>
+ </Variables>

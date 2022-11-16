@@ -12,17 +12,18 @@ Unk01       integer           Unknown //interrupt behavior
 	2
 	3 interrupt/force
 Unk02       integer           Unknown //30000 - max duration?
-Unk03       byte              Unknown //type?
+Unk03       byte              Unknown
 	0
 	1 normal
 	2 shouted
 	3 frontend
 	4 megaphone
 	5 heli
-Unk04       byte              Unknown
+Unk04       byte              Audibility
 	0 normal
 	1 clear
 	2 critical
+	3 lead-in
 Unk05       short             Unknown //0
 Unk06       metahash          Unknown //unused
 Unk07       integer           Unknown //-1

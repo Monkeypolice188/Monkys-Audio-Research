@@ -328,6 +328,7 @@ speed_to_brake_disc_volume
 speedboat_engine_2_volume
 speedboat_engine_pitch
 start_loop_vol_curve
+sub_turning_mod
 subway_brake_acceleration_pitch
 subway_brake_acceleration_volume
 subway_brake_velocity_pitch

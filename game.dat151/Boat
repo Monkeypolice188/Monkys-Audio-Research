@@ -7,27 +7,63 @@ Fields:
 
 Field name                Type      FileRef Description
 --
-Name                      metahash          Boat's modelName //or audioNameHash entry.
-Flags                     flags             Boat flags.
-Engine                    metahash  dat54   Left engine.
-EngineVolume              metahash  dat16   Volume curve for left engine.
-EnginePitch               metahash  dat16   Pitch curve for left engine.
-Engine2                   metahash  dat54   Right engine.
-Engine2Volume             metahash  dat16   Volume curve for right engine.
-Engine2Pitch              metahash  dat16   Pitch curve for right engine.
+Name                      metahash          Boat's modelName //or audioNameHash entry
+Flags                     flags             Boat flags
+Engine                    metahash  dat54   Left engine
+EngineVolume              metahash  dat16   Volume curve for left engine
+EnginePitch               metahash  dat16   Pitch curve for left engine
+Engine2                   metahash  dat54   Right engine
+Engine2Volume             metahash  dat16   Volume curve for right engine
+Engine2Pitch              metahash  dat16   Pitch curve for right engine
 EngineLowReso             metahash  dat54   Unknown
 EngineLowResoVolume       metahash  dat16   Unknown
 EngineLowResoPitch        metahash  dat16   Unknown
-EngineIdleLoop            metahash  dat54   Engine idle loops.
-EngineIdleVolume          metahash  dat16   Volume curve for engine idle loop.
-EngineIdlePitch           metahash  dat16   Pitch curve for engine idle loop.
+EngineIdleLoop            metahash  dat54   Engine idle loops
+EngineIdleVolume          metahash  dat16   Volume curve for engine idle loop
+EngineIdlePitch           metahash  dat16   Pitch curve for engine idle loop
 WaterTurbulence           metahash  dat54   Unknown
 WaterTurbulenceVolume     metahash  dat16   Unknown
 Unk15                     metahash  dat54   Unknown
 Unk16                     metahash  dat54   Unknown
 Unk17                     metahash  dat54   Unknown
 Unk18                     metahash  dat54   Unknown
-
+PoliceScannerParams       metahash  dat151  Police scanner settings Dat151VehicleScannerParams
+Unk20                     flags             Radio flags
+	0x00000000 - no radio //kosatka
+	0x00000001 - default radio
+	0x00000D01 - unknown //toreador
+	0x00000E01 - unknown //speeder
+Horn                      metahash  dat54   Horn sound (cannot be Dat54SoundList)
+Ignition                  metahash  dat54   Ignition sound
+Shutdown                  metahash  dat54   Engine stop/shutdown
+Unk24                     metahash          Unknown -  unused
+EngineSubmix              metahash  dat10   Engine submix 
+EngineSubmixPreset        metahash  dat10   Engine submix preset 
+ExhaustSubmix             metahash  dat10   Exhaust submix 
+ExhaustSubmixPreset       metahash  dat10   Exhaust submix preset 
+Collision                 metahash  dat151  Collision sounds Dat151Collision
+Unk30                     metahash  dat54   Unknown //engine environment reflections
+Unk31                     metahash  dat54   Unknown //engine environment reflections
+WaveHitMedium             metahash  dat54   Wave hit sounds //just "WaveHit"?
+Unk33                     metahash          Unknown - unused
+IdleHullSlap              metahash  dat54   Wave hit sounds upon idle //just "WaveHitIdle"?
+Unk35                     metahash  dat16   Unknown
+EngineGranular            metahash  dat151  Granular engine sounds Dat151VehicleEngineGranular
+BankSpray                 metahash  dat54   Water spray sounds upon banking
+Ignition2                 metahash  dat54   Ignition sound (for submarines?)
+Startup                   metahash  dat54   Engine start up
+Unk40                     metahash  dat16   SubTurnVolume // Volume curve for submarine turning
+SubTurn                   metahash  dat54   Submarine turning creak sounds.
+Unk42                     metahash  dat16   Unknown //constant_one
+Unk43                     metahash  dat16   Unknown //submarines
+Unk44                     metahash  dat16   Unknown //submarines
+SandSkid                  metahash  dat54   Sand skid sounds upon beaching
+Unk46                     float             Unknown //6
+Unk47                     float             Unknown //3 or 4
+Unk48                     float             Unknown //0, 0.5, 1              
+Unk49                     metahash  dat54   Unknown //hullscrapes
+Hull                      metahash  dat54   Unknown //hullscrapes
+Unk51                     metahash  dat54   Cloth //cloth flag sounds
 Example:
 
 <Item type="Boat" ntOffset="18818">

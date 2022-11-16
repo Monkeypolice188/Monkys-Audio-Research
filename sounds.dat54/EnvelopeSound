@@ -2,7 +2,7 @@ The EnvelopeSound (_env, _envelope, _one_shot) type is used to apply an ADSR (At
 
 Envelopes are used to play a sound for a specific duration and with specific mounts of fade-in/out.
 
-The EnvelopeSound uses the additional parameter Hold (ADSHR), which defines the amount of time sustain occurs.
+The EnvelopeSound uses the additional variable Hold (ADSHR), which defines the amount of time sustain occurs.
 
 Fields:
 
@@ -19,11 +19,11 @@ ReleaseVariance - integer value - Variance of Release.
 AttackCurve - metahash - Attack curve.
 DecayCurve - metahash - Decay curve.
 ReleaseCurve - metahash - Release curve.
-AttackParameter - metahash - Attack parameter.
-DecayParameter - metahash - Decay parameter.
-SustainParameter - metahash - Sustain parameter.
-HoldParameter - metahash - Hold parameter.
-ReleaseParameter - metahash - Release parameter.
+AttackVariable - metahash - Attack variable.
+DecayVariable - metahash - Decay variable.
+SustainVariable - metahash - Sustain variable.
+HoldVariable - metahash - Hold variable.
+ReleaseVariable - metahash - Release variable.
 ChildSound - metahash - child sound to envelope.
 Mode - integer value - Envelope behavior.
 	0 = Volume
@@ -61,11 +61,11 @@ Example:
  <AttackCurve>linear_rise</AttackCurve>
  <DecayCurve>linear_fall</DecayCurve>
  <ReleaseCurve>linear_fall</ReleaseCurve>
- <AttackParameter />
- <DecayParameter />
- <SustainParameter />
- <HoldParameter />
- <ReleaseParameter />
+ <AttackVariable />
+ <DecayVariable />
+ <SustainVariable />
+ <HoldVariable />
+ <ReleaseVariable />
  <ChildSound>truck_horn</ChildSound>
  <Mode value="0" />
  <OutputVariable />

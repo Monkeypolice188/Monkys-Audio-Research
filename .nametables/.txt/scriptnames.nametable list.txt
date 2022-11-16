@@ -23,6 +23,7 @@
 5s
 5s_to_event_start_countdown
 abbatave
+abemil
 abemilop
 abemilta
 accept_ghosting_mode
@@ -49,6 +50,7 @@ airhorn_blast_long
 airp
 alamo
 alarm
+alarm_disarm
 alarm_exterior
 alarm_interior
 alarm_interior_gate_loop
@@ -98,6 +100,7 @@ armour_off
 armour_on
 armour_pickup_loop
 arms
+armsslowmo
 armyb
 arrive_horn
 arrive_l_r
@@ -165,6 +168,7 @@ barge_door_glass
 barge_door_metal
 barge_door_metal_bars
 bark
+barracuda
 barrel_roll
 base_jump_passed
 basejumps_chopper_wind_wait
@@ -210,10 +214,13 @@ bicycle_medium
 bicycle_small
 big_stop
 big_win
+bigrig_brakerelease
+bigrig_handbrakerelease
 bike_bell
 biker_prop_grind
 biker_ride_off
 biker_ring_tone
+bikewatersplash
 bin_bag_bugs
 bird_impact
 birds
@@ -279,6 +286,7 @@ breaker_02
 breakerdown
 breakerup
 breaks
+breathing_heartbeat
 bridges
 brush
 brushes_hit_car
@@ -289,6 +297,8 @@ buenvin
 building_site_crash
 bull_shark_testosterone_end_master
 bull_shark_testosterone_start_master
+bulletbyin
+bulletbyout
 bulletimpact
 bulletimpactsound
 bumpsound
@@ -383,6 +393,7 @@ can_drop
 can_gulp
 can_initial
 cancel
+cannery
 cannon_activating_loop
 cannon_active
 cannon_active_loop
@@ -485,6 +496,7 @@ chickenhawk
 chil
 cholla
 chollar
+chollas
 choose_electric
 choose_pliers
 choose_water
@@ -654,6 +666,7 @@ creak_03
 creaking_loop
 creaksound
 creator_snap
+crenshawb
 criminal_damage_high_value
 criminal_damage_kill_player
 criminal_damage_low_value
@@ -681,6 +694,7 @@ cycle_item
 cypre
 damage_boost_loop
 damaged_truck_idle
+darien
 darts_hit_board_master
 darts_hit_bullseye_master
 darts_hit_dart_master
@@ -702,9 +716,11 @@ death
 death_impact
 death_screen_continue
 debris
+decent
 deck
 deckers
 decrease_loot_share
+deep_walk
 deer
 default
 degenatron_logo
@@ -809,6 +825,8 @@ dolphin
 dom
 dom_breathing
 dom_lands
+donate_01
+donate_02
 door_blast_a
 door_blast_b
 door_buzz
@@ -907,6 +925,7 @@ elsant
 elyfifwy
 elysian
 emirror
+emitterdamage
 emp
 emp_activate
 emp_blast
@@ -1004,6 +1023,7 @@ explosions_tanker
 explosions_tankshell
 explosions_train
 explosions_truck
+explosionshockwave
 external_explosion
 extra
 extrasunny
@@ -1183,6 +1203,9 @@ gas_station_explosion
 gas_tanker_explosion
 gasmask
 gate_lock_break
+gearchange_bike
+gearchange_external
+gearchange_internal
 geargrind_car
 geargrind_truck
 general
@@ -1334,6 +1357,7 @@ hawick
 hawik
 head
 headshot
+headslowmo
 health
 health_lost
 health_pickup_loop
@@ -1401,6 +1425,7 @@ hold_fail
 holding_position
 hollow_metal
 hollow_plastic
+hollowbranch
 hollywb
 honk_loop
 hood_open
@@ -1476,9 +1501,11 @@ item_close_loop
 item_found
 jackpot
 jail
+jamesto
 jb700_gun_player_master
 jet_explosions
 jetflyby
+jetflybylarge
 jn_death
 joad
 joshe
@@ -1560,6 +1587,8 @@ legs
 legs_down
 legs_land
 legs_up
+legsslowmo
+lemoyne
 lesbosl
 lester1a_sounds
 lester_laugh
@@ -1585,6 +1614,7 @@ lifts_tone
 lights
 lights_on
 limit
+linden
 lindsayc
 lmesa
 load_scene
@@ -1618,6 +1648,7 @@ lospuer
 lossf
 lost_target
 lostmc
+loudhaileron
 lower_bare
 lower_clothing
 lower_cotton
@@ -1757,6 +1788,7 @@ monkey_missed
 monkey_pain
 monkey_scream
 monkey_yell
+montanaa
 moonpool_prompt_exit
 moor_boat_engine
 moor_seashark3_engine
@@ -1841,6 +1873,8 @@ next_level_generic
 next_level_gun
 next_level_melee
 next_trap
+ngower
+nhighland
 night_die
 nightfall_stinger
 nightvision_loop
@@ -1863,6 +1897,9 @@ nowhe
 npop
 nrock
 nsheldon
+nsycamore
+nwestern
+nwilton
 object_collect_player
 object_collect_remote
 object_dropped_remote
@@ -1877,6 +1914,7 @@ off
 off_high
 off_low
 office_background_stream
+offroadrumble
 ok
 on
 on_call_player_join
@@ -1980,11 +2018,13 @@ peds
 pen_cross
 pen_erase
 pen_tick
+perino
 period_over
 period_start
 person_scroll
 person_select
 pertha
+petrol_ignite
 petrol_pool_fire
 petrol_pool_fire_start
 petrol_trail_fire
@@ -2136,17 +2176,23 @@ player_inactive
 player_near_death
 player_pick_up
 player_riding
+playercarspin
 playerfuckedsiren
+playerheartbeat
+playermapimpact
+playervehicleimpact
 playing_card
 pnq_eat
 pnq_swallow
 police_crash
 police_notification
+poop
 popup_cancel
 popup_confirm_fail
 popup_confirm_success
 portola
 positioned_walla_master
+pour_metal
 pouring
 power_down
 power_on
@@ -2226,6 +2272,7 @@ radio_off
 radio_on
 radio_tower_attract_loop
 radio_tower_fixed
+radiodrown
 rail_loop
 rail_loop_skip_start
 ramp_down
@@ -2254,6 +2301,7 @@ rattlesound
 rc_mines_empty
 ready
 rebreather
+receiver_slam
 recharged
 recharging_loop
 red_target_charge
@@ -2302,6 +2350,7 @@ retriever
 retry
 retune_high
 retune_low
+retuneburst
 retunefrontend
 retunepositioned
 return_to_vehicle_timer
@@ -2344,6 +2393,7 @@ rotor_turn
 rottweiler
 round_end
 round_ending_stinger_custom
+round_over
 round_passed
 round_start
 round_start_blade
@@ -2372,6 +2422,7 @@ sanand
 sanchia
 sandy
 sandyc
+sardine
 sasquatch
 save_scene
 scan
@@ -2482,6 +2533,7 @@ sign_destroyed
 signal_loop
 signal_off
 signal_on
+signalp
 signalst
 silo_alarm_loop
 single_blip_from_boat
@@ -2556,7 +2608,9 @@ solomon_1_jet_shot_explode
 sonar_pulse
 sonar_pulse_no_target
 song
+spacave
 spanav
+spank
 sparse
 spawn
 spawn_fe
@@ -2599,6 +2653,7 @@ squeak_final
 squeak_hard
 squeak_sequence
 srock
+sseaside
 ssham
 ssoto
 stad
@@ -2620,12 +2675,14 @@ start_mashing
 start_spin
 start_squelch
 startcutting
+startloudhailer
 startup_sequence
 steal
 steal_powerup
 steele
 stock_race_intro
 stop
+stoploudhailer
 stopsound
 strafe
 strain
@@ -2663,6 +2720,7 @@ svitus
 swallow
 swap_position
 swap_sides
+sweetner
 swing
 swing_shut
 swisss
@@ -2782,6 +2840,7 @@ torch
 torch_cut
 torpedoes
 torso
+torsoslowmo
 tow_truck_damage
 towedvehicleclatter
 tower
@@ -2804,6 +2863,7 @@ trail_custom
 trail_fast
 trail_med
 trail_slow
+trailerunhitch
 train_bell
 train_breaks
 train_coming
@@ -2962,6 +3022,7 @@ vehicle_debris_far
 vehicle_debris_near
 vehicle_destroyed
 vehicle_jump_land
+vehicle_rainsound
 vehicle_transform
 vehicle_warp
 vehicle_water_splash_heavy_script
@@ -2973,14 +3034,19 @@ vehicle_weapon_tampa_missile
 vehicle_weapon_tampa_mortar
 vehicle_weapon_trailer_missile
 vehicleclatter
+vehiclecollisionofac
+vehiclefragspropane
 vehiclehotwire
 vehiclepassby
 vehicles
+vehiclespeedscage
+vehiclewatersplash
 vent_fizzing
 vesp
 vespbd
 vespucci_canal_intro
 vine
+vinedr
 vineparkd
 vines
 vinewb
@@ -3000,10 +3066,13 @@ vulkan_lock_on_amber
 vulkan_lock_on_red
 walk
 walk_move
+walkman
 wall_crash
 warmwfwy
 warning
 warning_alarm_loop
+warning_dooropen
+warning_icevanreversing
 warning_loop
 warning_once
 warning_reversing

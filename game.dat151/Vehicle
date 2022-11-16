@@ -5,57 +5,60 @@ It is used to assign a variety of vehicle-related sounds to a vehicle model, inc
 Fields:
 Field name          Type      FileRef Description
 --
-Name                metahash          Vehicle's modelName //or audioNameHash entry.
-Unk00               flags             VehicleFlags - Vehicle behavioral     flags //see Unk00 VehicleFlags
-Engine              metahash  dat151  Engine sounds Dat151VehicleEngine
-EngineGranular      metahash  dat151  Granular engine sounds Dat151VehicleEngineGranular
-Horns               metahash  dat54   Horn & vehicle "horn" alarm sounds
-DoorOpen            metahash  dat54   Door opening sounds (door_pside_f/r & door_dside_f/r)
-DoorClose           metahash  dat54   Door closing sounds (door_pside_f/r & door_dside_f/r)
-TrunkOpen           metahash  dat54   Hood and trunk opening sounds (hood, boot & cargodoor)
-TrunkClose          metahash  dat54   Hood and trunk closed sounds (hood, boot & cargodoor)
-Unk08               metahash  dat54   Unknown - unused
-Unk09               float             Unknown //related to vehicles with doors (0.5 = default, 2 = trucks, 0 = no doors)
-SuspensionUp        metahash  dat54   Suspension lifted sound (suspension_lf/r, suspension_rf/r, suspension_lm & suspension rm)
-SuspensionDown      metahash  dat54   Suspension lowered sound (suspension_lf/r, suspension_rf/r, suspension_lm & suspension rm)
-Unk12               float             SuspensionUpFrequency
-Unk13               float             SuspensionDownFrequency
-Collision           metahash  dat151  Collision sounds Dat151Collision
-Unk15               integer           Unknown
-Unk16               integer           Unknown
-Unk17               integer           Unknown
-ScannerParams       metahash  dat151  Police scanner settings Dat151VehicleScannerParams
-JumpLandIntact      metahash  dat54   Intact suspension land sound
-JumpLandLoose       metahash  dat54   Damaged suspension land sound
-Unk21               integer           Unknown
-Unk22               integer           Unknown
-RadioFlags          flags             Radio settings //see RadioFlags
-IndicatorOn         metahash  dat54   Indicator "tick" on sound (indicator_lf/r & indicator rf/r)
-IndicatorOff        metahash  dat54   Indicator "tock" off sound (indicator_lf/r & indicator rf/r)
-Handbrake           metahash  dat54   handbrake pull sound when exiting
-Unk27               flags             Unknown
-ParkingTones        metahash  dat54   Unused - parking assist tones
-Unk29               flags             Unknown
-Unk30               metahash  dat54   Unknown wheel bounce noises?
-Unk31               metahash  dat54   Unknown wheel bounce noises?
-Fire                metahash  dat54   Fire & explosion sounds
-StartupSequence     metahash  dat54   Startup revs behavior
-Unk34               metahash  dat54   Unknown //null_sound
-Unk35               metahash  dat54   Unknown //0xF52E6D86
-Unk36               metahash  dat54   Unknown //0xF52E6D86
-Unk37               float             Unknown //6
-Unk38               float             Unknown //3
-Unk39               metahash  dat54   Unknown //[empty]
-Unk40               integer           Unknown //0
-Sirens              metahash  dat54   Siren sounds
-Unk42               integer           Unknown //0
-Unk43               integer           Unknown //0
-Unk44               integer           Unknown //0
-Unk45               metahash  dat54   Unknown //0x0C3F6AD5
-Unk46               metahash  dat54   Unknown //0x359E05CB
-ForkSounds          metahash  dat54   Sliding part sounds (forks & carriage / frame_1/2/3)
-TurretSounds        metahash  dat54   Turret rotation sounds (turrets)
-Unk49               integer           Unknown
+Name                    metahash          Vehicle's modelName //or audioNameHash entry.
+Flags                   flags             Vehicle flags - Vehicle behavioral flags //see VehicleFlags
+Engine                  metahash  dat151  Engine sounds Dat151VehicleEngine
+EngineGranular          metahash  dat151  Granular engine sounds Dat151VehicleEngineGranular
+Horns                   metahash  dat54   Horn & vehicle "horn" alarm sounds (must be Dat54SoundList)
+DoorOpen                metahash  dat54   Door opening sounds (door bones)
+DoorClose               metahash  dat54   Door closing sounds (door bones)
+TrunkOpen               metahash  dat54   Hood and trunk opening sounds (hood, boot & cargodoor bones)
+TrunkClose              metahash  dat54   Hood and trunk closed sounds (hood, boot & cargodoor bones)
+Unk08                   metahash  dat54   Unknown - unused
+Unk09                   float             Unknown //related to vehicles with doors
+- 0.5 = default
+- 2 = trucks
+- 0 = no doors
+SuspensionUp            metahash  dat54   Suspension lifted sound (suspension bones)
+SuspensionDown          metahash  dat54   Suspension lowered sound (suspension bones)
+SuspensionUpFrequency   float
+SuspensionDownFrequency float
+Collision               metahash  dat151  Collision sounds Dat151Collision
+Unk15                   integer           Unknown
+Unk16                   integer           Unknown
+Unk17                   integer           Unknown
+ScannerParams           metahash  dat151  Police scanner settings Dat151VehicleScannerParams
+JumpLandIntact          metahash  dat54   Intact suspension land sound
+JumpLandLoose           metahash  dat54   Damaged suspension land sound
+Unk21                   integer           Unknown
+Unk22                   integer           Unknown
+RadioFlags              flags             Radio settings //see RadioFlags
+IndicatorOn             metahash  dat54   Indicator "tick" on sound (indicator lights)
+IndicatorOff            metahash  dat54   Indicator "tock" off sound (indicator lights)
+Handbrake               metahash  dat54   handbrake pull sound when exiting
+Unk27                   flags             Unknown
+ParkingTones            metahash  dat54   Unused - parking assist tones
+Unk29                   flags             Unknown
+Unk30                   metahash  dat54   Unknown wheel bounce noises?
+Unk31                   metahash  dat54   Unknown wheel bounce noises?
+Fire                    metahash  dat54   Fire & explosion sounds
+StartupSequence         metahash  dat54   Startup revs behavior
+Unk34                   metahash  dat54   Unknown //null_sound
+Unk35                   metahash  dat54   Unknown //0xF52E6D86
+Unk36                   metahash  dat54   Unknown //0xF52E6D86
+Unk37                   float             Unknown //6
+Unk38                   float             Unknown //3
+Unk39                   metahash  dat54   Unknown //[empty]
+Unk40                   integer           Unknown //0
+Sirens                  metahash  dat54   Siren sounds
+Unk42                   integer           Unknown //0
+Unk43                   integer           Unknown //0
+Unk44                   integer           Unknown //0
+Unk45                   metahash  dat54   Unknown //0x0C3F6AD5
+Unk46                   metahash  dat54   Unknown //0x359E05CB
+Fork                    metahash  dat54   Sliding part sounds (forks & carriage / frame bones)
+Turret                  metahash  dat54   Turret rotation sounds (turrets)
+Unk49                   integer           Unknown
 - 0 = rhino, utillitruck/2, hauler, phantom, packer, trash, flatbed, biff, barracks/2, ripley, rubble, tiptruck/2, mixer/2, docktug, dump, cutter, firetruk, 
 - 1 = benson, mule/2/3
 - 3 = voodoo2, emperor2
@@ -63,26 +66,26 @@ Unk49               integer           Unknown
 - 5 = policet, riot, stockade/2/3 dloader, ratloader, boxville/2/3, burrito/2/3/4/5, camper, gburrito, journey, pony, rumpo, rumpo2, speedo/3/4, surfer/2, taco, youga
 - 6 = speedo2
 - 8 = default
-ScoopSounds         metahash  dat54   Rotating part sounds (scoop)
-TowArmSounds        metahash  dat54   Lifting part sounds (towarm)
-Unk52               integer           Unknown
+Scoop                   metahash  dat54   Rotating part sounds (scoop)
+TowArm                  metahash  dat54   Lifting part sounds (towarm)
+Unk52                   integer           Unknown
 - 0 = default
 - 1 = electric
 - 2 = hybrid
-ElectricEngine      metahash  dat151  Electric engine sounds Dat151ElectricEngine
-Unk54               float             Unknown
+ElectricEngine          metahash  dat151  Electric engine sounds Dat151ElectricEngine
+Unk54                   float             Unknown
 - 0 = default
 - 0.1-0.9 = convertible
 - 1 = no roof
-ReverseWarning      metahash  dat54   Reversing beep sounds
-Unk56               integer           EngineHealth - Engine condition
+ReverseWarning          metahash  dat54   Reversing beep sounds
+Unk56                   integer           EngineHealth - Engine condition
 - 3 = engine healthy
 - 2 = fan belt damage
 - 1 = clutch damage
 - 0 = ignition start damage
-VehicleMaster       metahash  dat54   Cloth/wind sounds
-ShutdownBeep        metahash  dat54   Engine shutting down "beep" sound
-Unk59               float             Unknown
+Cloth                   metahash  dat54   Cloth/wind sounds
+ShutdownBeep            metahash  dat54   Engine shutting down "beep" sound
+Unk59                   float             Unknown
 - 0 = marshall
 - 1 = default
 - 2 = dukes2
@@ -90,8 +93,8 @@ Unk59               float             Unknown
 - 4 = journey
 - 5 = surfer2
 - 6 = voodoo
-Unk60               integer           Unknown //0
-Unk61               float             Unknown
+Unk60                   integer           Unknown //0
+Unk61                   float             Unknown
 - 0 = marshall
 - 1 = default
 - 1.5 = dump, dloader
@@ -100,31 +103,31 @@ Unk61               float             Unknown
 - 4 = 
 - 5 = surfer2
 - 6 = voodoo2
-Unk62               integer           Unknown
+Unk62                   integer           Unknown
 - 0 = default
 - 300 = speedo/3/4, dloader, ratloader
-Unk63               metahash  dat54   Convertible roof wind sounds
-Unk64               integer           Unknown
-Unk65               ushort            Unknown
+Unk63                   metahash  dat54   Convertible roof wind sounds
+Unk64                   integer           Unknown
+Unk65                   ushort            Unknown
 - 0 = default
 - 100 = jb700
-Unk66               ushort            Unknown
+Unk66                   ushort            Unknown
 - 0 = default
 - 100 = jb700
-ConvertibleRoof     metahash  dat54   Retracting roof/wind sounds
-Unk68               metahash  dat54   Unknown more wind sounds
-InteriorTones       metahash  dat54   POV interior clatter sounds
-Unk70               integer           Unknown //0
-Unk71               metahash  dat54   Unknown //only on bikes
-Unk72               metahash  dat54   Unknown //only on bikes
+ConvertibleRoof         metahash  dat54   Retracting roof/wind sounds
+Unk68                   metahash  dat54   Unknown more wind sounds
+InteriorTones           metahash  dat54   POV interior clatter sounds
+Unk70                   integer           Unknown //0
+Unk71                   metahash  dat54   Unknown //only on bikes
+Unk72                   metahash  dat54   Unknown //only on bikes
 
 
 
 
-Unk00 - VehicleFlags
-The Unk00 value represents basic vehicle     flags which seem to control various aspects of vehicle sound behavior. Some may be overriden by other options in the Vehicle sound type.
+Flags - VehicleFlags
+The Flags value represents basic vehicle flags which seem to control various aspects of vehicle sound behavior. Some may be overriden by other options in the Vehicle sound type.
 
-The Unk00 flag reads "0xXXXXXXXX" where "X" represents the following digits in respective order:
+The Flags value reads "0xXXXXXXXX" where "X" represents the following digits in respective order:
 
 0x10000000 - ?  //most vehicles except some trucks/obscure vehicles
 >0x20000000
@@ -171,24 +174,24 @@ Only the first, second, fourth and eighth values of this flag value are used.
 
 The RadioFlag flag reads "0xXXXXXXXX" where "X" represents the following digits in respective order:
 
-0x10000000 - ? //radio-off override?
-0x01000000 - rock //Los Santos Rock Radio, Radio Mirror Park, Vinewood Boulevard Radio, KULT FM
+0x10000000 - ?            Radio-off override?
+0x01000000 - rock         Los Santos Rock Radio, Radio Mirror Park, Vinewood Boulevard Radio, KULT FM
 0x02000000 - off
-0x03000000 - pop //Non-Stop Pop FM and Still Slipping Los Santos.
-0x04000000 - rap //West Coast Classics, Radio Los Santos, The Lab.
+0x03000000 - pop          Non-Stop Pop FM and Still Slipping Los Santos.
+0x04000000 - rap          West Coast Classics, Radio Los Santos, The Lab.
 0x05000000 - off
-0x06000000 - punk //Channel X
-0x07000000 - left-talk //West Coast Talk Radio
-0x08000000 - right-talk //Blaine County Talk Radio (only in Blaine County, random everywhere else)
-0x09000000 - country //Rebel Radio
-0x0A000000 - dance //FlyLo FM, Soulwax FM, Music Locker Radio, Los Santos Underground Radio
-0x0B000000 - mexican //East Los FM
-0x0C000000 - reggae //Blue Ark FM
-0x0D000000 - jazz //Worldwide FM
-0X0E000000 - funk //The Lowdown and Space 103.2
+0x06000000 - punk         Channel X
+0x07000000 - left-talk    West Coast Talk Radio
+0x08000000 - right-talk   Blaine County Talk Radio (only in Blaine County, random everywhere else)
+0x09000000 - country      Rebel Radio
+0x0A000000 - dance        FlyLo FM, Soulwax FM, Music Locker Radio, Los Santos Underground Radio
+0x0B000000 - mexican      East Los FM
+0x0C000000 - reggae       Blue Ark FM
+0x0D000000 - jazz         Worldwide FM
+0X0E000000 - funk         The Lowdown and Space 103.2
 0x0F000000 - off
-0x00010000 - enable radio //toggles radio wheel option
-0x00020000 - emergency radio //toggles police scanner chatter radio
+0x00010000 - enable radio - toggles radio wheel option
+0x00020000 - emergency radio - toggles police scanner chatter radio
 0x00030000 - ? //stockade - both?
 0x00000100 - ? //variety of civilian vehicles
 0x00000001 - ? //variety of higher-end vehicles
@@ -200,7 +203,7 @@ Example:
 
   <Item type="Vehicle" ntOffset="362047">
    <Name>airbus</Name>
-   <Unk00 value="0x91005614" />
+   <Flags value="0x91005614" />
    <Engine>airbus_engine</Engine>
    <EngineGranular />
    <Horns>horn_list_truck</Horns>
@@ -212,8 +215,8 @@ Example:
    <Unk09 value="2" />
    <SuspensionUp>suspension_up</SuspensionUp>
    <SuspensionDown>suspension_down</SuspensionDown>
-   <Unk12 value="0.400000006" />
-   <Unk13 value="1" />
+   <SuspensionUpFrequency value="0.4" />
+   <SuspensionDownFrequency value="1" />
    <Collision>vehicle_collision_car</Collision>
    <Unk15 value="0" />
    <Unk16 value="0" />
@@ -248,17 +251,17 @@ Example:
    <Unk44 value="0" />
    <Unk45>hash_0C3F6AD5</Unk45>
    <Unk46>hash_359E05CB</Unk46>
-   <ForkSounds />
-   <TurretSounds />
+   <Fork />
+   <Turret />
    <Unk49 value="4" />
-   <ScoopSounds />
-   <TowArmSounds />
+   <Scoop />
+   <TowArm />
    <Unk52 value="0" />
    <ElectricEngine />
    <Unk54 value="0" />
    <ReverseWarning>null_sound</ReverseWarning>
    <EngineHealth value="3" />
-   <VehicleMaster>null_sound</VehicleMaster>
+   <Cloth>null_sound</Cloth>
    <ShutdownBeep>null_sound</ShutdownBeep>
    <Unk59 value="1" />
    <Unk60 value="0" />

@@ -13,7 +13,7 @@ Fields:
 Field name          Type      FileRef Description
 --
 Name                metahash          EngineGranular name //from Dat151Vehicle <EngineGranular>
-Unk00               flag              EngineGranular flags //see Flags
+Flags               flag              EngineGranular flags //see Flags
 MasterVolume        integer           Volume of engine //default 0-100?
 EngineAccel         metahash  dat54   Granular engine sound played at engine bone
 ExhaustAccel        metahash  dat54   Exhaust coning environmental reflections played at exhaust bone(s)
@@ -92,7 +92,7 @@ Example:
 
 <Item type="VehicleEngineGranular" ntOffset="365670">
  <Name>adder_granular_engine</Name>
- <Unk00 value="0xAAAAA955" />
+ <Flags value="0xAAAAA955" />
  <MasterVolume value="0" />
  <EngineAccel>supercar_4_eur_v8_engine_accel</EngineAccel>
  <ExhaustAccel>supercar_4_eur_v8_exhaust_accel</ExhaustAccel>

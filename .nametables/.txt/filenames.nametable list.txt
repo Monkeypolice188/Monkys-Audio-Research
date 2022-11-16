@@ -10638,6 +10638,8 @@ jungle_bird_04_c_02
 jungle_bird_04_c_03
 jungle_bird_04_c_04
 jungle_bird_04_c_05
+jw_rank_up_large_jeffselect_left
+jw_rank_up_large_jeffselect_right
 jw_rank_up_small_jeffselect_left
 jw_rank_up_small_jeffselect_right
 jw_sand_run_01
@@ -11329,6 +11331,8 @@ meet_me_halfway_left
 meet_me_halfway_right
 mesmerized_left
 mesmerized_right
+metal_bin_roll_loop_1
+metal_bin_roll_loop_2
 metal_bollard_1
 metal_bollard_2
 metal_bollard_3
@@ -16167,6 +16171,7 @@ squeaks_wood_close_02
 squeaks_wood_close_03
 squeaks_wood_open_01
 squeaks_wood_open_02
+squeaks_wood_open_03
 squirrel_intro_01
 squirrel_intro_02
 squirrel_intro_03
@@ -17692,6 +17697,18 @@ van_interior_loop_2
 van_open
 van_trunk_close
 van_trunk_open
+variation_1_beats_left
+variation_1_beats_right
+variation_1_horns_left
+variation_1_horns_right
+variation_1_lead_left
+variation_1_lead_right
+variation_2_beat_left
+variation_2_beat_right
+variation_2_horns_left
+variation_2_horns_right
+variation_2_lead_left
+variation_2_lead_right
 vault_klaxon
 vehicle_blend_stinger_base_left
 vehicle_blend_stinger_base_right
