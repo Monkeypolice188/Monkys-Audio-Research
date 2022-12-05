@@ -1646,6 +1646,13 @@ template_vehicles
 template_weapons
 tennis_patch
 tennis_scene
+test_module
+test_module_2
+test_scene_state
+test_scene_state_2
+test_scene_transition_module
+test_scene_variable_module
+test_vehicle_collision_module
 timer_scene
 tod_shift_scene
 tod_shift_scene_patch
@@ -1768,6 +1775,7 @@ weather_halloween
 weather_halloween_mixer
 weather_snow
 weather_snow_mixer
+weather_states
 weather_stormy
 weather_stormy_mixer
 web_epsilonism_site_music_scene

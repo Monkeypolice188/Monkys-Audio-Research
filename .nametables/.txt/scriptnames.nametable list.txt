@@ -844,6 +844,8 @@ door_open_02
 door_open_limit
 door_shut
 door_unlocked
+doorclosesound
+dooropensound
 doors_blown
 dorse
 dorsep
@@ -1960,6 +1962,7 @@ outcome_pimpin
 outcome_schwing
 outcome_sofine
 outcome_sweet
+outofcoversound
 output_highlight
 overcast
 overheat_loop
