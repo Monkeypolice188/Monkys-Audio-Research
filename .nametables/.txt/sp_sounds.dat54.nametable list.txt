@@ -144,6 +144,8 @@ flat_tyre_wrapper
 franklin_0_reverse_bus_beeps
 franklin_1_car_crash
 heli_turning_env
+prologue_blast_security_doors_master
+prologue_blast_security_doors_stream
 prologue_cop_radio_ss
 prologue_cop_radio_stream
 prologue_garage_door

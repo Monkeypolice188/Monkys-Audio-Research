@@ -140,6 +140,7 @@ backlotb
 backlotf
 backpack
 backpack_player
+bad_news_attract_loop
 ballistic
 ballistic_player
 banhamc
@@ -473,6 +474,7 @@ character_loop
 character_select
 charge_full
 charging
+chase_loop
 checkpoint
 checkpoint_ahead
 checkpoint_beast_hit
@@ -591,6 +593,7 @@ container_impact
 container_impact_land
 container_land
 container_release
+contaminated_success_fe
 continual_beep
 continue
 continue_accepted
@@ -708,6 +711,7 @@ davis
 davisa
 day_die
 daybreak_stinger
+de_spawn
 deactivate
 deactivate_privacy_glass
 dead
@@ -742,8 +746,14 @@ descend
 descend_impact
 deselect_print_tile
 despawn
+despawn_clone
+despawn_clown
+despawn_fastfood
 despawn_fe
+despawn_friedlander
 despawn_ingame
+despawn_lion
+despawn_monkey
 desrt
 destroy
 destroy_cop_car
@@ -757,6 +767,9 @@ detonate_dialing
 detonation
 detonation_2
 device
+dg_defender
+dg_monkey
+dg_penetrator
 dial
 dial_and_remote_ring
 didio
@@ -1107,6 +1120,7 @@ fire_powerup_amped
 fire_rpg
 fire_rpg_on_foot
 fire_start
+fire_works
 firing
 first_enemy_appear
 first_place
@@ -1124,6 +1138,7 @@ flashlightoff
 flashlighton
 flatbed_delivery
 flatbed_delivery_impact
+flight
 flight_loop
 flight_recorder
 flight_school_lesson_passed
@@ -1361,6 +1376,7 @@ head
 headshot
 headslowmo
 health
+health_damage_oneshot
 health_lost
 health_pickup_loop
 heart
@@ -1499,6 +1515,7 @@ intro
 intro_stream
 inven
 invulnerable_loop
+irrigation_spray
 item_close_loop
 item_found
 jackpot
@@ -2052,12 +2069,14 @@ pickup_ammo_missile_mp
 pickup_armour_standard
 pickup_briefcase
 pickup_camera
+pickup_clipboard
 pickup_custom_script
 pickup_default
 pickup_handcuff_key
 pickup_health_snack
 pickup_health_standard
 pickup_keyring
+pickup_keys
 pickup_money_case
 pickup_money_dep_bag
 pickup_money_med_bag
@@ -2267,6 +2286,8 @@ quit
 quit_whoosh
 r2_boost
 rabbit
+rabbit_boing
+rabbit_death
 race_placed
 radar_activate
 radar_beast_blip
@@ -2301,7 +2322,10 @@ rat_die
 rat_idle_loop
 ratchet
 rattlesound
+rc_bike
+rc_car
 rc_mines_empty
+rc_truck
 ready
 rebreather
 receiver_slam
@@ -2387,6 +2411,7 @@ roll
 roof_loop
 roof_start
 roof_stop
+room_tone
 rope_cut
 rotate_block
 rotate_loop
@@ -2614,9 +2639,16 @@ song
 spacave
 spanav
 spank
+sparkles
 sparse
 spawn
+spawn_alien
+spawn_clone
+spawn_clown
 spawn_fe
+spawn_friedlander
+spawn_lion
+spawn_monkey
 special_evil_ufo_death_ray
 special_evil_ufo_death_ray_3
 speech_a
@@ -2631,6 +2663,7 @@ speechsound
 speed_boost
 speedboat_material
 spikes
+spill_ambience_loop
 spin_handle
 spin_single_ticks
 spin_start
@@ -2870,6 +2903,7 @@ trailerunhitch
 train_bell
 train_breaks
 train_coming
+train_crash
 train_horn
 train_pick_up_impact_master
 train_pick_up_master
@@ -2929,6 +2963,8 @@ tumbler_pin_fall
 tumbler_pin_fall_final
 tumbler_reset
 tumbler_turn
+tunnel_entry_loop
+tunnel_loop
 turn
 turn_limit
 turn_npc
@@ -2947,6 +2983,7 @@ tyre_health_warning
 tyre_scrape_dent
 tyre_scrape_dent_turn
 tyrechirps
+ufo_ambience
 uncondemned
 under
 under_the_bridge
@@ -2965,6 +3002,10 @@ unlock_door
 unlocked
 unlocked_bleep
 unzip
+upgrade
+upgrade_backup
+upgrade_entity3
+upgrade_issi8
 upload_complete
 upper_alien
 upper_alien_player
@@ -3171,6 +3212,7 @@ whisp
 whistle
 whistle_for_cab
 whistling
+white_screen_fade
 whoosh
 whoosh_1s_l_to_r
 whoosh_1s_r_to_l
