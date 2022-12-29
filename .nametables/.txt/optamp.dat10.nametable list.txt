@@ -196,6 +196,14 @@ synth_abseil_rope
 synth_afb_siren
 synth_alarm_01
 synth_alarm_fbi_building
+synth_ambience_fly_zapper_crack
+synth_ambience_fly_zapper_hum
+synth_ambience_fly_zapper_zap
+synth_ambience_phone_ring_03
+synth_ambience_phone_ring_03_01
+synth_ambience_phone_ring_03_02
+synth_ambience_phone_ring_03_03
+synth_ambience_phone_ring_03_04
 synth_ambient_aircon_building
 synth_ambient_aircon_full
 synth_ambient_aircon_no_rattle
@@ -209,6 +217,9 @@ synth_ambient_barbeque_hiss
 synth_ambient_bass_beats_dubstep
 synth_ambient_bass_simple
 synth_ambient_can_machine
+synth_ambient_can_machine_02
+synth_ambient_can_machine_03
+synth_ambient_can_machine_click
 synth_ambient_church_organ
 synth_ambient_clapper
 synth_ambient_construction_welder
@@ -258,6 +269,7 @@ synth_click_sweetener
 synth_cloth_flapping
 synth_container_collisions
 synth_cop_heli_cam_turn
+synth_copier_key_beep
 synth_countdown_ticks
 synth_coyote_howl
 synth_crane_move_base

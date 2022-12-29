@@ -105,6 +105,7 @@ arm_1_lose_cops
 arm_1_montage_mutes
 arm_1_montage_mutes_patch
 arm_1_reflections_boost_patch
+arm_1_transporter_crash
 arm_1_tv_volume_patch
 arm_2_bagger_group
 arm_2_bagger_group_map
@@ -187,8 +188,6 @@ big_score_prep_c_garage_door_global
 big_score_traffic_control_scene
 biotech_heist_gasmask_scene
 biotech_heist_underwater_scene
-bjxl_exec
-bjxl_exec_patch
 bonnet_cam_aircraft_scene
 bonnet_cam_bicycle_scene
 bonnet_cam_bike_scene
@@ -423,7 +422,6 @@ cinema_interior
 cinema_interior_mutes
 cinema_morningwood
 cinema_vinewood
-clay_hallway
 col_test
 col_test_2
 col_test_3
@@ -436,7 +434,6 @@ creator_scenes_ambience
 creator_scenes_ambience_patch
 crouch_mode_patch
 crouch_mode_scene
-d2d3foyer
 darts_bar_patch
 darts_default_patch
 darts_match_complete_bar
@@ -449,7 +446,6 @@ darts_rock_patch
 darts_start_match_bar
 darts_start_match_rock
 death_scene
-death_scene_lfaf_scene
 dh2a_chopper_arrives
 dh2a_chopper_group
 dh2a_chopper_group_map
@@ -644,6 +640,7 @@ exile_3_test_scene
 exile_3_train_accel_control_scene
 exile_3_train_collision
 exile_3_train_decel_control_scene
+exile_3_train_fall
 exile_3_trevor_bike_jump
 exile_3_trevor_bike_see_train
 exile_3_trevor_bike_start
@@ -668,7 +665,6 @@ extreme_02_open_parachute
 extreme_02_plane_takeoff_cutscene
 extreme_02_skydive
 extreme_04_custom_quiet_scene
-extreme_2_jet
 fade_out_world_250ms_patch
 fade_out_world_250ms_scene
 fairground_rides_ferris_whale
@@ -893,6 +889,7 @@ fbi_5_shootout_start
 fbi_5_swim_to_tunnel_entrance
 fbi_5_swim_to_tunnel_exit
 fbi_5_take_patricia_home
+fbi_heist_h5_gasmask
 fbi_heist_h5_mute_ambience_scene
 film_noir_filter_2_scene
 film_noir_filter_music_patch
@@ -1080,6 +1077,7 @@ josh_02_scene_lenny_vehicle
 josh_02_scene_lenny_vehicle_map
 joyrider_group
 joyrider_group_map
+joyrider_radio_boost_patch
 joyrider_radio_scene
 jsh1_return_to_car
 jsh_1_default_patch_base
@@ -1307,11 +1305,17 @@ minute_03_scene
 mission_failed_scene
 mission_failed_scene_radio
 mission_failed_scene_world
+mixgrouplist
 mp_car_mod_shop
+mp_car_mod_shop_global_patch
 mp_car_mod_shop_mechanic_group
 mp_car_mod_shop_mechanic_group_map
+mp_car_mod_shop_mechanic_patch
+mp_car_mod_shop_player_patch
 mp_corona_menu_scene
 mp_heli_cam_filtering
+mp_heli_cam_filtering_bg_base
+mp_heli_cam_filtering_blend_base
 mp_intro_default_patch_base
 mp_intro_lamar_drive_scene
 mp_intro_race_scene
@@ -1378,6 +1382,7 @@ paparazzo_02_chase_justin_car
 paparazzo_02_chase_justin_car_map
 paparazzo_02_chase_security_car
 paparazzo_02_chase_security_car_map
+paparazzo_02_intro
 paparazzo_02_poppy_cars
 paparazzo_02_poppy_cars_map
 paparazzo_02_poppy_cars_patch
@@ -1421,8 +1426,6 @@ player_car
 player_car_map
 player_group
 player_group_map
-player_group_tour_patch_base
-player_switch_into_volume
 player_switch_red_alert_patch
 player_switch_red_alert_scene
 player_switch_white_alert_patch
@@ -1443,7 +1446,6 @@ prologue_switch_to_trevor
 prologue_take_cover
 prologue_threaten_hostages
 prologue_vault_rayfire
-prop_ind_light_03a+hifr.ytd
 prostitute_group
 prostitute_group_map
 prostitutes_bj_player_patch
@@ -1512,6 +1514,7 @@ ps_2a_shootout_swat_vans
 ps_2a_shootout_warehouse
 ps_2a_shootout_yard
 ps_2a_shootout_yard_flying_tank
+ps_2a_switch_to_franklin
 ps_2a_tank_arrives
 ps_2a_test
 ps_2a_train_arrives
@@ -1526,7 +1529,9 @@ race_creator_patch
 race_creator_scene
 race_intro_generic
 race_intro_generic_radio
+races_radio_mute_patch
 races_radio_mute_scene
+races_slipstream_patch
 races_slipstream_scene
 radio_ducking_scene
 radio_vol
@@ -1637,6 +1642,7 @@ street_race_npc_general
 street_race_npc_general_map
 street_race_outro
 street_race_outro_patch
+switch_to_mp_patch
 switch_to_mp_scene
 targets
 targets_map
@@ -1728,7 +1734,6 @@ trevor_2_sniper_sights
 trevor_2_test
 trevor_2_trains_patch_base
 trevor_2_trains_volume
-trevor_2_wing_flap
 trevor_3_default_patch_base
 trevor_3_detonate_bombs
 trevor_3_drive_to_floyds

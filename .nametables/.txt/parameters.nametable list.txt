@@ -774,6 +774,7 @@ tearingctrl
 temp
 temperature
 test
+texture
 third
 three
 thresh
@@ -845,6 +846,7 @@ volsmooth01
 volsmooth02
 volsmooth03
 volume
+volumedb
 volumelin
 w_frequency
 w_length
