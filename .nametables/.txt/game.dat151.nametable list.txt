@@ -1477,6 +1477,7 @@ ar_bullfrog_night
 ar_bullfrog_rivers
 ar_cab_whistle
 ar_cafe_clatter
+ar_cafe_clatter_fake
 ar_chicken_factory_horn
 ar_chilead_cable_car_line_base_shed
 ar_chilead_cable_car_line_pylon_01
@@ -1657,6 +1658,7 @@ ar_raccoon
 ar_rapids_medium
 ar_rapids_small
 ar_rattlesnake
+ar_really_distant_mower
 ar_sawmill_wood_drops
 ar_sewing_machines
 ar_shipyard_building_01
@@ -2020,6 +2022,15 @@ az_big_yankton
 az_big_zones_afb_01
 az_big_zones_air_traffic
 az_big_zones_airport_01
+az_big_zones_alamo_sea_01
+az_big_zones_alamo_sea_02
+az_big_zones_arid_01
+az_big_zones_arid_02
+az_big_zones_arid_03
+az_big_zones_arid_03_quarry
+az_big_zones_arid_04
+az_big_zones_arid_06
+az_big_zones_arid_07
 az_big_zones_bolingbroke_pen_01
 az_big_zones_cassidy_creek_00
 az_big_zones_cassidy_creek_01
@@ -2033,6 +2044,7 @@ az_big_zones_countryside_03_02
 az_big_zones_countryside_04
 az_big_zones_desert_01
 az_big_zones_desert_02
+az_big_zones_desert_02_town
 az_big_zones_desert_03
 az_big_zones_desert_04
 az_big_zones_desert_05
@@ -2044,6 +2056,7 @@ az_big_zones_ls_02
 az_big_zones_ls_03
 az_big_zones_ls_04
 az_big_zones_ls_05
+az_big_zones_ls_city_centre
 az_big_zones_mountains_01
 az_big_zones_mountains_02
 az_big_zones_mountains_03
@@ -2053,7 +2066,10 @@ az_big_zones_mountains_06
 az_big_zones_mountains_peak_01
 az_big_zones_mountains_peak_02
 az_big_zones_mountains_peak_03
+az_big_zones_wetlands_01
 az_big_zones_zancudo_river_01
+az_big_zones_zancudo_river_02_1
+az_big_zones_zancudo_river_02_2
 az_big_zones_zancudo_river_03
 az_big_zones_zancudo_river_04
 az_biker_camp_trailer_01
@@ -14960,6 +14976,11 @@ wait_for_me_sc
 wait_sc
 walk_me_to_the_car
 walk_me_to_the_car_sc
+walla_speech_curse_high
+walla_speech_list_default
+walla_speech_list_gang_areas
+walla_speech_list_paleto
+walla_speech_list_sandy_shores
 wanted_3_stars
 wanted_4_stars
 wanted_5_stars
