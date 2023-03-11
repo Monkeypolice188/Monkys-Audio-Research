@@ -1,0 +1,153 @@
+The Weapon (17) type is used to assign sounds to weapons.
+
+The type has fields for various weapon sounds, including the main fire and report sounds,
+as well as general collision, aim, holster and collision foley sounds and slow-motion sounds.
+
+Fields:
+
+Field name                Type      FileRef Description
+--
+Name              metahash          Weapon's name //from Dat151AudioItem <Weapon> or <FallBackWeapon>
+Flags             flags             Unknown flags
+Version           integer           Changes Dat151Weapon available entries (current version = 3)
+PlayerFire        metahash  dat54   Single shot sound (used on pistols, shotguns, etc)
+SuppressedFire    metahash  dat54   Suppressed variant of shots (both single/rapid)
+RapidFire         metahash  dat54   Rapid shot sounds (used on rifles, smgs, etc)
+Report            metahash  dat54   Loud bullet/explosion sounds
+Unk05             float             Unknown
+Unk06             integer           Unknown
+Unk07             float             Unknown
+Echo              metahash  dat54   Echo sound, used in reflected areas such as tunnels
+Unk09             metahash  dat54   SuppressedEcho //Suppressed variant of echo
+Unk10             metahash  dat54   Unknown //shells
+Unk11             metahash  dat54   MeleeSwipe, weapon swipe sound
+Unk12             metahash  dat54   MeleeCollision, weapon hit/collision sound
+Unk13             metahash  dat54   MeleeHitPed, hit ped sound
+Unk14             metahash  dat54   Unknown //handling/foley
+Unk15             metahash  dat54   Unknown //handling/foley
+Unk16             metahash  dat54   Unknown //handling/foley
+Unk17             metahash  dat54   Unknown //handling/foley
+PickUpWeapon      metahash  dat54   Pickup weapon HUD sound
+Unk19             integer           Unknown
+Unk20             metahash  dat54   Unused
+Unk21             metahash  dat54   Unused
+Unk22             metahash  dat54   FuelCan //used for glug/pouring fuel can soundset
+Unk23             metahash  dat54   Unknown //first-person fire? always right-channel fire sounds
+InteriorFire      metahash  dat54   Used in interiors, softer interior fire sounds
+Reload            metahash  dat54   Reload soundset, used for clipin/restock/chamber sounds
+Unk26             metahash  dat54   Unknown //handling/foley
+Unk27             metahash  dat54   Unknown //handling/foley
+Unk28             integer           Unknown
+Unk29             integer           Unknown
+Aim               metahash  dat54   Aim/holster handling foley, used when pointing gun
+Unk31             metahash  dat54   Unused
+Unk32             metahash  dat54   Unused
+SlowMotionFire    metahash  dat54   Slow-motion fire (single/rapid) bullet sounds, used in R* editor
+Unk34             metahash  dat54   Unknown //stun gun electricity
+Unk35             metahash  dat54   Unknown //Slow-motion melee?
+Unk36             metahash  dat54   Slow-motion suppressed fire
+Unk37             metahash  dat54   Unknown //Slow-motion melee?
+SlowMotionReport  metahash  dat54   Slow-motion report bullet/explosion sounds, used in R* editor
+Unk39             metahash  dat54   Unknown //player fire slow mo
+Unk40             metahash  dat54   Unused
+Unk41             metahash  dat54   Unused
+Unk42             metahash  dat54   Unused
+Unk43             metahash  dat54   Unused
+Unk44             metahash  dat54   Unused
+Unk45             metahash  dat54   Unused
+Unk46             metahash  dat54   Unknown //floaty
+Unk47             metahash  dat54   Unknown //floaty
+Unk48             integer           Unknown
+Unk49             integer           Unknown
+Unk50             integer           Unknown
+Unk51             metahash  dat54   SuperSlowMotionFire
+Unk52             metahash  dat54   Unknown
+Unk53             metahash  dat54   SuperSlowMotionSuppressedFire
+Unk54             metahash  dat54   Unknown
+Unk55             metahash  dat54   SuperSlowMotionReport
+Unk56             metahash  dat54   Unused
+Unk57             metahash  dat54   Unused
+Unk58             metahash  dat54   Unused
+Unk59             metahash  dat54   Unused
+Unk60             metahash  dat54   Unused
+Unk61             metahash  dat54   Unused
+Unk62             metahash  dat54   Unused
+Unk63             integer           Unknown //9999
+Unk64             integer           Unknown //9999
+Unk65             integer           Unknown //9999
+Unk66             integer           Unknown //9999
+Unk67             integer           Unknown //9999
+Example:
+
+<Item type="Weapon" ntOffset="9013">
+ <Name>w_precision_rifle_player</Name>
+ <Flags value="0xAAAAA800" />
+ <Version value="3" />
+ <PlayerFire>precision_rifle_fire_master</PlayerFire>
+ <SuppressedFire>null_sound</SuppressedFire>
+ <RapidFire>precision_rifle_fire_master</RapidFire>
+ <Report>precision_rifle_report_wrp</Report>
+ <Unk05 value="-100" />
+ <Unk06 value="75" />
+ <Unk07 value="0.2" />
+ <Echo>snp_echo_master</Echo>
+ <Unk09>hash_B5E90F3D</Unk09>
+ <Unk10>null_sound</Unk10>
+ <Unk11>null_sound</Unk11>
+ <Unk12>weapon_collisions_ak47_seq</Unk12>
+ <Unk13>weapon_collisions_ak47_melee</Unk13>
+ <Unk14>null_sound</Unk14>
+ <Unk15>null_sound</Unk15>
+ <Unk16>hash_9B6215ED</Unk16>
+ <Unk17>hash_9B31BA59</Unk17>
+ <PickUpWeapon>frontend_game_pickup_weapon</PickUpWeapon>
+ <Unk19 value="2" />
+ <Unk20>null_sound</Unk20>
+ <Unk21>null_sound</Unk21>
+ <Unk22 />
+ <Unk23>dlc_mpsum2_weapon_precision_rifle_precision_hit_st_00_right</Unk23>
+ <InteriorFire>snp_sniper_int_plyr_hold_vb</InteriorFire>
+ <Reload>snp_precision_rifle_plyr_reloads_mono_ss</Reload>
+ <Unk26>hash_9B31BA59</Unk26>
+ <Unk27>hash_9B31BA59</Unk27>
+ <Unk28 value="0" />
+ <Unk29 value="0" />
+ <Aim>hash_4F21C5ED</Aim>
+ <Unk31>null_sound</Unk31>
+ <Unk32>null_sound</Unk32>
+ <SlowMotionFire>hash_C49E705D</SlowMotionFire>
+ <Unk34>null_sound</Unk34>
+ <Unk35>null_sound</Unk35>
+ <Unk36>hash_BA29AD20</Unk36>
+ <Unk37>null_sound</Unk37>
+ <SlowMotionReport>null_sound</SlowMotionReport>
+ <Unk39>null_sound</Unk39>
+ <Unk40>null_sound</Unk40>
+ <Unk41>null_sound</Unk41>
+ <Unk42>null_sound</Unk42>
+ <Unk43>null_sound</Unk43>
+ <Unk44>null_sound</Unk44>
+ <Unk45>null_sound</Unk45>
+ <Unk46 />
+ <Unk47 />
+ <Unk48 value="0" />
+ <Unk49 value="0" />
+ <Unk50 value="0" />
+ <Unk51>null_sound</Unk51>
+ <Unk52>null_sound</Unk52>
+ <Unk53>null_sound</Unk53>
+ <Unk54>null_sound</Unk54>
+ <Unk55>null_sound</Unk55>
+ <Unk56>null_sound</Unk56>
+ <Unk57>null_sound</Unk57>
+ <Unk58>null_sound</Unk58>
+ <Unk59>null_sound</Unk59>
+ <Unk60>null_sound</Unk60>
+ <Unk61>null_sound</Unk61>
+ <Unk62>null_sound</Unk62>
+ <Unk63 value="9999" />
+ <Unk64 value="9999" />
+ <Unk65 value="9999" />
+ <Unk66 value="9999" />
+ <Unk67 value="9999" />
+</Item>

@@ -973,7 +973,6 @@ area_davis_01
 area_davis_quartz_01
 area_del_perro_01
 area_del_perro_02
-area_del_perro_02	
 area_del_perro_beach_01
 area_direction_central_01
 area_direction_central_02
@@ -984,7 +983,6 @@ area_direction_southern_01
 area_direction_western_01
 area_dorset_drive_01
 area_downtown_01
-area_downtown_01	
 area_downtown_02
 area_downtown_vinewood_01
 area_east_los_santos_01
@@ -4182,11 +4180,13 @@ chuff_01
 chuff_02
 church_bell_midnight_01_left
 church_bell_midnight_01_right
+cicada_a_1
 cicada_b_01
 cicada_b_1
 cicada_b_2
 cicada_b_single
 cicada_c_01
+cicada_c_1
 cicada_piercing_loop_01
 cicada_piercing_loop_02
 cicada_piercing_loop_end_01
@@ -4253,9 +4253,15 @@ claw_move_loop
 claw_rarewin
 claw_start_sting
 claw_win_sting
+clay_pot_large_1
+clay_pot_large_2
+clay_pot_large_3
 clay_pot_medium_1
 clay_pot_medium_2
 clay_pot_medium_3
+clay_pot_small_1
+clay_pot_small_2
+clay_pot_small_3
 cletus_mcs_1_seq_mastered.c_only
 cletus_mcs_1_seq_mastered.l_only
 cletus_mcs_1_seq_mastered.r_only
@@ -12406,6 +12412,7 @@ model_lazer_01
 model_lifeguard_granger_01
 model_manana_01
 model_maverick_01
+model_merbelle_01
 model_mesa_01
 model_metrotrain_01
 model_minivan_01

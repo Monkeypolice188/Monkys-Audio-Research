@@ -80,6 +80,7 @@ ah_3b_shootthroughdoor_scene
 ah_3b_skydive_freefall
 ah_3b_skydive_parachute
 ah_3b_skydive_prepare
+all_peds
 ambient_hunting_mix
 arm_1_chase
 arm_1_choose_car
@@ -1365,6 +1366,8 @@ nigel_1d_golf_cart_a
 nigel_1d_golf_cart_a_map
 nigel_1d_golf_cart_a_patch
 nigel_1d_scene
+non_targets
+non_veh_targets
 offroad_races_during_race
 offroad_races_during_race_closest_vehicle
 offroad_races_during_race_closest_vehicle_map
@@ -1771,13 +1774,20 @@ underwater_scene
 wanted_music_scene
 watching_safehouse_tv
 watching_safehouse_tv_patch
+weather_blizzard
+weather_blizzard_mixer
 weather_clear
 weather_clear_mixer
 weather_cloudy
 weather_cloudy_dark
+weather_cloudy_dark_mixer
 weather_cloudy_mixer
+weather_extra_sunny
+weather_extra_sunny_mixer
 weather_halloween
 weather_halloween_mixer
+weather_rainy
+weather_rainy_mixer
 weather_snow
 weather_snow_mixer
 weather_states
