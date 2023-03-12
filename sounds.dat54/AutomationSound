@@ -8,14 +8,15 @@ It also defines an AutomationNoteMap, which is used to assign note ranges a spec
 
 Fields:
 
-FallBackSound - metahash - Fallback sound.
-PlaybackRate - float value  - rate of playback, increasing it will increase the MIDI playback speed
-PlaybackRateVariance - float value - variance of the PlaybackRate.
-PlaybackRateParameter - metahash - overrides PlaybackRate.
-NoteMap - metahash - associates an AutomationNoteMapSound to the MIDI, mapping note/sounds onto the MIDI.
-ContainerName - metahash - File location.
-FileName - metahash - Name of the .mid file.
-VariableOutputs - metahash - Unknown.
+Field name            Type      FileRef Default value      Description
+FallBacksound         metahash  dat54                      Fallback sound, in case the notemap is not valid
+PlaybackRate          float             1                  Rate of MIDI playback
+PlaybackRateVariance  float             0                  Variance of PlaybackRate
+PlaybackRateVariable  metahash                             Variable to use for PlaybackRate value
+NoteMap               metahash  dat54                      AutomationNoteMapSound to use to map notes onto the MIDI
+ContainerName         metahash                             .awc MIDI file location
+FileName              metahash                             .mid file name
+VariableOutputs       metahash                             Unknown
 
 Example:
 

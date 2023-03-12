@@ -4,21 +4,22 @@ It is often used to fade out close/detailed sounds while fading in distant/far s
 
 Fields:
 
-FadeOutSound - metahash - NearSound
-FadeInSound - metahash - FarSound
-UnkByte - byte value - Mode
-	0 = None //?
-	1 = Linear //?
-	2 = Equal Power //?
-UnkFloat0 - float value - MinDistance
-UnkFloat1 - float value - MaxDistance
-UnkInt - integer value - Hysteresis
-UnkCurvesHash - metahash - CrossfadeCurve
-ParameterHash0 - metahash - DistanceVariable
-ParameterHash1 - metahash - MinDistanceVariable
-ParameterHash2 - metahash - MaxDistanceVariable
-ParameterHash3 - metahash - HysteresisVariable
-ParameterHash4 - metahash - CrossfadeVariable
+Field name                Type      FileRef Default value      Description
+NearSound                 metahash  dat54                      Near sound
+FarSound                  metahash  dat54                      Far sound
+Mode                      byte              0                  Crossfade blending mode
+	0 = None
+	1 = Linear
+	2 = Equal Power
+MinDistance               float             20                 Minimum distance in meters to play near sound
+MaxDistance               float             100                Maximum distance in meters to play near sound; after which the far sound will play
+Hysteresis                integer           0                  Deviation/lag factor during the crossfade  
+CrossfadeCurve            metahash  dat16   crossfade_curve    Crossfade type
+DistanceVariable          metahash                             Variable to use for distance
+MinDistanceVariable       metahash                             Variable to use for MinDistance
+MaxDistanceVariable       metahash                             Variable to use for MaxDistance
+HysteresisVariable        metahash                             Variable to use for Hysteresis
+CrossfadeVariable         metahash                             Variable to use for crossfade
 
 Example:
 

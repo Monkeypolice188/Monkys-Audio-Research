@@ -8,18 +8,19 @@ The IfSound type requires a defined ConditionVariable variable.
 
 Fields:
 
-TrueSound - metahash  - child sound 1.
-FalseSound - metahash - child sound 2.
-ConditionVariable - metahash - Parameter for child sound 1.
-IfParameterHash1 - metahash - Parameters // unknown?
-ConditionType - byte value - Type of condition behavior
-	0 = Less Than
-	1 = Less Than or Equal To
-	2 = Greater Than
-	3 = Greater Than or Equal To
-	4 = Equal To
-	5 = Not Equal To
-ConditionValue - float value - value for ConditionType //such as type/value/index, Mass in kg, speed in m/s, etc
+Field name                Type      FileRef Default value      Description
+TrueSound                 metahash  dat54                      Child sound 1 (if result is true)
+FalseSound                metahash  dat54                      Child sound 2 (if result is false)
+ConditionVariable         metahash                             Variable to use test
+ConditionType             byte                                 Type of condition behavior
+	0 = Less than
+	1 = Less than or Equal to
+	2 = Greater than
+	3 = Greater than or Equal to
+	4 = Equal to
+	5 = Not Equal to
+ConditionValue            float                                Value to test against ConditionVariable (such as mass in kg, speed in m/s, etc)
+ConditionVariable2        metahash                             Variable to compare against ConditionVariable, if comparing two variables rather than against a value
 
 Examples:
 
@@ -35,15 +36,15 @@ The condition "ped_type" is that the player is either male or female. If the val
  </Header>
  <TrueSound>dlc_apt_champagne_hiccup_male_rnd</TrueSound>
  <FalseSound>dlc_apt_champagne_hiccup_female_rnd</FalseSound>
- <ParameterHash1>ped_type</ParameterHash1>
+ <ParameterHash1>ped_type</ConditionVariable>
  <ConditionType value="4" /> //equal to
  <ConditionValue value="3" /> //ped_type Value (male)
- <ParameterHash2 />
+ <ConditionVariable2 />
 </Item>
   
 Below, "dlc_h4_combat_shotgun_player_fpmech" assesses whether to play child sound 1 or child sound 2. 
 
-The condition (hash_378A1D92) is that the player is in first person mode; child sound 1 plays if the condition is true, and child sound 2 plays if the condition is false.
+The condition "game.microphone.firstperson" is that the player is in first person mode; child sound 1 plays if the condition is true, and child sound 2 plays if the condition is false.
 
 <Item type="IfSound">
  <Name>dlc_h4_combat_shotgun_player_fpmech</Name>
@@ -55,10 +56,10 @@ The condition (hash_378A1D92) is that the player is in first person mode; child 
  </Header>
  <TrueSound>dlc_h4_combat_shotgun_mech_fp_mt</TrueSound>
  <FalseSound>dlc_h4_combat_shotgun_mech_mt</FalseSound>
- <ParameterHash1>hash_378A1D92</ParameterHash1>
+ <ConditionVariable>game.microphone.firstperson</ConditionVariable>
  <ConditionType value="4" /> //equal to
- <ConditionValue value="1" /> //hash_378A1D92 Value (first person)
- <ParameterHash2 />
+ <ConditionValue value="1" /> //game.microphone.firstperson Value (first person)
+ <ConditionVariable2 />
 </Item>
   
 Below, "dlc_apt_bvs_beast_sprint_vb_woosh_pts_rtol_mt_boost_if" assesses whether to play child sound 1 or not.
@@ -73,8 +74,27 @@ The condition "intensity" is that the player intensity is of a certain value. If
  </Header>
  <TrueSound>dlc_apt_bvs_beast_sprint_vb_woosh_pts_rtol_mt_boost</TrueSound>
  <FalseSound />
- <ParameterHash1>intensity</ParameterHash1>
+ <ConditionVariable>intensity</ConditionVariable>
  <ConditionType value="2" /> //greater than
  <ConditionValue value="0.5" /> //intensity Value
- <ParameterHash2 />
+ <ConditionVariable2 />
 </Item>
+
+
+Below, "franklin_heartbeat_if" assesses whether to play a regenerating heartbeat sound (true) or fast one (false).
+
+The condition "heartbeattimerunning" is the duration the player has been running for. If it exceeds the player's healthy hearbeat limit, it will play the regenerating heartbeat sound.
+
+  <Item type="IfSound">
+   <Name>franklin_heartbeat_if</Name>
+   <Header>
+    <Flags value="0x00000001" />
+    <Flags2 value="0xAAA8AAAA" />
+   </Header>
+   <TrueSound>franklin_heartbeat_health_pt</TrueSound>
+   <FalseSound>franklin_heartbeat_pt</FalseSound>
+   <ConditionVariable>heartbeattimerunning</ConditionVariable>
+   <ConditionType value="2" />
+   <ConditionValue value="0" />
+   <IfParameterHash1>heartbeathealth</IfParameterHash1>
+  </Item>

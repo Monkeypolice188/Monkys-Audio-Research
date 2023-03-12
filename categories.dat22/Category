@@ -1,0 +1,61 @@
+The Category (01) type is used to assign base settings to any audio entry using one. 
+
+A category holds several basic audio fields such as Volume, LPF and HPF cutoff, as well as distance and pan. 
+
+Categories can also contain a number of sub-categories, which will also be affected by the parent category's settings.
+
+As well as assigning information such as base volume, LPF and attenuation, categories are also used by mixers to change the volume/pan/etc of all audio entries using particular categories.
+
+Category appears in sounds.dat54's Header section, as well as in various types within game.dat151 and dynamix.dat15.
+
+Fields:
+
+Field name     Type      FileRef Default value      Description
+--
+Name           metahash                             Category name
+Flags          flags             0xAAAAAAAA         Unknown
+Unk01          byte              0                  Unknown //max header size?
+Volume         short             0                  Sound's volume
+Unk03          short             0                  Unknown
+LPFCutoff      short             23900              Low-pass filter cut-off
+LPFCutoffCurve metahash  dat16   default_lpf_curve  LPF curve
+HPFCutoff                        0                  High-pass filter cut-off
+HPFCutoffCurve metahash  dat16   default_hpf_curve  HPF curve
+Unk08          short             100                Unknown
+Unk09          short             100                Unknown
+Unk10          short             100                Unknown
+Unk11          short             100                Unknown
+Unk12          short             100                Unknown
+Unk13          short             100                Unknown
+Unk14          short             100                Unknown
+Unk15          short             0                  Unknown
+Unk16          short             0                  Unknown
+Unk17          short             100                Unknown //fade?
+Unk18          short             4                  Unknown
+SubCategories  item list                            List of other category entries which are children of (affected by) this
+
+Example:
+
+<Item type="Category" ntOffset="2922">
+ <Name>ambience_general_traffic</Name>
+ <Flags value="0xAAAAAAAA" />
+ <Unk01 value="0" />
+ <Volume value="0" />
+ <Unk03 value="0" />
+ <LPFCutoff value="23900" />
+ <LPFCutoffCurve>default_lpf_curve</LPFCutoffCurve>
+ <HPFCutoff value="0" />
+ <HPFCutoffCurve>default_hpf_curve</HPFCutoffCurve>
+ <Unk08 value="100" />
+ <Unk09 value="100" />
+ <Unk10 value="100" />
+ <Unk11 value="100" />
+ <Unk12 value="100" />
+ <Unk13 value="65" />
+ <Unk14 value="100" />
+ <Unk15 value="0" />
+ <Unk16 value="0" />
+ <Unk17 value="100" />
+ <Unk18 value="4" />
+ <SubCategories />
+</Item>

@@ -8,8 +8,13 @@ It can also be used as a child of a ModularSynthSound which applies the refracti
 
 Fields:
 
-ChannelID - byte value - Unknown. // possibly used only for GranularSound entries as they use Channels for engine/exhaust.
-
+Field name       Type      FileRef Default value      Description
+ChannelID        byte              0                  Defines left or right channel output
+	0 = left channel
+	1 = right channel
+	2 = 2nd side left channel
+	3 = 2nd side right channel
+	
 Example:
 
 <Item type="EnvironmentSound">
