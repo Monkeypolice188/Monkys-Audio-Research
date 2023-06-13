@@ -6,33 +6,35 @@ Engine sounds are played from the engine bone of the vehicle model, while exhaus
 
 Fields:
 
-Channel0 - engine acceleration sound and .awc location.
-Channel1 - exhaust acceleration sound and .awc location.
-Channel2 - engine deceleration sound and .awc location.
-Channel3 - exhaust deceleration sound and .awc location.
-Channel4 - engine idle sound and .awc location.
-Channel5 - exhaust idle sound and .awc location.
-ChannelSettings0 -  Unknown.
-ChannelSettings1 -  Unknown.
-ChannelSettings2 -  Unknown.
-ChannelSettings3 -  Unknown.
-ChannelSettings4 -  Unknown.
-ChannelSettings5 -  Unknown.
-	UnkFlags0 - flag value - Unknown. //set to 1 only on exhaust entries (ChannelSettings1, 4 and 6)
-	UnkFlags1 - flag value - Unknown. //set to 1 only on idle entries (ChannelSettings4 and 6)
-	UnkByte0 - byte value - Unknown. //set only to 0.
-	UnkByte1 - byte value - Unknown. //set only to 0. Sometimes 1 on deceleration entries (ChannelSettings2 and 4)
-	UnkFloat - float value - Unknown. //set to 0.5 only on acceleration entries (ChannelSettings0 and 2)
-	UnkFloat0 - float value - Unknown. //affects distortion for engine acceleration at rev limit.
-	UnkFloat1 - float value - Unknown. //affects distortion for exhaust acceleration at rev limit.
-ChannelVolume0 - ushort value - volume of engine acceleration entry.
-ChannelVolume1 - ushort value - volume of exhaust acceleration entry.
-ChannelVolume2 - ushort value - volume of engine deceleration entry.
-ChannelVolume3 - ushort value - volume of exhaust deceleration entry.
-ChannelVolume4 - ushort value - volume of engine idle entry.
-ChannelVolume5 - ushort value - volume of exhaust idle entry.
-ParentSound - associates the NPC GranularSound entry with the non-NPC GranularSound entry.
-GranularClock - vector data - the minimum and maximum pitch points for the accel/decel (1st line) and idle (2nd line) entries.
+Field name       Type      FileRef Default value      Description
+Channel0                                              Engine acceleration sound and .awc location
+Channel1                                              Exhaust acceleration sound and .awc location
+Channel2                                              Engine deceleration sound and .awc location
+Channel3                                              Exhaust deceleration sound and .awc location
+Channel4                                              Engine idle sound and .awc location
+Channel5                                              Exhaust idle sound and .awc location
+ChannelSettings0                                      Unknown
+ChannelSettings1                                      Unknown
+ChannelSettings2                                      Unknown
+ChannelSettings3                                      Unknown
+ChannelSettings4                                      Unknown
+ChannelSettings5                                      Unknown
+	UnkFlags0    flags                                Unknown //set to 1 only on exhaust entries (ChannelSettings1, 4 and 6)
+	UnkFlags1    flags                                Unknown //set to 1 only on idle entries (ChannelSettings4 and 6)
+	UnkByte0     byte                                 Unknown //set only to 0.
+	UnkByte1     byte                                 Unknown //set only to 0. Sometimes 1 on deceleration entries (ChannelSettings2 and 4)
+	UnkFloat     float                                Unknown //set to 0.5 only on acceleration entries (ChannelSettings0 and 2)
+	UnkFloat0    float                                Unknown //affects distortion for engine acceleration at rev limit.
+	UnkFloat1    float                                Unknown //affects distortion for exhaust acceleration at rev limit.
+ChannelVolume0   short                                Volume of engine acceleration entry
+ChannelVolume1   short                                Volume of exhaust acceleration entry.
+ChannelVolume2   short                                Volume of engine deceleration entry.
+ChannelVolume3   short                                Volume of exhaust deceleration entry.
+ChannelVolume4   short                                Volume of engine idle entry.
+ChannelVolume5   short                                Volume of exhaust idle entry.
+ParentSound      metahash  dat54                      Associates the NPC GranularSound entry with the non-NPC GranularSound entry.
+GranularClock    vector                               The minimum and maximum pitch points for the accel/decel (1st line) and idle (2nd line) entries.
+
 
 Example:
 

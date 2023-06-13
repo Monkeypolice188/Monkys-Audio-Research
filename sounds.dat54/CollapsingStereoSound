@@ -8,34 +8,35 @@ A crossfade curve will be applied during the fade between the mono and stereo pl
 
 Fields:
 
-LeftSound - metahash - stereo track 1 (left)
-RightSound - metahash - stereo track 2 (right)
-MinDistance - float value - Minimum distance to play this track in stereo.
-MaxDistance - float value - Maximum distance to play this track in stereo; after which it will reduce to mono playback.
-MinDistanceVariable - metahash - Parameters //Unknown
-MaxDistanceVariable - metahash - Parameters //Unknown
-CrossfadeOverrideVariable - metahash - Parameters //Unknown
-ParameterHash3 - metahash - Parameters //Unknown
-ParameterHash4 - metahash - Parameters //Unknown
-UnkInt - integer value - Unknown //always 1065353216?
-ParameterHash5 - metahash - Parameters //Unknown
-Mode - byte value - Crossfade mode:
+Field name                Type      FileRef Default value      Description
+LeftSound                 metahash  dat54                      Stereo track 1 (left)
+RightSound                metahash  dat54                      Stereo track 2 (right)
+MinDistance               float             0                  Minimum distance in meters to play the track in stereo
+MaxDistance               float                                Maximum distance in meters to play the track in stereo; after which it will reduce to mono playback
+MinDistanceVariable       metahash                             Variable to use for MinDistance
+MaxDistanceVariable       metahash                             Variable to use for MaxDistance
+CrossfadeOverrideVariable metahash                             Variable to use to override the default Crossfade curve
+ParameterHash3            metahash                             Unknown
+ParameterHash4            metahash                             Unknown
+UnkInt                    float             1065353216 (1)     UnkFloat //incorrect entry name
+ParameterHash5            metahash                             Unknown
+Mode                      byte              0                  Crossfade mode
 	0 = Fixed
-	1 = Both - plays both tracks as stereo
+	1 = Both (plays both tracks as stereo)
 	2 = Retrigger
 	3 = Position-relative Pan
-
+	
 Example:
 
 <Item type="CollapsingStereoSound">
- <Name>dlc_xm_int_sub_engine_room_stereo</Name>
+ <Name>ptl_heavy_player_slow_mo_fire_stereo</Name>
  <Header>
   <Flags value="0x00000000" />
  </Header>
- <LeftSound>dlc_xm_int_sub_engine_room_l</LeftSound>
- <ChildSound2>dlc_xm_int_sub_engine_room_r</ChildSound2>
- <MinDistance value="0" />
- <MaxDistance value="15" />
+ <LeftSound>resident_weapons_slow_mo_shot_01_left</LeftSound>
+ <RightSound>resident_weapons_slow_mo_shot_01_right</RightSound>
+ <MinDistance value="1" />
+ <MaxDistance value="3" />
  <MinDistanceVariable />
  <MaxDistanceVariable />
  <CrossfadeOverrideVariable />

@@ -64,6 +64,18 @@ Unk48                     float             Unknown //0, 0.5, 1
 Unk49                     metahash  dat54   Unknown //hullscrapes
 Hull                      metahash  dat54   Unknown //hullscrapes
 Unk51                     metahash  dat54   Cloth //cloth flag sounds
+Fire                      metahash  dat54   Fire and explosion sounds
+DoorOpen                  metahash  dat54   Door open sounds
+DoorClose                 metahash  dat54   Door close sounds
+Unk55                     metahash  dat54   Unknown - unused
+Unk56                     metahash  dat54   Unknown //squeaky doors
+Unk57                     metahash  dat54   SubExtras // additional bubble/water particle sounds
+Unk58                     metahash  dat54   SubStress // Metal stress/strain sounds
+SubCreaks                 metahash  dat54   Creaking sounds
+WaveHitBigAir             metahash  dat54   Unknown
+Unk61                     float             Unknown
+Unk62                     metahash  dat54   Unknown
+Unk63                     metahash  dat54   Unknown
 Example:
 
 <Item type="Boat" ntOffset="18818">

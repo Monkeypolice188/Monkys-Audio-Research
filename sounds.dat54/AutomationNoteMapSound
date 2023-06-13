@@ -4,20 +4,22 @@ The type can have numerous items which define specific note ranges of the MIDI, 
 
 The mapping will transpose the note range about middle C (C3).
 
-Fields:
-
-Maps - Maps - Item list of mappings
-	NoteRangeMin - byte value - minimum note of this mapping
-	NoteRangeMax - byte value - maximum note of this mapping
-	NoteRangeType - byte value - Type of note range behavior
-		0 = Track Pitch (plays according to MIDI input)
-		1 = Unity Pitch (plays as constant middle C (C3 - note 48),)
-	ChildSound - metahash - Sound to play on this mapping.
-
 It is important to note that the NoteRangeMin value will transpose the MIDI about middle C (C3 - note 48) according to the value you set it at. 
 For example, if the minimum note of your preferred range is note 37, setting a value of 37 will transpose the tune by -11 semi-tones (37-48 = -11). 
 To correct the resulting pitch change of transposing, the ChildSound should have an opposing pitch change value which should correspond with the number of semi-tones.
 For example, a transpose of -11 semi-tones should = -1100 pitch value (or 64435) to cancel out the change in pitch.)
+
+
+Fields:
+
+Field name       Type      FileRef Default value      Description
+NoteRangeMin     byte              0                  Minimum note of this mapping
+NoteRangeMax     byte              128                Maximum note of this mapping
+NoteRangeType    byte              0                  Type of note range behavior
+	0 = Track Pitch (plays according to MIDI input)
+	1 = Unity Pitch (plays as constant middle C (C3 - note 48),)
+ChildSound       metahash  dat54                      Sound to play on this mapping
+
 
 Example:
 

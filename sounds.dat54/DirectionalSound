@@ -1,12 +1,14 @@
-The DirectionalSound (_dir) type is used to apply a small amount of spread and translation to a sound.
+The DirectionalSound (20) (_dir) type is used to apply a small amount of spread and translation to a sound.
 
 Fields:
 
-InnerAngle - float value. Unknown
-OuterAngle - float value. Unknown
-RearAttenuation - float value. Unknown
-YawAngle - float value. Unknown
-PitchAngle - float value. Unknown
+Field name       Type      FileRef Default value      Description
+ChildSound       metahash  dat54                      Child sound to be affected by directional changes
+InnerAngle       float             30                 Unknown
+OuterAngle       float             90                 Unknown
+RearAttenuation  float             12                 Unknown
+YawAngle         float             90                 Unknown
+PitchAngle       float             0                  Unknown
 
 Example:
 

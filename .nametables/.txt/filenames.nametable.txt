@@ -978,7 +978,6 @@ area_davis_01
 area_davis_quartz_01
 area_del_perro_01
 area_del_perro_02
-area_del_perro_02	
 area_del_perro_beach_01
 area_direction_central_01
 area_direction_central_02
@@ -989,7 +988,6 @@ area_direction_southern_01
 area_direction_western_01
 area_dorset_drive_01
 area_downtown_01
-area_downtown_01	
 area_downtown_02
 area_downtown_vinewood_01
 area_east_los_santos_01

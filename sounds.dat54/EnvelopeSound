@@ -6,41 +6,42 @@ The EnvelopeSound uses the additional variable Hold (ADSHR), which defines the a
 
 Fields:
 
-Attack - ushort value - Duration of attack in ms. Attack style pairs up to AttackCurve.
-AttackVariance - ushort value - Variance of Attack.
-Decay - ushort value - Duration of decay in ms. Decay style pairs up to DecayCurve.
-DecayVariance - ushort value - Variance of Decay.
-Sustain - byte value - Level of sustain as a percentage from 0-100%.
-SustainVariance - byte value - Variance of Sustain
-Hold - integer value - duration of sustain in ms.
-HoldVariance - ushort value - Variance of Hold.
-Release - integer value - Duration of release in ms. Release style pairs up to ReleaseCurve.
-ReleaseVariance - integer value - Variance of Release.
-AttackCurve - metahash - Attack curve.
-DecayCurve - metahash - Decay curve.
-ReleaseCurve - metahash - Release curve.
-AttackVariable - metahash - Attack variable.
-DecayVariable - metahash - Decay variable.
-SustainVariable - metahash - Sustain variable.
-HoldVariable - metahash - Hold variable.
-ReleaseVariable - metahash - Release variable.
-ChildSound - metahash - child sound to envelope.
-Mode - integer value - Envelope behavior.
+Field name         Type      FileRef Default value          Description
+Attack             short             0                      Duration of attack in ms. Attack style pairs up to AttackCurve
+AttackVariance     short             0                      Variance of Attack.
+Decay              short             0                      Duration of decay in ms. Decay style pairs up to DecayCurve
+DecayVariance      short             0                      Variance of Decay
+Sustain            byte              100                    Level of sustain, as a percentage from 0 to 100%
+SustainceVariance  byte              0                      Variance of Sustain level
+Hold               integer           0                      Duration of hold in ms
+HoldVariance       short             0                      Variance of Hold
+Release            integer           0                      Duration of release in ms. Release style pairs up to ReleaseCurve
+ReleaseVariance    integer           0                      Variance of Release
+AttackCurve        metahash  dat16   linear_rise            Style of Attack
+DecayCurve         metahash  dat16   linear_fall            Style of Decay
+ReleaseCurve       metahash  dat16   default_release_curve  Style of Release
+AttackVariable     metahash                                 Variable to use as Attack
+DecayVariable      metahash                                 Variable to use as Decay
+SustainVariable    metahash                                 Variable to use as Sustain level
+HoldVariable       metahash                                 Variable to use as Hold
+ReleaseVariable    metahash                                 Variable to use as Release
+ChildSound         metahash  dat54                          Child sound to be affected by envelope
+Mode               integer           0                      Envelope behavior - what the envelope is affecting
 	0 = Volume
 	1 = Pitch
 	2 = Pan
 	3 = LPF
 	4 = HPF
-	5 = Variable (used by OutputVariable)
+	5 = Variable (uses OutputVariable field)
 	6 = Logarithmic LPF
 	7 = Logarithmic HPF
-OutputVariable - metahash - Output variable used if Mode is set to 5
-OuputRangeMin - float value - Minimum output level of the envelope (default -100 or 0).
-OuputRangeMax - float value - Maximum output level of the envelope (default 0 or 1).
+OutputVariable     metahash                                 Output variable used if Mode = 5
+OuputRangeMin      float             -100                   Ouput level min (controls minimum envelope scale)
+OuputRangeMax      float             0                      Ouput level max (controls maximum envelope scale)
 
 Example:
 
-"truck_horn" will have 900 ms of attack time (volume from 0 to 100%) before releasing for a further 200 ms.
+"truck_horn" will have 900 ms of attack time (Volume from 0 to 100%) before releasing for a further 200 ms.
 
 <Item type="EnvelopeSound">
 <Name>truck_horn_blast_env</Name>
@@ -52,7 +53,7 @@ Example:
  <AttackVariance value="0" />
  <Decay value="0" />
  <DecayVariance value="0" />
- <Sustain value="0" />
+ <Sustain value="100" />
  <SustainVariance value="0" />
  <Hold value="0" />
  <HoldVariance value="0" />
