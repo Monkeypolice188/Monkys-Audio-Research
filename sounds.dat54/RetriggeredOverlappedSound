@@ -6,7 +6,7 @@ Both a "start" and "tail" sound can also be defined, which play only once, on th
 
 Fields:
 
-LoopCount - ushort value - The number of times the retrigger occurs. This includes the StartSound, RetriggerSound and StopSound. 
+LoopCount - ushort value - The number of times the retrigger occurs. This includes the StartSound, RetriggerSound and StopSound. -1 for infinite loops.
 LoopCountVariance - ushort value - RetriggerVariance - Variance of LoopCount.
 DelayTime - ushort value - DelayTime - the DelayTime of the retrigger.  If this value matches the full duration of the sound, there will be no DelayTime. If this value exceeds the full duration of the sound, there will be DelayTime. If this value is set to 0, the retriggers will be played on top of each other, creating amplitude. This will affect all retriggers.
 DelayTimeVariance - ushort value - DelayTimeVariance - Variance of DelayTime. This will affect all retriggers by the same amount of variance.
