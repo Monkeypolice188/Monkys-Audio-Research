@@ -5,21 +5,21 @@ Often used for entities that produce sounds, such as vending machines, air con u
 
 Fields:
 
-Field name     Type      FileRef Description
+Current name   Type      FileRef Official name       Description
 --
-Name           metahash          EntityEmitter name.
-Flags          flags             Unknown flags.
-Unk01          metahash  dat54   Main sound.
-Unk02          float             Unknown
-Unk03          float             Unknown
-Unk04          float             Unknown
-Unk05          float             Unknown
-Unk06          float             Unknown
-Unk07          float             Unknown
-Unk08          float             Unknown
-Unk09          metahash          Unknown //Unused
-Unk10          integer           Unknown
-Unk11          float             Unknown
+Name           metahash          Name                EntityEmitter name.
+Flags          flags             Flags               Flags
+Unk01          metahash  dat54   Sound               Main sound.
+Unk02          float             MaxDistance         Unknown
+Unk03          float             BusinessHoursProb   Unknown
+Unk04          float             EveningProb         Unknown
+Unk05          float             NightProb           Unknown
+Unk06          float             ConeInnerAngle      Unknown
+Unk07          float             ConeOuterAngle      Unknown
+Unk08          float             ConeMaxAtten        Unknown
+Unk09          metahash          StopAfterLoudSound  Unknown //Unused
+Unk10          integer           MaxPathDepth        Unknown
+Unk11          float             BrokenHealth        Unknown
 
 Example:
 

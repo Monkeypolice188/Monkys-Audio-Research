@@ -4,7 +4,7 @@ It can be used to replay its child infinitely, or until a certain condition is m
 
 Fields:
 
-LoopCount - ushort value - Number of times to loop. 
+LoopCount - ushort value - Number of times to loop (-1 for infinite loops)
 LoopCountVariance - ushort value - Variance of LoopCount.
 LoopPoint - ushort value - Unknown. //unused?
 ChildSound - metahash - Child sound to loop.

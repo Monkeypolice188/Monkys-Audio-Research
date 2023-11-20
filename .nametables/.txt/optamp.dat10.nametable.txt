@@ -407,6 +407,7 @@ synth_horn_new
 synth_horn_organ
 synth_horn_orig
 synth_horn_raspy
+synth_horn_siren_spooky
 synth_human_whistle
 synth_industrial_drops
 synth_industrial_pumpjack_dull_metal

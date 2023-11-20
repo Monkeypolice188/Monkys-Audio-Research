@@ -5,102 +5,118 @@ walked on, or shot.
 
 Fields:
 
-Field name       Type      FileRef Description
+Current name     Type      FileRef Official name              Description
 --
-Name             metahash          AudioMaterial name.
-Unk00            flags             Unknown flags.
-Unk01            metahash  dat54   Main collision sound.
-Unk02            metahash  dat54   Unknown
-Unk03            metahash  dat54   Unknown
-Unk04            metahash  dat54   Collision scrape sound.
-Unk05            metahash  dat54   Collision scrape sound.
-Unk06            metahash  dat54   Unknown
-Unk07            metahash  dat54   Unknown
-Unk08            metahash  dat54   Unknown
-Unk09            metahash  dat54   Unknown
-Unk10            metahash  dat54   Unknown
-Unk11            metahash  dat54   Unknown
-Unk12            metahash  dat54   Unknown
-Unk13            metahash  dat54   Unknown
-Unk14            metahash  dat54   Unknown
-Unk15            integer           Unknown
-Unk16            integer           Unknown
-Unk17            integer           Unknown
-Unk18            integer           Unknown
-Unk19            float             Unknown
-Unk20            integer           Unknown
-Unk21            float             Unknown
-Unk22            float             Unknown
-Unk23            float             Unknown
-Unk24            float             Unknown
-Unk25            float             Unknown
-Unk26            float             Unknown
-Unk27            integer           Unknown
-Unk28            metahash  dat54   Unknown //soundset.
-Unk29            float             Unknown
-Unk30            float             Unknown
-Footsteps        metahash  dat151  Footsteps sounds on this material defined in Dat151Shoe.
-Unk31            integer           Unknown
-Unk32            metahash  dat151  Skis footsteps sound on this material defined in Dat151Skis //unused.
-AnimalFootsteps  metahash  dat151  Animal footsteps sounds on this material defined in Dat151AnimalFootstepsList.
-AudioTrack2      metahash          Unknown
-Unk33            metahash  dat16   Unknown //Impact start offset.
-Unk34            metahash  dat16   Unknown //Impact volume.
-Unk35            metahash  dat16   Unknown //Scrape pitch.
-Unk36            metahash  dat16   Unknown //Scrape volume.
-Unk37            metahash  dat54   Unknown
-Unk38            metahash  dat54   Unknown
-Unk39            metahash  dat54   Unknown
-Unk40            metahash  dat54   Unknown
-Unk41            metahash  dat54   Unknown
-Unk42            metahash  dat54   Unknown
-Unk43            metahash  dat54   Unknown
-Unk44            metahash  dat54   Unknown
-Unk45            metahash  dat54   Unknown
-Unk46            metahash  dat54   Unknown
-Unk47            metahash  dat54   Shot sound. //shell_plastic_hard
-Unk48            metahash  dat54   Unknown
-Unk49            metahash  dat54   Scrape sound.
-Unk50            metahash  dat54   Unknown
-Unk51            metahash  dat54   Tyre bump sound. //tyre_bumps_concrete
-Unk52            metahash  dat54   Unknown
-Unk53            metahash  dat54   Unknown
-Unk54            metahash          Unknown
-Unk55            float             Unknown
-Unk56            metahash  dat54   Unknown
-Unk57            metahash  dat54   Unknown
-Unk58            integer           Unknown
-Unk59            integer           Unknown
-Unk60            float             Unknown
-Unk61            integer           Unknown
-Unk62            integer           Unknown
-Unk63            metahash  dat54   Unknown
-Unk64            metahash  dat54   Unknown
-Unk65            metahash  dat54   Unknown
-Unk66            integer           Unknown
-Unk67            metahash  dat54   Unknown
-Unk68            metahash  dat54   Unknown
-Unk69            metahash  dat54   Unknown
-Unk70            metahash  dat54   Unknown
-Unk71            metahash  dat54   Unknown
-Unk72            integer           Unknown
-Unk73            metahash  dat54   Unknown
-Unk74            metahash  dat54   Unknown
-Unk75            metahash  dat54   Unknown
-Unk76            metahash  dat54   Unknown
-Unk77            float             Unknown
-Unk78            metahash  dat151  Unknown //Dat151AudioMaterial
-Unk79            metahash  dat151  Unknown //Dat151AudioMaterial (self referenced)
-Unk80            metahash  dat54   Unknown
-Unk81            metahash  dat54   Unknown
-Unk82            metahash  dat54   Unknown
-Unk83            metahash  dat54   Unknown
-Unk84            metahash  dat54   Unknown
-Unk85            integer           Unknown
-Unk86            metahash  dat54   Unknown
-Unk87            integer           Unknown
-Unk88            metahash  dat54   Unknown
-Unk89            integer           Unknown
+Name             metahash                                     AudioMaterial name.
+Unk00            flags             Flags                      Flags.
+
+IS_SOFT_FOR_LIGHT_PROPS
+DRY_MATERIAL
+SHOULD_PLAY_RICOCHET
+LOOSE_SURFACE
+SCRAPES_FOR_PEDS
+PEDS_ARE_SOLID
+USE_CUSTOM_CURVES
+SHELL_CASINGS_IGNORE_HARDNESS
+SURFACE_SETTLE_IS_LOOP
+GENERATE_POST_SHOOTOUT_DEBRIS
+
+Unk01            metahash  dat54   HardImpact                              Main collision sound.
+Unk02            metahash  dat54   SolidImpact                             Unknown
+Unk03            metahash  dat54   SoftImpact                              Unknown
+Unk04            metahash  dat54   ScrapeSound                             Collision scrape sound.
+Unk05            metahash  dat54   PedScrapeSound                          Collision scrape sound.
+Unk06            metahash  dat54   BreakSound                              Unknown
+Unk07            metahash  dat54   DestroySound                            Unknown
+Unk08            metahash  dat54   SettleSound                             Unknown
+Unk09            metahash  dat54   BulletImpactSound                       Unknown
+Unk10            metahash  dat54   AutomaticBulletImpactSound              Unknown
+Unk11            metahash  dat54   ShotgunBulletImpactSound                Unknown
+Unk12            metahash  dat54   BigVehicleImpactSound                   Unknown
+Unk13            metahash  dat54   PedPunch                                Unknown
+Unk14            metahash  dat54   PedKick                                 Unknown
+Unk15            integer           MediumIntensity                         Unknown
+Unk16            integer           HighIntensity                           Unknown
+Unk17            integer           Hardness                                Unknown
+Unk18            integer           MinImpulseMag                           Unknown
+Unk19            float             MaxImpulseMag                           Unknown
+Unk20            integer           ImpulseMagScalar                        Unknown
+Unk21            float             MaxScrapeSpeed                          Unknown
+Unk22            float             MinScrapeSpeed                          Unknown
+Unk23            float             ScrapeImpactMag                         Unknown
+Unk24            float             MaxRollSpeed                            Unknown
+Unk25            float             MinRollSpeed                            Unknown
+Unk26            float             RollImpactMag                           Unknown
+Unk27            integer           BulletCollisionScaling                  Unknown
+Unk28            metahash  dat54   FootstepCustomImpactSound               Unknown //soundset.
+Unk29            float             FootstepMaterialHardness                Unknown
+Unk30            float             FootstepMaterialLoudness                Unknown
+Footsteps        metahash  dat151  FootstepSettings                        Footsteps sounds on this material defined in Dat151Shoe.
+Unk31            integer           FootstepScaling                         Unknown
+                                   ScuffstepScaling
+                                   FootstepImpactScaling
+                                   ScuffImpactScaling
+Unk32            metahash  dat151  SkiSettings                             Skis footsteps sound on this material defined in Dat151Skis //unused.
+AnimalFootsteps  metahash  dat151  AnimalReference                         Animal footsteps sounds on this material defined in Dat151AnimalFootstepsList.
+AudioTrack2      metahash          WetMaterialReference                    Unknown
+Unk33            metahash  dat16   ImpactStartOffsetCurve                  Unknown //Impact start offset.
+Unk34            metahash  dat16   ImpactVolCurve                          Unknown //Impact volume.
+Unk35            metahash  dat16   ScrapePitchCurve                        Unknown //Scrape pitch.
+Unk36            metahash  dat16   ScrapeVolCurve                          Unknown //Scrape volume.
+Unk37            metahash  dat54   FastTyreRoll                            Unknown
+Unk38            metahash  dat54   DetailTyreRoll                          Unknown
+Unk39            metahash  dat54   MainSkid                                Unknown
+Unk40            metahash  dat54   SideSkid                                Unknown
+Unk41            metahash  dat54   MetalShellCasingSmall                   Unknown
+Unk42            metahash  dat54   MetalShellCasingMedium                  Unknown
+Unk43            metahash  dat54   MetalShellCasingLarge                   Unknown
+Unk44            metahash  dat54   MetalShellCasingSmallSlow               Unknown
+Unk45            metahash  dat54   MetalShellCasingMediumSlow              Unknown
+Unk46            metahash  dat54   MetalShellCasingLargeSlow               Unknown
+Unk47            metahash  dat54   PlasticShellCasing                      Shot sound. //shell_plastic_hard
+Unk48            metahash  dat54   PlasticShellCasingSlow                  Unknown
+Unk49            metahash  dat54   RollSound                               Scrape sound.
+Unk50            metahash  dat54   RainLoop                                Unknown
+Unk51            metahash  dat54   TyreBump                                Tyre bump sound. //tyre_bumps_concrete
+Unk52            metahash  dat54   ShockwaveSound                          Unknown
+Unk53            metahash  dat54   RandomAmbient                           Unknown
+Unk54            metahash          ClimbSettings                           Unknown
+Unk55            float             Dirtiness                               Unknown
+Unk56            metahash  dat54   SurfaceSettle                           Unknown
+Unk57            metahash  dat54   RidgedSurfaceLoop                       Unknown
+Unk58            integer           CollisionCount                          Unknown
+Unk59            integer           CollisionCountThreshold                 Unknown
+Unk60            float             VolumeThreshold                         Unknown
+Unk61            integer           MaterialID                              Unknown
+Unk62            integer           SoundSet                                Unknown
+Unk63            metahash  dat54   DebrisLaunch                            Unknown
+Unk64            metahash  dat54   DebrisLand                              Unknown
+Unk65            metahash  dat54   OffRoadSound                            Unknown
+Unk66            integer           Roughness                               Unknown
+Unk67            metahash  dat54   DebrisOnSlope                           Unknown
+Unk68            metahash  dat54   BicycleTyreRoll                         Unknown
+Unk69            metahash  dat54   OffRoadRumbleSound                      Unknown
+Unk70            metahash  dat54   StealthSweetener                        Unknown
+Unk71            metahash  dat54   Scuff                                   Unknown
+Unk72            integer           MaterialType                
+                                   SurfacePriority
+Unk73            metahash  dat54   WheelSpinLoop                           Unknown
+Unk74            metahash  dat54   BicycleTyreGritSound                    Unknown
+Unk75            metahash  dat54   PedSlideSound                           Unknown
+Unk76            metahash  dat54   PedRollSound                            Unknown
+Unk77            float             TimeInAirToTriggerBigLand               Unknown
+Unk78            metahash  dat151  MeleeOverideMaterial                    Unknown //Dat151AudioMaterial
+Unk79            metahash  dat151  NameHash                                Unknown //Dat151AudioMaterial (self referenced)
+Unk80            metahash  dat54   SlowMoHardImpact                        Unknown
+Unk81            metahash  dat54   SlowMoBulletImpactSound                 Unknown
+Unk82            metahash  dat54   SlowMoAutomaticBulletImpactSound        Unknown
+Unk83            metahash  dat54   SlowMoShotgunBulletImpactSound          Unknown
+Unk84            metahash  dat54   SlowMoBulletImpactPreSuck               Unknown
+Unk85            integer           SlowMoBulletImpactPreSuckTime           Unknown
+Unk86            metahash  dat54   SlowMoAutomaticBulletImpactPreSuck      Unknown
+Unk87            integer           SlowMoAutomaticBulletImpactPreSuckTime  Unknown
+Unk88            metahash  dat54   SlowMoShotgunBulletImpactPreSuck        Unknown
+Unk89            integer           SlowMoShotgunBulletImpactPreSuckTime    Unknown
 
 Example:
 

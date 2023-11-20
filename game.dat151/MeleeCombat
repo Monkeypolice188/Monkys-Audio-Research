@@ -5,27 +5,27 @@ bats, crowbars, or fists.
 
 Fields:
 
-Field name  Type      FileRef Description
+Current name  Type      FileRef  Official name                   Description
 --
-Name        metahash          MeleeCombat name.
-Unk01       metahash  dat54   Unknown //override
-Unk02       metahash  dat54   Hitting anything
-Unk03       metahash  dat54   Unknown
-Unk04       metahash  dat54   Unknown //response face - hitting ped face?
-Unk05       metahash  dat54   Unknown
-Unk06       metahash  dat54   Unknown
-Unk07       metahash  dat54   Unknown
-Unk08       metahash  dat54   Unknown
-Unk09       metahash  dat54   Unknown
-Unk10       metahash  dat54   Unknown //response body - hitting ped body?
-Unk11       metahash  dat54   Unknown
-Unk12       metahash  dat54   Unknown
-Unk13       metahash  dat54   Unknown
-Unk14       metahash  dat54   Unknown
-Unk15       metahash  dat54   Unknown
-Unk16       metahash  dat54   Unknown
-Unk17       metahash  dat54   Unknown //video editor melee - slowmo? 
-Unk18       metahash  dat54   Unknown
+Name          metahash           Name                            MeleeCombat name.
+Unk01         metahash  dat54    SwipeSound                      override
+Unk02         metahash  dat54    GeneralHitSound                 Hitting anything
+Unk03         metahash  dat54    PedHitSound                     Unknown
+Unk04         metahash  dat54    PedResponseSound                response face
+Unk05         metahash  dat54    HeadTakeDown                    Unknown
+Unk06         metahash  dat54    BodyTakeDown                    Unknown
+Unk07         metahash  dat54    SmallAnimalHitSound             Unknown
+Unk08         metahash  dat54    SmallAnimalResponseSound        Unknown
+Unk09         metahash  dat54    BigAnimalHitSound               Unknown
+Unk10         metahash  dat54    BigAnimalResponseSound          response body
+Unk11         metahash  dat54    SlowMoPedHitSound               Unknown
+Unk12         metahash  dat54    SlowMoPedResponseSound          Unknown
+Unk13         metahash  dat54    SlowMoHeadTakeDown              Unknown
+Unk14         metahash  dat54    SlowMoBodyTakeDown              Unknown
+Unk15         metahash  dat54    SlowMoSmallAnimalHitSound       Unknown
+Unk16         metahash  dat54    SlowMoSmallAnimalResponseSound  Unknown
+Unk17         metahash  dat54    SlowMoBigAnimalHitSound         video editor melee
+Unk18         metahash  dat54    SlowMoBigAnimalResponseSound    Unknown
 
 
 

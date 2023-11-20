@@ -4,42 +4,63 @@ The AmbientRules are often used by AmbientZones. Rules have information such as 
 
 Fields:
 
-Field name  Type      FileRef Description
+Field name  Type      FileRef  Official name                 Description
 --
-Name        metahash          Rule name //from Dat151AmbientZone <Rules>.
-Flags       flags             Unknown
-Flags2      metahash  dat54   Unknown
-Flags3      metahash  dat54   Unknown
-Position    vector3           Offset of the sound relative to the AmbientZone center.
-Flags3      flags             Unknown
-ChildSound  metahash  dat54   The master sound defined in sounds.dat.
-Category    metahash  dat22   Category defined in categories.dat.
-Flags4      metahash  dat54   Unknown
-Flags5      metahash  dat54   Unknown
-Flags6      metahash  dat54   Unknown
-Unk01       float             Unknown
-InnerRadius float             Inner radius of sound, in meters, - minimum distance the sound can be heard from.
-OuterRadius float             Outer radius of sound, in meters, - maximum distance the sound can be heard from.
-StartTime   integer           Start time, in minutes, the sound can play at.
-EndTime     integer           End time, in minutes, the sound can play at (1440 = 24hr / 12:00am)
-Frequency   integer           Frequency multiplier. Affects how often the sound should trigger, higher values = less frequent.
-Unk07       integer           Unknown
-Unk08       integer           Unknown
-Unk09       integer           Unknown
-Unk10       integer           Unknown
-Unk11       integer           Unknown
-Unk12       integer           Unknown
-Unk13       integer           Unknown
-Variables   item list         List of  variables which influence whether the sound should play.
-	Name    metahash  dat10   Variable to use.
-	Value   float             Value the variable must use for the rule to play.
-	Flags   flags             Type of condition behavior
+Name        metahash           Name                          Rule name //from Dat151AmbientZone <Rules>.
+Flags       flags              Flags                         Unknown
+
+
+
+Flags2      metahash  dat54                                  Unknown
+Flags3      metahash  dat54                                  Unknown
+Position    vector3            ExplicitSpawnPosition         Offset of the sound relative to the AmbientZone center.
+Flags3      flags                                            Unknown
+ChildSound  metahash  dat54    Sound                         The master sound defined in sounds.dat.
+Category    metahash  dat22    Category                      Category defined in categories.dat.
+Flags4      metahash  dat54    LastPlayTime                  Unknown
+Flags5      metahash  dat54    DynamicBankID                 Unknown
+Flags6      metahash  dat54    DynamicSlotType               Unknown
+Unk01       float              Weight                        Unknown
+InnerRadius float              MinDist                       Inner radius of sound, in meters, - minimum distance the sound can be heard from.
+OuterRadius float              MaxDist                       Outer radius of sound, in meters, - maximum distance the sound can be heard from.
+StartTime   integer            MinTimeMinutes                Start time, in minutes, the sound can play at.
+EndTime     integer            MaxTimeMinutes                End time, in minutes, the sound can play at (1440 = 24hr / 12:00am)
+Frequency   integer            MinRepeatTime                 Frequency multiplier. Affects how often the sound should trigger, higher values = less frequent.
+Unk07       integer            MinRepeatTimeVariance         Unknown
+Unk08       integer            SpawnHeight                   Unknown
+Unk09       integer            ExplicitSpawnPositionUsage    Unknown
+Unk10       integer            MaxLocalInstances             Unknown
+Unk11       integer            MaxGlobalInstances            Unknown
+Unk12       integer            BlockabilityFactor            Unknown
+Unk13       integer            MaxPathDepth                  Unknown
+Variables   item list          Conditions                    List of  variables which influence whether the sound should play.
+	Name    metahash  dat10                                   Variable to use.
+	Value   float                                             Value the variable must use for the rule to play.
+	Flags   flags                                             Type of condition behavior
 		0x00000100 = Less Than
 		0x00000101 = Less Than or Equal To
 		0x00000102 = Greater Than
 		0x00000103 = Greater Than or Equal To
 		0x00000104 = Equal To
 		0x00000105 = Not Equal To
+
+
+IGNORE_INITIAL_MIN_REPEAT_TIME
+STOP_WHEN_RAINING
+STOP_ON_LOUD_SOUND
+FOLLOW_LISTENER
+USE_OCCLUSION
+STREAMING_SOUND
+STOP_ON_ZONE_DEACTIVATION
+TRIGGER_ON_LOUD_SOUND
+CAN_TRIGGER_OVER_WATER
+CHECK_CONDITIONS_EACH_FRAME
+USE_PLAYER_POSITION
+DISABLE_IN_MULTIPLAYER
+
+
+
+
 Example:
 
 <Item type="AmbientRule" ntOffset="19358">

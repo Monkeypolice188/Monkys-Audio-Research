@@ -5,102 +5,105 @@ howl, main rotor, tail rotor and internal tones.
 
 Fields:
 
-Field name                Type      FileRef Description
+Current name             Type      FileRef  Official name                       Description
 --
-Name                      metahash          Helicopter's modelName //or audioNameHash entry.
-Flags                     flags             Unknown flags.
-MainRotor                 metahash  dat54   Main rotor loop sound.
-TailRotor                 metahash  dat54   Tail rotor loop sound.
-Exhaust                   metahash  dat54   Exhaust howl tone.
-Engine                    metahash  dat54   Engine banking tone.
-InternalCabinTone         metahash  dat54   Internal cabin buzz.
-Unk06                     float             Unknown //related to blade speed.
-BankAngleVolume           metahash  dat16   Volume curve of engine when banking.
-BankThrottleVolume        metahash  dat16   Volume curve of engine when throttling.
-BankThrottlePitch         metahash  dat16   Pitch curve of engine when throttling.
-RotorThrottleVolume       metahash  dat16   Volume curve of main rotors when throttling.
-RotorThrottlePitch        metahash  dat16   Pitch curve of main rotors when throttling.
-RotorThrottleGap          metahash  dat16   Unknown //affects the "gap" between each blade sound upon throttling.
-TailRotorThrottleVolume   metahash  dat16   Volume curve of tail rotor when throttling.
-ExhaustThrottleVolume     metahash  dat16   Volume curve of exhaust howl when throttling.
-ExhaustThrottlePitch      metahash  dat16   Pitch curve of exhaust howl when throttling.
-Unk16                     short             //46
-Unk17                     short             //134
-Unk18                     short             //-300
-Unk19                     short             //2
-Unk20                     short             //177
-Unk21                     short             //-300
-Unk22                     short             //80
-Unk23                     short             //100
-Unk24                     short             //-300
-Unk25                     short             //0
-ThrottleResonance1        metahash  dat16   Unknown //Resonance curve of main rotor when throttling?
-ThrottleResonance2        metahash  dat16   Unknown //Resonance curve of tail rotor when throttling?
-BankingResonance          metahash  dat16   Resonance curve of engine when throttling?
-RotorStartupVolume        metahash  dat16   Volume curve of main rotor when starting up.
-BladeStartupVolume        metahash  dat16   Unknown
-RotorStartupPitch         metahash  dat16   Pitch curve of of main rotor when starting up.
-RearRotorStartupVolume    metahash  dat16   Volume curve of tail rotor when starting up.
-ExhaustStartupVolume      metahash  dat16   Volume curve of exhaust howl when starting up.
-RotorStartupGap           metahash  dat16   Unknown //affects the "gap" between each blade sound upon startup.
-Startup                   metahash  dat54   Startup sound.
-Unk36                     short             //91
-Unk37                     short             //110
-Unk38                     short             //0
-Unk39                     short             //109
-Unk40                     integer           //76
-Unk41                     metahash  dat54   Unknown
-Unk42                     metahash  dat54   Unknown
-PoliceScannerCategory     metahash  dat54   Helicopter category for police scanner.
-PoliceScannerParams       metahash  dat151  Helicopter's scanner params defined in Dat151VehicleScannerParams.
-RadioFlags                integer           Radio flags.
+Name                      metahash          Name                                Helicopter's modelName //or audioNameHash entry.
+Flags                     flags             Flags                               Unknown flags.
+MainRotor                 metahash  dat54   RotorLoop                           Main rotor loop sound.
+TailRotor                 metahash  dat54   RearRotorLoop                       Tail rotor loop sound.
+Exhaust                   metahash  dat54   ExhaustLoop                         Exhaust howl tone.
+Engine                    metahash  dat54   BankingLoop                         Engine banking tone.
+InternalCabinTone         metahash  dat54   CabinToneLoop                       Internal cabin buzz.
+Unk06                     float             ThrottleSmoothRate                  Unknown //related to blade speed.
+BankAngleVolume           metahash  dat16   BankAngleVolumeCurve                Volume curve of engine when banking.
+BankThrottleVolume        metahash  dat16   BankThrottleVolumeCurve             Volume curve of engine when throttling.
+BankThrottlePitch         metahash  dat16   BankThrottlePitchCurve              Pitch curve of engine when throttling.
+RotorThrottleVolume       metahash  dat16   RotorThrottleVolumeCurve            Volume curve of main rotors when throttling.
+RotorThrottlePitch        metahash  dat16   RotorThrottlePitchCurve             Pitch curve of main rotors when throttling.
+RotorThrottleGap          metahash  dat16   RotorThrottleGapCurve               Unknown //affects the "gap" between each blade sound upon throttling.
+TailRotorThrottleVolume   metahash  dat16   RearRotorThrottleVolumeCurve        Volume curve of tail rotor when throttling.
+ExhaustThrottleVolume     metahash  dat16   ExhaustThrottleVolumeCurve          Volume curve of exhaust howl when throttling.
+ExhaustThrottlePitch      metahash  dat16   ExhaustThrottlePitchCurve           Pitch curve of exhaust howl when throttling.
+Unk16                     short             RotorConeFrontAngle                 //46
+Unk17                     short             RotorConeRearAngle                  //134
+Unk18                     short             RotorConeAtten                      //-300
+Unk19                     short             RearRotorConeFrontAngle             //2
+Unk20                     short             RearRotorConeRearAngle              //177
+Unk21                     short             RearRotorConeAtten                  //-300
+Unk22                     short             ExhaustConeFrontAngle               //80
+Unk23                     short             ExhaustConeRearAngle                //100
+Unk24                     short             ExhaustConeAtten                    //-300
+Unk25                     short                                                 //0
+ThrottleResonance1        metahash  dat16   Filter1ThrottleResonanceCurve       Unknown //Resonance curve of main rotor when throttling?
+ThrottleResonance2        metahash  dat16   Filter2ThrottleResonanceCurve       Unknown //Resonance curve of tail rotor when throttling?
+BankingResonance          metahash  dat16   BankingResonanceCurve               Resonance curve of engine when throttling?
+RotorStartupVolume        metahash  dat16   RotorVolumeStartupCurve             Volume curve of main rotor when starting up.
+BladeStartupVolume        metahash  dat16   BladeVolumeStartupCurve             Unknown
+RotorStartupPitch         metahash  dat16   RotorPitchStartupCurve              Pitch curve of of main rotor when starting up.
+RearRotorStartupVolume    metahash  dat16   RearRotorVolumeStartupCurve         Volume curve of tail rotor when starting up.
+ExhaustStartupVolume      metahash  dat16   ExhaustVolumeStartupCurve           Volume curve of exhaust howl when starting up.
+RotorStartupGap           metahash  dat16   RotorGapStartupCurve                Unknown //affects the "gap" between each blade sound upon startup.
+Startup                   metahash  dat54   StartUpOneShot                      Startup sound.
+Unk36                     short             BladeConeUpAngle                    //91
+Unk37                     short             BladeConeDownAngle                  //110
+Unk38                     short             BladeConeAtten                      //0
+Unk39                     short             ThumpConeUpAngle                    //109
+Unk40                     integer           ThumpConeDownAngle                  //76
+                                            ThumpConeAtten
+Unk41                     metahash  dat54   ScannerMake                         unused / IV leftover
+Unk42                     metahash  dat54   ScannerModel                        unused / IV leftover
+PoliceScannerCategory     metahash  dat54   ScannerCategory                     Helicopter category for police scanner.
+PoliceScannerParams       metahash  dat151  ScannerVehicleSettings              Helicopter's scanner params defined in Dat151VehicleScannerParams.
+RadioFlags                integer           RadioType                           Radio flags.
 	1 - default radio
 	4098 - no radio (police helicopter)
-DoorOpen                  metahash  dat54   Door open sound.
-DoorClose                 metahash  dat54   Door close sound.
-DoorLimit                 metahash  dat54   Door when knocked and reached maximum open angle.
-Damage                    metahash  dat54   Damage loop sounds (exhaust hissing).
-Unk50                     metahash  dat16   Unknown
-Unk51                     integer           Unknown
-Unk52                     metahash          Unknown //unused
-Unk53                     metahash          Unknown //unused
-Unk54                     metahash          Unknown //unused
-Unk55                     metahash          Unknown //unused
-Unk56                     metahash  dat54   Unknown //environment sounds
-Unk57                     metahash  dat54   Unknown //environment sounds
-RotorBass                 metahash  dat54   Rotor "bass" sounds used when panning camera.
-Unk59                     metahash  dat16   Unknown //possibly related to RotorBass
-Collision                 metahash  dat151  Helicopter's collision sounds defined in Dat151VehicleCollision.
-Fire                      metahash  dat54   Fire and explosion sounds.
-Distant                   metahash  dat54   Distant helicopter synth loop.
-Unk63                     metahash  dat54   Unknown
-Unk64                     metahash  dat54   Unknown
-Unk65                     metahash  dat54   Unknown
-Unk66                     metahash  dat54   Unknown
-SuspensionUp              metahash  dat54   Helicopter skid/suspsension sounds when compressed.
-SuspensionDown            metahash  dat54   Helicopter skid/suspsension sounds when retracted.
-Unk69                     float             Unknown //SuspsensionUpFrequency?
-Unk70                     float             Unknown //SuspsensionDownFrequency?
-DamageOneShots            metahash  dat54   Infrequent damage "pops" when engine breaking down.
-DamageWarning             metahash  dat54   Damage warning beeping tone.
-TailBreak                 metahash  dat54   Break/deform sound when tail is broken off.
-MainRotorBreak            metahash  dat54   Burst/pop sound when main rotor destroyed.
-TailRotorBreak            metahash  dat54   Burst/pop sound when tail rotor destroyed.
-CableDeploy               metahash  dat54   Cable/chain foley when rapple cables deployed.
-Unk77                     metahash  dat54   Unknown //scrapes
-Unk78                     metahash  dat54   Unknown //heat stress ticks?
-AltitudeWarning           metahash  dat54   Unknown
-DamageVolumeCurve         metahash  dat16   Unknown //Volume curve of damage loops.
-DamageVolumeCurve2        metahash  dat16   Unknown //Volume curve of damage loops.
-Unk83                     float             Unknown //0.003 - related to DamageVolumeCurve?
-Unk84                     float             Unknown //0.003 - related to DamageVolumeCurve2?
-Unk85                     float             Unknown //100
-Jet                       metahash  dat54   Unknown //unused, possibly obselete with <Engine>
-PlayerSwitch              metahash  dat54   Unknown //blade slowdown on char switch?
-Unk88                     metahash  dat54   Unknown
-Unk89                     metahash  dat54   Unknown
-Unk90                     metahash  dat54   Unknown
-StartupBroken             metahash  dat54   Startup sound when engine is damaged.
+                                            RadioGenre
+DoorOpen                  metahash  dat54   DoorOpen                            Door open sound.
+DoorClose                 metahash  dat54   DoorClose                           Door close sound.
+DoorLimit                 metahash  dat54   DoorLimit                           Door when knocked and reached maximum open angle.
+Damage                    metahash  dat54   DamageLoop                          Damage loop sounds (exhaust hissing).
+Unk50                     metahash  dat16   RotorSpeedToTriggerSpeedCurve       Unknown
+Unk51                     integer           RotorVolumePostSubmix               Unknown
+Unk52                     metahash          EngineSynthDef                      Unknown //unused
+Unk53                     metahash          EngineSynthPreset                   Unknown //unused
+Unk54                     metahash          ExhaustSynthDef                     Unknown //unused
+Unk55                     metahash          ExhaustSynthPreset                  Unknown //unused
+Unk56                     metahash  dat54   EngineSubmixVoice                   Unknown //environment sounds
+Unk57                     metahash  dat54   ExhaustSubmixVoice                  Unknown //environment sounds
+RotorBass                 metahash  dat54   RotorLowFreqLoop                    Rotor "bass" sounds used when panning camera.
+Unk59                     metahash  dat16   ExhaustPitchStartupCurve            Unknown //possibly related to RotorBass
+Collision                 metahash  dat151  VehicleCollisions                   Helicopter's collision sounds defined in Dat151VehicleCollision.
+Fire                      metahash  dat54   FireAudio                           Fire and explosion sounds.
+Distant                   metahash  dat54   DistantLoop                         Distant helicopter synth loop.
+Unk63                     metahash  dat54   SecondaryDoorStartOpen              Unknown
+Unk64                     metahash  dat54   SecondaryDoorStartClose             Unknown
+Unk65                     metahash  dat54   SecondaryDoorClose                  Unknown
+Unk66                     metahash  dat54   SecondaryDoorLimit                  Unknown
+SuspensionUp              metahash  dat54   SuspensionUp                        Helicopter skid/suspsension sounds when compressed.
+SuspensionDown            metahash  dat54   SuspensionDown                      Helicopter skid/suspsension sounds when retracted.
+Unk69                     float             MinSuspCompThresh                   Unknown
+Unk70                     float             MaxSuspCompThresh                   Unknown
+DamageOneShots            metahash  dat54   DamageOneShots                      Infrequent damage "pops" when engine breaking down.
+DamageWarning             metahash  dat54   DamageWarning                       Damage warning beeping tone.
+TailBreak                 metahash  dat54   TailBreak                           Break/deform sound when tail is broken off.
+MainRotorBreak            metahash  dat54   RotorBreak                          Burst/pop sound when main rotor destroyed.
+TailRotorBreak            metahash  dat54   RearRotorBreak                      Burst/pop sound when tail rotor destroyed.
+CableDeploy               metahash  dat54   CableDeploy                         Cable/chain foley when rapple cables deployed.
+Unk77                     metahash  dat54   HardScrape                          Srapes
+Unk78                     metahash  dat54   EngineCooling                       Heat stress ticks
+AltitudeWarning           metahash  dat54   AltitudeWarning                     Unknown
+DamageVolumeCurve         metahash  dat16   HealthToDamageVolumeCurve           Unknown //Volume curve of damage loops.
+DamageVolumeCurve2        metahash  dat16   HealthBelow600ToDamageVolumeCurve   Unknown //Volume curve of damage loops.
+DamageBelow600            metahash  dat54   DamageBelow600Loop
+Unk83                     float             AircraftWarningSeriousDamageThresh  Unknown //0.003 - related to DamageVolumeCurve?
+Unk84                     float             AircraftWarningCriticalDamageThresh Unknown //0.003 - related to DamageVolumeCurve2?
+Unk85                     float             AircraftWarningMaxSpeed             Unknown //100
+Jet                       metahash  dat54   SimpleSoundForLoading               Unknown //unused, possibly obselete with <Engine>
+PlayerSwitch              metahash  dat54   SlowMoRotorLoop                     Blade slowdown on char switch
+Unk88                     metahash  dat54   SlowMoRotorLowFreqLoop              Unknown
+Unk89                     metahash  dat54   VehicleRainSound                    Unknown
+Unk90                     metahash  dat54   VehicleRainSoundInterior            Unknown
+StartupBroken             metahash  dat54   StartUpFailOneShot                  Startup sound when engine is damaged.
 
 Example:
 
