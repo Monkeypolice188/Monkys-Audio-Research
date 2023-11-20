@@ -5,11 +5,11 @@ dedicated to this particular bank.
 
 Fields:
 
-Field name    Type      FileRef Description
+Field name    Type      FileRef  Official name   Description
 --
-Items         item list         List of audio banks.
-	AudioBank metahash          Container path (i.e, "dlc_tuner/dlc_tuner_car_meet_walla").
-	BankName  metahash  dat4    Ambience bank category (Dat4VariableList item).
+Items         item list                          List of audio banks.
+AudioBank     metahash           BankMap         Container path (i.e, "dlc_tuner/dlc_tuner_car_meet_walla").
+BankName      metahash  dat4     BankName        Ambience bank category (Dat4VariableList item).
 
 
 Example:
