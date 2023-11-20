@@ -96,6 +96,7 @@ Unk49                   integer           ClatterType                           
 - 4 = CLATTER_BUS
 - 5 = CLATTER_TRANSIT              //vans
 - 6 = CLATTER_TRANSIT_CLOWN        //clown van
+- 7 = CLATTER_DETAIL               
 - 8 = CLATTER_NONE                 //default
 Scoop                   metahash  dat54   DiggerSounds                          Rotating part sounds (scoop)
 TowArm                  metahash  dat54   TowTruckSounds                        Lifting part sounds (towarm)
