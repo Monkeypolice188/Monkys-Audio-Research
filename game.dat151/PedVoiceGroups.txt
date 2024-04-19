@@ -1,0 +1,135 @@
+PedVoiceGroup // ID = 30 (CW name: PedVoiceGroup)
+
+Name			hash
+PVGType			byte
+PVGBits
+	Value		byte
+	padding		byte
+	populated	byte
+VoicePriority	byte
+RingtoneSounds	hash
+
+<Item type="PedVoiceGroup" ntOffset="328304">
+ <Name>hash_05AE3B01</Name>
+ <Unk00 value="0x70030100" />
+ <Unk01 value="94" />
+ <Unk02 value="57" />
+ <Unk03 value="245" />
+ <Full>
+  <Item>
+   <Name>a_m_y_beach_03_black_full_01</Name>
+   <Unk1 value="0" />
+   <Unk2 value="0" />
+  </Item>
+  <Item>
+   <Name>a_m_y_musclbeac_01_black_full_01</Name>
+   <Unk1 value="0" />
+   <Unk2 value="0" />
+  </Item>
+ </Full>
+ <Mini>
+  <Item>
+   <Name>a_m_y_beach_03_black_mini_01</Name>
+   <Unk1 value="0" />
+   <Unk2 value="0" />
+  </Item>
+ </Mini>
+ <UnkItems />
+ <Unk07 value="0" />
+</Item>
+
+
+
+
+
+
+struct data
+
+		// 
+		// PedVoiceGroups
+		// 
+		enum PedVoiceGroupsFlagIds
+		{
+			FLAG_ID_PEDVOICEGROUPS_MAX = 0,
+		}; // enum PedVoiceGroupsFlagIds
+		
+		struct PedVoiceGroups
+		{
+			static const rage::u32 TYPE_ID = 30;
+			static const rage::u32 BASE_TYPE_ID = 0xFFFFFFFF;
+			
+			PedVoiceGroups() :
+				ClassId(0xFF),
+				NameTableOffset(0XFFFFFF),
+				PVGType(kMaleCowardly),
+				VoicePriority(3),
+				RingtoneSounds(4114177648U)
+			{}
+			
+			// PURPOSE - Returns a pointer to the field whose name is specified by the hash
+			void* GetFieldPtr(const rage::u32 fieldNameHash);
+			
+			rage::u32 ClassId : 8;
+			rage::u32 NameTableOffset : 24;
+			
+			rage::u8 PVGType;
+			
+			struct tPVGBits
+			{
+				union
+				{
+					rage::u8 Value;
+					struct
+					{
+						#if __BE
+							bool padding:7; // padding
+							bool Populated:1;
+						#else // __BE
+							bool Populated:1;
+							bool padding:7; // padding
+						#endif // __BE
+					} BitFields;
+				};
+			} PVGBits; // struct tPVGBits
+			
+			rage::u8 VoicePriority;
+			rage::u32 RingtoneSounds;
+			
+			static const rage::u8 MAX_PRIMARYVOICES = 16;
+			rage::u8 numPrimaryVoices;
+			struct tPrimaryVoice
+			{
+				rage::u32 VoiceName;
+				rage::u32 ReferenceCount;
+				rage::u32 RunningTab;
+			} PrimaryVoice[MAX_PRIMARYVOICES]; // struct tPrimaryVoice
+			
+			
+			static const rage::u8 MAX_MINIVOICES = 16;
+			rage::u8 numMiniVoices;
+			struct tMiniVoice
+			{
+				rage::u32 VoiceName;
+				rage::u32 ReferenceCount;
+				rage::u32 RunningTab;
+			} MiniVoice[MAX_MINIVOICES]; // struct tMiniVoice
+			
+			
+			static const rage::u8 MAX_GANGVOICES = 16;
+			rage::u8 numGangVoices;
+			struct tGangVoice
+			{
+				rage::u32 VoiceName;
+				rage::u32 ReferenceCount;
+				rage::u32 RunningTab;
+			} GangVoice[MAX_GANGVOICES]; // struct tGangVoice
+			
+			
+			static const rage::u8 MAX_BACKUPPVGS = 16;
+			rage::u8 numBackupPVGs;
+			struct tBackupPVG
+			{
+				rage::u32 PVG;
+			} BackupPVG[MAX_BACKUPPVGS]; // struct tBackupPVG
+			
+		} SPU_ONLY(__attribute__((packed))); // struct PedVoiceGroups

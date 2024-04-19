@@ -18198,6 +18198,8 @@ traffic_barrel_3_reso
 train_airhorn_loop_01
 train_airhorn_loop_02
 train_airhorn_oneshot
+train_bell_loop_from_crossing
+train_bell_loop_from_engine
 train_crash
 train_distant_horn_loop
 train_distant_horn_loop_tail
@@ -18561,6 +18563,13 @@ v_train_carriage01
 v_train_carriage02
 v_train_carriage03
 v_train_carriage04
+v_train_clack01
+v_train_clack02
+v_train_clack03
+v_train_clack04
+v_train_clack05
+v_train_squeal_loop01_01
+v_train_squeal_loop01_02
 vacca_distant_01
 vacca_distant_02
 vacca_distant_03

@@ -1,0 +1,126 @@
+ID	Officialname						CodeWalkername
+
+1	VehicleCollisionSettings			VehicleCollision
+2	TrailerAudioSettings				VehicleTrailer
+3	CarAudioSettings					Vehicle
+4	VehicleEngineAudioSettings			VehicleEngine
+5	CollisionMaterialSettings			AudioMaterial
+6	StaticEmitter						StaticEmitter
+7	EntityEmitter						EntityEmitter
+8	HeliAudioSettings					Helicopter
+9	MeleeCombatSettings					MeleeCombat
+10	SpeechContextSettings													//not used in GTA V
+11	TriggeredSpeechContext				SpeechContext
+12	SpeechContext						SpeechChoice
+13	SpeechContextVirtual				VirtualSpeechChoice
+14	SpeechParams						SpeechParams
+15	SpeechContextList					SpeechContextList
+16	BoatAudioSettings					Boat
+17	WeaponSettings						Weapon
+18	ShoeAudioSettings					Shoe
+19	OldShoeSettings															//not used in GTA V
+20	MovementShoeSettings													//not used in GTA V
+21	FootstepSurfaceSounds													//not used in GTA V
+22	ModelPhysicsParams					Unk22
+23	SkiAudioSettings					Skis
+24	RadioStationList					RadioStationList
+25	RadioStationSettings				RadioStation
+26	RadioStationTrackList				RadioTrack
+27	RadioTrackCategoryData				RadioTrackCategory
+28	ScannerCrimeReport					PoliceScannerCrime
+29	PedRaceToPVG						RaceToPedVoiceGroup
+30	PedVoiceGroups						PedVoiceGroup
+31	FriendGroup							PedType
+32	StaticEmitterList					StaticEmitterList
+33	ScriptedScannerLine					PoliceScannerReport
+34	ScannerArea																//not used in GTA V
+35	ScannerSpecificLocation				PoliceScannerLocation
+36	ScannerSpecificLocationList			PoliceScannerLocationList
+37	AmbientZone							AmbientZone
+38	AmbientRule							AmbientRule
+39	AmbientZoneList						AmbientZoneList
+40	AmbientSlotMap						AmbientStreamList
+41	AmbientBankMap						AmbienceBankMap
+42	EnvironmentRule						AmbientZoneParams
+43	TrainStation															//not used in GTA V
+44	InteriorSettings					Interior
+45	InteriorWeaponMetrics				InteriorRoomParams
+46	InteriorRoom						InteriorRoom
+47	DoorAudioSettings					Door
+48	DoorTuningParams					DoorParams
+49	DoorList							DoorList
+50	ItemAudioSettings					WeaponAudioItem
+51	ClimbingAudioSettings				Climbing
+52	ModelAudioCollisionSettings			Mod
+53	TrainAudioSettings					Train
+54	WeatherAudioSettings				WeatherType
+55	WeatherTypeAudioReference			WeatherTypeList
+56	BicycleAudioSettings				Bicycle
+57	PlaneAudioSettings					Aeroplane
+58	ConductorsDynamicMixingReference
+59	StemMix								StemMix
+60
+61
+62	InteractiveMusicMood				Mood
+63	StartTrackAction					StartTrackAction
+64	StopTrackAction						StopTrackAction
+65	SetMoodAction						SetMoodAction
+66	MusicEvent							PlayerAction
+67	StartOneShotAction					StartOneShotAction
+68	StopOneShotAction					StopOneShotAction
+69	BeatConstraint						MusicBeat
+70	BarConstraint						MusicBar
+71	DirectionalAmbience					DependentAmbience
+72	GunfightConductorIntensitySettings	Unk72
+73	AnimalParams						AnimalParams
+74	AnimalVocalAnimTrigger				AnimalSounds
+75	ScannerVoiceParams					VehicleScannerColourList
+76	ScannerVehicleParams				VehicleScannerParams
+77	AudioRoadInfo						Unk77
+78	MicSettingsReference				MicrophoneList
+79	MicrophoneSettings					Microphone
+80	CarRecordingAudioSettings			VehicleRecording
+81	CarRecordingList					VehicleRecordingList
+82	AnimalFootstepSettings				AnimalFootsteps
+83	AnimalFootstepReference				AnimalFootstepsList
+84	ShoeList							ShoeList
+85	ClothAudioSettings					Cloth
+86	ClothList							ClothList
+87	ExplosionAudioSettings				Explosion
+88	GranularEngineAudioSettings			VehicleEngineGranular
+89
+90	ShoreLinePoolAudioSettings			ShoreLinePool
+91	ShoreLineLakeAudioSettings			ShoreLineLake
+92	ShoreLineRiverAudioSettings			ShoreLineRiver
+93	ShoreLineOceanAudioSettings			ShoreLineOcean
+94	ShoreLineList						ShoreLineList
+95	RadioTrackSettings					RadioTrackSettings
+96	ModelFootStepTuning					Unk96
+97	GranularEngineSet														//not used in GTA V
+98	RadioDjSpeechAction					RadioDJSpeechAction
+99	SilenceConstraint					Unk99
+100ReflectionsSettings					Tunnel
+101AlarmSettings						Alarm
+102FadeOutRadioAction					FadeOutRadioAction
+103FadeInRadioAction					FadeInRadioAction
+104ForceRadioTrackAction				ForceRadioTrackAction
+105SlowMoSettings						SlowMoSettings
+106PedScenarioAudioSettings				Scenario
+107PortalSettings						AudioOcclusionOverride
+108ElectricEngineAudioSettings			ElectricEngine
+109PlayerBreathingSettings				BreathSettings
+110PedWallaSpeechSettings				Unk110
+111AircraftWarningSettings				AircraftWarningSettings
+112PedWallaSettingsList					Unk112
+113CopDispatchInteractionSettings		CopDispatchInteractionSettings
+114RadioTrackTextIds					RadioTrackEvents
+115RandomisedRadioEmitterSettings		Unk115
+116TennisVocalizationSettings			Unk116
+117DoorAudioSettingsLink				DoorModel
+118SportsCarRevsSettings				Unk118
+119FoliageSettings						Foilage
+120ReplayRadioStationTrackList			RadioTrackList
+121MacsModelOverrideList				MacsModelsOverrides
+122MacsModelOverrideListBig												//not used in GTA V
+123SoundFieldDefinition													//not used in GTA V
+124GameObjectHashList					RadioStationList2

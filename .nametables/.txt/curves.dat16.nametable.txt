@@ -1,3 +1,4 @@
+air_speed_to_wind_noise_volume_curve
 amb_frontend_clear_vol
 amb_frontend_critical_vol
 amb_frontend_lead_in_vol
@@ -182,6 +183,7 @@ heli_rotor_throttle_gap
 heli_rotor_throttle_pitch_curve
 heli_rotor_throttle_volume
 heli_startup_to_normal
+heli_suspension_compression_to_vol
 heli_throttle_resonance_1
 heli_throttle_resonance_1_military
 heli_throttle_resonance_2
@@ -194,6 +196,7 @@ impact_damage_volume
 industrial_large_plateau
 industrial_refinery_rolloff
 jail_courtyard_walla
+jets_closing_rate_to_flyby_distance
 lapping_waves_wind_to_vol
 lfo_sine_curve
 linear_fall
@@ -248,9 +251,25 @@ ped_veh_impulse_to_bone_break_prob
 ped_veh_impulse_to_impact
 ped_walla_default_tod_curve
 ped_walla_density_post_panic
+plane_air_speed_to_wind_noise_pitch
+plane_banking_angle_to_wind_noise_pitch
+plane_banking_angle_to_wind_noise_vol
+plane_jet_damage_vol
+plane_prop_banking_angle_vol
+plane_prop_banking_throttle_pitch
+plane_prop_banking_throttle_vol
+plane_prop_distance_throttle_pitch
+plane_prop_distance_throttle_vol
+plane_prop_engine_throttle_pitch
+plane_prop_engine_throttle_vol
+plane_prop_idle_throttle_pitch
+plane_prop_idle_throttle_vol
+plane_prop_propellor_throttle_pitch
+plane_prop_propellor_throttle_vol
 player_ang_vel_to_car_pass_vol
 player_revs_curve
 player_throttle_curve
+prop_closing_rate_to_flyby_distance
 qub3d_vt
 rain_blocked_atten
 rain_distance_to_uncover_vol
@@ -328,6 +347,7 @@ speed_to_brake_disc_volume
 speedboat_engine_2_volume
 speedboat_engine_pitch
 start_loop_vol_curve
+stunt_prop_distance_vol
 sub_turning_mod
 subway_brake_acceleration_pitch
 subway_brake_acceleration_volume
@@ -342,6 +362,7 @@ subway_grind_pitch
 subway_grind_volume
 subway_idle_pitch
 subway_idle_volume
+subway_rumble_distance_to_intensity
 subway_rumble_volume
 subway_scrape_speed_volume
 subway_squeal_pitch
