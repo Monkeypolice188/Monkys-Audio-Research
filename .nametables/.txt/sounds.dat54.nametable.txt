@@ -554,7 +554,6 @@ amp_fix_synth
 anim_door_open
 anim_door_open_heavy
 anim_door_open_rand
-ap1_01_d_plinth_007_36_lod
 appliances_alarm_clock
 appliances_alarm_clock_b1
 appliances_alarm_clock_b2
@@ -2493,9 +2492,6 @@ cruiser_squeak_null
 cruiser_squeak_rdm
 cruiser_squeak_rto
 crunch_collisions_rnd
-cs1_12_props_combo0418_47_lod
-cs4_02_props_p101_slod_lod
-cs4_08_em_12_lod
 custom_mag_demo_engine_accel
 custom_mag_demo_exhaust_accel
 cutscene_abigail_mcs_1_seq_mastered_only_abigail_mcs_1_seq_mastered.c_only
@@ -6096,7 +6092,6 @@ gym_bag_tail_1
 gym_bag_tail_2
 gym_bag_tail_3
 gym_bag_tail_4
-h4_mph4_isl_lod_se_placement_ipl_04_26_lod
 habanero_horn
 hacking_click
 hacking_click_bad
@@ -6643,9 +6638,6 @@ hydrant_roll_master
 hydrant_solid_master
 hydrant_wrap
 ice_bullet_strike
-id2_04_props_combo_67_lod
-id2_13_gas_02_fizz_lodb
-id2_props_combo0407_86_lod
 idle_hull_slap
 ignition
 ignition_chopper
@@ -18846,7 +18838,6 @@ slipstream_pts
 slo_mo_master
 slo_mo_multi
 slow_metal_box_scrape
-sm_props_combo30_79_lod
 small_bird_wings
 small_bird_wings_synth
 small_bird_wings_synth_env
@@ -19205,7 +19196,6 @@ song_sparrow_tweet_11_rt
 song_sparrow_tweet_13
 song_sparrow_tweet_14_pd
 song_sparrow_tweet_15_pd
-sp1_props_combo02_20_lod
 spaceship
 sparrow_song
 sparrow_song_chirp
