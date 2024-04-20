@@ -6,7 +6,9 @@ amin
 amount
 amp_modded
 angle
+angularvelocity
 apply
+approach_time
 armwrestlingintensity
 asmooth
 assembly
@@ -48,6 +50,7 @@ bike_ratchet_hold
 bike_speed
 bike_wheel_size
 blade_volume
+bladerpm
 bleed
 blooptime
 blow
@@ -85,6 +88,7 @@ chirps
 church_bell_ring_count
 clatter
 clattercycles
+clattervol
 click
 click_freq
 click_pow
@@ -197,12 +201,15 @@ echotime
 echovol
 endpan
 energy
+enginedamage
+enginewaterdepth
 env
 env_hold_time
 envcontrol
 envlength
 envpow
 envtime
+exhaustproximity
 exponent
 f1
 f1_bw
@@ -443,6 +450,7 @@ lump_thresh
 mag
 maincontrol
 mainscalar
+mainskidvolume
 mass
 massfact
 master_volume
@@ -465,6 +473,7 @@ maxpd
 maxpitch
 maxres
 maxrt
+maxskidvolume
 maxv
 maxvariance
 maxvol
@@ -486,6 +495,7 @@ minminpd
 minpd
 minvariance
 minx
+missile_distance_to_plane
 mod
 mod1
 mod2
@@ -504,6 +514,7 @@ monkey_volume
 motor_hum
 movement_speed
 movetest
+muffled
 muffling
 mxlast
 mylast
@@ -640,6 +651,7 @@ rolloff
 roofopenness
 roomfreq
 root
+rotorspeed
 rpm
 rto_time
 rtodelaytime
@@ -659,6 +671,7 @@ saw
 scale
 scrape_length
 scrapectrl
+scrapeskidratio
 screech
 second
 seed
@@ -669,6 +682,7 @@ sharpness
 shoehardness
 shots
 shouldchange
+sideskidvolume
 sin_x
 sin_y
 sine
@@ -771,6 +785,7 @@ stream
 strengthscale
 surface
 surface2
+surfacehardness
 surfacevol
 sustain
 sweep
@@ -848,6 +863,7 @@ tumbler_in_zone
 tw
 two
 type
+understeervolume
 unit_pickup
 uphold
 uplength
@@ -858,6 +874,7 @@ v2
 variation
 vault
 vc
+vehicle.healthfactor
 velocity
 verticalvelocity
 vmax
@@ -888,6 +905,7 @@ wait
 waittime
 wetness
 wheelspeed
+wheeltouchingfactor
 whine_a
 whine_factor
 whine_mod_max

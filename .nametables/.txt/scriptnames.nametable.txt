@@ -45,6 +45,7 @@ air_defences_disabled
 air_defenses_disabled
 air_drop_package
 air_drop_parachute
+air_suspension_down
 airhorn
 airhorn_blast_long
 airp
@@ -62,6 +63,7 @@ alert
 algonquin
 alhambra
 all
+all_clear
 all_connected_correct
 all_connected_incorrect
 alt_st
@@ -140,6 +142,9 @@ backlotb
 backlotf
 backpack
 backpack_player
+bad_land_bike
+bad_land_car
+bad_landing_loop
 bad_news_attract_loop
 ballistic
 ballistic_player
@@ -202,6 +207,14 @@ become_jn
 become_slasher
 become_target
 bed
+bed_loop_bike
+bed_loop_bike_franklin
+bed_loop_bike_michael
+bed_loop_bike_trevor
+bed_loop_car
+bed_loop_car_franklin
+bed_loop_car_michael
+bed_loop_car_trevor
 beep_green
 beep_red
 bell
@@ -211,8 +224,13 @@ bell_03
 bellsound
 bicycle
 bicycle_heavy
+bicycle_heavy_underwater
 bicycle_medium
+bicycle_medium_underwater
 bicycle_small
+bicycle_small_underwater
+bicycledirtywheelloop
+bicycleglassywheelloop
 big_stop
 big_win
 bigrig_brakerelease
@@ -228,11 +246,16 @@ birds
 blade_appear
 blade_beasts_fail
 blade_beasts_win
+blade_impact
+blade_impact_ped
+blade_sustained
+blade_sustained_ped
 bleep
 blip
 blip_pickup
 blizzard
 blow_cell_door
+blow_open_metal_gate
 blowout
 blowout_b
 blowtorch_cut_loop
@@ -257,6 +280,7 @@ bomb_release
 bomb_timer_loop
 bombs_empty
 bonnet_slam
+boost_fail
 boot_close_loop
 boot_close_start
 boot_close_stop
@@ -421,6 +445,8 @@ car_theft_movie_lot_drop_spikes
 car_theft_movie_lot_eject_seat
 car_wheels
 carcer
+cardirtywheelloop
+carglassywheelloop
 cargo_alarm_loop
 cargo_debris
 cargo_engine
@@ -430,6 +456,7 @@ carjackimpact
 carriage
 carrying
 carsona
+carwaterlappingloop
 cascabel
 case_beep
 cash
@@ -578,6 +605,7 @@ computers_mouse_click
 condemned
 condemned_heartbeat
 conductors_port_of_ls_2a_loop
+confidence
 confirm
 confirm_beep
 connect_multiply_1
@@ -758,6 +786,7 @@ desrt
 destroy
 destroy_cop_car
 destroy_electrical_panel
+destroy_panel
 destroy_supply_player
 destroy_supply_remote
 destroyed
@@ -795,6 +824,8 @@ distant_sirens_fight
 distant_sirens_rappel
 distant_sirens_rubble
 distant_sirens_skip_start
+dive
+dive_horn
 diveinwater
 dj_crowd_cheer
 dlc_aw_arena_traps_rams_sounds
@@ -877,6 +908,7 @@ drill_jam
 drill_pin_break
 drill_wall
 drive_loop
+drivewheelslip
 drone
 drone2
 drone_view
@@ -1127,6 +1159,7 @@ first_place
 flag_collected
 flag_delivered
 flag_dropped
+flaps_close
 flaps_loop
 flaps_start
 flaps_stop
@@ -1286,6 +1319,9 @@ golf_hud_scorecard_master
 golf_new_record
 golf_shoes
 goma
+good_land_bike
+good_land_car
+good_landing_loop
 goon_paid_large
 goon_paid_small
 got_powerup
@@ -1309,6 +1345,7 @@ grenade_throw_success
 grenadetimeout
 grove
 growl
+grumbling_loop
 gtao_biker_fm_soundset
 gtao_boss_goons_fm_soundset
 gtao_mp_apartment_shower_plastic_master
@@ -1319,6 +1356,8 @@ gun_assault_rifle_fire
 gun_assault_rifle_reload
 gun_assault_rifle_reload_last
 gun_collect
+gun_flaps_close
+gun_flaps_open
 gun_nailgun_dry_fire
 gun_nailgun_fire
 gun_nailgun_reload
@@ -1373,6 +1412,18 @@ harmo
 hawick
 hawik
 head
+headlamp_switchoff
+headlamp_switchoff_bicycle
+headlamp_switchoff_boat
+headlamp_switchoff_heli
+headlamp_switchoff_plane
+headlamp_switchoff_submersible
+headlamp_switchon
+headlamp_switchon_bicycle
+headlamp_switchon_boat
+headlamp_switchon_heli
+headlamp_switchon_plane
+headlamp_switchon_submersible
 headshot
 headslowmo
 health
@@ -1386,6 +1437,7 @@ heavy
 heavy_bag
 heavy_bag_player
 heavy_boots
+heavybrakingchirp
 heavysound
 hedge_trimmer
 heels
@@ -1401,6 +1453,7 @@ helicopter_loop
 helicopter_prompt_exit
 helicopter_wind
 helicopter_wind_idle
+helirotorhittingwater
 hen
 heritage
 hide_wheel
@@ -1436,6 +1489,9 @@ hit_key
 hit_metal
 hit_mirror
 hit_out
+hit_ped_generic
+hit_ped_pistol
+hit_ped_rifle
 hit_player
 hit_rock
 hit_space
@@ -1457,6 +1513,7 @@ horde_cool_down_timer
 horn
 horn_fast
 horn_slow
+hornsound
 hornsounds
 hors
 hot_tub_loop
@@ -1479,6 +1536,8 @@ hum
 humlab
 hurt
 husky
+hydraulic_suspension_down
+hydraulic_suspension_up
 hydraulics_down
 hydraulics_up
 icevansiren
@@ -1506,6 +1565,8 @@ input_highlight
 insert_coin
 insert_keycard
 inside_track_start
+instant_refill_player
+instant_refill_remote
 integ
 interior_explosion
 interior_rain
@@ -1532,8 +1593,10 @@ joad
 joshe
 joshr
 jump
+jump_armed
 jump_land
 jump_land_bikes
+jump_rc_armed
 keycard_fail
 keycard_success
 keycard_wait_loop
@@ -1632,6 +1695,8 @@ lift
 lift_posh_door_open
 lift_posh_move
 lifts_tone
+lightcover_popdown
+lightcover_popup
 lights
 lights_on
 limit
@@ -1714,6 +1779,7 @@ marathon
 mariachi
 marinad
 marker_erase
+marker_remote
 marl
 martin1_distant_train_horns_master
 martin_1_plane_crash_master
@@ -1789,6 +1855,7 @@ mirrpb
 missile_defence_cannon
 missile_defence_near_miss
 missile_fired
+missile_fired_solid
 missile_incoming_hit
 missile_incoming_miss
 missile_launch
@@ -2007,6 +2074,7 @@ pan_loop
 pan_soft_long
 panic_walla
 panorama
+paper_remote
 paper_shuffle
 paper_stick
 parachute_land
@@ -2039,6 +2107,8 @@ ped_phone_dial_01
 peds
 pen_cross
 pen_erase
+pen_strikethrough
+pen_strikethrough_short
 pen_tick
 perino
 period_over
@@ -2559,6 +2629,7 @@ show_source_menu
 show_wheel
 shutter
 shutter_flash
+sideswipe
 sign_destroyed
 signal_loop
 signal_off
@@ -2594,6 +2665,8 @@ slipstream_master
 slow
 slow_clap
 slow_clap_cel
+slow_down_player
+slow_down_remote
 slow_squeak
 slsant
 slurps
@@ -2618,6 +2691,7 @@ smoke_grenade
 smoke_loop
 smoket
 smomil
+snakespeed
 snip_ponytail
 sniper_aim_camera
 sniper_bullet_hit
@@ -2663,6 +2737,8 @@ speech_going_up
 speechechosound
 speechsound
 speed_boost
+speed_up_player
+speed_up_remote
 speedboat_material
 spikes
 spill_ambience_loop
@@ -2694,6 +2770,7 @@ srock
 sseaside
 ssham
 ssoto
+stabilize
 stad
 stafford_fall
 stage_00
@@ -2706,6 +2783,8 @@ stage_06
 stage_07
 stage_sounds
 stairs_collapse
+stance_lowered
+stance_raised
 standard_door
 start
 start_game
@@ -2751,6 +2830,8 @@ super_mod_garage_upgrade_car_default
 supermod_consumer
 supermod_scifi
 supermod_wasteland
+surface
+surface_horn
 survival_failed
 survival_passed
 suspension_script_force
@@ -2854,6 +2935,7 @@ thumps
 thunder
 tile_select
 time_lapse_master
+timeinair
 timer
 timer_10s
 timer_5s
@@ -2883,6 +2965,8 @@ tow_truck_damage
 towedvehicleclatter
 tower
 towing_engine_turning_master
+towtruck_hookattach
+towtruck_hookrelease
 track_move_loop
 traffic_control_bg_noise
 traffic_control_bg_stream
@@ -2920,6 +3004,7 @@ transform_oneshot
 transform_remote_player
 transform_to_car
 transform_to_car_short
+transform_to_flight
 transition_sound
 transitvan
 transitvanclown
@@ -2984,6 +3069,8 @@ tyre_burst
 tyre_health_warning
 tyre_scrape_dent
 tyre_scrape_dent_turn
+tyrebumpstairs
+tyrebumpstairsbike
 tyrechirps
 ufo_ambience
 uncondemned
@@ -3002,6 +3089,7 @@ unlock
 unlock_cell
 unlock_door
 unlocked
+unlocked_beep
 unlocked_bleep
 unzip
 upgrade
@@ -3079,8 +3167,12 @@ vehicle_weapon_ruiner_rocket
 vehicle_weapon_tampa_missile
 vehicle_weapon_tampa_mortar
 vehicle_weapon_trailer_missile
+vehiclebonnetbreakoff
+vehiclebonnetflypast
 vehicleclatter
 vehiclecollisionofac
+vehiclecomingoutofwater
+vehicledoorbreakoff
 vehiclefragspropane
 vehiclehotwire
 vehiclepassby
@@ -3229,7 +3321,11 @@ window_draw
 window_loop
 window_start
 window_stop
+windowsmash_interior
+windscreensmash_interior
 wing_flap
+wings_in
+wings_out
 winner
 winning_team_shard
 winston

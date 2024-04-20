@@ -17,6 +17,7 @@ amb_spoken_lead_in_vol
 amb_spoken_normal_vol
 ambience_curves_loud_sound_exclusion_radius
 amount_of_tail_energy_affects
+ang_vel_to_fitness
 angle_to_vertical
 area_to_listener_reverb
 banking_resonance_curve
@@ -49,7 +50,9 @@ built_up_to_shouted_echo_volume
 built_up_to_tail_volume
 burn_strength_to_main_vol
 caddy_engine_low_volume
+cars_to_num_sirens
 chainlink_impact_start_offset
+chasing_veh_to_citness
 chewing_sine
 chewing_tail
 collision_camper_impact_volume
@@ -127,6 +130,7 @@ distance_to_reverb_wet_dry
 distance_to_reverb_wet_dry_loud
 distance_to_reverb_wet_dry_quiet
 distance_to_water_wind_strength
+distance_veh_veh_to_fitness
 distant_horn_release
 echo_angle_to_suitability
 echo_colocated_attenuation
@@ -221,6 +225,7 @@ molotov_fuse_fire_release
 molotov_fuse_pitch_curve
 molotov_fuse_vol_curve
 mp_countdown_attack
+npc_road_noise_relative_speed_to_vol
 outer_occlusion
 pain_frontend_clear_vol
 pain_frontend_critical_vol
@@ -251,6 +256,7 @@ ped_veh_impulse_to_bone_break_prob
 ped_veh_impulse_to_impact
 ped_walla_default_tod_curve
 ped_walla_density_post_panic
+pitch_diff_to_fitness
 plane_air_speed_to_wind_noise_pitch
 plane_banking_angle_to_wind_noise_pitch
 plane_banking_angle_to_wind_noise_vol
@@ -275,6 +281,8 @@ rain_blocked_atten
 rain_distance_to_uncover_vol
 rain_to_rain_volume
 rear_rotor_volume_startup_curve
+recent_speed_to_settle_release_time
+recent_speed_to_settle_vol
 rel_speed_to_carby_vol
 reverb_large
 reverb_medium
@@ -283,12 +291,15 @@ reverb_small
 reverb_wet_to_echo_volume
 reverb_wet_to_shouted_echo_volume
 revs_smoothing_rate
+road_noise_bicycle_vol
 road_noise_cobble_volume
 road_noise_detail_vol
 road_noise_fast_vol
 road_noise_fast_vol_player
 road_noise_pitch
 road_noise_single_vol
+road_noise_steering_angle_cr_to_vol
+road_noise_steering_angle_to_attenuation
 road_noise_wet_vol
 rolloff_to_quiet_loud
 rotor_gap_startup_curve
@@ -320,8 +331,10 @@ siren_curves_time_to_volume
 siren_curves_time_to_volume_2
 siren_wail_curve
 sirens_police
+skid_curves_drift_angle_to_vol
 skid_curves_fwd_slip_to_main_vol
 skid_curves_fwd_slip_to_scrape_vol
+skid_curves_fwd_slip_to_understeer_vol
 skid_curves_lateral_slip_to_side_vol
 skid_curves_speed_ratio_to_pitch
 skid_curves_speed_ratio_to_volume
@@ -391,6 +404,8 @@ turbo_curves_boost_to_pitch
 turbo_curves_boost_to_vol
 turbo_curves_revs_to_boost
 up_and_down
+up_right_to_fitness
+veh_distance_to_fitness
 vehicle_interior_open_to_cutoff
 vehicle_interior_open_to_speech_cutoff
 vehicle_interior_open_to_speech_vol
@@ -398,6 +413,7 @@ vehicle_interior_open_to_vol
 vehicle_mass_to_heavy_vol
 vehicle_radio_fall
 vehicle_radio_rise
+vehicle_roof_openness
 vehicle_scrape_impact
 volume_to_quiet_loud
 walla_num_hostile_peds_to_density
@@ -417,3 +433,4 @@ waves_tail_vol_curve
 waves_test
 waveshaper_curves_overdrive
 wet_to_leakage
+yaw_diff_to_fitness

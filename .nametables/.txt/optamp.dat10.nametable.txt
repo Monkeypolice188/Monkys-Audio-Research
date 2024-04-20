@@ -276,6 +276,7 @@ synth_bike_bell_ting
 synth_bike_bell_ting_2
 synth_bike_bell_ting_4
 synth_bike_sprockets_01
+synth_birds_desert_peeps
 synth_bloop
 synth_bodyfall_sweetener
 synth_buoy_hit_01
@@ -302,6 +303,7 @@ synth_click_sweetener
 synth_cloth_flapping
 synth_coin_ding
 synth_container_collisions
+synth_container_collisions_pitch
 synth_cop_heli_cam_turn
 synth_copier_key_beep
 synth_countdown_ticks
@@ -326,6 +328,8 @@ synth_door_vault_gas
 synth_door_vault_motor
 synth_door_vault_squeal
 synth_dryer_bang
+synth_editor_sound_stereo_l
+synth_editor_sound_stereo_r
 synth_electrical_crack
 synth_electrical_sparks
 synth_exhaust_pop
@@ -465,6 +469,7 @@ synth_police_siren
 synth_police_sirens
 synth_police_sirens_pm
 synth_preset_default
+synth_prop_planes_sub_bass
 synth_propeller_02
 synth_radiator_hiss
 synth_radio_beep

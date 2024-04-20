@@ -113,6 +113,7 @@ score
 scripted
 scripted_alarms
 scripted_louder
+scripted_louder_first_person
 scripted_mini_games
 scripted_override_fade
 scripted_override_pitch
@@ -194,6 +195,7 @@ video_editor_weapons_guns_bullet_bys
 video_editor_weapons_guns_bullet_impacts
 water
 water_loud
+water_louder_silly
 water_ocean
 water_river
 water_swimming

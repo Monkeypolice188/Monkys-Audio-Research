@@ -1,3 +1,4 @@
+01_scanner_voice_params
 a_c_boar
 a_c_cat_01
 a_c_chickenhawk
@@ -1439,6 +1440,7 @@ ar_biker_generator_01
 ar_biker_generator_02
 ar_biker_light_trash_rustle
 ar_biker_trash_rustle
+ar_birds_black_legged_stilt
 ar_birds_blackbird_dawn
 ar_birds_blackbird_day
 ar_birds_coot
@@ -2270,6 +2272,7 @@ az_los_santos_vinewood_hills
 az_los_santos_vinewood_hills_observatory
 az_ls_kortz_centre_01
 az_ls_kortz_centre_long_fountain
+az_ls_sirens_city
 az_music_beverly_hills_01
 az_music_beverly_hills_02
 az_music_beverly_hills_03
@@ -2845,6 +2848,7 @@ camper
 camper_engine
 camper_granular_engine
 camper_scanner_params
+cancel_tooth
 cant_lose_enemy
 cant_lose_enemy_sc
 car1_1
@@ -4568,12 +4572,16 @@ dune_scanner_params
 duster
 dying_moan
 dying_moan_sc
+ee_aircon_fan_small
+ee_aircon_fan_small_one_way
+ee_aircon_fan_tiny
 ee_aircon_large
 ee_aircon_med
 ee_aircon_small
 ee_alarm
 ee_can_machine
 ee_desk_fan
+ee_dreyfuss_paper
 ee_electrical_box_large
 ee_electrical_box_med
 ee_electrical_box_small
@@ -4589,6 +4597,7 @@ ee_generator_med_03
 ee_generator_small_01
 ee_generator_small_02
 ee_generator_small_03
+ee_omega_power_cells
 ee_prop_engine_small_01
 ee_pumpjacks_motor_01
 ee_pumpjacks_motor_02
@@ -4597,6 +4606,9 @@ ee_pylon_big
 ee_radio
 ee_rural_windmill
 ee_turnstile
+ee_wind_through_trees
+ee_wind_through_trees_huge
+ee_wind_through_trees_small
 ee_windchimes
 electrocution
 electrocution_sc
@@ -6378,6 +6390,9 @@ gang_balla
 gang_biker
 gang_bump
 gang_bump_sc
+gang_fam
+gang_kor
+gang_lat
 gang_mexgoon_r2pvg
 gasmask_choke
 gasmask_choke_sc
@@ -6766,6 +6781,7 @@ idle
 impotent_pvg
 in_cover_resp
 in_cover_resp_sc
+in_players_head_mic
 indian
 infernus
 infernus_engine
@@ -7470,6 +7486,7 @@ interior_weapon_supermarket_large
 interior_weapon_warehouse_dead
 interior_weapon_warehouse_live
 interior_weapon_warehouse_open
+internal_view_reflections
 intruder
 intruder_engine
 intruder_granular_engine
@@ -8509,6 +8526,7 @@ mic3_steve_shot
 mic3_stop_track
 mic3_trev_heli_restart
 mic3_vehicle_escape_restart
+mic_references
 michael_epsilon_robes
 michael_epsilon_robes_sc
 michaelone004
@@ -13753,6 +13771,7 @@ sniff
 sniff_finish
 sniff_finish_random
 sniff_random
+sniper_low_zoom_aim_mic
 snore
 snoring_sc
 soft_steps
@@ -14316,6 +14335,8 @@ tennis_start_with_trevor_sc
 tennis_vfx_settings
 tennis_win
 tennis_win_sc
+test_44
+test_77
 test_radio_track
 test_tracks
 testing

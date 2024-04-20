@@ -555,6 +555,7 @@ epsilonism_08_non_compliance_enemy_car
 epsilonism_08_non_compliance_enemy_car_map
 epsilonism_08_non_compliance_heli
 epsilonism_08_non_compliance_heli_map
+exhaust_proximity_scene
 exile_1_cargo_plane
 exile_1_cargo_plane_appears
 exile_1_cargo_plane_appears_patch
@@ -1061,6 +1062,7 @@ hint_cam_scene
 hint_cam_scene_p
 hunting_02_settings
 hunting_02_traffic_scene
+interior_view_aircraft_passenger_scene
 interior_view_aircraft_scene
 interior_view_always_louder_patch
 interior_view_always_quieter_patch
@@ -1319,6 +1321,7 @@ mp_corona_menu_scene
 mp_heli_cam_filtering
 mp_heli_cam_filtering_bg_base
 mp_heli_cam_filtering_blend_base
+mp_heli_cam_filtering_main_base
 mp_intro_default_patch_base
 mp_intro_lamar_drive_scene
 mp_intro_race_scene
@@ -1380,6 +1383,7 @@ offroad_races_general
 offroad_races_outro_patch
 offroad_races_outro_scene
 offroad_races_patch
+on_moving_train_scene
 paparazzo_01_chase
 paparazzo_01_intro
 paparazzo_02_chase
@@ -1590,6 +1594,7 @@ sea_race_during_race_npc_general_map
 sea_race_during_race_npc_general_vehicles
 sea_races_outro
 sea_races_outro_patch
+shamal_interior_scene
 shoot_through_door_group
 shoot_through_door_group_map
 siren_patch
@@ -1647,6 +1652,7 @@ street_race_npc_general
 street_race_npc_general_map
 street_race_outro
 street_race_outro_patch
+stunt_tunnel_scene
 switch_to_mp_patch
 switch_to_mp_scene
 targets
@@ -1773,6 +1779,8 @@ tv_trevors_trailer_patch
 ufo_proximity
 ufo_proximity_patch
 underwater_scene
+vehicle_firstperson_turret_interior_scene
+vehicle_firstperson_turret_scene
 wanted_music_scene
 watching_safehouse_tv
 watching_safehouse_tv_patch

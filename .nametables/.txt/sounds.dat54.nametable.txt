@@ -139,6 +139,11 @@ alarms_klaxon_07_close
 alarms_klaxon_07_far
 alarms_null_loop
 alarms_null_loop_null
+alarms_small_beeps_01
+alarms_small_beeps_02
+alarms_small_beeps_03_bigger_ro
+alarms_small_beeps_04
+alarms_small_beeps_05_bigger
 alarms_soundset
 alc_agent_alc_agent
 alc_agent_alc_agent_1
@@ -1602,6 +1607,7 @@ chassis_stress_detail_tl
 chassis_stress_heavy
 chassis_stress_heavy_env
 chassis_stress_heavy_tl
+chassstresstypes
 chatter_rumble
 chavos_horn
 chavos_multi_horn
@@ -1800,6 +1806,7 @@ clown_van_suspension_up_multi
 clown_van_transit_clatter
 clown_van_transit_clatter_multi
 clown_van_transit_clatter_rand
+cnc_plane_drop_soundset
 cognoscenti_horn
 cognoscienti_multi_horn
 collision_scrape_boat
@@ -4377,6 +4384,7 @@ dj_speech_mono
 dj_speech_positioned
 dlc_dmod_prop_editor_sounds
 dlc_vcfm_history_history_left
+dlc_xm_air_suspension_sounds
 dm_30sec_countdown
 dock_crane_crate_impact_01_left
 dock_crane_crate_impact_01_right
@@ -4725,6 +4733,7 @@ dynamic_wrapper_test
 e109_horn
 e109_multi_horn
 elbow_to_face
+electrical_sparks_big
 electrical_sparks_big_mt_zap
 elk_brey_master
 elk_brey_sequential
@@ -4743,6 +4752,7 @@ ent_anim_dog_peeing
 ent_anim_dog_poo
 ent_dst_gen_cardboard
 ent_dst_pineapple
+ent_sht_electrical_box_lp
 entity_distant
 enveloped_car_collisions
 epsilon_fly_epsilon_fly_1
@@ -5720,6 +5730,7 @@ girl_bump
 girl_bump_rand
 glass_bottle_impact_master
 glass_bottle_roll_master
+glass_bottle_settle
 glass_bottle_settle_master
 glass_bullet_crack_random
 glass_bullet_impact_random
@@ -6600,6 +6611,7 @@ hud_mini_game_select_master
 hud_mini_game_soundset
 hud_minigame_soundset
 hud_mission_creator_soundset
+hud_mp_error_master
 hud_property_soundset
 hud_race_creator_soundset
 hud_vehicle_shop_soundset
@@ -6637,6 +6649,10 @@ hydrant_reso_env_1
 hydrant_roll_master
 hydrant_solid_master
 hydrant_wrap
+hydraulic_suspension_donk_npc_ss
+hydraulic_suspension_donk_ss
+hydraulic_suspension_npc_ss
+hydraulic_suspension_ss
 ice_bullet_strike
 idle_hull_slap
 ignition
@@ -6701,6 +6717,7 @@ interior_car_creaks
 interior_view_constant
 interior_view_mt
 interior_view_player_speed
+interior_view_wind_openness
 interior_view_wind_rush_mt
 interior_view_wind_rush_mt_p
 interior_view_wind_vb
@@ -6754,6 +6771,8 @@ jacket_leather_sprint
 jacket_leather_walk
 jacket_sound
 jacking_grab_body_1
+jacking_pull_ped_out_env
+jacking_pull_ped_out_mt
 jacuzzi_lap_01
 jacuzzi_lap_1_rto
 jacuzzi_lap_2
@@ -6822,6 +6841,7 @@ jump_land_soft_intact
 jump_land_soft_intact_env
 jump_land_soft_intact_multi
 jump_land_tyre_squeal
+jump_rc_recharge
 jump_sound
 jump_sound_echo
 jump_ss
@@ -7158,6 +7178,7 @@ lmg_assault_player_rprt_end_b_env
 lmg_assault_player_rprt_end_b_rdm
 lmg_assault_player_rprt_master
 lmg_assault_player_sub_rdm
+lmg_combat2_npc_master
 lmg_combat2_player_00_first.l
 lmg_combat2_player_00_first.r
 lmg_combat2_player_01.l
@@ -8091,6 +8112,7 @@ musclecar_4_us_v8_exhaust_accel
 musclecar_4_veh_idle_sub
 musket_dry_fire_env
 musket_dry_fire_master
+nav_up_down_master
 neck_break
 new_distant_helis_mt
 new_distant_helis_pts
@@ -14656,6 +14678,14 @@ resident_collision_cardboard_box_3
 resident_collision_cardboard_box_4
 resident_collision_cardboard_box_5
 resident_collision_cardboard_box_6
+resident_collision_chainlink_impacts_head_01
+resident_collision_chainlink_impacts_head_02
+resident_collision_chainlink_impacts_head_03
+resident_collision_chainlink_impacts_head_04
+resident_collision_chainlink_impacts_tail_01
+resident_collision_chainlink_impacts_tail_02
+resident_collision_chainlink_impacts_tail_03
+resident_collision_chainlink_impacts_tail_04
 resident_collision_chipboard_1
 resident_collision_chipboard_2
 resident_collision_chipboard_3
@@ -14963,6 +14993,9 @@ resident_collision_metal_plate_hollow_3_reso
 resident_collision_metal_plate_medium_1
 resident_collision_metal_plate_medium_2
 resident_collision_metal_plate_medium_3
+resident_collision_metal_sign_large_1
+resident_collision_metal_sign_large_2
+resident_collision_metal_sign_large_3
 resident_collision_motorbike_collision_1
 resident_collision_motorbike_collision_1_1
 resident_collision_motorbike_collision_2
@@ -15236,8 +15269,11 @@ resident_collision_truck_trailer_heavy_2
 resident_collision_truck_trailer_heavy_3
 resident_collision_truck_trailer_heavy_4
 resident_collision_truck_trailer_heavy_wrapper
+resident_collision_tubular_metal_stress_1
 resident_collision_tubular_metal_stress_1_3
+resident_collision_tubular_metal_stress_2
 resident_collision_tubular_metal_stress_2_3
+resident_collision_tubular_metal_stress_3
 resident_collision_tubular_metal_stress_3_3
 resident_collision_umbrella_1
 resident_collision_umbrella_1_1
@@ -15465,10 +15501,21 @@ resident_doors_creak_particle
 resident_doors_door_buzzer
 resident_doors_door_buzzer_end
 resident_doors_door_buzzer_wrapper
+resident_doors_door_key_in_1
+resident_doors_door_key_in_2
+resident_doors_door_key_in_3
 resident_doors_door_unlock
+resident_doors_farm_gate_hit
 resident_doors_garage_door_a
 resident_doors_garage_door_b
 resident_doors_glass_tap
+resident_doors_jw_michaels_front_gate_open_01
+resident_doors_mech_gate_latch_01
+resident_doors_mech_gate_latch_02
+resident_doors_mech_gate_latch_03
+resident_doors_mech_latch_handle_01
+resident_doors_mech_latch_handle_02
+resident_doors_mech_latch_handle_03
 resident_doors_mech_latch_internal_01
 resident_doors_mech_latch_internal_01_1
 resident_doors_mech_latch_internal_02
@@ -15493,6 +15540,8 @@ resident_doors_metal_squeak_rusty_02_2
 resident_doors_metal_squeak_rusty_03
 resident_doors_metal_squeak_rusty_03_1
 resident_doors_metal_squeak_rusty_03_2
+resident_doors_pay_and_spray_auto_door
+resident_doors_pay_and_spray_auto_door_stop
 resident_doors_push_hand_slap_01
 resident_doors_push_hand_slap_02
 resident_doors_push_hand_slap_03
@@ -16871,6 +16920,7 @@ rfl_assault2_player_shot_rdm
 rfl_assault2_player_sub_rdm
 rfl_assault2_player_thud_a
 rfl_assault2_player_thud_b
+rfl_assault_1_npc_fnl_master
 rfl_assault_backup_master
 rfl_assault_echo_master
 rfl_assault_echo_rto
@@ -16911,6 +16961,7 @@ rfl_assault_suppressed2_player_wide_env
 rfl_assault_suppressed2_player_wide_rdm
 rfl_assault_suppressed2_player_wide_rprt.l
 rfl_assault_suppressed2_player_wide_rprt.r
+rfl_carbine1_npc_master
 rfl_carbine_echo_master
 rfl_carbine_int_plyr_hold_pts
 rfl_carbine_int_plyr_hold_vb_master
@@ -17558,6 +17609,8 @@ script_alarm_klaxon_04_alarm_klaxon_04_wet_right
 script_alarm_klaxon_05_alarm_klaxon_05_dry
 script_alarm_klaxon_05_alarm_klaxon_05_wet_left
 script_alarm_klaxon_05_alarm_klaxon_05_wet_right
+script_alarm_klaxon_07_big_heist_custom_alarm_wet_left
+script_alarm_klaxon_07_big_heist_custom_alarm_wet_right
 script_alarms_burglar_alarm_a
 script_alarms_burglar_alarm_b
 script_alarms_electronic_alarm_01_left
@@ -18648,6 +18701,13 @@ sirens_blip_seq_3
 sirens_blip_seq_3_env0
 sirens_blip_seq_3_env1
 sirens_blip_seq_3_env2
+sirens_conductor_fade
+sirens_conductor_long_envelope
+sirens_conductor_loop
+sirens_conductor_sequential
+sirens_conductor_short_envelope
+sirens_conductor_variable
+sirens_conductor_variable.vr
 sirens_distant_01_master
 sirens_distant_crossfade_01
 sirens_distant_crossfade_02
@@ -18833,6 +18893,7 @@ slatted_blinds_multi
 slatted_blinds_solid_master
 slatted_blinds_thin_collision
 sleighbells_short
+sliding_metal_gate_metal_sign_large_rnd
 slipstream_master
 slipstream_pts
 slo_mo_master
@@ -20514,6 +20575,7 @@ sub_creaks_loop
 sub_creaks_loop_env
 sub_creaks_loop_master
 sub_creaks_multi
+sub_creaks_oneshot_master
 sub_creaks_onstop
 sub_creaks_pts
 sub_creaks_sol
@@ -20522,6 +20584,8 @@ sub_extras_multi
 sub_extras_pts
 sub_high
 sub_high_twin
+sub_pressure_destroy_master
+sub_pressure_warning_master
 sub_resident_extras_small_car_close_2
 sub_start
 sub_stop
@@ -20533,6 +20597,7 @@ sub_turn_multi_main
 sub_turn_twin
 submersible_splash_master
 submersible_splash_multi
+submersible_water_enter_master
 subway_carriage
 subway_carriage_env
 subway_carriage_pt
@@ -20729,6 +20794,7 @@ tailbreak_deform_light
 tailbreak_deform_med
 tailbreak_sheer
 takings_tires_peelaway_master
+tank_damage_warning_master
 target_practice_flip_master
 target_practice_slide_master
 target_practice_stop_master
@@ -21307,6 +21373,7 @@ trailer_drop_random
 trailer_drop_random_category
 trailer_drop_upperbody_rnds
 trailer_rattle_env
+trailer_scrape_twin_loop
 train_approach_track_rumble
 train_explosion_multi
 train_explosion_multi_b
@@ -21352,6 +21419,7 @@ transmission
 trash_bag_break_master
 trash_bag_break_multi
 trash_bag_collision
+trash_bag_impact_for_particle
 trash_bag_impact_master
 trash_bag_scrape_master
 trash_bag_scrape_multi
@@ -21648,6 +21716,11 @@ veh_downwash_dirt
 veh_downwash_foliage
 veh_downwash_sand
 veh_downwash_water
+veh_dynamic_explosion
+veh_dynamic_explosion_underwater
+veh_dynamic_impacts_high
+veh_dynamic_impacts_low
+veh_dynamic_impacts_medium
 veh_fire_soundset
 veh_glass_bulletproof_fall_loop
 veh_glass_bulletproof_hit_ground
@@ -22321,6 +22394,7 @@ vehicles_wheel_loops_stone_6
 vehicles_wheel_loops_stone_7
 vehicles_wheel_loops_stone_8
 vehicles_wheel_loops_stone_9
+vehicles_wheel_loops_tarmac_scrape
 vehicles_wheel_loops_wet_road_loop_a
 vehicles_wheel_loops_wet_road_loop_b
 vehicles_wheel_loops_wet_skid_a
