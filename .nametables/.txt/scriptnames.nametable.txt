@@ -265,6 +265,8 @@ blowtorch_on
 blue_target_charge
 blue_target_explode
 boar
+boar_death
+boar_pain
 boat_wave_hit_script
 boats_planes_helis_boom
 body_fall_dive_water_master
@@ -418,6 +420,7 @@ can_drop
 can_gulp
 can_initial
 cancel
+cancel_target
 cannery
 cannon_activating_loop
 cannon_active
@@ -589,6 +592,7 @@ collect_part
 collect_pass
 collect_pickup
 collect_powerup
+collect_shard
 collect_water
 collectable_cash
 collectable_damage
@@ -608,6 +612,7 @@ conductors_port_of_ls_2a_loop
 confidence
 confirm
 confirm_beep
+confirm_target
 connect_multiply_1
 connect_multiply_10
 connect_multiply_2
@@ -644,6 +649,7 @@ cops_arrive_2
 copy
 cormorant
 cornered
+correct
 cortes
 cosi
 cougara
@@ -718,6 +724,7 @@ cursor_move
 custom_material
 cut_bar
 cut_final_bar
+cut_power
 cutscene_dialogue_override_sound_01
 cutscene_dialogue_override_sound_02
 cutter
@@ -754,6 +761,8 @@ deckers
 decrease_loot_share
 deep_walk
 deer
+deer_death
+deer_pain
 default
 degenatron_logo
 degenatron_star
@@ -865,6 +874,8 @@ docks_heist_finale_2a_sub_land
 docks_heist_prep_1_cable_snap
 docks_heist_prep_1_sub_swing
 docks_heist_prep_1_sub_tilt
+dog_death
+dog_pain
 dolphin
 dom
 dom_breathing
@@ -1253,6 +1264,7 @@ gas_station_explosion
 gas_tanker_explosion
 gasmask
 gate_lock_break
+gate_unlock
 gearchange_bike
 gearchange_external
 gearchange_internal
@@ -1392,6 +1404,7 @@ hacking_door_unlock_sounds
 hacking_downloaded
 hacking_downloading
 hacking_failure
+hacking_loop
 hacking_move_cursor
 hacking_success
 halloween
@@ -1943,6 +1956,7 @@ nav_arrow_left
 nav_arrow_right
 nav_blocked
 nav_down
+nav_error
 nav_left_right
 nav_left_right_photo_change
 nav_up
@@ -2348,6 +2362,9 @@ pull_out
 purchase
 purchase_upgrade
 push
+push_door_complete
+push_door_loop
+push_door_start
 put_away
 put_down
 put_on_mask
@@ -2596,6 +2613,7 @@ select_spec_drone
 select_stage
 select_stage_failed
 select_start_grid_position
+select_target
 select_trap_cam
 select_turret
 sell
@@ -2799,6 +2817,7 @@ steal_powerup
 steele
 stock_race_intro
 stop
+stop_self_destruct
 stoploudhailer
 stopsound
 strafe
@@ -3074,6 +3093,12 @@ tyrebumpstairsbike
 tyrechirps
 ufo_ambience
 uncondemned
+undead_chant_loop
+undead_death
+undead_death_fire
+undead_death_plague
+undead_explode
+undead_pain
 under
 under_the_bridge
 under_water_come_up
@@ -3095,7 +3120,9 @@ unzip
 upgrade
 upgrade_backup
 upgrade_entity3
+upgrade_eurosx32
 upgrade_issi8
+upgrade_niobe
 upload_complete
 upper_alien
 upper_alien_player
@@ -3152,6 +3179,7 @@ vehicle_01
 vehicle_02
 vehicle_03
 vehicle_04
+vehicle_alarm
 vehicle_debris_far
 vehicle_debris_near
 vehicle_destroyed
@@ -3342,6 +3370,8 @@ working
 wounded
 wrecked
 wrecked_crash
+wrong
+wrong_final
 wvine
 yes
 yoga_exhale
