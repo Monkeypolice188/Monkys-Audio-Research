@@ -1,3 +1,4 @@
+bang_hydraulics
 biker_formation_sounds
 celebration_winner
 cutscene_dialogue_override_sound_01
@@ -5,10 +6,14 @@ cutscene_dialogue_override_sound_02
 dlc_apartments_drop_zone_sounds
 dlc_apartments_extraction_soundset
 dlc_apt_apartment_soundset
+dlc_aw_mod_vehicle_npc_sounds
+dlc_aw_mod_vehicle_player_sounds
 dlc_biker_syg_sounds
 dlc_exec_tp_soundset
 dlc_gtao_explode_last_sounds
 dlc_ie_sell_general_sounds
+dlc_importexport_ruiner2_npc_sounds
+dlc_importexport_ruiner2_sounds
 dlc_io_warehouse_mod_garage_sounds
 dlc_lowrider_relay_race_sounds
 door_buzz_master
@@ -52,12 +57,17 @@ gtao_rappel_sounds
 gtao_script_doors_faded_screen_sounds
 gtao_script_doors_sounds
 gtao_shepherd_sounds
+gtao_special_ability_mp_gun_master
+gtao_special_ability_mp_silencer_master
+gtao_special_ability_mp_stun_gun_master
 gtao_speed_convoy_soundset
 gtao_speed_race_sounds
 gtao_vision_modes_soundset
 gtao_yacht_soundset
 hud_frontend_mp_collectable_sounds
+hydraulic_suspension_bounce_small
 hydraulic_suspension_ss
+mod_vehicle_wheely_ss
 mp_cctv_soundset
 mp_drop_weapons_sounds
 mp_lobby_sounds
@@ -72,4 +82,5 @@ proj_flare_trail
 respawn_online_soundset
 scr_apa_jacuzzi_drips
 scr_apa_jacuzzi_wade
+special_ammo_type_bullet_impacts
 water_splash_plane_in

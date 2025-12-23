@@ -559,6 +559,9 @@ amp_fix_synth
 anim_door_open
 anim_door_open_heavy
 anim_door_open_rand
+animal_vocal_far_ss
+animal_vocal_near_ss
+animal_vocal_pain_ss
 appliances_alarm_clock
 appliances_alarm_clock_b1
 appliances_alarm_clock_b2
@@ -1029,6 +1032,7 @@ bicycle_cruiser_chain
 bicycle_cruiser_chain_var_pts
 bicycle_gear_change_rnd
 bicycle_headlight_master
+bicycle_hp_normal
 bicycle_jump_land
 bicycle_re_pedal_rnd
 bicycle_seat_master
@@ -1111,10 +1115,12 @@ boat_hull_multi
 boat_hull_multi_louder
 boat_hull_solid
 boat_wave_hit_big_air
+boat_wave_hit_medium
 boat_wave_hit_script
 boat_wave_hit_script_multi
 boats_horn_dynamic
 boats_horn_dynamic 
+boats_hp_normal
 bobber_horn
 bobber_horn_mt
 bobcat_horn
@@ -1272,6 +1278,7 @@ bulldozer_rev_oneshot
 bulldozer_wheels_ss
 bulldozerdefault
 bullet_bys_soundset
+bullet_bys_underwater_soundset
 bullet_glass_multi
 bullet_impact_debris
 bullet_impact_debris_env
@@ -1396,6 +1403,7 @@ car_rain_twinloop_02
 car_rain_twinloop_1
 car_rain_twinloop_2
 car_rain_twinloop_wrapper
+car_roll_sound_temp
 car_scrape
 car_scrape_fast
 car_scrape_x
@@ -1486,6 +1494,9 @@ cargobob_heli_suspension_down
 carpet
 carpet_env
 carpet_rolling
+cars_hp_aggressive
+cars_hp_held_down
+cars_hp_normal
 carwash_brushes_hitting_car
 carwash_brushes_hitting_car_mt
 carwash_brushes_hitting_car_mt_tl
@@ -1806,7 +1817,11 @@ clown_van_suspension_up_multi
 clown_van_transit_clatter
 clown_van_transit_clatter_multi
 clown_van_transit_clatter_rand
+cnc_arresting
+cnc_arresting_halfway
+cnc_arresting_success
 cnc_plane_drop_soundset
+coded_weapon_sounds
 cognoscenti_horn
 cognoscienti_multi_horn
 collision_scrape_boat
@@ -2022,6 +2037,7 @@ conductor_ricco_02_master
 conductor_ricco_03_master
 conductor_ricco_distant_master
 conductor_ricco_master
+conductor_ricco_rand
 conductor_siren_01_master
 conductor_siren_01_multi_01
 conductor_siren_01_seq_01
@@ -4136,7 +4152,9 @@ cutscenes_trvram_3_mastered_only
 cutscenes_trvram_4_mastered_only
 cutscenes_trvram_5_seq_mastered_only
 cutscenes_weed_exchange_sync_mastered_only
+damage_engine_misfire
 damage_exhaust_drag
+damage_exhaust_drag_pull_away
 damage_exhaust_rattle
 damage_exhaust_rattle_2
 damage_exhaust_rattle_2_wrapper
@@ -4197,6 +4215,7 @@ darts_throw_dart_master
 deamon_distant
 death_gargle_sound
 death_gargle_sound_echo
+death_gargle_sound_ss
 deathmatch_sounds
 debris_car_glass
 debris_car_glass_wrapper
@@ -4315,6 +4334,7 @@ dirt_soft_env
 dirty_concrete_detail
 dirty_concrete_detail_rand
 disc_brake_squeel_loop
+dispatch_interaction_speech_sound
 distant_bang
 distant_cargo_plane
 distant_city_dog
@@ -4750,6 +4770,8 @@ ent_amb_insect_plane_mt
 ent_amb_insect_plane_xf
 ent_anim_dog_peeing
 ent_anim_dog_poo
+ent_dst_concrete
+ent_dst_concrete_vehicle
 ent_dst_gen_cardboard
 ent_dst_pineapple
 ent_sht_electrical_box_lp
@@ -4828,6 +4850,7 @@ explosion_debris_mt
 explosion_distortion_loop
 explosion_distortion_loop_1
 explosion_distortion_loop_distance
+explosion_distortion_loop_distance_wrapper
 explosion_distortion_loop_env
 explosion_distortion_loop_env_1
 explosion_distortion_loop_stereo
@@ -4836,6 +4859,12 @@ explosion_impact_04.l_1
 explosion_impact_05.l
 explosion_impact_05.l_1
 explosion_woof
+explosions_bullet_jet_master
+explosions_bullet_jet_master_underwater
+explosions_bullet_jet_slow_mo
+explosions_bullet_jet_slow_mo_underwater
+explosions_car_close_crash_debris_env_wrapper
+explosions_car_debris_close_parts_wrapper
 explosions_car_fire
 explosions_car_impact
 explosions_car_master
@@ -4846,12 +4875,20 @@ explosions_distant_multi_1
 explosions_distant_tails
 explosions_impact
 explosions_impact_distance
+explosions_impact_pre_distance_wrapper
+explosions_interior_grenade_report_vb_wrapper
+explosions_interior_grenade_vb_wrapper
+explosions_interior_main_grenade_1_vb_wrapper
+explosions_interior_report_vb_wrapper
+explosions_interior_tail_vb_wrapper
 explosions_main
+explosions_main_pre_distance_wrapper
 explosions_mids
 explosions_mids_wrapper
 explosions_mids_wrapper_wrapper
 ext_horn
 ext_mutli_horn
+exterior_walla_default
 external_gear_change
 external_gear_change_clunk
 extra_surfaces_dirt_multi
@@ -5153,6 +5190,7 @@ fire_start_wind_env
 fire_tick
 fire_tick_loop
 fire_tick_wood
+fire_truck_water_cannon_soundset
 fire_wind_burn
 fire_woof
 firetruck_warning_dir
@@ -5221,11 +5259,14 @@ flight_school_flight_school_twilight
 flight_school_flight_school_twilight_1
 flight_school_flight_school_twilight_1_left
 flight_school_flight_school_twilight_1_right
+flock_of_birds_fly_away_master
+flock_of_pigeons_fly_away_master
 focus_in_master
 focus_in_multi
 focus_out_master
 focus_out_multi
 foliage_collisions_loop
+footstep_under_rain_soundset
 footsteps_rain_master
 footsteps_rain_pt
 footsteps_rain_puddle_rnd
@@ -5258,6 +5299,7 @@ franklin_0_reverse_bus_beeps
 franklin_0_sounds
 franklin_1_car_crash
 franklin_bed_sit_master
+franklin_bullet_vehicle_master
 franklin_by
 franklin_by_master
 franklin_car_drop_random
@@ -6199,6 +6241,7 @@ headlamp_switch_beam_on
 headlamp_switch_beam_on_seq
 headlamp_switch_beam_on_submersible
 headlamp_switch_off_end_wrapper
+headset_submix_control
 heart_breathing
 heart_monitor
 heart_monitor_env
@@ -6273,8 +6316,10 @@ helicopter_collision_mt
 helicopter_collisions
 helicopter_frogger_door_close
 helicopter_misfire_mt
+helicopter_missfire
 helicopter_pitch
 helicopter_rattle
+helicopter_rotor_generic_collision_retrig
 helicopter_shutdown
 helicopter_shutdown_env
 helicopter_shutdown_os
@@ -6282,6 +6327,7 @@ helicopter_shutdown_pts
 helicopter_spin_out_random
 helicopter_warning_tones
 helicopter_warning_tones_rnd
+heligrapplinghook
 hellfury_horn_mt
 helmet_grab_master
 helmet_off_master
@@ -6314,6 +6360,8 @@ hen_wood_chips_master
 hen_wood_creaky_master
 hen_wood_hollow_master
 hen_wood_solid_master
+highway_passby_concrete_roll
+highway_passby_concrete_roll_side
 highway_passby_tyre_bump
 highway_passby_tyre_bump_side
 hintcamsounds
@@ -6574,6 +6622,7 @@ hud_default_select_mt
 hud_default_timer_env
 hud_default_timer_master
 hud_default_timer_multi
+hud_default_veh_pick_up_master
 hud_default_waypoint_set_env
 hud_default_waypoint_set_master
 hud_default_waypoint_set_multi
@@ -6995,6 +7044,9 @@ large_truck_horn_02
 large_truck_horn_02_multi
 large_truck_horn_03
 large_truck_horn_1
+laser_bullets_impact_master
+laser_bullets_rico_master
+laser_bullets_zip_by_master
 lazer_afterburner_mt
 lazer_afterburner_pts
 lazer_bank_mt
@@ -7320,6 +7372,8 @@ loading_tune
 loading_tune_01_im
 loading_tune_pt
 loading_tune_pts
+local_player_submix
+local_player_voice
 lokus_horn
 lokus_multi_horn
 long_player_switch_cam_move
@@ -7399,6 +7453,7 @@ main_body_wrap
 main_collisions_rnd
 main_explosion
 main_explosion_02
+main_explosion_02_distant_crossfade_wrapper
 main_explosion_cheap
 main_explosion_cheap_grenade
 main_explosion_grenade
@@ -7538,6 +7593,12 @@ melee_combat_anims_stab
 melee_combat_anims_stab_hit
 melee_combat_anims_stab_hit_thud
 melee_combat_anims_uppercut
+melee_combat_fabric_swing_lrg
+melee_combat_fabric_swing_med
+melee_combat_fabric_swing_quiet_lrg
+melee_combat_fabric_swing_quiet_med
+melee_combat_fabric_swing_quiet_sml
+melee_combat_fabric_swing_sml
 melee_combat_hit_fist
 melee_combat_hit_fist_2
 melee_combat_hit_fist_body
@@ -8149,6 +8210,7 @@ noir_filter_loop
 noir_filter_loop_env
 noir_filter_loop_mt_crackle
 noir_filter_sounds
+npc_heart_beat
 npc_roadnoise_passes_default
 npc_roadnoise_passes_default_highways
 npc_roadnoise_passes_default_mt
@@ -8235,6 +8297,7 @@ oneshot_ambience_lightning_strike_02_strike_02_03
 oneshot_ambience_lightning_strike_03_strike_03_01
 oneshot_ambience_lightning_strike_03_strike_03_02
 oneshot_ambience_lightning_strike_03_strike_03_03
+optimised_debris_general
 oracle_horn
 oracle_multi_horn
 organ_horn_loop_01
@@ -8261,10 +8324,13 @@ pain_cycling_exhale
 pain_cycling_exhale_echo
 pain_cycling_exhale_ss
 pain_death_high_long
+pain_death_high_long_ss
 pain_death_high_medium
 pain_death_high_medium_echo
+pain_death_high_medium_ss
 pain_death_high_short
 pain_death_high_short_echo
+pain_death_high_short_ss
 pain_death_low
 pain_death_low_echo
 pain_death_low_ss
@@ -8280,6 +8346,7 @@ pain_gargle_sound_ss
 pain_high
 pain_high_echo
 pain_high_fall
+pain_high_fall_death_ss
 pain_high_fall_echo
 pain_high_fall_ss
 pain_high_ss
@@ -8292,12 +8359,15 @@ pain_low_ss
 pain_medium
 pain_medium_echo
 pain_medium_ss
+pain_melee_large_grunt_ss
+pain_melee_small_grunt_ss
 pain_none
 pain_on_fire
 pain_on_fire_echo
 pain_on_fire_ss
 pain_scream_panic
 pain_scream_panic_echo
+pain_scream_panic_short_ss
 pain_scream_panic_ss
 pain_scream_scared
 pain_scream_scared_echo
@@ -8311,6 +8381,7 @@ pain_scream_terror_ss
 pain_shove
 pain_shove_echo
 pain_shove_ss
+pain_super_high_fall_ss
 pain_tazer_sound
 pain_tazer_sound_echo
 pain_tazer_sound_ss
@@ -8436,6 +8507,7 @@ parachute_deploy_synth_sweetener
 parachute_descent
 parachute_descent_wind
 parachute_descent_wind_fluc
+parachute_land_parachute_release_master
 parachute_loop
 parachute_open
 parachute_rain
@@ -8500,6 +8572,7 @@ payphone_slam_multitrack
 payphone_sounds
 pcj_horn_mt
 pcj_horn_one_shot
+ped_collision_set
 ped_fire
 ped_fire_fire_hiss
 ped_fire_fire_hiss_env
@@ -8546,9 +8619,11 @@ ped_scrape_trail_master
 ped_scrape_wet_road
 ped_scrape_wood_master
 ped_shove
+ped_veh_collisions_soundset
 ped_vehicle_head_impact
 ped_vehicle_limb_impact
 ped_vehicle_torso_impact
+ped_voice_night_out
 perspex_impact_hard_master
 perspex_impact_solid_master
 perspex_sheet_collision
@@ -8558,6 +8633,7 @@ petrol_leak_mt
 petrol_leak_os
 petrol_leak_pts
 petrol_pump_collision
+petrol_pump_metal_explosion
 petrol_pump_solid
 petrol_spray_os
 peyote_attract_boar
@@ -8652,6 +8728,7 @@ peyote_attract_small_dog_lp
 peyote_attract_small_dog_seq
 peyote_attract_small_dog_seq_wait
 peyote_attract_soundset
+peyote_bird_poop_sounds
 peyote_horn
 peyote_multi_horn
 peyote_player_secret_vocal_master
@@ -8893,6 +8970,7 @@ player_fucked_siren_maths_fsel.vr
 player_fucked_siren_seq
 player_fucked_siren_seq_get_start_time
 player_fucked_siren_seq_get_time
+player_gun_dropped_slowmo_deathscreen
 player_helicopter_spin_out
 player_helicopter_spin_out_random
 player_inhale
@@ -9002,6 +9080,7 @@ pocket_change_05
 pocket_change_master
 pocket_soundset
 police_chopper_cam_sounds
+police_radio_squelch_master
 police_scanner_01_0_gtaiv_legacy_support_01_police_scanner_dispatch_air_unit_from
 police_scanner_01_0_gtaiv_legacy_support_01_police_scanner_dispatch_fib_team_from
 police_scanner_01_0_gtaiv_legacy_support_01_police_scanner_dispatch_swat_unit_from
@@ -10433,6 +10512,7 @@ police_scanner_direction_heading_east_b
 police_scanner_direction_heading_north_b
 police_scanner_direction_heading_south_b
 police_scanner_direction_heading_west_b
+police_scanner_dispatch_noise_loop
 police_scanner_doing_speed_100_b
 police_scanner_doing_speed_40_b
 police_scanner_doing_speed_50_b
@@ -10752,6 +10832,9 @@ police_scanner_model_washington_b
 police_scanner_model_youga_b
 police_scanner_model_zion_b
 police_scanner_model_ztype_b
+police_scanner_no_conjuctive
+police_scanner_no_conjuctive_no_direction
+police_scanner_no_direction
 police_scanner_noise_loop
 police_scanner_noise_loop_end
 police_scanner_noise_loop_end_mt
@@ -10904,6 +10987,7 @@ positioned_noise_loop
 positioned_noise_loop_b
 positioned_walla_master
 positioned_walla_multi
+post_shootout_debris_soundset
 power_play_general_soundset
 preload_speech_sound
 premier_horn
@@ -11180,6 +11264,7 @@ ptl_suppressed_player_wide_04.r
 ptl_suppressed_player_wide_end.l
 ptl_suppressed_player_wide_end.r
 puddle_random
+pulse_headset_sounds
 quail_seq
 quail_seqol_wait
 quail_song
@@ -12688,7 +12773,9 @@ radio_13_jazz_wwfm_p2_wwfm_p2_right
 radio_13_jazz_wwfm_p2_wwfm_p2_v4_left
 radio_13_jazz_wwfm_p2_wwfm_p2_v4_right
 radio_13_jazz_wwfm_p3
+radio_13_jazz_wwfm_p3_alt
 radio_13_jazz_wwfm_p3_env
+radio_13_jazz_wwfm_p3_start
 radio_13_jazz_wwfm_p3_wwfm_p3_left
 radio_13_jazz_wwfm_p3_wwfm_p3_right
 radio_13_jazz_wwfm_p3_wwfm_p3_v5_left
@@ -14149,6 +14236,7 @@ rat_wood_creaky_master
 rat_wood_hollow_master
 rat_wood_solid_master
 rattle
+rc_banditto_tyre_bumps_multi
 rc_car_collision
 rc_car_collisions
 rc_car_collisions_debris_env
@@ -14189,6 +14277,7 @@ redwing_blackbird_lp_rnd_song_seq_hold_oss_loop
 redwing_blackbird_lp_rnd_song_seq_hold_oss_stop
 redwing_blackbird_lp_rnd_song_seq_in
 regular_door_close_rnd
+remote_player_voice
 remote_sniper_rifle_move
 remote_sniper_rifle_move_mo
 remote_sniper_rifle_move_os
@@ -17203,6 +17292,8 @@ rig_2_turret_mts
 rig_2_turret_vbs
 rig_2_turret_vert_mt
 ringtone_list_default
+river_brook_strong_water_soundset
+river_brook_weak_water_soundset
 river_la_strong_water_soundset
 river_la_weak_water_soundset
 river_medium_babble_multi
@@ -17529,6 +17620,10 @@ sawmill_wood_drops_rnd_reso
 sawmill_wood_drops_rnd_snap_med
 sawmill_wood_drops_rnd_strut
 scan_fail
+scanner_car_unit_trigger
+scanner_crime_code_trigger
+scanner_crime_trigger
+scanner_location_trigger
 schafter_horn
 schafter_multi_horn
 scope_ui_master
@@ -18892,6 +18987,7 @@ slatted_blinds_impact_master
 slatted_blinds_multi
 slatted_blinds_solid_master
 slatted_blinds_thin_collision
+sleighbells_chassis_stress_detail
 sleighbells_short
 sliding_metal_gate_metal_sign_large_rnd
 slipstream_master
@@ -19154,6 +19250,7 @@ snp_assault_player_shot_rdm
 snp_assault_player_sub
 snp_assault_player_thud_a
 snp_assault_player_thud_b
+snp_bolt_plyr_action_master
 snp_echo_master
 snp_heavy_int_plyr_hold_vb
 snp_heavy_player_env
@@ -19274,7 +19371,12 @@ sparrow_song_seq_vbs_mos
 sparrow_song_seq_vbs_mos_rtol
 sparrow_song_seq_vbs_mos_rtol_sw
 sparrow_song_seq_wait
+special_ability_michael_gun_master
+special_ability_michael_gun_pulse
 special_ability_michael_master
+special_ability_michael_silenced_gun_pulse
+special_ability_michael_silencer_master
+special_ability_michael_stun_gun_master
 special_ability_sounds
 special_ability_soundset
 special_ability_trevor_master
@@ -19581,6 +19683,7 @@ stationary_vehicle_02_1min
 stationary_vehicle_02_pt
 stealth_neck_break
 steed_horn
+steering_angle_squeal
 stereo_collisions_rnd
 stereo_exp_mids_1
 stereo_exp_mids_2
@@ -20604,6 +20707,7 @@ subway_carriage_pt
 subway_carriage_vb
 subway_train_big_brake_release
 subway_train_brake_release
+subway_train_held_down
 subway_train_horns_air_horn
 subway_train_horns_bell_crossing
 subway_train_horns_bell_engine
@@ -20631,6 +20735,7 @@ super_jump_rand
 super_jump_whoosh
 super_jump_whoosh_1
 super_mod_garage_upgrade_car_default
+super_slowmo_explosion_sounds
 supercar_1_eur_flat6_engine_accel
 supercar_1_eur_flat6_engine_accel_npc
 supercar_1_eur_flat6_exhaust_accel
@@ -21227,6 +21332,7 @@ tennis_slam_racket
 tennis_slam_racket_master
 tennis_slam_racket_rdm
 tennis_slam_racket_verb
+tennis_vocalization
 test
 test_mult
 test_mult_pts
@@ -21502,12 +21608,14 @@ trevor_in_multi
 trevor_loop_multi
 trevor_melee_master
 trevor_melee_multi
+trevor_mini_gun_fire_master
 trevor_onstop
 trevor_onstop_multi
 trevor_out_multi
 trevor_pukeintofount_sounds
 trevor_shove_master
 trevor_splat_master
+trevor_weapon_fire_master
 trevors_poo_fail
 trevors_poo_fail_seq
 trevors_poo_fail_seq_strain
@@ -21712,6 +21820,7 @@ veh_air_turbulance_water
 veh_aircraft_fire_soundset
 veh_big_fire_soundset
 veh_boat_fire_soundset
+veh_collisions_set
 veh_downwash_dirt
 veh_downwash_foliage
 veh_downwash_sand
@@ -21744,6 +21853,7 @@ veh_wheel_puncture
 vehicle_barracks_master
 vehicle_barracks_tarp_rto
 vehicle_barracks_tarp_rto_rdm
+vehicle_breakable_glass_sounset
 vehicle_bullet_impact_auto_master
 vehicle_bullet_impact_multi
 vehicle_bullet_impact_shotgun_master
@@ -21751,6 +21861,7 @@ vehicle_bullet_impacts
 vehicle_bullet_impacts_plastic
 vehicle_debris_loop_ls
 vehicle_debris_random_one_shots
+vehicle_debris_random_one_shots_louder
 vehicle_doors_check
 vehicle_dune_master
 vehicle_dune_tarp_rdm
@@ -22445,6 +22556,7 @@ vincent_horn
 vincent_multi_horn
 virgo_horn
 virgo_multi_horn
+voicechat_sounds
 voodoo_horn
 voodoo_multi_horn
 vulkan_lock_on_amber
@@ -22453,6 +22565,10 @@ vulkan_lock_on_amber_retrig
 vulkan_lock_on_red
 vulkan_lock_on_red_env
 vulkan_lock_on_synth
+w_vehicle_spl_rayminigun_npc_servo_master
+w_vehicle_spl_rayminigun_npc_servo_nospinup_master
+w_vehicle_spl_rayminigun_servo_master
+w_vehicle_spl_rayminigun_servo_nospinup_master
 wagon_door_close_rnd
 walla_across_street_speech_envelope
 walla_across_street_speech_envelope_gang
@@ -22895,6 +23011,8 @@ wet_mud_env
 wet_skid_scrape
 wet_skids
 wet_skids_backup
+whale_vocal_far_ss
+whale_vocal_near_ss
 wheel_debris_twin_loop
 wheel_debris_twin_loop_x
 wheel_rim
@@ -22953,6 +23071,8 @@ wind_paper_master_env_twinloop
 wind_paper_master_multi
 wind_paper_master_pts
 wind_paper_soundset
+wind_props_bottle_roll
+wind_props_bottles_rattle
 wind_r
 wind_soft_01_twin
 wind_stormy_master

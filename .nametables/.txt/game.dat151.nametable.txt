@@ -1024,6 +1024,9 @@ am_base_plastic_hollow_clear
 am_base_polystyrene
 am_base_prop_trailer_entity
 am_base_puddle
+am_base_quadped_large
+am_base_quadped_med
+am_base_quadped_small
 am_base_rc_car_entity
 am_base_rock
 am_base_rock_mossy
@@ -3218,6 +3221,8 @@ cloth_gas_mask_player
 cloth_heavy_bag
 cloth_heavy_bag_player
 cloth_lower_bare
+cloth_lower_bikini_speedo
+cloth_lower_bikini_speedo_player
 cloth_lower_cotton
 cloth_lower_cotton_player
 cloth_lower_extreme
@@ -4315,6 +4320,11 @@ debug_stop_oneshot
 debug_stop_track
 default
 default_cinematic_mic
+default_doors_barrier_arm
+default_doors_garage
+default_doors_sliding_horizontal
+default_doors_sliding_vertical
+default_doors_std
 default_foliage
 default_heli
 default_heli_scanner_params
@@ -6295,6 +6305,7 @@ futo
 futo_engine
 futo_granular_engine
 futo_scanner_params
+g_f_y_ballas_01_black_pvg
 g_f_y_families_01_black_pvg
 g_f_y_families_01_r2pvg
 g_f_y_vagos_01_latino_pvg
@@ -8031,10 +8042,12 @@ male_beachvesp_white_pvg
 male_bevhills_black_pvg
 male_bevhills_r2pvg
 male_bevhills_white_pvg
+male_brave_pvg
 male_business_black_pvg
 male_business_chinese_pvg
 male_business_r2pvg
 male_business_white_pvg
+male_cowardly_pvg
 male_doorman_r2pvg
 male_downtown_black_pvg
 male_downtown_r2pvg
@@ -8197,6 +8210,7 @@ medic_realise_victim_dead
 medic_realise_victim_dead_sc
 medic_reflect_on_death
 medic_reflect_on_death_sc
+medic_return_to_ambulance_resp
 medic_return_to_ambulance_state
 medic_return_to_ambulance_state_sc
 medium_intensity
@@ -11499,7 +11513,9 @@ radio_news_news
 radio_stations_01
 radio_track_category_min_time_between_repeats
 radio_track_category_weights_from_back_to_back_music
+radio_track_category_weights_from_back_to_back_music_kultfm
 radio_track_category_weights_from_music
+radio_track_category_weights_from_music_kultfm
 radio_track_category_weights_no_back_to_back_music
 radio_weather_01
 raketanker
@@ -11837,6 +11853,8 @@ romero_scanner_params
 rottweiler_agitated
 rottweiler_attack
 rottweiler_bark
+rottweiler_bark_far
+rottweiler_bark_far_random
 rottweiler_bark_random
 rottweiler_canter
 rottweiler_chuff
@@ -13230,6 +13248,7 @@ shoreline_mirrorpark_11
 shoreline_morningwood_01
 shoreline_noisy_place_pool_01
 shoreline_noisy_place_pool_02
+shoreline_ocean_el_burro_heights_0_0
 shoreline_pacific_bluffs_01
 shoreline_pacific_bluffs_hotel
 shoreline_pool_davis_01
@@ -13420,11 +13439,17 @@ slowmo_custom
 slowmo_extreme_04
 slowmo_fib4_truck_smash
 slowmo_general
+slowmo_pausemenu
 slowmo_prologue_vault
+slowmo_radiowheel
+slowmo_special_franklin
+slowmo_special_michael
+slowmo_special_trevor
 slowmo_stunt
 slowmo_switch
 slowmo_t1_rayfire_explosion
 slowmo_t1_trailer_smash
+slowmo_third_person_cinematic_aim
 slowmo_weapon
 sm20_tun1
 sm20_tun2
@@ -15124,6 +15149,7 @@ vbca_tunnel4_gtamloroom014
 vbca_tunnel5
 vbca_tunnel5_gtamloroom015
 veh_bonnet_mic
+veh_last_gen_bonnet_mic
 vehicle_chase
 vehicle_collide_bird
 vehicle_collide_bird_generic
